@@ -1,0 +1,45 @@
+{
+  "raw_query": "the pillow is on a black couch that is placed in the northern corner of the room with a whiteboard above it . it has a dirty silver color and is shaped like a rectangular prism with one of the sides caved in .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "dirty silver color",
+      "rectangular prism",
+      "one side caved in"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "whiteboard",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "couch"
+    },
+    {
+      "subject": "whiteboard",
+      "relation": "above",
+      "object": "couch"
+    },
+    {
+      "subject": "couch",
+      "relation": "in",
+      "object": "northern corner of the room"
+    }
+  ],
+  "view_constraints": [
+    "northern corner of the room"
+  ]
+}

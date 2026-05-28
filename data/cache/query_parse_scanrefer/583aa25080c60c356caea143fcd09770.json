@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a brown door . it is across from an armchair .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "armchair",
+      "attributes": [],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "across from",
+      "object": "armchair"
+    }
+  ],
+  "view_constraints": []
+}

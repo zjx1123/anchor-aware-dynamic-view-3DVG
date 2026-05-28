@@ -1,0 +1,35 @@
+{
+  "raw_query": "there is a table that has two chairs tucked under it . it also has a red and black object on it .",
+  "target": {
+    "category": "table",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "object",
+      "attributes": [
+        "red",
+        "black"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "table"
+    },
+    {
+      "subject": "object",
+      "relation": "on",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

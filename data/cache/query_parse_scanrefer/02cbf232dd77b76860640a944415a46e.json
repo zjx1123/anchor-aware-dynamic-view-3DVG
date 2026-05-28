@@ -1,0 +1,15 @@
+{
+  "raw_query": "a wooden square table . in the middle of the room .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "wooden",
+      "square"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "in the middle of the room"
+  ]
+}

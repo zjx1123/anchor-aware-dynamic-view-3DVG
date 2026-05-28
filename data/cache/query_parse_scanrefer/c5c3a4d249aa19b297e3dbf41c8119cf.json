@@ -1,0 +1,36 @@
+{
+  "raw_query": "this is a table . this table is front of the book shelves , the book shelves it is in front of are the second and the third from the left . the third book shelf from the left is shorter than all the rest .",
+  "target": {
+    "category": "table",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "book shelf",
+      "attributes": [
+        "second from the left"
+      ],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "book shelf",
+      "attributes": [
+        "third from the left"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "book shelves"
+    },
+    {
+      "subject": "book shelf",
+      "relation": "shorter than",
+      "object": "all the rest"
+    }
+  ],
+  "view_constraints": []
+}

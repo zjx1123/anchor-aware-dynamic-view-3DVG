@@ -1,0 +1,25 @@
+{
+  "raw_query": "this is a armchair . its white with patterns on it . its closest to the window in the room .",
+  "target": {
+    "category": "armchair",
+    "attributes": [
+      "white",
+      "with patterns"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,27 @@
+{
+  "raw_query": "there is a rectangular dark cabinet . it is next to a white cabinet .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "rectangular",
+      "dark"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rectangular dark cabinet",
+      "relation": "next to",
+      "object": "white cabinet"
+    }
+  ],
+  "view_constraints": []
+}

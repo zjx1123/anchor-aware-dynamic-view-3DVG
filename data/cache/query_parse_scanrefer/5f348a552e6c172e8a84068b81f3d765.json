@@ -1,0 +1,32 @@
+{
+  "raw_query": "the door is to the right of the desk . the door has shelves in front of it .",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "front"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "right of",
+      "object": "desk"
+    },
+    {
+      "subject": "shelves",
+      "relation": "in front of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

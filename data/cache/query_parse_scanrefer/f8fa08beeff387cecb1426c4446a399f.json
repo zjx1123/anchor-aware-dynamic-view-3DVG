@@ -1,0 +1,25 @@
+{
+  "raw_query": "the window is tall and has a brown frame . the window is on the right of another one .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "tall",
+      "brown frame"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "on the right of",
+      "object": "another window"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,35 @@
+{
+  "raw_query": "there is a rectangular gray cabinet . it is on a wall next to a shelf .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "rectangular",
+      "gray"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "shelf",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "next to",
+      "object": "shelf"
+    }
+  ],
+  "view_constraints": []
+}

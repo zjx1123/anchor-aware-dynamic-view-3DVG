@@ -1,0 +1,18 @@
+{
+  "raw_query": "this is a rack object with different surfaces atop each other . there are objects on top of them .",
+  "target": {
+    "category": "rack",
+    "attributes": [
+      "different surfaces atop each other"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "objects",
+      "relation": "on top of",
+      "object": "rack"
+    }
+  ],
+  "view_constraints": []
+}

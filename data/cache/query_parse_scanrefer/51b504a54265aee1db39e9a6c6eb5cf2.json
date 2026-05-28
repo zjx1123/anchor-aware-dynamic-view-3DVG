@@ -1,0 +1,17 @@
+{
+  "raw_query": "this is a black chair facing away from the viewer . it is closest to the viewer .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "facing away from viewer",
+      "closest to viewer"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "facing away from viewer",
+    "closest to viewer"
+  ]
+}

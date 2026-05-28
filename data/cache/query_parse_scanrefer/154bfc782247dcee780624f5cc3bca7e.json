@@ -1,0 +1,14 @@
+{
+  "raw_query": "an ottoman made from leather . it is the one furthest to the left .",
+  "target": {
+    "category": "ottoman",
+    "attributes": [
+      "made from leather"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "furthest to the left"
+  ]
+}

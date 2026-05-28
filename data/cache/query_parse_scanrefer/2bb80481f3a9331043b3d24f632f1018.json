@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a black sofa chair . it is to the left of the lamp .",
+  "target": {
+    "category": "sofa chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "lamp",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sofa chair",
+      "relation": "left of",
+      "object": "lamp"
+    }
+  ],
+  "view_constraints": []
+}

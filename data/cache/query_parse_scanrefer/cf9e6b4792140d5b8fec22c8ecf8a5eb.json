@@ -1,0 +1,28 @@
+{
+  "raw_query": "this tv is on the left wall . it is black .",
+  "target": {
+    "category": "tv",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "left"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "tv",
+      "relation": "on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "left wall"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "raw_query": "the brown wooden chair . the chair is in the back in the middle .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "brown",
+      "wooden"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "in the back",
+    "in the middle"
+  ]
+}

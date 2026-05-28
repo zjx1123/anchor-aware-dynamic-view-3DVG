@@ -1,0 +1,15 @@
+{
+  "raw_query": "this window is bright . it is facing inward .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "bright",
+      "facing inward"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "facing inward"
+  ]
+}

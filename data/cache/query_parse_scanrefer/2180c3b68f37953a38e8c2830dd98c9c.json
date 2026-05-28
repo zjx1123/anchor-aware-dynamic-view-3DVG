@@ -1,0 +1,25 @@
+{
+  "raw_query": "a small circular table sits in the middle of the floor . it 's surrounded by four chairs .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "small",
+      "circular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "surrounding"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "surrounded by",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

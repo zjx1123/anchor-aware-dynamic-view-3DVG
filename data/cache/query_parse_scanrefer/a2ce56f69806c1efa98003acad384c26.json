@@ -1,0 +1,38 @@
+{
+  "raw_query": "this is a metallic round table with a base of one pole . it is below the picture on the wall and between two red stools .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "metallic",
+      "round",
+      "one pole base"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "picture",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "stool",
+      "attributes": [
+        "red"
+      ],
+      "relation_to_target": "left and right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "below",
+      "object": "picture"
+    },
+    {
+      "subject": "table",
+      "relation": "between",
+      "object": "two red stools"
+    }
+  ],
+  "view_constraints": []
+}

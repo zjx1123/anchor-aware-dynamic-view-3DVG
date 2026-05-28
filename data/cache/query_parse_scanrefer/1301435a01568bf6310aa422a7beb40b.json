@@ -1,0 +1,22 @@
+{
+  "raw_query": "this is a lamp . the lamp is at the corner of the room .",
+  "target": {
+    "category": "lamp",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "corner"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "at",
+      "object": "corner of room"
+    }
+  ],
+  "view_constraints": []
+}

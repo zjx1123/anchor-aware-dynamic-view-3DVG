@@ -1,0 +1,29 @@
+{
+  "raw_query": "the trash can is the second closest to the door out of the group of cans . the trash can has a plastic bag over it .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "has plastic bag over it"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "second closest"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "is second closest to",
+      "object": "door"
+    },
+    {
+      "subject": "trash can",
+      "relation": "has",
+      "object": "plastic bag"
+    }
+  ],
+  "view_constraints": []
+}

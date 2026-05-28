@@ -1,0 +1,25 @@
+{
+  "raw_query": "the microwave is left of the door . the microwave is a white rectangular prism .",
+  "target": {
+    "category": "microwave",
+    "attributes": [
+      "white",
+      "rectangular prism"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "microwave",
+      "relation": "left of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

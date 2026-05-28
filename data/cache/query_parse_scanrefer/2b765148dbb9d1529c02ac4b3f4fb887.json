@@ -1,0 +1,26 @@
+{
+  "raw_query": "there is a rectangular monitor . it is to the right of the one closest to the door .",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [
+        "closest to the door"
+      ],
+      "relation_to_target": "left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rectangular monitor",
+      "relation": "to the right of",
+      "object": "monitor closest to the door"
+    }
+  ],
+  "view_constraints": []
+}

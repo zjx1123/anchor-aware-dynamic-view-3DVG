@@ -1,0 +1,35 @@
+{
+  "raw_query": "the door is next to the trash can and a table . the door is a brown rectangle .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "brown",
+      "rectangle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "next to",
+      "object": "trash can"
+    },
+    {
+      "subject": "door",
+      "relation": "next to",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

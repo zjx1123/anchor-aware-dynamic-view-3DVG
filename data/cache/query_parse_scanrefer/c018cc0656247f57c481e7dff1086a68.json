@@ -1,0 +1,46 @@
+{
+  "raw_query": "the picture is above the counter that 's between two chairs . the picture is blue , gold , and white .",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "blue",
+      "gold",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "below"
+    },
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "left_of"
+    },
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "right_of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "above",
+      "object": "counter"
+    },
+    {
+      "subject": "counter",
+      "relation": "between",
+      "object": "chair"
+    },
+    {
+      "subject": "counter",
+      "relation": "between",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

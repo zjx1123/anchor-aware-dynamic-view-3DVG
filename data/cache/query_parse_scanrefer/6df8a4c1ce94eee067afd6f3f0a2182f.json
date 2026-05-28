@@ -1,0 +1,29 @@
+{
+  "raw_query": "the pillow is on top of the couch . it is on the furthest left .",
+  "target": {
+    "category": "pillow",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on top of",
+      "object": "couch"
+    },
+    {
+      "subject": "pillow",
+      "relation": "on the furthest left",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": [
+    "on the furthest left"
+  ]
+}

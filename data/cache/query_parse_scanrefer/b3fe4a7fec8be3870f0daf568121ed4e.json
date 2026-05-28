@@ -1,0 +1,37 @@
+{
+  "raw_query": "a brown wooden chair . it is in between multiple wooden chairs next to a wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "brown",
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "wooden"
+      ],
+      "relation_to_target": "surrounding"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in between",
+      "object": "multiple wooden chairs"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

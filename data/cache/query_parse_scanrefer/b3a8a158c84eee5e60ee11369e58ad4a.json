@@ -1,0 +1,39 @@
+{
+  "raw_query": "this is a small night stand kept close to the wall . a table on the left and bed on the right are kept close to it .",
+  "target": {
+    "category": "night stand",
+    "attributes": [
+      "small"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "night stand",
+      "relation": "close to",
+      "object": "wall"
+    },
+    {
+      "subject": "table",
+      "relation": "on the left of",
+      "object": "night stand"
+    },
+    {
+      "subject": "bed",
+      "relation": "on the right of",
+      "object": "night stand"
+    }
+  ],
+  "view_constraints": []
+}

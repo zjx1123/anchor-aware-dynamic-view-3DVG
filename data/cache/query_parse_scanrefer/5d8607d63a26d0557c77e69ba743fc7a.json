@@ -1,0 +1,33 @@
+{
+  "raw_query": "this chair is facing down and right . it is curved and is the closest the viewer .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "facing down and right",
+      "curved",
+      "closest to viewer"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "down and right"
+    },
+    {
+      "subject": "chair",
+      "relation": "is",
+      "object": "curved"
+    },
+    {
+      "subject": "chair",
+      "relation": "is",
+      "object": "closest to viewer"
+    }
+  ],
+  "view_constraints": [
+    "facing down and right",
+    "closest to viewer"
+  ]
+}

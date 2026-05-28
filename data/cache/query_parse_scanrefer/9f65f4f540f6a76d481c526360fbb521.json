@@ -1,0 +1,55 @@
+{
+  "raw_query": "the object is a chair . it is on the right side of the room from the doorway at the end table . it is the second one next to the wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "second",
+      "next to wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "doorway",
+      "attributes": [],
+      "relation_to_target": "from"
+    },
+    {
+      "category": "end table",
+      "attributes": [],
+      "relation_to_target": "at"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on right side of",
+      "object": "room"
+    },
+    {
+      "subject": "chair",
+      "relation": "from",
+      "object": "doorway"
+    },
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "end table"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "right side of room",
+    "from doorway",
+    "at end table",
+    "second next to wall"
+  ]
+}

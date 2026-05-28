@@ -1,0 +1,45 @@
+{
+  "raw_query": "it is a black cabinet . the black cabinet is sitting next to the white cabinet and the white rail across from the white door .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "rail",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "across from"
+    },
+    {
+      "category": "door",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "black cabinet",
+      "relation": "next to",
+      "object": "white cabinet"
+    },
+    {
+      "subject": "white rail",
+      "relation": "across from",
+      "object": "white door"
+    }
+  ],
+  "view_constraints": []
+}

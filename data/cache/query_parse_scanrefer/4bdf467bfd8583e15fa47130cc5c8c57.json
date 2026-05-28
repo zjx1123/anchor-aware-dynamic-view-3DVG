@@ -1,0 +1,24 @@
+{
+  "raw_query": "there is a cylindrical table . it is next to a curtain .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "cylindrical"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "curtain",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "next to",
+      "object": "curtain"
+    }
+  ],
+  "view_constraints": []
+}

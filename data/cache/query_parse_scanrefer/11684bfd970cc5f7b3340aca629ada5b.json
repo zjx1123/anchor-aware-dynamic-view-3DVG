@@ -1,0 +1,48 @@
+{
+  "raw_query": "it is a brown leather couch with a bag on the left cushion . there is a fire extinguisher behind it and it is across from another identical couch .",
+  "target": {
+    "category": "couch",
+    "attributes": [
+      "brown",
+      "leather",
+      "has bag on left cushion"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bag",
+      "attributes": [],
+      "relation_to_target": "on left cushion"
+    },
+    {
+      "category": "fire extinguisher",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "couch",
+      "attributes": [
+        "identical"
+      ],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bag",
+      "relation": "on",
+      "object": "left cushion"
+    },
+    {
+      "subject": "fire extinguisher",
+      "relation": "behind",
+      "object": "couch"
+    },
+    {
+      "subject": "couch",
+      "relation": "across from",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

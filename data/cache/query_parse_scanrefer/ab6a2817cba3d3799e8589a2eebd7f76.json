@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is a pillow . its pink in color and is on top of the pattered sofa .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "pink"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sofa",
+      "attributes": [
+        "pattered"
+      ],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on top of",
+      "object": "sofa"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,38 @@
+{
+  "raw_query": "this printer is directly below the window . it is sitting on the counter , in the corner .",
+  "target": {
+    "category": "printer",
+    "attributes": [
+      "directly below window",
+      "sitting on counter",
+      "in corner"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "printer",
+      "relation": "below",
+      "object": "window"
+    },
+    {
+      "subject": "printer",
+      "relation": "on",
+      "object": "counter"
+    }
+  ],
+  "view_constraints": [
+    "corner"
+  ]
+}

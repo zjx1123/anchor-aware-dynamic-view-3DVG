@@ -1,0 +1,26 @@
+{
+  "raw_query": "a white sink . on the side of the bathroom .",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathroom",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "on the side of",
+      "object": "bathroom"
+    }
+  ],
+  "view_constraints": [
+    "side of bathroom"
+  ]
+}

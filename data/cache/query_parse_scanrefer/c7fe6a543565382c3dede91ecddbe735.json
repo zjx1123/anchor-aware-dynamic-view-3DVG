@@ -1,0 +1,26 @@
+{
+  "raw_query": "two windows . on the side of the bathroom .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "two"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathroom",
+      "attributes": [],
+      "relation_to_target": "side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "on side of",
+      "object": "bathroom"
+    }
+  ],
+  "view_constraints": [
+    "side of bathroom"
+  ]
+}

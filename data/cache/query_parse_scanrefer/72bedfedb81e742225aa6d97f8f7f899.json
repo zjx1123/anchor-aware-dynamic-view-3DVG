@@ -1,0 +1,26 @@
+{
+  "raw_query": "the bookshelf has a white board leaning on it . the bookshelf has 3 layers .",
+  "target": {
+    "category": "white board",
+    "attributes": [
+      "leaning"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "3 layers"
+      ],
+      "relation_to_target": "leaning on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "white board",
+      "relation": "leaning on",
+      "object": "bookshelf"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,26 @@
+{
+  "raw_query": "a white pillow . next to the black pillow .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "pillow",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "white pillow",
+      "relation": "next to",
+      "object": "black pillow"
+    }
+  ],
+  "view_constraints": []
+}

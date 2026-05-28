@@ -1,0 +1,27 @@
+{
+  "raw_query": "the large hanging curtain . the curtain is next to the little shelf .",
+  "target": {
+    "category": "curtain",
+    "attributes": [
+      "large",
+      "hanging"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shelf",
+      "attributes": [
+        "little"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "curtain",
+      "relation": "next to",
+      "object": "shelf"
+    }
+  ],
+  "view_constraints": []
+}

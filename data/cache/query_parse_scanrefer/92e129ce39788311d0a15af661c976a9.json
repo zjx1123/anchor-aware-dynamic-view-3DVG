@@ -1,0 +1,25 @@
+{
+  "raw_query": "there is a white plastic soap dispenser placed on the side of the wall .",
+  "target": {
+    "category": "soap dispenser",
+    "attributes": [
+      "white",
+      "plastic"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "on the side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "soap dispenser",
+      "relation": "on the side of",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

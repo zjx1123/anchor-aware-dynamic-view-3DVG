@@ -1,0 +1,39 @@
+{
+  "raw_query": "the trash can is located along the far wall of the room . the trash can is also directly to the right of the toilet and underneath the toilet paper .",
+  "target": {
+    "category": "trash can",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "directly to the right of"
+    },
+    {
+      "category": "toilet paper",
+      "attributes": [],
+      "relation_to_target": "underneath"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "located along",
+      "object": "far wall of the room"
+    },
+    {
+      "subject": "trash can",
+      "relation": "directly to the right of",
+      "object": "toilet"
+    },
+    {
+      "subject": "trash can",
+      "relation": "underneath",
+      "object": "toilet paper"
+    }
+  ],
+  "view_constraints": [
+    "far wall of the room"
+  ]
+}

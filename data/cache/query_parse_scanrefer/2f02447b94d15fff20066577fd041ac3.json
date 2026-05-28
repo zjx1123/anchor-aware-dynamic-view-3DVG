@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a brown bed . it is to the left of another bed .",
+  "target": {
+    "category": "bed",
+    "attributes": [
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "brown bed",
+      "relation": "is to the left of",
+      "object": "another bed"
+    }
+  ],
+  "view_constraints": []
+}

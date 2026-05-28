@@ -1,0 +1,20 @@
+{
+  "raw_query": "this cabinet is on the other side . its green in color .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "green"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "on the other side",
+      "object": "unknown"
+    }
+  ],
+  "view_constraints": [
+    "on the other side"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "raw_query": "the brown shelf is to the left of the window . it is so tall that it reaches the ceiling .",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "brown",
+      "tall",
+      "reaches ceiling"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "to the left of",
+      "object": "window"
+    },
+    {
+      "subject": "shelf",
+      "relation": "reaches",
+      "object": "ceiling"
+    }
+  ],
+  "view_constraints": [
+    "left side of window",
+    "tall enough to reach ceiling"
+  ]
+}

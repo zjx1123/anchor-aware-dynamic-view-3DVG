@@ -1,0 +1,22 @@
+{
+  "raw_query": "this is a window in the meeting room . it is near the chalkboard .",
+  "target": {
+    "category": "window",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chalkboard",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "near",
+      "object": "chalkboard"
+    }
+  ],
+  "view_constraints": []
+}

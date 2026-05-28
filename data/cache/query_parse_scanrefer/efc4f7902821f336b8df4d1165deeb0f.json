@@ -1,0 +1,42 @@
+{
+  "raw_query": "this is a plain office chair . it si near the corner of the table . it is slightly pulled out and by the white board .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "plain",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "near corner"
+    },
+    {
+      "category": "white board",
+      "attributes": [],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "near",
+      "object": "corner of table"
+    },
+    {
+      "subject": "chair",
+      "relation": "pulled out",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "by",
+      "object": "white board"
+    }
+  ],
+  "view_constraints": [
+    "slightly pulled out"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a big screen tv . it is affixed to the wall .",
+  "target": {
+    "category": "tv",
+    "attributes": [
+      "big screen"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "affixed to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "tv",
+      "relation": "affixed to",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

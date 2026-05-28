@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a white soap dispenser . it is above the sink .",
+  "target": {
+    "category": "soap dispenser",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "soap dispenser",
+      "relation": "above",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

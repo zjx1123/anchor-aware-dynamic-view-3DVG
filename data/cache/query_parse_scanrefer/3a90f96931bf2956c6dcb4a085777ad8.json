@@ -1,0 +1,26 @@
+{
+  "raw_query": "there is a rectangular radiator . it is next to a white chair .",
+  "target": {
+    "category": "radiator",
+    "attributes": [
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "radiator",
+      "relation": "next to",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

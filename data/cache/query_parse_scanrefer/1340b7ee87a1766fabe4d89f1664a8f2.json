@@ -1,0 +1,29 @@
+{
+  "raw_query": "the picture is on the back wall of the room . it is to the right of the shower curtain .",
+  "target": {
+    "category": "picture",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "shower curtain",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "on",
+      "object": "back wall"
+    },
+    {
+      "subject": "picture",
+      "relation": "to the right of",
+      "object": "shower curtain"
+    }
+  ],
+  "view_constraints": [
+    "back wall of the room"
+  ]
+}

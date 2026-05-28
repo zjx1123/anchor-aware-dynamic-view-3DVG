@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a wooden desk . the desk is close to wall .",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "close to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "close to",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

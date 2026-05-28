@@ -1,0 +1,29 @@
+{
+  "raw_query": "there are white washing machines . they are an island in the middle of the room .",
+  "target": {
+    "category": "washing machine",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "washing machine",
+      "relation": "is located in",
+      "object": "room"
+    },
+    {
+      "subject": "washing machine",
+      "relation": "is an island in",
+      "object": "room"
+    }
+  ],
+  "view_constraints": []
+}

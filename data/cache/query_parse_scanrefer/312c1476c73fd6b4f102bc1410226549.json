@@ -1,0 +1,14 @@
+{
+  "raw_query": "this is a closed door . it is wooden and has a handle .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "closed",
+      "wooden",
+      "has handle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

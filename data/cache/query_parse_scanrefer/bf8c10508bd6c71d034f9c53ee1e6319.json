@@ -1,0 +1,39 @@
+{
+  "raw_query": "the green instrument case has a gray rolled up sleeping bag in front of it . the instrument case is to the left of the white dresser .",
+  "target": {
+    "category": "instrument case",
+    "attributes": [
+      "green"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sleeping bag",
+      "attributes": [
+        "gray",
+        "rolled up"
+      ],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "dresser",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sleeping bag",
+      "relation": "in front of",
+      "object": "instrument case"
+    },
+    {
+      "subject": "instrument case",
+      "relation": "to the left of",
+      "object": "dresser"
+    }
+  ],
+  "view_constraints": []
+}

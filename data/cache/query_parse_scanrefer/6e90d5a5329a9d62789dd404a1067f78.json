@@ -1,0 +1,54 @@
+{
+  "raw_query": "a bookshelf is against the wall with a door to the left of it . this bookshelf has a desk and chair in front of it .",
+  "target": {
+    "category": "bookshelf",
+    "attributes": [
+      "against the wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "in front"
+    },
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "in front"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bookshelf",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "door",
+      "relation": "to the left of",
+      "object": "bookshelf"
+    },
+    {
+      "subject": "desk",
+      "relation": "in front of",
+      "object": "bookshelf"
+    },
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "bookshelf"
+    }
+  ],
+  "view_constraints": []
+}

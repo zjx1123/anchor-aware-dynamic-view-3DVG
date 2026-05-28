@@ -1,0 +1,27 @@
+{
+  "raw_query": "it is a beige and black chair . the beige and black chair is the chair at the right of the two chairs in the mid - front of the room .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "beige",
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "right of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "mid-front of the room"
+  ]
+}

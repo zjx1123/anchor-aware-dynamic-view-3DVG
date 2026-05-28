@@ -1,0 +1,35 @@
+{
+  "raw_query": "there is a square brown chair . it is against the wall and next to the door .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "square",
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,41 @@
+{
+  "raw_query": "it is a white toilet with the lid up at the end of the bathroom . there is a toilet on the right side hanging up .",
+  "target": {
+    "category": "toilet",
+    "attributes": [
+      "white",
+      "lid up"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathroom",
+      "attributes": [],
+      "relation_to_target": "at the end of"
+    },
+    {
+      "category": "toilet",
+      "attributes": [
+        "on the right side",
+        "hanging up"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet",
+      "relation": "at the end of",
+      "object": "bathroom"
+    },
+    {
+      "subject": "toilet",
+      "relation": "next to",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": [
+    "end of bathroom",
+    "right side"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "raw_query": "the monitor is opposite the desk with two monitors , and is next to the white shelf / cabinet . there is a black , non - rolling chair at the same desk .",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "black",
+      "non-rolling"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [
+        "with two monitors"
+      ],
+      "relation_to_target": "opposite"
+    },
+    {
+      "category": "shelf",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "opposite",
+      "object": "desk"
+    },
+    {
+      "subject": "monitor",
+      "relation": "next to",
+      "object": "shelf"
+    },
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a white monitor . it is on the floor .",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "floor",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on",
+      "object": "floor"
+    }
+  ],
+  "view_constraints": []
+}

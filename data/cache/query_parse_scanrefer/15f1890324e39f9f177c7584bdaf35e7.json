@@ -1,0 +1,14 @@
+{
+  "raw_query": "this bench is on the top left corner . it is dark .",
+  "target": {
+    "category": "bench",
+    "attributes": [
+      "dark"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "top left corner"
+  ]
+}

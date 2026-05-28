@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a white cabinet . it is to the left of a toilet .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "left of",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": []
+}

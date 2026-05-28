@@ -1,0 +1,25 @@
+{
+  "raw_query": "the sink is white and has a wide counter around it . the sink is in between two walls .",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "white",
+      "has wide counter"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "in between",
+      "object": "two walls"
+    }
+  ],
+  "view_constraints": []
+}

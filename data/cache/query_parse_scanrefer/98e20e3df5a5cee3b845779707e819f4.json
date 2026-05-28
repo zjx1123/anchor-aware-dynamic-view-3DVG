@@ -1,0 +1,25 @@
+{
+  "raw_query": "it is a grey circular table in the corner of the room . there is a lamp on top of it .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "grey",
+      "circular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "corner"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "on top of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

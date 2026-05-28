@@ -1,0 +1,27 @@
+{
+  "raw_query": "the chair is south of the northwestern - most bookshelf . the chair is gray and has four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "gray",
+      "has four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "northwestern-most"
+      ],
+      "relation_to_target": "north of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "south of",
+      "object": "northwestern-most bookshelf"
+    }
+  ],
+  "view_constraints": []
+}

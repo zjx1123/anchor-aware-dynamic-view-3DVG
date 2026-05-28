@@ -1,0 +1,27 @@
+{
+  "raw_query": "the table is brown and round . it is on the right side of the room .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "brown",
+      "round"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "on the right side of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "right side of the room"
+  ]
+}

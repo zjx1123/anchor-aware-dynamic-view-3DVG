@@ -1,0 +1,37 @@
+{
+  "raw_query": "this is a black chair . there are many black chairs in this room . but there are only two chairs that are right in front of the blackboard . if you are looking at the blackboard give me the chair on the left . if you are standing behind the chairs it is the chair on the right .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "blackboard",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "blackboard"
+    },
+    {
+      "subject": "chair",
+      "relation": "on the left of",
+      "object": "blackboard"
+    },
+    {
+      "subject": "chair",
+      "relation": "on the right of",
+      "object": "chairs"
+    }
+  ],
+  "view_constraints": [
+    "looking at the blackboard",
+    "standing behind the chairs"
+  ]
+}

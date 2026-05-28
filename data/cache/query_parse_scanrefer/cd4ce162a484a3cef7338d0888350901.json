@@ -1,0 +1,14 @@
+{
+  "raw_query": "this is a sink basin that is empty . it is white and tan .",
+  "target": {
+    "category": "sink basin",
+    "attributes": [
+      "empty",
+      "white",
+      "tan"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

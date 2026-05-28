@@ -1,0 +1,27 @@
+{
+  "raw_query": "this is a chair . it sets between 2 tables .",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "between",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

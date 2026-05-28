@@ -1,0 +1,30 @@
+{
+  "raw_query": "the sink is north of the table in the center . the sink is rectangular and metallic .",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "rectangular",
+      "metallic"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "in the center"
+      ],
+      "relation_to_target": "south"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "north of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "north of table",
+    "center"
+  ]
+}

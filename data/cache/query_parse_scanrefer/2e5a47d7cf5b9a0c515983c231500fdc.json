@@ -1,0 +1,45 @@
+{
+  "raw_query": "it is a black adjustable desk chair . it is pushed up under the desk table that is against the wall from the left side of the bed .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "adjustable"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [
+        "table"
+      ],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "left side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "desk"
+    },
+    {
+      "subject": "desk",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "desk",
+      "relation": "left side of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": [
+    "left side of the bed",
+    "against the wall"
+  ]
+}

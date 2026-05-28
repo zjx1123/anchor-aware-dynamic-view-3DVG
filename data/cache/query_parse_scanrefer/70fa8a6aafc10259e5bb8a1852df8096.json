@@ -1,0 +1,44 @@
+{
+  "raw_query": "the chair is pulled into the desk . the chair has a wall behind it . the couch is in the background past it .",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "pulled into"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "in background past"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "pulled into",
+      "object": "desk"
+    },
+    {
+      "subject": "chair",
+      "relation": "has behind",
+      "object": "wall"
+    },
+    {
+      "subject": "couch",
+      "relation": "in background past",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "background"
+  ]
+}

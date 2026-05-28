@@ -1,0 +1,33 @@
+{
+  "raw_query": "the refrigerator is in a corner and left of the oven . the refrigerator is a white , boxy prism .",
+  "target": {
+    "category": "refrigerator",
+    "attributes": [
+      "white",
+      "boxy",
+      "prism"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "oven",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "refrigerator",
+      "relation": "left of",
+      "object": "oven"
+    },
+    {
+      "subject": "refrigerator",
+      "relation": "in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": [
+    "corner"
+  ]
+}

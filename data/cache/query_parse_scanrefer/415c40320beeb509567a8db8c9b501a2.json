@@ -1,0 +1,13 @@
+{
+  "raw_query": "this towel is curled . it is hung .",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "curled",
+      "hung"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

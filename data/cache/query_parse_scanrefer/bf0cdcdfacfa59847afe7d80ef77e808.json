@@ -1,0 +1,25 @@
+{
+  "raw_query": "there is a black and white toilet . it is to the left of the bathroom stall door .",
+  "target": {
+    "category": "toilet",
+    "attributes": [
+      "black",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathroom stall door",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet",
+      "relation": "left of",
+      "object": "bathroom stall door"
+    }
+  ],
+  "view_constraints": []
+}

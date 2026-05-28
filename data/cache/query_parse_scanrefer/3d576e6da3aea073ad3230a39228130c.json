@@ -1,0 +1,35 @@
+{
+  "raw_query": "there are dark brown kitchen cabinet . they are beneath the counter directly to the left of the doorway .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "dark brown",
+      "kitchen"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "doorway",
+      "attributes": [],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "beneath",
+      "object": "counter"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "directly to the left of",
+      "object": "doorway"
+    }
+  ],
+  "view_constraints": []
+}

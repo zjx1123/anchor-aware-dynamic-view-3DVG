@@ -1,0 +1,26 @@
+{
+  "raw_query": "the shelf is black . there is a white lamp on top of it .",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "lamp",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "on top of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "on top of",
+      "object": "shelf"
+    }
+  ],
+  "view_constraints": []
+}

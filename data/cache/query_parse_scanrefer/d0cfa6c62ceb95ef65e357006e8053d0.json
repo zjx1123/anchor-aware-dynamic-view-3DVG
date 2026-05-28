@@ -1,0 +1,37 @@
+{
+  "raw_query": "the chair is on the opposite side from the green paper cutter and has a chair to its right . the chair is gold and has four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "gold",
+      "four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "paper cutter",
+      "attributes": [
+        "green"
+      ],
+      "relation_to_target": "opposite side"
+    },
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on opposite side from",
+      "object": "green paper cutter"
+    },
+    {
+      "subject": "chair",
+      "relation": "has to its right",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

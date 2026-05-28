@@ -1,0 +1,32 @@
+{
+  "raw_query": "there is a window . it is to the left of the desk and shelves .",
+  "target": {
+    "category": "window",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "right"
+    },
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "left of",
+      "object": "desk"
+    },
+    {
+      "subject": "window",
+      "relation": "left of",
+      "object": "shelves"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,37 @@
+{
+  "raw_query": "the chair is left of the table north of the green table . the chair is brown with four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "brown",
+      "four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "green"
+      ],
+      "relation_to_target": "north of"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "left of",
+      "object": "table"
+    },
+    {
+      "subject": "table",
+      "relation": "north of",
+      "object": "green table"
+    }
+  ],
+  "view_constraints": []
+}

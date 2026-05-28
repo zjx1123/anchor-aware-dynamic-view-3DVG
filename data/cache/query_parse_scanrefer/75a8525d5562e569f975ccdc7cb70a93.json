@@ -1,0 +1,36 @@
+{
+  "raw_query": "this is a black chair in a small classroom . it is on the right side of the table and is next to the wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "right side of"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right side of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "small classroom"
+  ]
+}

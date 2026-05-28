@@ -1,0 +1,24 @@
+{
+  "raw_query": "a black chair . in front of the door .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

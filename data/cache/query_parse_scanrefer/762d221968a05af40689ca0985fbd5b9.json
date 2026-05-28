@@ -1,0 +1,28 @@
+{
+  "raw_query": "there is a circular wooden end table . it is next to a teal couch .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "circular",
+      "wooden",
+      "end"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [
+        "teal"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "next to",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

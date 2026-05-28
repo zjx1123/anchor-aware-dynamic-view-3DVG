@@ -1,0 +1,32 @@
+{
+  "raw_query": "the armchair is to the right of the other chair . it is facing the table .",
+  "target": {
+    "category": "armchair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "to the right of",
+      "object": "other chair"
+    },
+    {
+      "subject": "armchair",
+      "relation": "facing",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

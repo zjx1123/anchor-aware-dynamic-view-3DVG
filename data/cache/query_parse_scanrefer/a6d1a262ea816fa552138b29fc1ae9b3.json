@@ -1,0 +1,25 @@
+{
+  "raw_query": "there is a square brown nightstand . it is left of the bed .",
+  "target": {
+    "category": "nightstand",
+    "attributes": [
+      "square",
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "nightstand",
+      "relation": "left of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

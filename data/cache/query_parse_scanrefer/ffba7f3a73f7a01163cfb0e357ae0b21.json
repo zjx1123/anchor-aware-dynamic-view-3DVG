@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a black chair . it is to the left of another chair .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "black chair",
+      "relation": "left of",
+      "object": "another chair"
+    }
+  ],
+  "view_constraints": []
+}

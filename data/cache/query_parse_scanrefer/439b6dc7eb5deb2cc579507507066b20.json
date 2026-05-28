@@ -1,0 +1,41 @@
+{
+  "raw_query": "it is a gray trash can . the gray trash can sits at the bottom right of the long beige table behind the brown chairs .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "gray"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "long",
+        "beige"
+      ],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "chairs",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "sits at",
+      "object": "bottom right of table"
+    },
+    {
+      "subject": "table",
+      "relation": "behind",
+      "object": "chairs"
+    }
+  ],
+  "view_constraints": [
+    "bottom right"
+  ]
+}

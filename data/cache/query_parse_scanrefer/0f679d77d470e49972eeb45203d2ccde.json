@@ -1,0 +1,26 @@
+{
+  "raw_query": "an oval shaped sink . it is above a white cabinet .",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "oval shaped"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "above",
+      "object": "cabinet"
+    }
+  ],
+  "view_constraints": []
+}

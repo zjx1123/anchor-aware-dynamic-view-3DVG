@@ -1,0 +1,51 @@
+{
+  "raw_query": "there are two black chairs situated between six brown chairs and a black couch . this black chair is next to the black couch . it appears to be leather . it is black . there is a snack machine on the opposite wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "leather"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "chair",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "between"
+    },
+    {
+      "category": "snack machine",
+      "attributes": [],
+      "relation_to_target": "opposite wall"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "couch"
+    },
+    {
+      "subject": "chair",
+      "relation": "between",
+      "object": "chair"
+    },
+    {
+      "subject": "chair",
+      "relation": "opposite wall",
+      "object": "snack machine"
+    }
+  ],
+  "view_constraints": [
+    "opposite wall"
+  ]
+}

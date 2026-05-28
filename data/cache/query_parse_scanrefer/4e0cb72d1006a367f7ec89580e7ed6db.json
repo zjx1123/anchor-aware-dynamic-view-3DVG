@@ -1,0 +1,37 @@
+{
+  "raw_query": "an l - shaped desk with a wood top . it is opposite the window in the room and directly to your left when you enter the door .",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "l-shaped",
+      "wood top"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "opposite"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "left when entering"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "opposite",
+      "object": "window"
+    },
+    {
+      "subject": "desk",
+      "relation": "to the left of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": [
+    "when entering the door"
+  ]
+}

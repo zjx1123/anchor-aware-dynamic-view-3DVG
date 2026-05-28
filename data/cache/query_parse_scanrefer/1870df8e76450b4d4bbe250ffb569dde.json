@@ -1,0 +1,39 @@
+{
+  "raw_query": "the book shelf is in the back corner of the room . there is a window to the right of it on the adjoining wall and a desk in front of it .",
+  "target": {
+    "category": "bookshelf",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bookshelf",
+      "relation": "in",
+      "object": "back corner of the room"
+    },
+    {
+      "subject": "window",
+      "relation": "to the right of",
+      "object": "bookshelf"
+    },
+    {
+      "subject": "desk",
+      "relation": "in front of",
+      "object": "bookshelf"
+    }
+  ],
+  "view_constraints": [
+    "back corner of the room"
+  ]
+}

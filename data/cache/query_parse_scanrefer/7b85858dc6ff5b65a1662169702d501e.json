@@ -1,0 +1,50 @@
+{
+  "raw_query": "the trash can is grey and is on the floor . it is in the far corner of the room against the red wall and the glass wall .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "grey"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "floor",
+      "attributes": [],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "red wall",
+      "attributes": [
+        "red"
+      ],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "glass wall",
+      "attributes": [
+        "glass"
+      ],
+      "relation_to_target": "against"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "on",
+      "object": "floor"
+    },
+    {
+      "subject": "trash can",
+      "relation": "against",
+      "object": "red wall"
+    },
+    {
+      "subject": "trash can",
+      "relation": "against",
+      "object": "glass wall"
+    }
+  ],
+  "view_constraints": [
+    "far corner of the room"
+  ]
+}

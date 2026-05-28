@@ -1,0 +1,34 @@
+{
+  "raw_query": "the grey cushioned chair has wooden arms on each side . this grey cushioned chair has another beside it on the left .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "grey",
+      "cushioned",
+      "wooden arms"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "grey",
+        "cushioned"
+      ],
+      "relation_to_target": "beside on left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "has",
+      "object": "wooden arms"
+    },
+    {
+      "subject": "chair",
+      "relation": "has beside",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,25 @@
+{
+  "raw_query": "the cool office chair . the chair is by the desk .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "cool",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "by",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

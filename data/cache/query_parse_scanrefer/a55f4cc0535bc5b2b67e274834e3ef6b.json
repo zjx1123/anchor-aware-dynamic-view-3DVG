@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a white bathtub . it is behind a shower curtain .",
+  "target": {
+    "category": "bathtub",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shower curtain",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bathtub",
+      "relation": "behind",
+      "object": "shower curtain"
+    }
+  ],
+  "view_constraints": []
+}

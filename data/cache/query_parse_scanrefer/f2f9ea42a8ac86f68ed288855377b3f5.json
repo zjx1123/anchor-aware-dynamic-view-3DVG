@@ -1,0 +1,28 @@
+{
+  "raw_query": "this is a rectangular flat panel monitor . it is the last monitor on the right in the front row of monitors .",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "rectangular",
+      "flat panel"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [],
+      "relation_to_target": "in the front row"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "is",
+      "object": "the last monitor on the right in the front row of monitors"
+    }
+  ],
+  "view_constraints": [
+    "front row",
+    "right side"
+  ]
+}

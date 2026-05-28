@@ -1,0 +1,27 @@
+{
+  "raw_query": "a medium sized wooden chair . the chair is in front of a window with blinds .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "medium sized",
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [
+        "with blinds"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

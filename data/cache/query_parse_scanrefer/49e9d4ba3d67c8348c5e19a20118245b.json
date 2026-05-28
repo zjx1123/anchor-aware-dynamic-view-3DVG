@@ -1,0 +1,32 @@
+{
+  "raw_query": "there is a rectangular dark coffee table . it is in front of a couch and at the center of the room .",
+  "target": {
+    "category": "coffee table",
+    "attributes": [
+      "rectangular",
+      "dark"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "coffee table",
+      "relation": "in front of",
+      "object": "couch"
+    },
+    {
+      "subject": "coffee table",
+      "relation": "at center of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "center of room"
+  ]
+}

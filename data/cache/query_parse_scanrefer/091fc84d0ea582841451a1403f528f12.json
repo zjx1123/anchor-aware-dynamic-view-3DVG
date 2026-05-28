@@ -1,0 +1,44 @@
+{
+  "raw_query": "this table is to the left of the couch . it 's positioned on the floor between the rug and the carpet .",
+  "target": {
+    "category": "table",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    },
+    {
+      "category": "rug",
+      "attributes": [],
+      "relation_to_target": "between"
+    },
+    {
+      "category": "carpet",
+      "attributes": [],
+      "relation_to_target": "between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "to the left of",
+      "object": "couch"
+    },
+    {
+      "subject": "table",
+      "relation": "between",
+      "object": "rug"
+    },
+    {
+      "subject": "table",
+      "relation": "between",
+      "object": "carpet"
+    }
+  ],
+  "view_constraints": [
+    "floor"
+  ]
+}

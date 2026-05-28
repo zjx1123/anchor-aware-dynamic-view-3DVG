@@ -1,0 +1,35 @@
+{
+  "raw_query": "the tiny mini fridge . the mini fridge on the corner by the whiteboard .",
+  "target": {
+    "category": "fridge",
+    "attributes": [
+      "tiny",
+      "mini"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "whiteboard",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "adjacent"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fridge",
+      "relation": "on",
+      "object": "corner"
+    },
+    {
+      "subject": "fridge",
+      "relation": "by",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": [
+    "corner",
+    "by whiteboard"
+  ]
+}

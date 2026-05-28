@@ -1,0 +1,32 @@
+{
+  "raw_query": "the office chair is black and is pushed out from the desk . the chair is the second from the right .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "pushed out from",
+      "object": "desk"
+    },
+    {
+      "subject": "chair",
+      "relation": "second from the right",
+      "object": "other chairs"
+    }
+  ],
+  "view_constraints": [
+    "second from the right"
+  ]
+}

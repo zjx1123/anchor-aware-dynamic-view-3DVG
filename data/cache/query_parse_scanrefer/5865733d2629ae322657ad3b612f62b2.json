@@ -1,0 +1,39 @@
+{
+  "raw_query": "there is a chair with an orange seat in the back of the room , facing away from the wall . there is a blue container to the right .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "orange seat"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "container",
+      "attributes": [
+        "blue"
+      ],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "facing away from",
+      "object": "wall"
+    },
+    {
+      "subject": "chair",
+      "relation": "in back of",
+      "object": "room"
+    },
+    {
+      "subject": "container",
+      "relation": "to the right of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "back of the room",
+    "facing away from the wall"
+  ]
+}

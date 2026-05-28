@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a white pillow . it is under the picture .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "picture",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "under",
+      "object": "picture"
+    }
+  ],
+  "view_constraints": []
+}

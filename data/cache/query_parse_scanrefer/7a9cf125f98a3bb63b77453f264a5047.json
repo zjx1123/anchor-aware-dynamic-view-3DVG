@@ -1,0 +1,55 @@
+{
+  "raw_query": "wooden cabinets are on the wall to the left of the kitchen sink . they are in the corner , to the left of the windows that sit above the sink .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [
+        "kitchen"
+      ],
+      "relation_to_target": "to the right"
+    },
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "to the left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "to the left of",
+      "object": "sink"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "in",
+      "object": "corner"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "to the left of",
+      "object": "window"
+    },
+    {
+      "subject": "window",
+      "relation": "above",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": [
+    "left side of sink",
+    "corner",
+    "below windows"
+  ]
+}

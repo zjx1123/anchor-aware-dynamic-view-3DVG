@@ -1,0 +1,27 @@
+{
+  "raw_query": "it is a black trash can . the black trash can sits to the left of another black trash can that has a clear white trash bag in it .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [
+        "black",
+        "has clear white trash bag"
+      ],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "black trash can",
+      "relation": "sits to the left of",
+      "object": "another black trash can that has a clear white trash bag in it"
+    }
+  ],
+  "view_constraints": []
+}

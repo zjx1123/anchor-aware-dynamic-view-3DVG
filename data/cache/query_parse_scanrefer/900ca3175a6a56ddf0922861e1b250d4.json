@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is the closet doors in the corner of the room . a bed is present in front of the closet .",
+  "target": {
+    "category": "closet doors",
+    "attributes": [
+      "in the corner of the room"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bed",
+      "relation": "in front of",
+      "object": "closet doors"
+    }
+  ],
+  "view_constraints": [
+    "corner of the room"
+  ]
+}

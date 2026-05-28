@@ -1,0 +1,32 @@
+{
+  "raw_query": "the door is to the right of the mail cubbies . it is directly across from the cabinets .",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "mail cubbies",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    },
+    {
+      "category": "cabinets",
+      "attributes": [],
+      "relation_to_target": "directly across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "to the right of",
+      "object": "mail cubbies"
+    },
+    {
+      "subject": "door",
+      "relation": "directly across from",
+      "object": "cabinets"
+    }
+  ],
+  "view_constraints": []
+}

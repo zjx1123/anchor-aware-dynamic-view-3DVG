@@ -1,0 +1,48 @@
+{
+  "raw_query": "there is one purple chair in the room the purple chair is in front of a brown wooden door . the wooden door is the item we are looking for . the brown wooden door has shiny brass hardware . the purple chair and the brown wooden door are to the right of the big desk in front of all the little desks in the room .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "brown",
+      "wooden",
+      "shiny brass hardware"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "purple"
+      ],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "desk",
+      "attributes": [
+        "big"
+      ],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "purple chair",
+      "relation": "in front of",
+      "object": "brown wooden door"
+    },
+    {
+      "subject": "brown wooden door",
+      "relation": "to the right of",
+      "object": "big desk"
+    },
+    {
+      "subject": "big desk",
+      "relation": "in front of",
+      "object": "little desks"
+    }
+  ],
+  "view_constraints": [
+    "right of big desk",
+    "in front of little desks"
+  ]
+}

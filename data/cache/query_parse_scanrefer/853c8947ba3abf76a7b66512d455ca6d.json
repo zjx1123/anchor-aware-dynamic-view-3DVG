@@ -1,0 +1,35 @@
+{
+  "raw_query": "there is a black desk with a clear rectangular glass . the desk is located near the window , and has a office chair pulled up to it .",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "black",
+      "clear rectangular glass"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "near"
+    },
+    {
+      "category": "office chair",
+      "attributes": [],
+      "relation_to_target": "pulled up to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "located near",
+      "object": "window"
+    },
+    {
+      "subject": "office chair",
+      "relation": "pulled up to",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,40 @@
+{
+  "raw_query": "a red cube shaped footrest . the footrest is near the end of a large blue couch and a wooden table .",
+  "target": {
+    "category": "footrest",
+    "attributes": [
+      "red",
+      "cube shaped"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [
+        "large",
+        "blue"
+      ],
+      "relation_to_target": "near the end of"
+    },
+    {
+      "category": "table",
+      "attributes": [
+        "wooden"
+      ],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "footrest",
+      "relation": "near the end of",
+      "object": "couch"
+    },
+    {
+      "subject": "footrest",
+      "relation": "near",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,36 @@
+{
+  "raw_query": "the kitchen table chair . the chair is on the right under the table .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "kitchen",
+      "on the right",
+      "under the table"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "kitchen"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "right side of the table",
+    "under the table"
+  ]
+}

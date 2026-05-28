@@ -1,0 +1,37 @@
+{
+  "raw_query": "this is a red office chair . it is at the back head of the table next to a black chair .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "red",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "chair",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "at the back head of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "black chair"
+    }
+  ],
+  "view_constraints": []
+}

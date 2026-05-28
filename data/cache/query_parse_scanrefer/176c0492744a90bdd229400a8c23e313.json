@@ -1,0 +1,29 @@
+{
+  "raw_query": "there is a rectangular silver refrigerator . it is at the side of the room and next to brown cabinets .",
+  "target": {
+    "category": "refrigerator",
+    "attributes": [
+      "rectangular",
+      "silver"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinets",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "refrigerator",
+      "relation": "next to",
+      "object": "cabinets"
+    }
+  ],
+  "view_constraints": [
+    "at the side of the room"
+  ]
+}

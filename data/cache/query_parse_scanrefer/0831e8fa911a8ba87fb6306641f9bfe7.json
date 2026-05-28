@@ -1,0 +1,16 @@
+{
+  "raw_query": "the cabinet is in the middle of the room . the cabinet is a white prism with a blue top .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "white",
+      "prism",
+      "blue top"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "in the middle of the room"
+  ]
+}

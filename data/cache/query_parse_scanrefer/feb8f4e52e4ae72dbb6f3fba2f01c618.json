@@ -1,0 +1,15 @@
+{
+  "raw_query": "this sofa chair is in the middle . it is dark .",
+  "target": {
+    "category": "sofa chair",
+    "attributes": [
+      "dark",
+      "in the middle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "in the middle"
+  ]
+}

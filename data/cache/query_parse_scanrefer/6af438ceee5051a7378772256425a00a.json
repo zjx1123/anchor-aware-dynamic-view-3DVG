@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a square table . it is to the left of shelves .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "square"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "to the left of",
+      "object": "shelves"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is a white keyboard . it is located below the computer screen on the right .",
+  "target": {
+    "category": "keyboard",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "computer screen",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "keyboard",
+      "relation": "below",
+      "object": "computer screen"
+    }
+  ],
+  "view_constraints": [
+    "right"
+  ]
+}

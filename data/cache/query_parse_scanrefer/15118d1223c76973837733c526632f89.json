@@ -1,0 +1,36 @@
+{
+  "raw_query": "this is a framed picture on the wall in the bathroom . it is above the toilet .",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "framed"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "picture",
+      "relation": "above",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": [
+    "bathroom"
+  ]
+}

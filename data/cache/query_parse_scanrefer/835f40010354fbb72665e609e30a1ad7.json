@@ -1,0 +1,14 @@
+{
+  "raw_query": "this is a janitor cart holding supplies . its front is facing away fron the viewer .",
+  "target": {
+    "category": "janitor cart",
+    "attributes": [
+      "holding supplies"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "front facing away from viewer"
+  ]
+}

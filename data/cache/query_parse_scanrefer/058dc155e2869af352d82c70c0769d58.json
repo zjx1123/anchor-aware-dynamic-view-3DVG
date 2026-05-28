@@ -1,0 +1,27 @@
+{
+  "raw_query": "the chair is north of the closet . the chair is white and has four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "white",
+      "has four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "closet",
+      "attributes": [],
+      "relation_to_target": "south of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "north of",
+      "object": "closet"
+    }
+  ],
+  "view_constraints": [
+    "north of closet"
+  ]
+}

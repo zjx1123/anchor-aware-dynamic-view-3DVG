@@ -1,0 +1,34 @@
+{
+  "raw_query": "this is a brown table . it sets along the wall , with a microwave on top of it .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "adjacent"
+    },
+    {
+      "category": "microwave",
+      "attributes": [],
+      "relation_to_target": "on top of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "adjacent to",
+      "object": "wall"
+    },
+    {
+      "subject": "microwave",
+      "relation": "on top of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

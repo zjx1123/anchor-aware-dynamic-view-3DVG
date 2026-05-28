@@ -1,0 +1,34 @@
+{
+  "raw_query": "the cart is below the announcement board . the cart is to the left of the black cart .",
+  "target": {
+    "category": "cart",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "announcement board",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "cart",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cart",
+      "relation": "below",
+      "object": "announcement board"
+    },
+    {
+      "subject": "cart",
+      "relation": "left of",
+      "object": "black cart"
+    }
+  ],
+  "view_constraints": []
+}

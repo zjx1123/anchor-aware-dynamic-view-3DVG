@@ -1,0 +1,34 @@
+{
+  "raw_query": "the bench is between two large bookshelves . the bench is rectangular and red brown in color .",
+  "target": {
+    "category": "bench",
+    "attributes": [
+      "rectangular",
+      "red brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "large"
+      ],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "large"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bench",
+      "relation": "between",
+      "object": "bookshelf"
+    }
+  ],
+  "view_constraints": []
+}

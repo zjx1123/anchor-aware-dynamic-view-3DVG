@@ -1,0 +1,27 @@
+{
+  "raw_query": "the door is right of the purple chair . the door is a brown rectangle .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "brown",
+      "rectangle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "purple"
+      ],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "right of",
+      "object": "purple chair"
+    }
+  ],
+  "view_constraints": []
+}

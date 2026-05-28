@@ -1,0 +1,36 @@
+{
+  "raw_query": "the object is a desk . if you enter the room it would be located on the right side directly in front of you against the window .",
+  "target": {
+    "category": "desk",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "against"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "against",
+      "object": "window"
+    },
+    {
+      "subject": "desk",
+      "relation": "on the right side",
+      "object": "entrance"
+    },
+    {
+      "subject": "desk",
+      "relation": "directly in front of",
+      "object": "entrance"
+    }
+  ],
+  "view_constraints": [
+    "right side",
+    "directly in front of entrance",
+    "against window"
+  ]
+}

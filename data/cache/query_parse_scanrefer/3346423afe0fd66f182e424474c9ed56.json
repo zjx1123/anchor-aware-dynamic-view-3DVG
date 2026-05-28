@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is a black chair . the back of the chair is against the wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "back of chair is against wall"
+  ]
+}

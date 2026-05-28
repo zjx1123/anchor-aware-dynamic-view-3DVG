@@ -1,0 +1,36 @@
+{
+  "raw_query": "the recycling bin is on the floor partially under the table . it is green at the top .",
+  "target": {
+    "category": "recycling bin",
+    "attributes": [
+      "green at the top"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "recycling bin",
+      "relation": "on",
+      "object": "floor"
+    },
+    {
+      "subject": "recycling bin",
+      "relation": "under",
+      "object": "table"
+    },
+    {
+      "subject": "table",
+      "relation": "above",
+      "object": "recycling bin"
+    }
+  ],
+  "view_constraints": [
+    "partial view under table"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "raw_query": "the bed is on the left side of the room . it has a green cover .",
+  "target": {
+    "category": "bed",
+    "attributes": [
+      "green cover"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "bed",
+      "relation": "on the left side of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "left side of the room"
+  ]
+}

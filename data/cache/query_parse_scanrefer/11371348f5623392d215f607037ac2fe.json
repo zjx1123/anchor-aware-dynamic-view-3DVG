@@ -1,0 +1,33 @@
+{
+  "raw_query": "the chair the right - most one on the northern side of the table . the chair is red with two arms .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "red",
+      "two arms"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "northern side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the northern side of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "right-most",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "right-most",
+    "northern side"
+  ]
+}

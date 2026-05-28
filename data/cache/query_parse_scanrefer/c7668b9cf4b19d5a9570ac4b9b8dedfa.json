@@ -1,0 +1,46 @@
+{
+  "raw_query": "this picture is hanged on the wall besides another picture . two monitors are present on the table under these pictures .",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "hanged",
+      "on the wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "picture",
+      "attributes": [
+        "hanged",
+        "on the wall"
+      ],
+      "relation_to_target": "besides"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "besides",
+      "object": "picture"
+    },
+    {
+      "subject": "picture",
+      "relation": "under",
+      "object": "table"
+    },
+    {
+      "subject": "monitors",
+      "relation": "on",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "wall",
+    "table"
+  ]
+}

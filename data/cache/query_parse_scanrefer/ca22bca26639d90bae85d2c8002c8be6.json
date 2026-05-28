@@ -1,0 +1,31 @@
+{
+  "raw_query": "a counter / desk where a tv often sits . it is beside the black chair .",
+  "target": {
+    "category": "counter",
+    "attributes": [
+      "tv often sits"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "counter",
+      "relation": "has",
+      "object": "tv"
+    },
+    {
+      "subject": "counter",
+      "relation": "beside",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

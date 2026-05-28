@@ -1,0 +1,25 @@
+{
+  "raw_query": "this is a desk chair facing towards a desk . it is dark colored and pushed in .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "dark colored",
+      "pushed in"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "facing towards"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "facing towards",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

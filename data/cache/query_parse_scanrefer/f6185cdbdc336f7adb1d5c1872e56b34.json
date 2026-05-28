@@ -1,0 +1,26 @@
+{
+  "raw_query": "there is a rectangular computer tower . it is on a stand with wheels .",
+  "target": {
+    "category": "computer tower",
+    "attributes": [
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "stand",
+      "attributes": [
+        "with wheels"
+      ],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "computer tower",
+      "relation": "on",
+      "object": "stand"
+    }
+  ],
+  "view_constraints": []
+}

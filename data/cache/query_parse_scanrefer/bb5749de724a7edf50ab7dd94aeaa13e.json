@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a rectangular radiator . it is under a window .",
+  "target": {
+    "category": "radiator",
+    "attributes": [
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "radiator",
+      "relation": "under",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

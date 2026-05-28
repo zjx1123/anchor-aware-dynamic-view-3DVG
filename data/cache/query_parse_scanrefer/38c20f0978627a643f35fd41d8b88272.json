@@ -1,0 +1,29 @@
+{
+  "raw_query": "the window has blinds on it . it is to the right of the bed in the room .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "has blinds"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "has",
+      "object": "blinds"
+    },
+    {
+      "subject": "window",
+      "relation": "to the right of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

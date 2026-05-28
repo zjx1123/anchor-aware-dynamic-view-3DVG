@@ -1,0 +1,28 @@
+{
+  "raw_query": "this toaster oven is black . it is on the far hard surface .",
+  "target": {
+    "category": "toaster oven",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "hard surface",
+      "attributes": [
+        "far"
+      ],
+      "relation_to_target": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toaster oven",
+      "relation": "on",
+      "object": "hard surface"
+    }
+  ],
+  "view_constraints": [
+    "far"
+  ]
+}

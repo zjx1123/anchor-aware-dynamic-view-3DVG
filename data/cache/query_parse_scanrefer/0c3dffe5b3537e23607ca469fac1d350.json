@@ -1,0 +1,26 @@
+{
+  "raw_query": "it is a white window . the white window is is next to the white window curtain .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window curtain",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "next to",
+      "object": "window curtain"
+    }
+  ],
+  "view_constraints": []
+}

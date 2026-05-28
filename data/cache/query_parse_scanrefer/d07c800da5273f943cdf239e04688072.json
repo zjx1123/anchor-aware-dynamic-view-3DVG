@@ -1,0 +1,36 @@
+{
+  "raw_query": "there is a rectangular computer tower . it is on a stand with wheels next to a sofa .",
+  "target": {
+    "category": "computer tower",
+    "attributes": [
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "stand",
+      "attributes": [
+        "with wheels"
+      ],
+      "relation_to_target": "supporting"
+    },
+    {
+      "category": "sofa",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "computer tower",
+      "relation": "on",
+      "object": "stand"
+    },
+    {
+      "subject": "stand",
+      "relation": "next to",
+      "object": "sofa"
+    }
+  ],
+  "view_constraints": []
+}

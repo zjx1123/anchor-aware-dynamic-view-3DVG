@@ -1,0 +1,34 @@
+{
+  "raw_query": "the chair is sitting with a round table behind it . there are two armchairs behind it .",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "round"
+      ],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "armchair",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "armchair"
+    }
+  ],
+  "view_constraints": []
+}

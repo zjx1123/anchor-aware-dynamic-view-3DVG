@@ -1,0 +1,33 @@
+{
+  "raw_query": "there are two carts with shelves and wheels against the wall . the one we want is on the left .",
+  "target": {
+    "category": "cart",
+    "attributes": [
+      "with shelves",
+      "with wheels",
+      "on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cart",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "cart",
+      "relation": "on the left of",
+      "object": "cart"
+    }
+  ],
+  "view_constraints": [
+    "left side"
+  ]
+}

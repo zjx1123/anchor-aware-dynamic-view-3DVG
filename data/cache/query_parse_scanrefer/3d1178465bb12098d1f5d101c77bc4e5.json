@@ -1,0 +1,36 @@
+{
+  "raw_query": "the whiteboard is on the white wall . it is to the right of the doors .",
+  "target": {
+    "category": "whiteboard",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "doors",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "whiteboard",
+      "relation": "on",
+      "object": "white wall"
+    },
+    {
+      "subject": "whiteboard",
+      "relation": "to the right of",
+      "object": "doors"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,45 @@
+{
+  "raw_query": "this is a brown leather chair located under the first dark brown table immediately inside the door . it is on the middle side of the room , relative to the table .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "brown",
+      "leather"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "dark brown",
+        "first"
+      ],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "immediately inside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "immediately inside",
+      "object": "door"
+    },
+    {
+      "subject": "chair",
+      "relation": "on middle side of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "relative to the table"
+  ]
+}

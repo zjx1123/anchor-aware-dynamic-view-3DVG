@@ -1,0 +1,31 @@
+{
+  "raw_query": "the chair is black and oriented beside another surface . it is spatially facing about 330 degrees in relation to the viewer .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "surface",
+      "attributes": [],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "beside",
+      "object": "surface"
+    },
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "viewer"
+    }
+  ],
+  "view_constraints": [
+    "facing about 330 degrees"
+  ]
+}

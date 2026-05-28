@@ -1,0 +1,27 @@
+{
+  "raw_query": "a window is lit up in the wall . it 's behind a row of chairs .",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "lit up"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "behind",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "lit up",
+    "behind a row of chairs"
+  ]
+}

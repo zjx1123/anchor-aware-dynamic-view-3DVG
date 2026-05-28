@@ -1,0 +1,35 @@
+{
+  "raw_query": "this is a grey patterned couch . its on the wall where the entry way is on the left .",
+  "target": {
+    "category": "couch",
+    "attributes": [
+      "grey",
+      "patterned"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "entry way",
+      "attributes": [],
+      "relation_to_target": "left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "entry way",
+      "relation": "left of",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

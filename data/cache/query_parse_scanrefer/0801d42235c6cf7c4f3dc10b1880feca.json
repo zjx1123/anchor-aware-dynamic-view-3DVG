@@ -1,0 +1,42 @@
+{
+  "raw_query": "a white laundry basket is on top of a laundry machine . it is located at the far left machine , across from the door .",
+  "target": {
+    "category": "laundry basket",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "laundry machine",
+      "attributes": [],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "laundry basket",
+      "relation": "on top of",
+      "object": "laundry machine"
+    },
+    {
+      "subject": "laundry basket",
+      "relation": "located at",
+      "object": "far left machine"
+    },
+    {
+      "subject": "laundry basket",
+      "relation": "across from",
+      "object": "door"
+    }
+  ],
+  "view_constraints": [
+    "far left",
+    "across from door"
+  ]
+}

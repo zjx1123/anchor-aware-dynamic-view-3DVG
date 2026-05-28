@@ -1,0 +1,52 @@
+{
+  "raw_query": "the pillow on the bed farther from the door . it is the top pillow on the side of the bed that is closer to the table between the beds .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "top",
+      "on the side closer to the table"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "farther from the door"
+      ],
+      "relation_to_target": "support"
+    },
+    {
+      "category": "table",
+      "attributes": [
+        "between the beds"
+      ],
+      "relation_to_target": "side closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "bed"
+    },
+    {
+      "subject": "pillow",
+      "relation": "closer to",
+      "object": "table"
+    },
+    {
+      "subject": "bed",
+      "relation": "farther from",
+      "object": "door"
+    },
+    {
+      "subject": "table",
+      "relation": "between",
+      "object": "beds"
+    }
+  ],
+  "view_constraints": [
+    "bed farther from the door",
+    "side of bed closer to table"
+  ]
+}

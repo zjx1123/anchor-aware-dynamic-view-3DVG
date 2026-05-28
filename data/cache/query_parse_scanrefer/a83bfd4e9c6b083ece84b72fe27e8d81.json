@@ -1,0 +1,25 @@
+{
+  "raw_query": "this is a white rectangular pillow . it is sitting at the head of the bed .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "white",
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "head"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "sitting at",
+      "object": "head of bed"
+    }
+  ],
+  "view_constraints": []
+}

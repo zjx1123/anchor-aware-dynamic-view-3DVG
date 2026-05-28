@@ -1,0 +1,39 @@
+{
+  "raw_query": "in the room there is a cream colored door to the left of the wooden shelves and to the right of the water heater . the door is slightly open and has a door handle about half way up on the right side .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "cream colored",
+      "slightly open",
+      "has door handle",
+      "door handle about half way up on the right side"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shelves",
+      "attributes": [
+        "wooden"
+      ],
+      "relation_to_target": "to the left of"
+    },
+    {
+      "category": "water heater",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "to the left of",
+      "object": "shelves"
+    },
+    {
+      "subject": "door",
+      "relation": "to the right of",
+      "object": "water heater"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,38 @@
+{
+  "raw_query": "the white towel is hanging on the wall in the bathroom . it is on the right wall next to the toilet .",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "right"
+      ],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "hanging on",
+      "object": "wall"
+    },
+    {
+      "subject": "towel",
+      "relation": "next to",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": [
+    "bathroom"
+  ]
+}

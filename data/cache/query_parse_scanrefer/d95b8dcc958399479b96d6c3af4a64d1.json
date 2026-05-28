@@ -1,0 +1,33 @@
+{
+  "raw_query": "it is a white table . the white table is sitting behind the two brown desks in the far left corner of the room .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "behind",
+      "object": "desks"
+    },
+    {
+      "subject": "desks",
+      "relation": "in",
+      "object": "far left corner of the room"
+    }
+  ],
+  "view_constraints": [
+    "far left corner of the room"
+  ]
+}

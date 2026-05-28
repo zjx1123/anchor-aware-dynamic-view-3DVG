@@ -1,0 +1,43 @@
+{
+  "raw_query": "this is a tan . metal frame chair . the chair is at the second table back , on the right side of the room . this chair is on the front left side edge of the table .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "tan",
+      "metal frame"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "second table back"
+    },
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "right side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "second table back"
+    },
+    {
+      "subject": "chair",
+      "relation": "on",
+      "object": "front left side edge of the table"
+    },
+    {
+      "subject": "chair",
+      "relation": "on right side of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "front left side edge of the table",
+    "right side of the room"
+  ]
+}

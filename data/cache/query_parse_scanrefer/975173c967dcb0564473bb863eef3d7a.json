@@ -1,0 +1,32 @@
+{
+  "raw_query": "this picture is located on the back wall of the room . it is above the left bed .",
+  "target": {
+    "category": "picture",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "left"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "above",
+      "object": "left bed"
+    },
+    {
+      "subject": "picture",
+      "relation": "on",
+      "object": "back wall"
+    }
+  ],
+  "view_constraints": [
+    "back wall",
+    "above left bed"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "raw_query": "the trash can is the rightmost one out of a row of three trash cans next to the bed . the trash can is blue and has a plastic bag on top .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "blue",
+      "has plastic bag on top",
+      "rightmost"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "is next to",
+      "object": "bed"
+    },
+    {
+      "subject": "trash can",
+      "relation": "is rightmost in",
+      "object": "row of three trash cans"
+    }
+  ],
+  "view_constraints": []
+}

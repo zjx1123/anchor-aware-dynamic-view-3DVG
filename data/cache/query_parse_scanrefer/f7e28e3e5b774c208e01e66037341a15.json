@@ -1,0 +1,24 @@
+{
+  "raw_query": "this pillow is by the wall . it is dark .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "dark"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "by",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

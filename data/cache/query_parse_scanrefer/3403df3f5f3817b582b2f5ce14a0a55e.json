@@ -1,0 +1,24 @@
+{
+  "raw_query": "trashcan sitting in a hallway .",
+  "target": {
+    "category": "trashcan",
+    "attributes": [
+      "sitting"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "hallway",
+      "attributes": [],
+      "relation_to_target": "in"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trashcan",
+      "relation": "in",
+      "object": "hallway"
+    }
+  ],
+  "view_constraints": []
+}

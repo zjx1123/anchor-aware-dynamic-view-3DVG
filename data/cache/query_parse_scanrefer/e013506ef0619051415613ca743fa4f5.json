@@ -1,0 +1,24 @@
+{
+  "raw_query": "this pillow is on the bed . it is brown .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

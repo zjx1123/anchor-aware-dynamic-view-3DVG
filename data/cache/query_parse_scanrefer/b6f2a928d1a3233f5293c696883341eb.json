@@ -1,0 +1,29 @@
+{
+  "raw_query": "the picture is affixed to the wall . it is located to the left of the door .",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "affixed to the wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "affixed to",
+      "object": "wall"
+    },
+    {
+      "subject": "picture",
+      "relation": "located to the left of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

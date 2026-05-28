@@ -1,0 +1,37 @@
+{
+  "raw_query": "the chair is left of a desk that is between the two blackboards . the chair is black with a curved back .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "curved back"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "right"
+    },
+    {
+      "category": "blackboard",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "left of",
+      "object": "desk"
+    },
+    {
+      "subject": "desk",
+      "relation": "between",
+      "object": "two blackboards"
+    }
+  ],
+  "view_constraints": []
+}

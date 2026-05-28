@@ -1,0 +1,34 @@
+{
+  "raw_query": "the item is in end table . what is the only in end table found between the two couches in the room .",
+  "target": {
+    "category": "item",
+    "attributes": [
+      "only"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "end table",
+      "attributes": [],
+      "relation_to_target": "contains"
+    },
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "item",
+      "relation": "in",
+      "object": "end table"
+    },
+    {
+      "subject": "end table",
+      "relation": "between",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

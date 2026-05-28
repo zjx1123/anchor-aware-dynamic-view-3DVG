@@ -1,0 +1,29 @@
+{
+  "raw_query": "this is a tan end table . it is in between to couches .",
+  "target": {
+    "category": "end table",
+    "attributes": [
+      "tan"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "end table",
+      "relation": "between",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

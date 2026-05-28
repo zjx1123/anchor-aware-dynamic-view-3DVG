@@ -1,0 +1,33 @@
+{
+  "raw_query": "the chair is black and pushed into a desk . it is the chair furthest to the left . that is on the left .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "pushed into a desk",
+      "furthest to the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "pushed into"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "pushed into",
+      "object": "desk"
+    },
+    {
+      "subject": "chair",
+      "relation": "is",
+      "object": "furthest to the left"
+    }
+  ],
+  "view_constraints": [
+    "left"
+  ]
+}

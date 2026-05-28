@@ -1,0 +1,27 @@
+{
+  "raw_query": "this chair is on the right side . it is facing left .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "on the right side",
+      "facing left"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right side of",
+      "object": "scene"
+    },
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "left"
+    }
+  ],
+  "view_constraints": [
+    "right side",
+    "facing left"
+  ]
+}

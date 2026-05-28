@@ -1,0 +1,35 @@
+{
+  "raw_query": "a green and black chair is pulled out from a desk . there is a keyboard to the left of it .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "green",
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "keyboard",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "pulled out from",
+      "object": "desk"
+    },
+    {
+      "subject": "keyboard",
+      "relation": "to the left of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

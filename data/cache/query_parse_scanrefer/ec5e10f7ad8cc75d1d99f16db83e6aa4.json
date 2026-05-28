@@ -1,0 +1,48 @@
+{
+  "raw_query": "this is a chair against the wall by the plugins . this is by the right corner of the white board .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "against the wall",
+      "by the plugins",
+      "by the right corner of the white board"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "plugins",
+      "attributes": [],
+      "relation_to_target": "by"
+    },
+    {
+      "category": "white board",
+      "attributes": [
+        "right corner"
+      ],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "chair",
+      "relation": "by",
+      "object": "plugins"
+    },
+    {
+      "subject": "chair",
+      "relation": "by",
+      "object": "right corner of the white board"
+    }
+  ],
+  "view_constraints": []
+}

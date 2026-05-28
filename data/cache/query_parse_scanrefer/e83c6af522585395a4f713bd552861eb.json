@@ -1,0 +1,32 @@
+{
+  "raw_query": "this is a chair . it sets against the wall by another chair .",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

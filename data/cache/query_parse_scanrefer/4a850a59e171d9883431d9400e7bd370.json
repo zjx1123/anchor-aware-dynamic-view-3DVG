@@ -1,0 +1,30 @@
+{
+  "raw_query": "the trash can is right of the right - most door on the northern wall . the trash can is a trapezoidal prism and gray .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "trapezoidal prism",
+      "gray"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "right-most",
+        "on northern wall"
+      ],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "is right of",
+      "object": "right-most door on the northern wall"
+    }
+  ],
+  "view_constraints": [
+    "northern wall"
+  ]
+}

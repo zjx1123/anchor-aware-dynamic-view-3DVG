@@ -1,0 +1,26 @@
+{
+  "raw_query": "the backpack is yellow . the backpack is on the back of the black chair .",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "yellow"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "on the back of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "on the back of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

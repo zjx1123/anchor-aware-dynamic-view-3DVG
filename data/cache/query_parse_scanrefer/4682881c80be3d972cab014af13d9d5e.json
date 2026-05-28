@@ -1,0 +1,33 @@
+{
+  "raw_query": "it is a wooden desk chair . it is the chair that is second to last on the right side of the table .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "wooden",
+      "second to last",
+      "on the right side of the table"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "right side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "is located on the right side of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "is second to last",
+      "object": "in a sequence on the right side of the table"
+    }
+  ],
+  "view_constraints": [
+    "right side of the table"
+  ]
+}

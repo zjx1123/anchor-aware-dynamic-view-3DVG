@@ -1,0 +1,51 @@
+{
+  "raw_query": "the coffee table is black and on top of an area rug that has 2 semi - circles on it . the coffee table has a book on it and is in front of a couch and across from a bookshelf .",
+  "target": {
+    "category": "coffee table",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "area rug",
+      "attributes": [
+        "has 2 semi-circles"
+      ],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "coffee table",
+      "relation": "on top of",
+      "object": "area rug"
+    },
+    {
+      "subject": "coffee table",
+      "relation": "in front of",
+      "object": "couch"
+    },
+    {
+      "subject": "coffee table",
+      "relation": "across from",
+      "object": "bookshelf"
+    },
+    {
+      "subject": "coffee table",
+      "relation": "has on it",
+      "object": "book"
+    }
+  ],
+  "view_constraints": []
+}

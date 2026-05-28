@@ -1,0 +1,32 @@
+{
+  "raw_query": "a chair sits pulled under a table . it 's the third chair from the left .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "third from the left",
+      "pulled under"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "positioned",
+      "object": "third from the left"
+    }
+  ],
+  "view_constraints": [
+    "left-to-right orientation"
+  ]
+}

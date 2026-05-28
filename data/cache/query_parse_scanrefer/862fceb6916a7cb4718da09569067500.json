@@ -1,0 +1,43 @@
+{
+  "raw_query": "this radiator is attached to the wall under the window . two trash cans are present in front of this .",
+  "target": {
+    "category": "radiator",
+    "attributes": [
+      "attached to wall",
+      "under window"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "attached to"
+    },
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "radiator",
+      "relation": "attached to",
+      "object": "wall"
+    },
+    {
+      "subject": "radiator",
+      "relation": "under",
+      "object": "window"
+    },
+    {
+      "subject": "trash can",
+      "relation": "in front of",
+      "object": "radiator"
+    }
+  ],
+  "view_constraints": [
+    "front view of radiator",
+    "below window"
+  ]
+}

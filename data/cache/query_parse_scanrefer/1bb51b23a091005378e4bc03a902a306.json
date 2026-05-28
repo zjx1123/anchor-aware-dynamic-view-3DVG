@@ -1,0 +1,37 @@
+{
+  "raw_query": "this is a trash can that has a bag in it . it is left of the counter on the floor in the corner .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "has a bag in it"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "left of",
+      "object": "counter"
+    },
+    {
+      "subject": "trash can",
+      "relation": "on",
+      "object": "floor"
+    },
+    {
+      "subject": "trash can",
+      "relation": "in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": [
+    "floor",
+    "corner"
+  ]
+}

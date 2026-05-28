@@ -1,0 +1,45 @@
+{
+  "raw_query": "the couch has a pillow on the left side of it . there is a fire extinguisher on the wall behind the couch .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "on left side of couch"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "has pillow on left side"
+    },
+    {
+      "category": "fire extinguisher",
+      "attributes": [
+        "on wall",
+        "behind couch"
+      ],
+      "relation_to_target": "on wall behind couch"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on left side of",
+      "object": "couch"
+    },
+    {
+      "subject": "fire extinguisher",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "fire extinguisher",
+      "relation": "behind",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": [
+    "behind couch",
+    "left side of couch"
+  ]
+}

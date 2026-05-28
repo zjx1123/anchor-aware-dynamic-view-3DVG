@@ -1,0 +1,38 @@
+{
+  "raw_query": "the black chair is located in front of the wooden door . the chair is also located to the right of a white shelving unit .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "wooden"
+      ],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "shelving unit",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "door"
+    },
+    {
+      "subject": "chair",
+      "relation": "to the right of",
+      "object": "shelving unit"
+    }
+  ],
+  "view_constraints": []
+}

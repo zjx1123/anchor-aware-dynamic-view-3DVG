@@ -1,0 +1,34 @@
+{
+  "raw_query": "there is a white toilet flush button above the toilet . it is to the left of the sink .",
+  "target": {
+    "category": "toilet flush button",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "below"
+    },
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet flush button",
+      "relation": "above",
+      "object": "toilet"
+    },
+    {
+      "subject": "toilet flush button",
+      "relation": "left of",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

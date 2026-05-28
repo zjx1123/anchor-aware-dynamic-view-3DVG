@@ -1,0 +1,27 @@
+{
+  "raw_query": "there is a long black couch in the room . it is by the wall with a picture .",
+  "target": {
+    "category": "couch",
+    "attributes": [
+      "long",
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "with a picture"
+      ],
+      "relation_to_target": "adjacent"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "by",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

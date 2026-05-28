@@ -1,0 +1,42 @@
+{
+  "raw_query": "it is a chair . there is a table in front and a bookshelf behind it . a backpack is in the seat .",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "backpack",
+      "attributes": [],
+      "relation_to_target": "in the seat"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "chair"
+    },
+    {
+      "subject": "bookshelf",
+      "relation": "behind",
+      "object": "chair"
+    },
+    {
+      "subject": "backpack",
+      "relation": "in the seat",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

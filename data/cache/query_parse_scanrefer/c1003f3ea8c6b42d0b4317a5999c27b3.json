@@ -1,0 +1,49 @@
+{
+  "raw_query": "the object referenced here is a long black couch against a wall in the room . it has various pillows on it and is near a hanging orange sweater and a whiteboard .",
+  "target": {
+    "category": "couch",
+    "attributes": [
+      "long",
+      "black",
+      "has pillows"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "sweater",
+      "attributes": [
+        "hanging",
+        "orange"
+      ],
+      "relation_to_target": "near"
+    },
+    {
+      "category": "whiteboard",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "couch",
+      "relation": "near",
+      "object": "sweater"
+    },
+    {
+      "subject": "couch",
+      "relation": "near",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": []
+}

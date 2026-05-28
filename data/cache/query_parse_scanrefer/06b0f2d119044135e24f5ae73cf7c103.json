@@ -1,0 +1,40 @@
+{
+  "raw_query": "this is a simple dark square table with four chairs pushed up to it . it is near the end of the room . the chair on its right side is a rolling office chair .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "dark",
+      "square"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "rolling",
+        "office"
+      ],
+      "relation_to_target": "right side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "has",
+      "object": "four chairs"
+    },
+    {
+      "subject": "table",
+      "relation": "near",
+      "object": "end of the room"
+    },
+    {
+      "subject": "chair",
+      "relation": "on right side of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "near end of the room"
+  ]
+}

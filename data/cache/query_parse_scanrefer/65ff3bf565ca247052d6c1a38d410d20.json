@@ -1,0 +1,26 @@
+{
+  "raw_query": "the table is dark brown . it is to the right of two tall chairs tucked under it .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "dark brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "tall"
+      ],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "to the right of",
+      "object": "two tall chairs"
+    }
+  ],
+  "view_constraints": []
+}

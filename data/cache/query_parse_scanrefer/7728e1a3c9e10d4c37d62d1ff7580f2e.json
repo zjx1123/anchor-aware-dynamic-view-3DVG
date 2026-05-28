@@ -1,0 +1,25 @@
+{
+  "raw_query": "the small wooden bookshelf . the shelf is by the desk .",
+  "target": {
+    "category": "bookshelf",
+    "attributes": [
+      "small",
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bookshelf",
+      "relation": "by",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

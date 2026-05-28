@@ -1,0 +1,26 @@
+{
+  "raw_query": "the curtain is by the white table . the curtain is gray .",
+  "target": {
+    "category": "curtain",
+    "attributes": [
+      "gray"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "curtain",
+      "relation": "by",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,34 @@
+{
+  "raw_query": "the monitor is the southeast - most one on the eastern - most table . the monitor has a black square center .",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "black square center"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "eastern-most"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on",
+      "object": "eastern-most table"
+    },
+    {
+      "subject": "monitor",
+      "relation": "is",
+      "object": "southeast-most"
+    }
+  ],
+  "view_constraints": [
+    "southeast-most",
+    "eastern-most"
+  ]
+}

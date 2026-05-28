@@ -1,0 +1,37 @@
+{
+  "raw_query": "there is a long rectangular bench . it is next to another wide bench that 's closer to the pillar .",
+  "target": {
+    "category": "bench",
+    "attributes": [
+      "long",
+      "rectangular"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bench",
+      "attributes": [
+        "wide"
+      ],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "pillar",
+      "attributes": [],
+      "relation_to_target": "closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "long rectangular bench",
+      "relation": "next to",
+      "object": "wide bench"
+    },
+    {
+      "subject": "wide bench",
+      "relation": "closer to",
+      "object": "pillar"
+    }
+  ],
+  "view_constraints": []
+}

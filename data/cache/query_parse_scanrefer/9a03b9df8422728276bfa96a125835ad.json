@@ -1,0 +1,40 @@
+{
+  "raw_query": "this fridge is in the corner on the back right . it faces left and is behind the cabinet . there is a table to the left and in front .",
+  "target": {
+    "category": "fridge",
+    "attributes": [
+      "in the corner",
+      "on the back right",
+      "faces left",
+      "behind the cabinet"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fridge",
+      "relation": "behind",
+      "object": "cabinet"
+    },
+    {
+      "subject": "fridge",
+      "relation": "to the right of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "back right corner",
+    "faces left"
+  ]
+}

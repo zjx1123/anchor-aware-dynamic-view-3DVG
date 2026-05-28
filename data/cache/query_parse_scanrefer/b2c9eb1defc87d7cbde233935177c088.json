@@ -1,0 +1,47 @@
+{
+  "raw_query": "the trash can is on the floor to the left of the cabinet . there is a small white bin beside it , to the right .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "on the floor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [],
+      "relation_to_target": "to the left of"
+    },
+    {
+      "category": "bin",
+      "attributes": [
+        "small",
+        "white"
+      ],
+      "relation_to_target": "beside it, to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "on",
+      "object": "floor"
+    },
+    {
+      "subject": "trash can",
+      "relation": "to the left of",
+      "object": "cabinet"
+    },
+    {
+      "subject": "bin",
+      "relation": "beside",
+      "object": "trash can"
+    },
+    {
+      "subject": "bin",
+      "relation": "to the right of",
+      "object": "trash can"
+    }
+  ],
+  "view_constraints": []
+}

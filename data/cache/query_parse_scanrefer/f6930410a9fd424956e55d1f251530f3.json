@@ -1,0 +1,13 @@
+{
+  "raw_query": "this table is in the middle . it is square .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "square",
+      "in the middle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

@@ -1,0 +1,29 @@
+{
+  "raw_query": "this is a white shelf . it is between tables .",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "between",
+      "object": "tables"
+    }
+  ],
+  "view_constraints": []
+}

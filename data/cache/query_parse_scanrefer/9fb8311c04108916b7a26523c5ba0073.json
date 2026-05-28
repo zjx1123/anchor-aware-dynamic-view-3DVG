@@ -1,0 +1,25 @@
+{
+  "raw_query": "there is a rectangular brown door . it is next to a light switch .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "rectangular",
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "light switch",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "next to",
+      "object": "light switch"
+    }
+  ],
+  "view_constraints": []
+}

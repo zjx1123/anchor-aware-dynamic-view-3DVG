@@ -1,0 +1,24 @@
+{
+  "raw_query": "the rectangle trash can . the trash can is by the hamper .",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "rectangle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "hamper",
+      "attributes": [],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "by",
+      "object": "hamper"
+    }
+  ],
+  "view_constraints": []
+}

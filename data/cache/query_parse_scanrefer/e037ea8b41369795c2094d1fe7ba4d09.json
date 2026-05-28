@@ -1,0 +1,28 @@
+{
+  "raw_query": "the highlighted object is the kitchen refrigerator . it has a freezer on top . it appears to have stainless steel components . there are magnets and other items stuck to the front and side of it .",
+  "target": {
+    "category": "refrigerator",
+    "attributes": [
+      "kitchen",
+      "stainless steel",
+      "freezer on top",
+      "magnets on front and side"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "refrigerator",
+      "relation": "has",
+      "object": "freezer"
+    },
+    {
+      "subject": "refrigerator",
+      "relation": "has",
+      "object": "magnets"
+    }
+  ],
+  "view_constraints": [
+    "front and side view"
+  ]
+}

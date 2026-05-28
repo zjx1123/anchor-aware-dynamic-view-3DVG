@@ -1,0 +1,28 @@
+{
+  "raw_query": "the chair is southwest of the left - most round table . the chair has a curved back and is blue .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "curved back",
+      "blue"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "round",
+        "left-most"
+      ],
+      "relation_to_target": "southwest of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "southwest of",
+      "object": "left-most round table"
+    }
+  ],
+  "view_constraints": []
+}

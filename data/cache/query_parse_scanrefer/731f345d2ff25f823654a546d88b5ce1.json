@@ -1,0 +1,12 @@
+{
+  "raw_query": "this is a toilet . it is made of porcelain .",
+  "target": {
+    "category": "toilet",
+    "attributes": [
+      "made of porcelain"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

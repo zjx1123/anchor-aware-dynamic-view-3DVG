@@ -1,0 +1,38 @@
+{
+  "raw_query": "the object is a wooden chair . it is the right most chair against the wall . there is a large window behind it .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "window",
+      "attributes": [
+        "large"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "window",
+      "relation": "behind",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "right most"
+  ]
+}

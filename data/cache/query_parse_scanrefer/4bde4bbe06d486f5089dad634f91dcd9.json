@@ -1,0 +1,31 @@
+{
+  "raw_query": "the gray padded chair is on rollers . it is the only rolling chair at the table .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "gray",
+      "padded",
+      "on rollers"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "at"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on",
+      "object": "rollers"
+    },
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,29 @@
+{
+  "raw_query": "the cabinet is south of the northwest table . the cabinet is gray with four legs .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "gray",
+      "four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "northwest"
+      ],
+      "relation_to_target": "northwest"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "south of",
+      "object": "northwest table"
+    }
+  ],
+  "view_constraints": [
+    "south of northwest table"
+  ]
+}

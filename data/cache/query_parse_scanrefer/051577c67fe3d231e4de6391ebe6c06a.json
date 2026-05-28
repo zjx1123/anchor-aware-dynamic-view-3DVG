@@ -1,0 +1,34 @@
+{
+  "raw_query": "the chair is black and is pushed into the desk . it is located pushed into the desk across from the bed .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "pushed into"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "pushed into",
+      "object": "desk"
+    },
+    {
+      "subject": "chair",
+      "relation": "across from",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

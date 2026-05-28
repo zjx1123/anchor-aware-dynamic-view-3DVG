@@ -1,0 +1,27 @@
+{
+  "raw_query": "a small wooden cabinet . there is three small bins near it .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "small",
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bin",
+      "attributes": [
+        "small"
+      ],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bin",
+      "relation": "near",
+      "object": "cabinet"
+    }
+  ],
+  "view_constraints": []
+}

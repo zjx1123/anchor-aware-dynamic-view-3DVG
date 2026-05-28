@@ -1,0 +1,46 @@
+{
+  "raw_query": "a rolling office chair on the right side of the table from the head chair . it is the second to last chair .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "rolling",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "right side of"
+    },
+    {
+      "category": "chair",
+      "attributes": [
+        "head"
+      ],
+      "relation_to_target": "from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on right side of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "from",
+      "object": "head chair"
+    },
+    {
+      "subject": "chair",
+      "relation": "is second to last",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "right side of table",
+    "from head chair",
+    "second to last"
+  ]
+}

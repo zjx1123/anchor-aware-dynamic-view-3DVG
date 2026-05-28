@@ -1,0 +1,31 @@
+{
+  "raw_query": "the radiator on the wall . the radiator is next to the toilet .",
+  "target": {
+    "category": "radiator",
+    "attributes": [
+      "on the wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "radiator",
+      "relation": "next to",
+      "object": "toilet"
+    },
+    {
+      "subject": "radiator",
+      "relation": "on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "wall"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "raw_query": "this chair is in the middle . it is facing right .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "in the middle",
+      "facing right"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "facing right"
+  ]
+}

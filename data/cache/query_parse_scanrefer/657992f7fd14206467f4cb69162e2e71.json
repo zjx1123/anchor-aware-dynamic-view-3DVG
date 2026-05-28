@@ -1,0 +1,38 @@
+{
+  "raw_query": "the multi color curtain is closest to the open closet door . right in front of this curtain there is door straight ahead .",
+  "target": {
+    "category": "curtain",
+    "attributes": [
+      "multi color"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "closet door",
+      "attributes": [
+        "open"
+      ],
+      "relation_to_target": "closest to"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "curtain",
+      "relation": "closest to",
+      "object": "closet door"
+    },
+    {
+      "subject": "door",
+      "relation": "in front of",
+      "object": "curtain"
+    }
+  ],
+  "view_constraints": [
+    "straight ahead"
+  ]
+}

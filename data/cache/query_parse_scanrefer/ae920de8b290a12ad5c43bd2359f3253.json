@@ -1,0 +1,27 @@
+{
+  "raw_query": "the chair is west of the left - most table . the chair is dark brown and has four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "dark brown",
+      "four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "left-most"
+      ],
+      "relation_to_target": "west of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "west of",
+      "object": "left-most table"
+    }
+  ],
+  "view_constraints": []
+}

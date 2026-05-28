@@ -1,0 +1,26 @@
+{
+  "raw_query": "the armchair on the left side of the room . it is grey .",
+  "target": {
+    "category": "armchair",
+    "attributes": [
+      "grey"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "left side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "on left side of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": [
+    "left side of the room"
+  ]
+}

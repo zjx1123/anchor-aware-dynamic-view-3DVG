@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a black mattress . it is to the right of the radiator .",
+  "target": {
+    "category": "mattress",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "radiator",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "mattress",
+      "relation": "to the right of",
+      "object": "radiator"
+    }
+  ],
+  "view_constraints": []
+}

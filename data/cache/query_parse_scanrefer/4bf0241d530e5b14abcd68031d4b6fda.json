@@ -1,0 +1,31 @@
+{
+  "raw_query": "large larder style stainless steel fridge freezer . has a split upper and lower areas with large wide handle . located to the left of the large larder style kitchen unit .",
+  "target": {
+    "category": "fridge freezer",
+    "attributes": [
+      "large",
+      "larder style",
+      "stainless steel",
+      "split upper and lower areas",
+      "large wide handle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "kitchen unit",
+      "attributes": [
+        "large",
+        "larder style"
+      ],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fridge freezer",
+      "relation": "located to the left of",
+      "object": "kitchen unit"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,14 @@
+{
+  "raw_query": "this storage bin is on the top right . it is box shaped .",
+  "target": {
+    "category": "storage bin",
+    "attributes": [
+      "box shaped"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "top right"
+  ]
+}

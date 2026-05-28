@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a black keyboard . it is in front of a monitor .",
+  "target": {
+    "category": "keyboard",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "keyboard",
+      "relation": "in front of",
+      "object": "monitor"
+    }
+  ],
+  "view_constraints": []
+}

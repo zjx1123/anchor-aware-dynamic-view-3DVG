@@ -1,0 +1,28 @@
+{
+  "raw_query": "this is a small square gray pillow . it is located on a black couch .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "small",
+      "square",
+      "gray"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

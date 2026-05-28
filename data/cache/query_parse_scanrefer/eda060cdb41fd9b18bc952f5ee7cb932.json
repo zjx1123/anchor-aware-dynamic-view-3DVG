@@ -1,0 +1,13 @@
+{
+  "raw_query": "this is a black door with a metal handle . it is the entrance to the room .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "black",
+      "metal handle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

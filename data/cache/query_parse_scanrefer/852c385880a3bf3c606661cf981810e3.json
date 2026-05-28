@@ -1,0 +1,26 @@
+{
+  "raw_query": "a door stands in the hall . it 's to the right of some clothes hanging on the wall .",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "clothes",
+      "attributes": [
+        "hanging on the wall"
+      ],
+      "relation_to_target": "to the left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "to the right of",
+      "object": "clothes"
+    }
+  ],
+  "view_constraints": [
+    "hall"
+  ]
+}

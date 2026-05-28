@@ -1,0 +1,32 @@
+{
+  "raw_query": "you are looking for the chair closest to the front . it is on the right side , right behind the chair leg .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "closest to the front"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair leg",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "behind",
+      "object": "chair leg"
+    },
+    {
+      "subject": "chair",
+      "relation": "on the right side of",
+      "object": "front"
+    }
+  ],
+  "view_constraints": [
+    "right side",
+    "closest to the front"
+  ]
+}

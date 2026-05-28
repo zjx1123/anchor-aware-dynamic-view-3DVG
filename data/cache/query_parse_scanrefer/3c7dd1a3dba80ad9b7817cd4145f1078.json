@@ -1,0 +1,21 @@
+{
+  "raw_query": "the cabinet is the northwestern - most one . the cabinet is a brown rectangular prism .",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "brown",
+      "rectangular prism"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "is",
+      "object": "northwestern-most"
+    }
+  ],
+  "view_constraints": [
+    "northwestern-most"
+  ]
+}

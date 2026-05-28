@@ -1,0 +1,24 @@
+{
+  "raw_query": "the sink is white . it is on top of the counter .",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "on top of",
+      "object": "counter"
+    }
+  ],
+  "view_constraints": []
+}

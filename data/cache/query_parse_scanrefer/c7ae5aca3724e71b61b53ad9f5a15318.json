@@ -1,0 +1,46 @@
+{
+  "raw_query": "the door is open facing the inside of the small bedroom . it sits midway in the wall and has a closet on one side of it .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "open",
+      "facing inside",
+      "midway in wall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bedroom",
+      "attributes": [
+        "small"
+      ],
+      "relation_to_target": "contains"
+    },
+    {
+      "category": "closet",
+      "attributes": [],
+      "relation_to_target": "adjacent to one side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "facing",
+      "object": "inside of bedroom"
+    },
+    {
+      "subject": "door",
+      "relation": "located in",
+      "object": "wall"
+    },
+    {
+      "subject": "door",
+      "relation": "has adjacent",
+      "object": "closet"
+    }
+  ],
+  "view_constraints": [
+    "door is open",
+    "facing inside of bedroom"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "raw_query": "the chair is next to the northeast - most table . the chair is black with four legs .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "four legs"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "northeast-most"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "northeast-most"
+  ]
+}

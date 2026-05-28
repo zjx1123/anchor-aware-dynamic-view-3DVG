@@ -1,0 +1,30 @@
+{
+  "raw_query": "there is a square beige table . it is next to a large rectangular table at the side of the room .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "square",
+      "beige"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "large",
+        "rectangular"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "square beige table",
+      "relation": "next to",
+      "object": "large rectangular table"
+    }
+  ],
+  "view_constraints": [
+    "side of the room"
+  ]
+}

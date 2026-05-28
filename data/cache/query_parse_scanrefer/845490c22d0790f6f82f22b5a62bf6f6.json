@@ -1,0 +1,45 @@
+{
+  "raw_query": "the pillow is on top of a bed that is to the left of a desk and a drawer . the pillow is a white rectangle .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "white",
+      "rectangle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "right_of"
+    },
+    {
+      "category": "drawer",
+      "attributes": [],
+      "relation_to_target": "right_of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on_top_of",
+      "object": "bed"
+    },
+    {
+      "subject": "bed",
+      "relation": "to_the_left_of",
+      "object": "desk"
+    },
+    {
+      "subject": "bed",
+      "relation": "to_the_left_of",
+      "object": "drawer"
+    }
+  ],
+  "view_constraints": []
+}

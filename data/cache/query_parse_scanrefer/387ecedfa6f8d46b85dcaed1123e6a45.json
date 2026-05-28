@@ -1,0 +1,25 @@
+{
+  "raw_query": "the towel is hanging on the wall . it is the right most towel hanging . it is light colored .",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "light colored",
+      "right most"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "hanging on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "hanging on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

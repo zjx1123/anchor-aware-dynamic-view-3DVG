@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a yellow office chair . it is facing the table .",
+  "target": {
+    "category": "office chair",
+    "attributes": [
+      "yellow"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "office chair",
+      "relation": "facing",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,20 @@
+colorama==0.4.6
+# 2.36.0 在部分国内镜像尚未同步，2.35.1 与 SeqVLM 用法兼容
+imageio==2.35.1
+mmengine==0.10.6
+# numpy 2.3.x 需 Python>=3.9，且阿里云等镜像常滞后；用范围便于在 3.8/3.9 与镜像上解析
+numpy>=1.24.4,<2.3
+# 0.3.0 部分国内镜像未同步；代码仅用 op()，0.2.3 即可
+objprint==0.2.3
+openai==1.102.0
+opencv_python==4.10.0.84
+# pandas 2.3.x 常与 numpy 2 绑定，镜像也可能无该版本
+pandas>=2.0.3,<2.3
+# Pillow 11.x 部分镜像未同步
+Pillow>=10.2.0,<12
+psutil==6.0.0
+PyYAML==6.0.2
+# 4090 请用 cu121：pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# torch==1.11.0+cu113
+tqdm==4.62.3
+transformers==4.44.2

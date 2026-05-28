@@ -1,0 +1,34 @@
+{
+  "raw_query": "the table is black and against the back right wall . there are chairs around it .",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "back",
+        "right"
+      ],
+      "relation_to_target": "against"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "chairs",
+      "relation": "around",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "back right wall"
+  ]
+}

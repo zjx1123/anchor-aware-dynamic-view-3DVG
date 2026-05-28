@@ -1,0 +1,15 @@
+{
+  "raw_query": "there are two large wooden doors . the doors are a golden wooden color with large dark handles .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "large",
+      "wooden",
+      "golden wooden color",
+      "large dark handles"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

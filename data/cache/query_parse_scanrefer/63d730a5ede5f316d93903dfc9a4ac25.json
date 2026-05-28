@@ -1,0 +1,25 @@
+{
+  "raw_query": "there is a rectangular red pillow . it is on the right side of a bed .",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "rectangular",
+      "red"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on the right side of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

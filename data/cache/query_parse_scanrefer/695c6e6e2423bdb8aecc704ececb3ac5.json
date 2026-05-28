@@ -1,0 +1,20 @@
+{
+  "raw_query": "this is a chair . its blue in color and is in the center of the room 5th from each corner .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "blue"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in",
+      "object": "center of room"
+    }
+  ],
+  "view_constraints": [
+    "5th from each corner"
+  ]
+}

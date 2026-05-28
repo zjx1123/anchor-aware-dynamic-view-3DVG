@@ -1,0 +1,50 @@
+{
+  "raw_query": "the waist height white oscillating fan is positioned beside the bed and desk chair . if you enter the bedroom door and continue straight ahead you will run into it before reaching the bed . against the rear wall .",
+  "target": {
+    "category": "fan",
+    "attributes": [
+      "waist height",
+      "white",
+      "oscillating"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "beside"
+    },
+    {
+      "category": "desk chair",
+      "attributes": [],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fan",
+      "relation": "beside",
+      "object": "bed"
+    },
+    {
+      "subject": "fan",
+      "relation": "beside",
+      "object": "desk chair"
+    },
+    {
+      "subject": "fan",
+      "relation": "in front of",
+      "object": "bed"
+    },
+    {
+      "subject": "fan",
+      "relation": "against",
+      "object": "rear wall"
+    }
+  ],
+  "view_constraints": [
+    "enter bedroom door",
+    "continue straight ahead",
+    "before reaching the bed"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "raw_query": "the door is rectangular and white . it is located to the left of the world map on the wall .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "rectangular",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "world map",
+      "attributes": [],
+      "relation_to_target": "to the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "located to the left of",
+      "object": "world map"
+    }
+  ],
+  "view_constraints": [
+    "on the wall"
+  ]
+}

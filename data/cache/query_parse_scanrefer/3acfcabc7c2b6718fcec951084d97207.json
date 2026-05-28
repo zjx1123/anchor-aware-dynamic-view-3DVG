@@ -1,0 +1,35 @@
+{
+  "raw_query": "the file cabinet is below the center desk on the right side of the room . the file cabinet is a dark gray box .",
+  "target": {
+    "category": "file cabinet",
+    "attributes": [
+      "dark gray",
+      "box"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [
+        "center",
+        "right side of the room"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "file cabinet",
+      "relation": "below",
+      "object": "center desk"
+    },
+    {
+      "subject": "center desk",
+      "relation": "on",
+      "object": "right side of the room"
+    }
+  ],
+  "view_constraints": [
+    "right side of the room"
+  ]
+}

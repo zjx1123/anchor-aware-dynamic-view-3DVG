@@ -1,0 +1,34 @@
+{
+  "raw_query": "a chair sits near a long wooden table . it is the second chair from the right .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "second from the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "long",
+        "wooden"
+      ],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "near",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "is",
+      "object": "second from the right"
+    }
+  ],
+  "view_constraints": [
+    "right side of the table"
+  ]
+}

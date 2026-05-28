@@ -1,0 +1,55 @@
+{
+  "raw_query": "a brown ottomon with two black knapsacks and a tissue box on it sits in front of a matching brown leather sofa , which is up against a wall . to its left is a black piano .",
+  "target": {
+    "category": "ottoman",
+    "attributes": [
+      "brown",
+      "with two black knapsacks",
+      "with a tissue box on it"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sofa",
+      "attributes": [
+        "brown",
+        "leather",
+        "matching"
+      ],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "behind sofa"
+    },
+    {
+      "category": "piano",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "ottoman",
+      "relation": "in front of",
+      "object": "sofa"
+    },
+    {
+      "subject": "sofa",
+      "relation": "up against",
+      "object": "wall"
+    },
+    {
+      "subject": "piano",
+      "relation": "to the left of",
+      "object": "ottoman"
+    }
+  ],
+  "view_constraints": [
+    "front view of ottoman",
+    "left side of scene includes piano"
+  ]
+}

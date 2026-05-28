@@ -1,0 +1,30 @@
+{
+  "raw_query": "this is a white two drawer storage bin . it is between the bedside table and the wall .",
+  "target": {
+    "category": "storage bin",
+    "attributes": [
+      "white",
+      "two drawer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bedside table",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "storage bin",
+      "relation": "between",
+      "object": "bedside table and wall"
+    }
+  ],
+  "view_constraints": []
+}

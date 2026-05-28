@@ -1,0 +1,36 @@
+{
+  "raw_query": "this is a black , rolling office chair . this chair sits at the desk , at the end of the bed .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black",
+      "rolling",
+      "office"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "at"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "at the end of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "sits at",
+      "object": "desk"
+    },
+    {
+      "subject": "chair",
+      "relation": "is at the end of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

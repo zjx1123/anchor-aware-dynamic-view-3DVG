@@ -1,0 +1,21 @@
+{
+  "raw_query": "this shelf is on the other side . it is on the wall .",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "on the other side",
+      "on the wall"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "other side"
+  ]
+}

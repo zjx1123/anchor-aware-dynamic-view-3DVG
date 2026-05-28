@@ -1,0 +1,22 @@
+config.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Logs and local artifacts
+logs/
+
+# Large local datasets (keep small annotation files in data/)
+data/feats_3d.pkl
+data/*.tar.gz
+data/huggingface/
+data/mask3d_inst_seg_pcds/
+data/preprocessed_nr3d/
+data/preprocessed_scanrefer/
+data/scanrefer/
+data/referit3d/
+data/tar/
+data/mask3d/

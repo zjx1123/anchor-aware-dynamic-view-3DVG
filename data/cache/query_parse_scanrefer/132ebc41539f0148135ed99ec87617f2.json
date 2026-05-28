@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is a black chair . it is in the corner of the room .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in",
+      "object": "corner of room"
+    }
+  ],
+  "view_constraints": [
+    "corner of room"
+  ]
+}

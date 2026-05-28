@@ -1,0 +1,24 @@
+{
+  "raw_query": "this is a black office chair . it is to the left of a computer tower .",
+  "target": {
+    "category": "office chair",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "computer tower",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "office chair",
+      "relation": "left of",
+      "object": "computer tower"
+    }
+  ],
+  "view_constraints": []
+}

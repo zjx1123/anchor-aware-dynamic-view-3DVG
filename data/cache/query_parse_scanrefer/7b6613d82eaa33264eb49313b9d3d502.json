@@ -1,0 +1,44 @@
+{
+  "raw_query": "this chair is kept closer to the table . on right a white board can be seen on the wall .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "closer to table"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "closer to"
+    },
+    {
+      "category": "white board",
+      "attributes": [
+        "on wall",
+        "right"
+      ],
+      "relation_to_target": "on right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "closer to",
+      "object": "table"
+    },
+    {
+      "subject": "white board",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "white board",
+      "relation": "on right of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "right side view"
+  ]
+}

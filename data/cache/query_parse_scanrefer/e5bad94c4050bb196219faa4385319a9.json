@@ -1,0 +1,50 @@
+{
+  "raw_query": "a grey chair is behind a table and black chairs . the grey chair is leaning back and has a black chair to the right of it .",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "grey",
+      "leaning back"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "chair",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "grey chair",
+      "relation": "behind",
+      "object": "table"
+    },
+    {
+      "subject": "grey chair",
+      "relation": "behind",
+      "object": "black chairs"
+    },
+    {
+      "subject": "grey chair",
+      "relation": "leaning back",
+      "object": "none"
+    },
+    {
+      "subject": "black chair",
+      "relation": "to the right of",
+      "object": "grey chair"
+    }
+  ],
+  "view_constraints": [
+    "behind",
+    "to the right of"
+  ]
+}

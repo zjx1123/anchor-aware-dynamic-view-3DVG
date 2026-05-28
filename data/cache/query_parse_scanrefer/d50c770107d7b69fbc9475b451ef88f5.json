@@ -1,0 +1,27 @@
+{
+  "raw_query": "a brown wooden door . on the left to the paper box .",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "brown",
+      "wooden"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "box",
+      "attributes": [
+        "paper"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "left of",
+      "object": "paper box"
+    }
+  ],
+  "view_constraints": []
+}
