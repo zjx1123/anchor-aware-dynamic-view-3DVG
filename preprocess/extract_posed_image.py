@@ -11,6 +11,9 @@ import numpy as np
 
 COMPRESSION_TYPE_COLOR = {-1: "unknown", 0: "raw", 1: "png", 2: "jpeg"}
 
+OUTPUT_ROOT = "/root/autodl-tmp/posed_images"
+SCAN_INPUT_DIRS = ["data/scens_val"]
+
 COMPRESSION_TYPE_DEPTH = {
     -1: "unknown",
     0: "raw_ushort",
@@ -170,7 +173,7 @@ def process_scene(path, limit, frame_skip, idx):
     print(f"Processing {idx}.")
     t1 = time.time()
     data = SensorData(os.path.join(path, idx, f"{idx}.sens"), limit, frame_skip)
-    output_path = os.path.join("posed_images", idx)
+    output_path = os.path.join(OUTPUT_ROOT, idx)
     data.export_color_images(output_path)
     data.export_intrinsics(output_path)
     data.export_poses(output_path)
@@ -198,13 +201,8 @@ if __name__ == "__main__":
     parser.add_argument("--nproc", type=int, default=6)
     args = parser.parse_args()
 
-    # process train and val scenes
-    if os.path.exists("scans"):
-        process_directory(
-            "scans", args.max_images_per_scene, args.frame_skip, args.nproc
-        )
-    # process test scenes
-    if os.path.exists("scans_test"):
-        process_directory(
-            "scans_test", args.max_images_per_scene, args.frame_skip, args.nproc
-        )
+    for scan_dir in SCAN_INPUT_DIRS:
+        if os.path.exists(scan_dir):
+            process_directory(
+                scan_dir, args.max_images_per_scene, args.frame_skip, args.nproc
+            )
