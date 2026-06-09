@@ -22,20 +22,19 @@ from seqvlm.anchor_utils import (
     summarize_candidate_batch_for_prompt,
 )
 
+from seqvlm.dynamic_view_selector import DynamicViewSelector
 
 
 class AdpativePredictor:
-    
-    def __init__(self, **kwargs):        
+    def __init__(self, **kwargs):
         self.image_path = kwargs.get('image_path')
         self.max_retry = kwargs.get('max_retry')
         self.vlm_model = kwargs.get('vlm_model')
         self.max_batch_size = kwargs.get('max_batch_size')
         self.max_vlm_props = kwargs.get('max_vlm_props')
-        
         self.handler = VisualFeatHandler.get_instance()
 
-        # Anchor-aware 新增
+        # Anchor-aware
         self.use_anchor_aware = kwargs.get('use_anchor_aware', True)
         self.max_anchor_per_type = kwargs.get('max_anchor_per_type', 5)
         self.seg_conf_score = kwargs.get('seg_conf_score', 0.2)
@@ -48,6 +47,40 @@ class AdpativePredictor:
             ),
             max_retry=self.max_retry,
         )
+
+        # Dynamic canvas 新增
+        self.use_dynamic_canvas = kwargs.get('use_dynamic_canvas', False)
+        self.dynamic_canvas_root = kwargs.get(
+            'dynamic_canvas_root',
+            '../data/dynamic_canvas_scanrefer'
+        )
+
+        if self.use_dynamic_canvas:
+            self.dynamic_view_selector = DynamicViewSelector(
+                crop_image_root=kwargs.get(
+                    'crop_image_root',
+                    '../data/crop_images'
+                ),
+                crop_pool_meta_root=kwargs.get(
+                    'crop_pool_meta_root',
+                    '../data/crop_pool_meta_scanrefer'
+                ),
+                view_meta_root=kwargs.get(
+                    'view_meta_root',
+                    '../data/view_meta_scanrefer'
+                ),
+                posed_image_root=kwargs.get(
+                    'posed_image_root',
+                    '../data/posed_images_rgb_pose'
+                ),
+                canvas_root=self.dynamic_canvas_root,
+                canvas_k=kwargs.get('canvas_k', 5),
+                num_appearance_views=kwargs.get('num_appearance_views', 2),
+                num_relation_views=kwargs.get('num_relation_views', 2),
+                use_global_context=kwargs.get('use_global_context', True),
+            )
+        else:
+            self.dynamic_view_selector = None
 
     
     def execute(self, scene_id, obj_name, caption, prog_str):
@@ -86,14 +119,33 @@ class AdpativePredictor:
             print("Anchor Infos:")
             op(anchor_infos[:10])
 
-        # 3. target proposals 仍然只保留 target class
+        # 3. Dynamic canvas: 如果启用，则动态生成 canvas
         index = []
         prop_images = []
 
         for i, label in enumerate(ins_labels):
             if ins_scores[i] > self.seg_conf_score and label == pred_cls:
-                canvas = os.path.join(self.image_path, scene_id, str(i), 'canvas.jpg')
-                if os.path.exists(canvas):
+
+                if self.use_dynamic_canvas:
+                    # 为当前 query-proposal pair 动态生成 canvas
+                    canvas = self.dynamic_view_selector.build_query_specific_canvas(
+                        scene_id=scene_id,
+                        target_proposal_id=i,
+                        query=caption,
+                        parsed_query=parsed_query,
+                        anchor_infos=anchor_infos,
+                        candidate_meta={
+                            "proposal_id": i,
+                            "label": label,
+                            "score": float(ins_scores[i]),
+                            "loc": ins_locs[i],
+                        },
+                    )
+                else:
+                    # 原始固定 canvas fallback
+                    canvas = os.path.join(self.image_path, scene_id, str(i), 'canvas.jpg')
+
+                if canvas is not None and os.path.exists(canvas):
                     index.append(i)
                     prop_images.append(canvas)
 
@@ -196,22 +248,32 @@ class AdpativePredictor:
                 anchor_infos=anchor_infos or [],
             )
 
-            user_prompt = build_anchor_aware_user_prompt(
-                query=caption,
-                parsed_query=json.dumps(parsed_query or {}, ensure_ascii=False, indent=2),
-                anchor_summary=anchor_summary or "",
-                candidate_summary=candidate_summary,
-                n_images=n_images,
-            )
+            if self.use_dynamic_canvas:
+                user_prompt = build_dynamic_anchor_aware_user_prompt(
+                    query=caption,
+                    parsed_query=json.dumps(parsed_query or {}, ensure_ascii=False, indent=2),
+                    anchor_summary=anchor_summary or "",
+                    candidate_summary=candidate_summary,
+                    n_images=n_images,
+                )
+                system_prompt = DYNAMIC_ANCHOR_AWARE_SYSTEM_PROMPT
+            else:
+                user_prompt = build_anchor_aware_user_prompt(
+                    query=caption,
+                    parsed_query=json.dumps(parsed_query or {}, ensure_ascii=False, indent=2),
+                    anchor_summary=anchor_summary or "",
+                    candidate_summary=candidate_summary,
+                    n_images=n_images,
+                )
+                system_prompt = ANCHOR_AWARE_SYSTEM_PROMPT
 
-            system_prompt = ANCHOR_AWARE_SYSTEM_PROMPT
         else:
             user_prompt = USER_PROMPT.format(
                 query=caption,
                 n_images=n_images,
             )
             system_prompt = SYSTEM_PROMPT
-
+            
         messages = [
             {"role": "system", "content": system_prompt},
             {

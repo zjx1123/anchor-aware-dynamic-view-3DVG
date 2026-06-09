@@ -72,15 +72,14 @@ def build_anchor_candidates(
             if label != matched_cls:
                 continue
 
-            canvas = os.path.join(image_path, scene_id, str(i), "canvas.jpg")
-
+            # 注意：dynamic view 不再依赖 anchor 的固定 canvas。
+            # anchor 的 visual evidence 后续由 view_meta_scanrefer + posed_images_rgb_pose 动态生成。
             candidates.append({
                 "anchor_query_category": anchor_cat,
                 "matched_class": matched_cls,
                 "proposal_id": i,
                 "score": float(ins_scores[i]),
                 "loc": ins_locs[i],
-                "canvas": canvas if os.path.exists(canvas) else None,
                 "relation_to_target": anchor.get("relation_to_target", ""),
                 "attributes": anchor.get("attributes", []),
             })

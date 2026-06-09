@@ -12,7 +12,7 @@ from seqvlm.adaptive_predictor import AdpativePredictor
 
 
 if __name__ == '__main__':
-    # add an argument
+    # 主流程参数
     parser = argparse.ArgumentParser(description='seqvlm scanrefer')
     parser.add_argument('--data_path', type=str, default='../data/scanrefer_250.json')
     parser.add_argument('--exp_name', type=str, required=True)
@@ -22,7 +22,44 @@ if __name__ == '__main__':
     parser.add_argument('--max_batch_size', type=int, default=4)
     parser.add_argument('--max_vlm_props', type=int, default=40)
     parser.add_argument('--max_samples', type=int, default=None, help='limit eval samples for smoke test')
-    
+
+    # dynamic canvas 新增参数
+    parser.add_argument('--use_dynamic_canvas', action='store_true')
+
+    parser.add_argument(
+        '--crop_image_root',
+        type=str,
+        default='../data/crop_images',
+    )
+
+    parser.add_argument(
+        '--crop_pool_meta_root',
+        type=str,
+        default='../data/crop_pool_meta_scanrefer',
+    )
+
+    parser.add_argument(
+        '--view_meta_root',
+        type=str,
+        default='../data/view_meta_scanrefer',
+    )
+
+    parser.add_argument(
+        '--posed_image_root',
+        type=str,
+        default='../data/posed_images_rgb_pose',
+    )
+
+    parser.add_argument(
+        '--dynamic_canvas_root',
+        type=str,
+        default='../data/dynamic_canvas_scanrefer',
+    )
+
+    parser.add_argument('--canvas_k', type=int, default=5)
+    parser.add_argument('--num_appearance_views', type=int, default=2)
+    parser.add_argument('--num_relation_views', type=int, default=2)
+    parser.add_argument('--use_global_context', action='store_true')
     args = parser.parse_args()
 
     metrics_logger, full_log_path, metrics_log_path = setup_run_logging('scanrefer')
@@ -46,23 +83,33 @@ if __name__ == '__main__':
     
     eps = 10 ** -6
     
+    # vlm configs
     vlm_configs = {
-        'image_path': args.image_path, 
-        'vlm_model': args.vlm_model, 
-        'max_retry': args.max_retry, 
-        'max_batch_size': args.max_batch_size, 
-        'max_vlm_props': args.max_vlm_props
-    }        
-        
+        'image_path': args.image_path,
+        'vlm_model': args.vlm_model,
+        'max_retry': args.max_retry,
+        'max_batch_size': args.max_batch_size,
+        'max_vlm_props': args.max_vlm_props,
+    }
+
     vlm_configs["use_anchor_aware"] = True
     vlm_configs["max_anchor_per_type"] = 5
     vlm_configs["seg_conf_score"] = 0.2
     vlm_configs["query_parse_cache_dir"] = "../data/cache/query_parse_scanrefer"
 
+    # dynamic canvas configs
+    vlm_configs["use_dynamic_canvas"] = args.use_dynamic_canvas
+    vlm_configs["crop_image_root"] = args.crop_image_root
+    vlm_configs["crop_pool_meta_root"] = args.crop_pool_meta_root
+    vlm_configs["view_meta_root"] = args.view_meta_root
+    vlm_configs["posed_image_root"] = args.posed_image_root
+    vlm_configs["dynamic_canvas_root"] = args.dynamic_canvas_root
+    vlm_configs["canvas_k"] = args.canvas_k
+    vlm_configs["num_appearance_views"] = args.num_appearance_views
+    vlm_configs["num_relation_views"] = args.num_relation_views
+    vlm_configs["use_global_context"] = args.use_global_context
+
     predictor = AdpativePredictor(**vlm_configs)
-
-
-    
     
     if args.max_samples is not None:
         eval_data = eval_data[:args.max_samples]

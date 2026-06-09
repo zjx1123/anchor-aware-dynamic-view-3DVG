@@ -52,8 +52,6 @@ IMAGE_ID_INVALID_PROMPT = """The image_id {image_id} you selected does not exist
 
 WRONG_FORMAT_PROMPT = """The answer contains extra characters. Please follow the format of the example strictly."""
 
-# prompts/prompt.py
-
 ANCHOR_AWARE_SYSTEM_PROMPT = """
 Imagine you are in a 3D indoor scene and you are asked to find one target object.
 You are given:
@@ -80,6 +78,31 @@ The JSON format must be:
 }
 """
 
+# dynamic anchor-aware prompt
+DYNAMIC_ANCHOR_AWARE_SYSTEM_PROMPT = """
+Imagine you are in a 3D indoor scene and you are asked to find one target object.
+
+You are given several candidate images. Each candidate image is a query-specific canvas
+constructed for one candidate target proposal.
+
+Important visual marks:
+- RED boxes indicate the candidate target object.
+- BLUE boxes indicate reference/anchor objects mentioned in the query.
+- Some sub-images focus on target appearance.
+- Some sub-images show target-anchor spatial relations in the original full-frame view.
+
+You must use BOTH:
+1. local target appearance, such as category, color, texture, material, shape;
+2. target-anchor relation evidence, such as near, under, on, left of, right of, behind, in front of;
+3. global scene context if visible.
+
+Do not select only by target appearance when the query contains reference objects.
+You must check whether the red-box target satisfies the relation with the blue-box anchor.
+
+Return ONLY valid JSON, no markdown, no code block.
+The JSON format must be:
+{ "process": "Explain how you checked target appearance, anchors, and spatial relations.", "image_id": 0 }
+"""
 
 def build_anchor_aware_user_prompt(
     query: str,
@@ -102,6 +125,37 @@ def build_anchor_aware_user_prompt(
         f"There are {n_images} candidate images in this batch.\n"
         "The image_id values refer to the original candidate indices shown in the "
         "candidate summary, not necessarily 0..n-1.\n\n"
+        "Please select the best image_id.\n"
+        f"Return ONLY valid JSON:\n{json_example}\n"
+    )
+
+    # 修改后代码：追加到 prompts/prompt.py
+
+def build_dynamic_anchor_aware_user_prompt(
+    query: str,
+    parsed_query: str,
+    anchor_summary: str,
+    candidate_summary: str,
+    n_images: int,
+) -> str:
+    json_example = (
+        '{\n'
+        '  "process": "...",\n'
+        '  "image_id": 0\n'
+        '}'
+    )
+
+    return (
+        f"Query:\n{query}\n\n"
+        f"Parsed query:\n{parsed_query}\n\n"
+        f"Anchor/reference object summary:\n{anchor_summary}\n\n"
+        f"Current candidate batch:\n{candidate_summary}\n\n"
+        f"There are {n_images} candidate images in this batch.\n"
+        "Each candidate image is a dynamic canvas for one target proposal.\n"
+        "RED boxes mark candidate target objects.\n"
+        "BLUE boxes mark reference/anchor objects when visible.\n"
+        "The image_id values refer to the original candidate indices shown in the candidate summary, "
+        "not necessarily 0..n-1.\n\n"
         "Please select the best image_id.\n"
         f"Return ONLY valid JSON:\n{json_example}\n"
     )
