@@ -10,6 +10,23 @@ import pandas as pd
 from utils import *
 from seqvlm.adaptive_predictor import AdpativePredictor
 
+import os
+import random
+import numpy as np
+
+def set_seed(seed=42):
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+
+    try:
+        import torch
+        torch.manual_seed(seed)
+        torch.cuda.manual_seed_all(seed)
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+    except ImportError:
+        pass
 
 if __name__ == '__main__':
     # 主流程参数
@@ -22,6 +39,7 @@ if __name__ == '__main__':
     parser.add_argument('--max_batch_size', type=int, default=4)
     parser.add_argument('--max_vlm_props', type=int, default=40)
     parser.add_argument('--max_samples', type=int, default=None, help='limit eval samples for smoke test')
+    parser.add_argument('--seed', type=int, default=42)
 
     # dynamic canvas 新增参数
     parser.add_argument('--use_dynamic_canvas', action='store_true')
@@ -61,7 +79,8 @@ if __name__ == '__main__':
     parser.add_argument('--num_relation_views', type=int, default=2)
     parser.add_argument('--use_global_context', action='store_true')
     args = parser.parse_args()
-
+    set_seed(args.seed)
+    
     metrics_logger, full_log_path, metrics_log_path = setup_run_logging('scanrefer')
     
     with open(args.data_path, 'r') as f:

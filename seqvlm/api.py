@@ -49,7 +49,9 @@ def invoke_api(model, messages):
     with TimeCounter(tag="Invoke"):
         response = client.chat.completions.create(
             model=model, 
-            messages=messages
+            messages=messages,
+            temperature=0.1,
+            top_p=0.3,
         )
         result = {
             'answer': response.choices[0].message.content, 
