@@ -17,6 +17,7 @@ python evaluate.py \
   --exp_name dynamic_canvas_scanrefer_250 \
   --image_path ../data/scanrefer_preprocessed \
   --vlm_model qwen \
+  --max_vlm_props 40 \
   --use_dynamic_canvas \
   --crop_image_root ../data/crop_images \
   --crop_pool_meta_root ../data/crop_pool_meta_scanrefer \

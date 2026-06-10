@@ -6,7 +6,7 @@ import json
 import os
 import random
 from objprint import op
-from colorama import Fore, init
+from colorama import Fore, init, Style
 init(autoreset=True)
 
 from prompts.prompt import *
@@ -141,9 +141,21 @@ class AdpativePredictor:
                             "loc": ins_locs[i],
                         },
                     )
+
+                    # 关键 fallback：
+                    # dynamic canvas 失败时，回退到原始固定 canvas
+                    if canvas is None or not os.path.exists(canvas):
+                        fallback_canvas = os.path.join(
+                            self.image_path,
+                            scene_id,
+                            str(i),
+                            "canvas.jpg",
+                        )
+                        if os.path.exists(fallback_canvas):
+                            print(f"[Fallback] use fixed canvas for scene={scene_id}, proposal={i}")
+                            canvas = fallback_canvas
                 else:
-                    # 原始固定 canvas fallback
-                    canvas = os.path.join(self.image_path, scene_id, str(i), 'canvas.jpg')
+                    canvas = os.path.join(self.image_path, scene_id, str(i), "canvas.jpg")
 
                 if canvas is not None and os.path.exists(canvas):
                     index.append(i)
@@ -155,25 +167,43 @@ class AdpativePredictor:
         if n_props == 0:
             return None, False
 
-        if n_props <= self.max_vlm_props:
-            candidate_metas = build_target_candidate_meta(
-                target_indices=index,
-                ins_labels=ins_labels,
-                ins_locs=ins_locs,
-                ins_scores=ins_scores,
-            )
+        # =========================
+        # Important fix:
+        # If candidate proposals are more than max_vlm_props,
+        # do NOT directly fail. Truncate them before VLM reasoning.
+        # =========================
+        if self.max_vlm_props is not None and n_props > self.max_vlm_props:
+            print(f"[Truncate] Target proposals: {n_props} -> {self.max_vlm_props}")
 
-            pred = self.predict(
-                prop_images=prop_images,
-                caption=caption,
-                parsed_query=parsed_query,
-                anchor_infos=anchor_infos,
-                anchor_summary=anchor_summary,
-                candidate_metas=candidate_metas,
-            )
+            # 第一版先按 proposal score 排序截断
+            ranked = sorted(
+                range(len(index)),
+                key=lambda k: float(ins_scores[index[k]]),
+                reverse=True,
+            )[: self.max_vlm_props]
 
-            if pred is not None:
-                return ins_locs[index[pred]], True
+            index = [index[k] for k in ranked]
+            prop_images = [prop_images[k] for k in ranked]
+            n_props = len(prop_images)
+
+        candidate_metas = build_target_candidate_meta(
+            target_indices=index,
+            ins_labels=ins_labels,
+            ins_locs=ins_locs,
+            ins_scores=ins_scores,
+        )
+
+        pred = self.predict(
+            prop_images=prop_images,
+            caption=caption,
+            parsed_query=parsed_query,
+            anchor_infos=anchor_infos,
+            anchor_summary=anchor_summary,
+            candidate_metas=candidate_metas,
+        )
+
+        if pred is not None:
+            return ins_locs[index[pred]], True
 
         return None, False
 
@@ -317,7 +347,7 @@ class AdpativePredictor:
                 )
 
             except Exception as e:
-                print(Fore.RED + f'Except: {e}')
+                print(Fore.RED + f"Except: {e}" + Style.RESET_ALL)
                 guide_prompt = WRONG_FORMAT_PROMPT
 
             messages.append({

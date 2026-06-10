@@ -1,10 +1,3 @@
-'''
-【用途】
-
-根据解析出的 anchor category，从 ScanRefer 的 Mask3D proposals 中找 anchor proposals，并生成给 VLM 的文本上下文。
-
-第一版只做文本上下文，不改图像。后续第二版再做 anchor box 可视化。
-'''
 
 import os
 import numpy as np
