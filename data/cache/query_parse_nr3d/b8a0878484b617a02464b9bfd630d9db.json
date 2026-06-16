@@ -1,0 +1,42 @@
+{
+  "raw_query": "find the box with the longest set of bookcases then choose the smaller one in the corner next to it on the left",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "smaller",
+      "in corner",
+      "next to bookcases",
+      "on left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookcase",
+      "attributes": [
+        "longest set"
+      ],
+      "relation_to_target": "adjacent"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "next to",
+      "object": "bookcase"
+    },
+    {
+      "subject": "box",
+      "relation": "in corner",
+      "object": "room"
+    },
+    {
+      "subject": "box",
+      "relation": "on left of",
+      "object": "bookcase"
+    }
+  ],
+  "view_constraints": [
+    "corner",
+    "left side"
+  ]
+}

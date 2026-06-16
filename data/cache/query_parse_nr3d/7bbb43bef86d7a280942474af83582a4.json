@@ -1,0 +1,24 @@
+{
+  "raw_query": "this trashcan is by a double door",
+  "target": {
+    "category": "trashcan",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "double"
+      ],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trashcan",
+      "relation": "by",
+      "object": "double door"
+    }
+  ],
+  "view_constraints": []
+}

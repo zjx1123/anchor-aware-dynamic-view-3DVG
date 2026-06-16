@@ -1,0 +1,24 @@
+{
+  "raw_query": "the desk closest to the window",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

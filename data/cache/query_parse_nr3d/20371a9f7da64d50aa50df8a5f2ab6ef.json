@@ -1,0 +1,30 @@
+{
+  "raw_query": "the backpack close to the bed on the floor",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "close to the bed",
+      "on the floor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "close to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "close to",
+      "object": "bed"
+    },
+    {
+      "subject": "backpack",
+      "relation": "on",
+      "object": "floor"
+    }
+  ],
+  "view_constraints": []
+}

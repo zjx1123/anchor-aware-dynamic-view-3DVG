@@ -1,0 +1,39 @@
+{
+  "raw_query": "when facing the wall with two white boards so that the door is at your right select the whiteboard on the right",
+  "target": {
+    "category": "whiteboard",
+    "attributes": [
+      "right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "with two white boards"
+      ],
+      "relation_to_target": "contains"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "on right side when facing wall"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "on right side of",
+      "object": "wall"
+    },
+    {
+      "subject": "whiteboard",
+      "relation": "on right side of",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "facing the wall with two white boards",
+    "door is at your right"
+  ]
+}

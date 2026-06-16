@@ -1,0 +1,31 @@
+{
+  "raw_query": "looking at both books on the desk it is the book on the right",
+  "target": {
+    "category": "book",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "book",
+      "relation": "on",
+      "object": "desk"
+    },
+    {
+      "subject": "book",
+      "relation": "right of",
+      "object": "book"
+    }
+  ],
+  "view_constraints": [
+    "looking at both books on the desk"
+  ]
+}

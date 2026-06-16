@@ -1,0 +1,25 @@
+{
+  "raw_query": "this backpack is closer to the tall brown wardrobe cabinet '",
+  "target": {
+    "category": "backpack",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "wardrobe cabinet",
+      "attributes": [
+        "tall",
+        "brown"
+      ],
+      "relation_to_target": "closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "closer to",
+      "object": "wardrobe cabinet"
+    }
+  ],
+  "view_constraints": []
+}

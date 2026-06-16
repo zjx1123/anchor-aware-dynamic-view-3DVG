@@ -1,0 +1,33 @@
+{
+  "raw_query": "the picture that is slightly behind the air mattress propped on the wall",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "slightly behind"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "air mattress",
+      "attributes": [
+        "propped on the wall"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "behind",
+      "object": "air mattress"
+    },
+    {
+      "subject": "air mattress",
+      "relation": "propped on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "slightly behind"
+  ]
+}

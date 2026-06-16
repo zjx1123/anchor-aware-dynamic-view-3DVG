@@ -1,0 +1,20 @@
+{
+  "raw_query": "the armchair that is right in the corner",
+  "target": {
+    "category": "armchair",
+    "attributes": [
+      "in the corner"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "is located in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": [
+    "corner"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "raw_query": "facing the tables the second table from the left",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "second",
+      "from the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "facing",
+      "object": "tables"
+    },
+    {
+      "subject": "target table",
+      "relation": "is",
+      "object": "second from the left"
+    }
+  ],
+  "view_constraints": [
+    "facing the tables"
+  ]
+}

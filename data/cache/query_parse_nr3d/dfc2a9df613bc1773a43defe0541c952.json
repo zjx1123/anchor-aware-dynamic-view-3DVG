@@ -1,0 +1,34 @@
+{
+  "raw_query": "the left artwork directly above the blue shredder",
+  "target": {
+    "category": "artwork",
+    "attributes": [
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shredder",
+      "attributes": [
+        "blue"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "artwork",
+      "relation": "above",
+      "object": "shredder"
+    },
+    {
+      "subject": "artwork",
+      "relation": "left of",
+      "object": "artwork"
+    }
+  ],
+  "view_constraints": [
+    "directly above",
+    "left"
+  ]
+}

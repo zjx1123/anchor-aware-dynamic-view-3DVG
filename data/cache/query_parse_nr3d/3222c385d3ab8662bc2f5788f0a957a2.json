@@ -1,0 +1,20 @@
+{
+  "raw_query": "the kitchen cabinets sink and counter plus part of the floor",
+  "target": {
+    "category": "kitchen",
+    "attributes": [
+      "cabinets",
+      "sink",
+      "counter",
+      "floor"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "include cabinets",
+    "include sink",
+    "include counter",
+    "include part of floor"
+  ]
+}

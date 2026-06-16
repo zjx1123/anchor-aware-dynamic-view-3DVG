@@ -1,0 +1,45 @@
+{
+  "raw_query": "The bed next to the dresser, it is the pillow in the back, closest to the nightstand.",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "in the back",
+      "closest to the nightstand"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "next to the dresser"
+      ],
+      "relation_to_target": "contains"
+    },
+    {
+      "category": "nightstand",
+      "attributes": [],
+      "relation_to_target": "close to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "bed"
+    },
+    {
+      "subject": "pillow",
+      "relation": "close to",
+      "object": "nightstand"
+    },
+    {
+      "subject": "bed",
+      "relation": "next to",
+      "object": "dresser"
+    }
+  ],
+  "view_constraints": [
+    "back of the bed",
+    "closest to the nightstand"
+  ]
+}

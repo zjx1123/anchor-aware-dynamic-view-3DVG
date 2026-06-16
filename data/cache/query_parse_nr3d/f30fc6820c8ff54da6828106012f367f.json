@@ -1,0 +1,26 @@
+{
+  "raw_query": "the blue toddler chair that does not have a disney cars theme it is right in front of the curtains",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "blue",
+      "toddler",
+      "not disney cars theme"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "curtains",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "curtains"
+    }
+  ],
+  "view_constraints": []
+}

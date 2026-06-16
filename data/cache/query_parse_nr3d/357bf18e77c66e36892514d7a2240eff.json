@@ -1,0 +1,36 @@
+{
+  "raw_query": "round table in corner with something black on it",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "round"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "corner",
+      "attributes": [],
+      "relation_to_target": "in"
+    },
+    {
+      "category": "object",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in",
+      "object": "corner"
+    },
+    {
+      "subject": "object",
+      "relation": "on",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

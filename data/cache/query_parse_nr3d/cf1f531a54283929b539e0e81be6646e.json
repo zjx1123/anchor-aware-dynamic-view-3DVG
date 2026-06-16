@@ -1,0 +1,22 @@
+{
+  "raw_query": "the picture above the desk",
+  "target": {
+    "category": "picture",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "above",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

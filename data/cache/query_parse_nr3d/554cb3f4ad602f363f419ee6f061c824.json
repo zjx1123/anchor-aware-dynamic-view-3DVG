@@ -1,0 +1,27 @@
+{
+  "raw_query": "lamp in between the beds",
+  "target": {
+    "category": "lamp",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "between",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

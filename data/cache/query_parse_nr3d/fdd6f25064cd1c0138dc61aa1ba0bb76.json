@@ -1,0 +1,24 @@
+{
+  "raw_query": "the table in front of the chair with a circular stand",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "circular stand"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

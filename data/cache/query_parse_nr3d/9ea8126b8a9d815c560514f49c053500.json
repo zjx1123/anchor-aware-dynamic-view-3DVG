@@ -1,0 +1,30 @@
+{
+  "raw_query": "the darker brown nightstand beside the bed with a lamp sitting on top",
+  "target": {
+    "category": "nightstand",
+    "attributes": [
+      "darker brown",
+      "with a lamp sitting on top"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "nightstand",
+      "relation": "beside",
+      "object": "bed"
+    },
+    {
+      "subject": "lamp",
+      "relation": "sitting on top of",
+      "object": "nightstand"
+    }
+  ],
+  "view_constraints": []
+}

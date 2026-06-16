@@ -1,0 +1,29 @@
+{
+  "raw_query": "the window on the right that has a fan in front of the middle of it",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "on the right",
+      "has a fan in front of the middle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "fan",
+      "attributes": [
+        "in front of the middle of the window"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fan",
+      "relation": "in front of",
+      "object": "middle of window"
+    }
+  ],
+  "view_constraints": [
+    "right side"
+  ]
+}

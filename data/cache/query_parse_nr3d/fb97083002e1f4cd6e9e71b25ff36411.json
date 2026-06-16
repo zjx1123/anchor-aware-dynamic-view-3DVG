@@ -1,0 +1,37 @@
+{
+  "raw_query": "facing the windows chose the center desk under the clock",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "center",
+      "under clock"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "facing"
+    },
+    {
+      "category": "clock",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "under",
+      "object": "clock"
+    },
+    {
+      "subject": "person",
+      "relation": "facing",
+      "object": "windows"
+    }
+  ],
+  "view_constraints": [
+    "facing windows"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "raw_query": "pick the door that is slightly open and is closer to the red an yellow painting",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "slightly open",
+      "closer to the red and yellow painting"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "painting",
+      "attributes": [
+        "red and yellow"
+      ],
+      "relation_to_target": "closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "closer to",
+      "object": "painting"
+    }
+  ],
+  "view_constraints": []
+}

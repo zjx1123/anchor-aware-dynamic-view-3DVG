@@ -1,0 +1,12 @@
+{
+  "raw_query": "the green chair",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "green"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

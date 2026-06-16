@@ -1,0 +1,32 @@
+{
+  "raw_query": "the shelf next to the bed on the desk",
+  "target": {
+    "category": "shelf",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "next to",
+      "object": "bed"
+    },
+    {
+      "subject": "shelf",
+      "relation": "on",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

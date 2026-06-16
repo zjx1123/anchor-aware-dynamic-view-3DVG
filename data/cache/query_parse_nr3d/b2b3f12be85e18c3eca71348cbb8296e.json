@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the windows the window to the left",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "to the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "windows",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "to the left of",
+      "object": "windows"
+    }
+  ],
+  "view_constraints": [
+    "facing the windows"
+  ]
+}

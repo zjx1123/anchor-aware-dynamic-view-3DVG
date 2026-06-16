@@ -1,0 +1,37 @@
+{
+  "raw_query": "the door between grey trash can and two folding tables",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [
+        "grey"
+      ],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "table",
+      "attributes": [
+        "folding",
+        "two"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "between",
+      "object": "grey trash can"
+    },
+    {
+      "subject": "door",
+      "relation": "between",
+      "object": "two folding tables"
+    }
+  ],
+  "view_constraints": []
+}

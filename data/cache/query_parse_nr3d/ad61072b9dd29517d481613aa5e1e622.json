@@ -1,0 +1,49 @@
+{
+  "raw_query": "the keyboard that is on the little side desk on the end of the big desks and is near the shelves",
+  "target": {
+    "category": "keyboard",
+    "attributes": [
+      "on the little side desk",
+      "near the shelves"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "side desk",
+      "attributes": [
+        "little"
+      ],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "desk",
+      "attributes": [
+        "big"
+      ],
+      "relation_to_target": "on the end of"
+    },
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "keyboard",
+      "relation": "on",
+      "object": "little side desk"
+    },
+    {
+      "subject": "little side desk",
+      "relation": "on the end of",
+      "object": "big desks"
+    },
+    {
+      "subject": "keyboard",
+      "relation": "near",
+      "object": "shelves"
+    }
+  ],
+  "view_constraints": []
+}

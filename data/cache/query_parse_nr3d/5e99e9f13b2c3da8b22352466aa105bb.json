@@ -1,0 +1,26 @@
+{
+  "raw_query": "it is the chair closest to the exit doorway",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "doorway",
+      "attributes": [
+        "exit"
+      ],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "closest to",
+      "object": "exit doorway"
+    }
+  ],
+  "view_constraints": []
+}

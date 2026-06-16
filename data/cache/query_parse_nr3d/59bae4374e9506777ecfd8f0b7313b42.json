@@ -1,0 +1,37 @@
+{
+  "raw_query": "it is the towel on the wall that is the farthest from the sinks",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "on the wall",
+      "farthest from the sinks"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "support"
+    },
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "distance"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "on",
+      "object": "wall"
+    },
+    {
+      "subject": "towel",
+      "relation": "farthest from",
+      "object": "sinks"
+    }
+  ],
+  "view_constraints": [
+    "farthest from the sinks"
+  ]
+}

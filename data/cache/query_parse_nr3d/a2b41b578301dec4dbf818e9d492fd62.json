@@ -1,0 +1,37 @@
+{
+  "raw_query": "the smaller white colored box against the wall next to the green bucket",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "smaller",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "bucket",
+      "attributes": [
+        "green"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "box",
+      "relation": "next to",
+      "object": "bucket"
+    }
+  ],
+  "view_constraints": []
+}

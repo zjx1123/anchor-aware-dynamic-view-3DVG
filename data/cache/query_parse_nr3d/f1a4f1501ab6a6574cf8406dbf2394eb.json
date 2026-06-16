@@ -1,0 +1,22 @@
+{
+  "raw_query": "chair next to the whiteboard",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "whiteboard",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": []
+}

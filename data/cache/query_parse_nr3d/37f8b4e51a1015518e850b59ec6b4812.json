@@ -1,0 +1,27 @@
+{
+  "raw_query": "the pillow on the side near the kitchen table",
+  "target": {
+    "category": "pillow",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "kitchen table",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "side"
+    },
+    {
+      "subject": "side",
+      "relation": "near",
+      "object": "kitchen table"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,42 @@
+{
+  "raw_query": "while facing the play carpet it is the farthest chair to the left beside the bookshelf",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "farthest",
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "play carpet",
+      "attributes": [],
+      "relation_to_target": "facing"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "play carpet"
+    },
+    {
+      "subject": "chair",
+      "relation": "beside",
+      "object": "bookshelf"
+    },
+    {
+      "subject": "chair",
+      "relation": "farthest",
+      "object": "left"
+    }
+  ],
+  "view_constraints": [
+    "facing play carpet"
+  ]
+}

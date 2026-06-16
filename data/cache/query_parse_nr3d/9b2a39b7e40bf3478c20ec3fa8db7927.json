@@ -1,0 +1,26 @@
+{
+  "raw_query": "the rail directly above the toilet",
+  "target": {
+    "category": "rail",
+    "attributes": [
+      "directly above the toilet"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rail",
+      "relation": "above",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": [
+    "directly above"
+  ]
+}

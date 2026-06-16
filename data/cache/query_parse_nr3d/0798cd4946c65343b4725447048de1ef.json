@@ -1,0 +1,35 @@
+{
+  "raw_query": "toilet paper on top of the paper towel dispenser its the one at the bottom closest to the window",
+  "target": {
+    "category": "toilet paper",
+    "attributes": [
+      "on top of paper towel dispenser"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "paper towel dispenser",
+      "attributes": [
+        "at the bottom",
+        "closest to the window"
+      ],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet paper",
+      "relation": "on top of",
+      "object": "paper towel dispenser"
+    },
+    {
+      "subject": "paper towel dispenser",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "bottom",
+    "closest to window"
+  ]
+}

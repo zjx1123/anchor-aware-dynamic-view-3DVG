@@ -1,0 +1,33 @@
+{
+  "raw_query": "it is the small bookshelf located between the two larger bookshelves",
+  "target": {
+    "category": "bookshelf",
+    "attributes": [
+      "small"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "large"
+      ],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "large"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "small bookshelf",
+      "relation": "between",
+      "object": "two larger bookshelves"
+    }
+  ],
+  "view_constraints": []
+}

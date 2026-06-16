@@ -1,0 +1,27 @@
+{
+  "raw_query": "the table is the shorter lighter one with the pulled out chair at it",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "shorter",
+      "lighter"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "pulled out"
+      ],
+      "relation_to_target": "at"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

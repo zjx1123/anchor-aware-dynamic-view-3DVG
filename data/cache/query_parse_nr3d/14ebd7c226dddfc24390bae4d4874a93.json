@@ -1,0 +1,35 @@
+{
+  "raw_query": "choose the book on the bottom bunk closest to the outside of the bunk",
+  "target": {
+    "category": "book",
+    "attributes": [
+      "on bottom bunk",
+      "closest to outside of bunk"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bunk",
+      "attributes": [
+        "bottom"
+      ],
+      "relation_to_target": "supports"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "book",
+      "relation": "on",
+      "object": "bottom bunk"
+    },
+    {
+      "subject": "book",
+      "relation": "closest to",
+      "object": "outside of bunk"
+    }
+  ],
+  "view_constraints": [
+    "bottom bunk",
+    "outside of bunk"
+  ]
+}

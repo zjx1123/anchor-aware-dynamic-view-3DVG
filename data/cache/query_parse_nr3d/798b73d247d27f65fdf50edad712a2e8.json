@@ -1,0 +1,29 @@
+{
+  "raw_query": "the dresser under the bed with the orange pillow",
+  "target": {
+    "category": "dresser",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "with orange pillow"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "dresser",
+      "relation": "under",
+      "object": "bed"
+    },
+    {
+      "subject": "bed",
+      "relation": "has",
+      "object": "orange pillow"
+    }
+  ],
+  "view_constraints": []
+}

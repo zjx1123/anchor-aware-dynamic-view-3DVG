@@ -1,0 +1,34 @@
+{
+  "raw_query": "facing the boxes the rightmost one that is in front of a green chair",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "rightmost",
+      "in front of green chair"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "green"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "in front of",
+      "object": "green chair"
+    },
+    {
+      "subject": "box",
+      "relation": "facing",
+      "object": "boxes"
+    }
+  ],
+  "view_constraints": [
+    "facing the boxes"
+  ]
+}

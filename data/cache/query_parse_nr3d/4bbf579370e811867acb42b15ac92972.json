@@ -1,0 +1,22 @@
+{
+  "raw_query": "the toilet paper on the right hand side of the toilet",
+  "target": {
+    "category": "toilet paper",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet paper",
+      "relation": "on the right hand side of",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": []
+}

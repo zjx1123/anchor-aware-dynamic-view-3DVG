@@ -1,0 +1,22 @@
+{
+  "raw_query": "the door that has a painting to the left of it",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "painting",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "painting",
+      "relation": "left of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,39 @@
+{
+  "raw_query": "if you face the two monitors pick the one of the left side that is closer to the window",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "left side",
+      "closer to window"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "closer to"
+    },
+    {
+      "category": "monitor",
+      "attributes": [
+        "right side"
+      ],
+      "relation_to_target": "opposite of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on left side of",
+      "object": "two monitors"
+    },
+    {
+      "subject": "monitor",
+      "relation": "closer to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "face the two monitors"
+  ]
+}

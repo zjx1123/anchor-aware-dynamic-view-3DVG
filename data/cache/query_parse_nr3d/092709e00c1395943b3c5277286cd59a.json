@@ -1,0 +1,22 @@
+{
+  "raw_query": "the table next to the copier",
+  "target": {
+    "category": "table",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "copier",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "next to",
+      "object": "copier"
+    }
+  ],
+  "view_constraints": []
+}

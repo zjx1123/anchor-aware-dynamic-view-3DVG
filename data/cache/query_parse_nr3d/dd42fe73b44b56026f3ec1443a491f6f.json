@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the bookshelves the chair in the lower right corner",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "in the lower right corner"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelves",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "bookshelves"
+    }
+  ],
+  "view_constraints": [
+    "lower right corner"
+  ]
+}

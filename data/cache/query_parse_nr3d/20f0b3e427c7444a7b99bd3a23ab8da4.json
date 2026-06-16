@@ -1,0 +1,37 @@
+{
+  "raw_query": "chair near the table facing the chair in the corner",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "near the table",
+      "facing the chair in the corner"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "near"
+    },
+    {
+      "category": "chair",
+      "attributes": [
+        "in the corner"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "near",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "facing",
+      "object": "chair in the corner"
+    }
+  ],
+  "view_constraints": []
+}

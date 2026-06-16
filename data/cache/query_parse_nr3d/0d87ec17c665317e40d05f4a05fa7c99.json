@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the chairs this is the one on the left",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chairs",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the left of",
+      "object": "chairs"
+    }
+  ],
+  "view_constraints": [
+    "facing the chairs"
+  ]
+}

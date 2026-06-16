@@ -1,0 +1,46 @@
+{
+  "raw_query": "the lightest colored desk under the clock closest to the file box on the black cabinet",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "lightest colored"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "clock",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "file box",
+      "attributes": [],
+      "relation_to_target": "near"
+    },
+    {
+      "category": "cabinet",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "under",
+      "object": "clock"
+    },
+    {
+      "subject": "clock",
+      "relation": "closest to",
+      "object": "file box"
+    },
+    {
+      "subject": "file box",
+      "relation": "on",
+      "object": "cabinet"
+    }
+  ],
+  "view_constraints": []
+}

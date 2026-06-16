@@ -1,0 +1,34 @@
+{
+  "raw_query": "the trash bin in the right corner behind the blue trash can",
+  "target": {
+    "category": "trash bin",
+    "attributes": [
+      "in the right corner",
+      "behind the blue trash can"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [
+        "blue"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash bin",
+      "relation": "behind",
+      "object": "blue trash can"
+    },
+    {
+      "subject": "trash bin",
+      "relation": "in",
+      "object": "right corner"
+    }
+  ],
+  "view_constraints": [
+    "right corner"
+  ]
+}

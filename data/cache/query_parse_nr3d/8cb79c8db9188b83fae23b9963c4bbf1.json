@@ -1,0 +1,24 @@
+{
+  "raw_query": "the microwave on the light brown desk",
+  "target": {
+    "category": "microwave",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [
+        "light brown"
+      ],
+      "relation_to_target": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "microwave",
+      "relation": "on",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

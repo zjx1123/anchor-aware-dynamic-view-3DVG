@@ -1,0 +1,24 @@
+{
+  "raw_query": "i am the ottoman closest to the coffee table",
+  "target": {
+    "category": "ottoman",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "coffee table",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "ottoman",
+      "relation": "closest to",
+      "object": "coffee table"
+    }
+  ],
+  "view_constraints": []
+}

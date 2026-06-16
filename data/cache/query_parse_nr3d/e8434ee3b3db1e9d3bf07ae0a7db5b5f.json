@@ -1,0 +1,24 @@
+{
+  "raw_query": "when pushing in this chair it is the chair on the right",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

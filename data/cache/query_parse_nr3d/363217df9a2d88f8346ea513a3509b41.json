@@ -1,0 +1,24 @@
+{
+  "raw_query": "choose the plant closest to the bed",
+  "target": {
+    "category": "plant",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "plant",
+      "relation": "closest to",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

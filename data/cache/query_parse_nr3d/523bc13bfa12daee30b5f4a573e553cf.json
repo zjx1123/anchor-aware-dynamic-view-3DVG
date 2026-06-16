@@ -1,0 +1,24 @@
+{
+  "raw_query": "find the backpack that is farthest away from the window",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "farthest from window"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "reference point for distance"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "is farthest away from",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

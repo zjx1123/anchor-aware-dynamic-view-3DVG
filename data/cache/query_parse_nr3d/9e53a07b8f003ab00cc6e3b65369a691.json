@@ -1,0 +1,34 @@
+{
+  "raw_query": "find the monitor that sits on the table near the window blinds",
+  "target": {
+    "category": "monitor",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "supports"
+    },
+    {
+      "category": "window blinds",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on",
+      "object": "table"
+    },
+    {
+      "subject": "table",
+      "relation": "near",
+      "object": "window blinds"
+    }
+  ],
+  "view_constraints": [
+    "near window blinds"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "raw_query": "the monitor that is the only one on the side of the room without the man",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "only one"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "side of"
+    },
+    {
+      "category": "man",
+      "attributes": [],
+      "relation_to_target": "without"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "is on the side of",
+      "object": "room"
+    },
+    {
+      "subject": "monitor",
+      "relation": "is without",
+      "object": "man"
+    }
+  ],
+  "view_constraints": [
+    "side of the room without the man"
+  ]
+}

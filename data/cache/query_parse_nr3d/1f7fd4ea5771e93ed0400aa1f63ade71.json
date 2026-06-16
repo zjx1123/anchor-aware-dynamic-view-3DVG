@@ -1,0 +1,19 @@
+{
+  "raw_query": "the round table with the most objects on top of it",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "round",
+      "with the most objects on top of it"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "has",
+      "object": "objects"
+    }
+  ],
+  "view_constraints": []
+}

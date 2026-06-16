@@ -1,0 +1,45 @@
+{
+  "raw_query": "this lamp is on a table between the beds",
+  "target": {
+    "category": "lamp",
+    "attributes": [
+      "on a table",
+      "between the beds"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "supporting"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "left side"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "right side"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "on",
+      "object": "table"
+    },
+    {
+      "subject": "lamp",
+      "relation": "between",
+      "object": "bed"
+    },
+    {
+      "subject": "lamp",
+      "relation": "between",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

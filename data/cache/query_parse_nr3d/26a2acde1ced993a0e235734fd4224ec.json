@@ -1,0 +1,31 @@
+{
+  "raw_query": "if facing the doors the one on your left",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "on your left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "you",
+      "relation": "facing",
+      "object": "doors"
+    },
+    {
+      "subject": "target door",
+      "relation": "on left of",
+      "object": "you"
+    }
+  ],
+  "view_constraints": [
+    "facing the doors"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "the trashcan next to the open doorway",
+  "target": {
+    "category": "trashcan",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "doorway",
+      "attributes": [
+        "open"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trashcan",
+      "relation": "next to",
+      "object": "doorway"
+    }
+  ],
+  "view_constraints": []
+}

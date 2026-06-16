@@ -1,0 +1,24 @@
+{
+  "raw_query": "choose the chair that is closest to the trash can",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "closest to",
+      "object": "trash can"
+    }
+  ],
+  "view_constraints": []
+}

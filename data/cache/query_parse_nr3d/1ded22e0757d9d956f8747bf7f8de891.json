@@ -1,0 +1,36 @@
+{
+  "raw_query": "the open door by the trash cans leading into a room with white flooring",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "open"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [],
+      "relation_to_target": "by"
+    },
+    {
+      "category": "room",
+      "attributes": [
+        "white flooring"
+      ],
+      "relation_to_target": "leading into"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "by",
+      "object": "trash can"
+    },
+    {
+      "subject": "door",
+      "relation": "leading into",
+      "object": "room"
+    }
+  ],
+  "view_constraints": []
+}

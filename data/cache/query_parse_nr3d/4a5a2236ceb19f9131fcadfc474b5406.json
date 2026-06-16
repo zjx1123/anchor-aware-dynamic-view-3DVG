@@ -1,0 +1,34 @@
+{
+  "raw_query": "choose the smaller of the two windows it is on the left if you face the windows",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "smaller",
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [
+        "larger"
+      ],
+      "relation_to_target": "comparative"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "is smaller than",
+      "object": "window"
+    },
+    {
+      "subject": "window",
+      "relation": "is on the left of",
+      "object": "windows"
+    }
+  ],
+  "view_constraints": [
+    "face the windows"
+  ]
+}

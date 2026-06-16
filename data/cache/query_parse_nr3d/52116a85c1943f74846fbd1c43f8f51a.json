@@ -1,0 +1,32 @@
+{
+  "raw_query": "the trash can in front of piles of papers that are under a desk",
+  "target": {
+    "category": "trash can",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "piles of papers",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "in front of",
+      "object": "piles of papers"
+    },
+    {
+      "subject": "piles of papers",
+      "relation": "under",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

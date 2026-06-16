@@ -1,0 +1,31 @@
+{
+  "raw_query": "the chair at the corner and there is a square table in front of it",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "at the corner"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "square"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "at",
+      "object": "corner"
+    },
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,18 @@
+{
+  "raw_query": "the chair that does not have a blue bag on it",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "does not have a blue bag on it"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "does not have",
+      "object": "blue bag"
+    }
+  ],
+  "view_constraints": []
+}

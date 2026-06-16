@@ -1,0 +1,24 @@
+{
+  "raw_query": "select the sink farther from the washer",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "farther from washer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "washer",
+      "attributes": [],
+      "relation_to_target": "closer"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "farther from",
+      "object": "washer"
+    }
+  ],
+  "view_constraints": []
+}

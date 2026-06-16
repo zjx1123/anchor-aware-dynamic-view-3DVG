@@ -1,0 +1,26 @@
+{
+  "raw_query": "the toilet in the right stall",
+  "target": {
+    "category": "toilet",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "stall",
+      "attributes": [
+        "right"
+      ],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet",
+      "relation": "in",
+      "object": "stall"
+    }
+  ],
+  "view_constraints": [
+    "right"
+  ]
+}

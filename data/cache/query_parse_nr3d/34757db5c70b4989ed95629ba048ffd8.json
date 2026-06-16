@@ -1,0 +1,12 @@
+{
+  "raw_query": "the smallest bathroom stall",
+  "target": {
+    "category": "bathroom stall",
+    "attributes": [
+      "smallest"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

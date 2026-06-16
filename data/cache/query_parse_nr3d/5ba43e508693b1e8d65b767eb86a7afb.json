@@ -1,0 +1,29 @@
+{
+  "raw_query": "these shoes are adjacent to the nearby door rather than in front of it",
+  "target": {
+    "category": "shoes",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "adjacent"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shoes",
+      "relation": "adjacent to",
+      "object": "door"
+    },
+    {
+      "subject": "shoes",
+      "relation": "not in front of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": [
+    "nearby"
+  ]
+}

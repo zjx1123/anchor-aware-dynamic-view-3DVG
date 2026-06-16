@@ -1,0 +1,34 @@
+{
+  "raw_query": "the book is on the white shelf near the desk",
+  "target": {
+    "category": "book",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "shelf",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "book",
+      "relation": "on",
+      "object": "shelf"
+    },
+    {
+      "subject": "shelf",
+      "relation": "near",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

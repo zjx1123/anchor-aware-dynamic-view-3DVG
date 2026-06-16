@@ -1,0 +1,24 @@
+{
+  "raw_query": "wall mounted cabinet the one that is not above printer",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "wall mounted"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "printer",
+      "attributes": [],
+      "relation_to_target": "not above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "not above",
+      "object": "printer"
+    }
+  ],
+  "view_constraints": []
+}

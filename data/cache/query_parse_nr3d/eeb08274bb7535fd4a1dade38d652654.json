@@ -1,0 +1,22 @@
+{
+  "raw_query": "the shelf above the couch",
+  "target": {
+    "category": "shelf",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "above",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

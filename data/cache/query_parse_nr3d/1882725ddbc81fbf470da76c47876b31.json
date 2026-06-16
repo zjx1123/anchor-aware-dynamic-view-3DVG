@@ -1,0 +1,27 @@
+{
+  "raw_query": "the chair that is alone under the smaller tan table",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "alone"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "smaller",
+        "tan"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "under",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

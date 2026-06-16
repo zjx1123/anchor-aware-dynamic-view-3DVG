@@ -1,0 +1,36 @@
+{
+  "raw_query": "the door along the wall with the open door ( it is not the open door )",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "closed"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "adjacent"
+    },
+    {
+      "category": "door",
+      "attributes": [
+        "open"
+      ],
+      "relation_to_target": "along"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "along",
+      "object": "wall"
+    },
+    {
+      "subject": "door",
+      "relation": "not",
+      "object": "open door"
+    }
+  ],
+  "view_constraints": []
+}

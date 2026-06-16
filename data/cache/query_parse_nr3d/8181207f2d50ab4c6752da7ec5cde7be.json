@@ -1,0 +1,24 @@
+{
+  "raw_query": "the middle option near the paper towels",
+  "target": {
+    "category": "option",
+    "attributes": [
+      "middle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "paper towels",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "option",
+      "relation": "near",
+      "object": "paper towels"
+    }
+  ],
+  "view_constraints": []
+}

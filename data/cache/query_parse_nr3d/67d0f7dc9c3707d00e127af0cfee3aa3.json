@@ -1,0 +1,12 @@
+{
+  "raw_query": "the only office style chair in the room",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "office style"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

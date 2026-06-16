@@ -1,0 +1,24 @@
+{
+  "raw_query": "the door directly opposite the window",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "opposite"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "opposite",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "directly opposite"
+  ]
+}

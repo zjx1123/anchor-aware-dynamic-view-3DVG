@@ -1,0 +1,24 @@
+{
+  "raw_query": "the sink closest to the washing machine",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "washing machine",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "closest to",
+      "object": "washing machine"
+    }
+  ],
+  "view_constraints": []
+}

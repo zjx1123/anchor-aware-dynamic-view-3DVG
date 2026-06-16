@@ -1,0 +1,24 @@
+{
+  "raw_query": "in the bathtub the shorter towel",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "shorter"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathtub",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "in",
+      "object": "bathtub"
+    }
+  ],
+  "view_constraints": []
+}

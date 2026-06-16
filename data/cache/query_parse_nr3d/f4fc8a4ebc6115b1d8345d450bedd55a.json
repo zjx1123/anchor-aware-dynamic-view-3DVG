@@ -1,0 +1,26 @@
+{
+  "raw_query": "shelf up above the bed",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "up above"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "above",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": [
+    "up above"
+  ]
+}

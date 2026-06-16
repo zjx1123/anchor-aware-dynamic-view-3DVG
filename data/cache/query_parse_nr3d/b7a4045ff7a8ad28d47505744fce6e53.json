@@ -1,0 +1,24 @@
+{
+  "raw_query": "it is the brown table with a bag on it",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "brown"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bag",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bag",
+      "relation": "on",
+      "object": "table"
+    }
+  ],
+  "view_constraints": []
+}

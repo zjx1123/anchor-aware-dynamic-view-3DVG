@@ -1,0 +1,24 @@
+{
+  "raw_query": "the backpack closest to the windows",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "closest to",
+      "object": "windows"
+    }
+  ],
+  "view_constraints": []
+}

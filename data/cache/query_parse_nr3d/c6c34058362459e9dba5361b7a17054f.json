@@ -1,0 +1,27 @@
+{
+  "raw_query": "this is the round table by the closed white door",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "round"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "closed",
+        "white"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "next to",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

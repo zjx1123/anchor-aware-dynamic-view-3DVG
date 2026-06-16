@@ -1,0 +1,32 @@
+{
+  "raw_query": "the pillow is yellow and standing upright on the couch not laying down",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "yellow",
+      "standing upright"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on",
+      "object": "couch"
+    },
+    {
+      "subject": "pillow",
+      "relation": "not laying down",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": [
+    "standing upright"
+  ]
+}

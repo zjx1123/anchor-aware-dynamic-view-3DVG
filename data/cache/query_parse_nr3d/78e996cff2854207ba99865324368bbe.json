@@ -1,0 +1,18 @@
+{
+  "raw_query": "the bathroom stall with the toilet seat that is up",
+  "target": {
+    "category": "bathroom stall",
+    "attributes": [
+      "toilet seat is up"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "toilet seat",
+      "relation": "is",
+      "object": "up"
+    }
+  ],
+  "view_constraints": []
+}

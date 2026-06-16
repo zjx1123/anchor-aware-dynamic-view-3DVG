@@ -1,0 +1,34 @@
+{
+  "raw_query": "white item resting on top of paper towel dispenser close to the door",
+  "target": {
+    "category": "item",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "paper towel dispenser",
+      "attributes": [],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "white item",
+      "relation": "on top of",
+      "object": "paper towel dispenser"
+    },
+    {
+      "subject": "paper towel dispenser",
+      "relation": "close to",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

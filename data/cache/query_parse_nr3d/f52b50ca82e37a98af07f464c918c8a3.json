@@ -1,0 +1,28 @@
+{
+  "raw_query": "facing the wall with two pictures the picture on the right",
+  "target": {
+    "category": "picture",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "with two pictures"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "picture",
+      "relation": "on the right of",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "facing the wall with two pictures"
+  ]
+}

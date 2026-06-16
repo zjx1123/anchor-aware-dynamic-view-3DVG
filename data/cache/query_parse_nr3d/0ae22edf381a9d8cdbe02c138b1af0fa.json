@@ -1,0 +1,36 @@
+{
+  "raw_query": "choose the frame over the bed closest to the window",
+  "target": {
+    "category": "frame",
+    "attributes": [
+      "over the bed"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "closest to the window"
+      ],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "frame",
+      "relation": "over",
+      "object": "bed"
+    },
+    {
+      "subject": "bed",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

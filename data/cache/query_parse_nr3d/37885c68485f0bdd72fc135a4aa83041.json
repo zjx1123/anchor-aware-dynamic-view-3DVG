@@ -1,0 +1,24 @@
+{
+  "raw_query": "bathroom sink next to the toilet",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "bathroom"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "next to",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "the taller dresser across from the bed",
+  "target": {
+    "category": "dresser",
+    "attributes": [
+      "taller"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "across from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "dresser",
+      "relation": "across from",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

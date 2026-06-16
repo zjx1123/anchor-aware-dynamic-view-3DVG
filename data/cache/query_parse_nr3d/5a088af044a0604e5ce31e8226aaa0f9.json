@@ -1,0 +1,29 @@
+{
+  "raw_query": "the lamp on the stand with two remotes",
+  "target": {
+    "category": "lamp",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "stand",
+      "attributes": [
+        "with two remotes"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "lamp",
+      "relation": "on",
+      "object": "stand"
+    },
+    {
+      "subject": "stand",
+      "relation": "has",
+      "object": "two remotes"
+    }
+  ],
+  "view_constraints": []
+}

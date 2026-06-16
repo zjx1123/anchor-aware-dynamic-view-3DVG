@@ -1,0 +1,29 @@
+{
+  "raw_query": "middle of the bar directly above the toilet flushing part",
+  "target": {
+    "category": "bar",
+    "attributes": [
+      "middle",
+      "above toilet flushing part"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet",
+      "attributes": [
+        "flushing part"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bar",
+      "relation": "above",
+      "object": "toilet flushing part"
+    }
+  ],
+  "view_constraints": [
+    "directly above"
+  ]
+}

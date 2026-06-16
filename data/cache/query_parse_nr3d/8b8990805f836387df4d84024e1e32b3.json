@@ -1,0 +1,20 @@
+{
+  "raw_query": "the sink on the right hand side",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "on the right hand side"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "on",
+      "object": "right hand side"
+    }
+  ],
+  "view_constraints": [
+    "right hand side"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "the armchair facing the door",
+  "target": {
+    "category": "armchair",
+    "attributes": [
+      "facing the door"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "facing",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

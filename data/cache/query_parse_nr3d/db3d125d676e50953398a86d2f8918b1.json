@@ -1,0 +1,32 @@
+{
+  "raw_query": "select the curtain beside the chairs the one on your left",
+  "target": {
+    "category": "curtain",
+    "attributes": [
+      "beside the chairs",
+      "on your left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "curtain",
+      "relation": "beside",
+      "object": "chair"
+    },
+    {
+      "subject": "curtain",
+      "relation": "on left of",
+      "object": "user"
+    }
+  ],
+  "view_constraints": [
+    "left side of user"
+  ]
+}

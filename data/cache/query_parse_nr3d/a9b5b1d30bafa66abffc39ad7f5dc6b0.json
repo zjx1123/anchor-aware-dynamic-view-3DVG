@@ -1,0 +1,26 @@
+{
+  "raw_query": "box surrounds door with glass inset",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "surrounds"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "with glass inset"
+      ],
+      "relation_to_target": "surrounded by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "surrounds",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

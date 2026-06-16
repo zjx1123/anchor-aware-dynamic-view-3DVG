@@ -1,0 +1,33 @@
+{
+  "raw_query": "the light in the middle of the room on the ceiling",
+  "target": {
+    "category": "light",
+    "attributes": [
+      "in the middle of the room",
+      "on the ceiling"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "light",
+      "relation": "located in",
+      "object": "room"
+    },
+    {
+      "subject": "light",
+      "relation": "attached to",
+      "object": "ceiling"
+    }
+  ],
+  "view_constraints": [
+    "top view",
+    "center of room"
+  ]
+}

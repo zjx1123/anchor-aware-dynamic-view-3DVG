@@ -1,0 +1,26 @@
+{
+  "raw_query": "the blue trash can to the left of the grey trash can",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "blue"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [
+        "grey"
+      ],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "blue trash can",
+      "relation": "left of",
+      "object": "grey trash can"
+    }
+  ],
+  "view_constraints": []
+}

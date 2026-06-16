@@ -1,0 +1,26 @@
+{
+  "raw_query": "this is the angled bookshelf far away from the corner of bookshelves",
+  "target": {
+    "category": "bookshelf",
+    "attributes": [
+      "angled"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bookshelf",
+      "attributes": [
+        "corner"
+      ],
+      "relation_to_target": "far away from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bookshelf",
+      "relation": "far away from",
+      "object": "corner of bookshelves"
+    }
+  ],
+  "view_constraints": []
+}

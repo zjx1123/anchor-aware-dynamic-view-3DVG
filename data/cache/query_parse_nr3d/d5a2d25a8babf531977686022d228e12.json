@@ -1,0 +1,34 @@
+{
+  "raw_query": "when facing the long grey counter it is the window in the middle",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "in the middle"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [
+        "long",
+        "grey"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "is in",
+      "object": "middle"
+    },
+    {
+      "subject": "observer",
+      "relation": "facing",
+      "object": "counter"
+    }
+  ],
+  "view_constraints": [
+    "facing the long grey counter"
+  ]
+}

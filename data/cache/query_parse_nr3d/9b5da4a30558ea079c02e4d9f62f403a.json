@@ -1,0 +1,24 @@
+{
+  "raw_query": "choose the black backpack hanging on the wall",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "black"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "hanging on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "hanging on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": []
+}

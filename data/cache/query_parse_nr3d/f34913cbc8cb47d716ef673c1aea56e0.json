@@ -1,0 +1,35 @@
+{
+  "raw_query": "chair against the wall closest to the window",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "against the wall",
+      "closest to the window"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [],
+      "relation_to_target": "against"
+    },
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "wall"
+    },
+    {
+      "subject": "chair",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,32 @@
+{
+  "raw_query": "toilet paper located directly below the metal holding bar and directly to the left of the toilet",
+  "target": {
+    "category": "toilet paper",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "metal holding bar",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "toilet",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet paper",
+      "relation": "below",
+      "object": "metal holding bar"
+    },
+    {
+      "subject": "toilet paper",
+      "relation": "left of",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": []
+}

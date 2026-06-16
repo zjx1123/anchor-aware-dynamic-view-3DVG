@@ -1,0 +1,24 @@
+{
+  "raw_query": "the book closest to the windows",
+  "target": {
+    "category": "book",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "book",
+      "relation": "closest to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,31 @@
+{
+  "raw_query": "the window that does not have a computer facing directly away from it",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "does not have a computer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "computer",
+      "attributes": [],
+      "relation_to_target": "facing directly away from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "does not have",
+      "object": "computer"
+    },
+    {
+      "subject": "computer",
+      "relation": "facing directly away from",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "facing directly away from"
+  ]
+}

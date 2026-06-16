@@ -1,0 +1,24 @@
+{
+  "raw_query": "window with a white frame by the shoes",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "white frame"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shoes",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "by",
+      "object": "shoes"
+    }
+  ],
+  "view_constraints": []
+}

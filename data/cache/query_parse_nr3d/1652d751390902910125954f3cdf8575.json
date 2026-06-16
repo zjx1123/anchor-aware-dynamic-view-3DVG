@@ -1,0 +1,37 @@
+{
+  "raw_query": "when standing in the middle of the room facing the plants the correct one is on the left above the tv",
+  "target": {
+    "category": "object",
+    "attributes": [
+      "correct one"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "plants",
+      "attributes": [],
+      "relation_to_target": "facing"
+    },
+    {
+      "category": "tv",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "target",
+      "relation": "on the left of",
+      "object": "plants"
+    },
+    {
+      "subject": "target",
+      "relation": "above",
+      "object": "tv"
+    }
+  ],
+  "view_constraints": [
+    "standing in the middle of the room",
+    "facing the plants"
+  ]
+}

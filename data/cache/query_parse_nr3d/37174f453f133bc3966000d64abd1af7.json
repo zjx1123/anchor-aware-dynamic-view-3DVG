@@ -1,0 +1,30 @@
+{
+  "raw_query": "the smallest table its has no chairs under next to it",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "smallest",
+      "no chairs under"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "under"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "has no",
+      "object": "chairs under"
+    },
+    {
+      "subject": "table",
+      "relation": "next to",
+      "object": "it"
+    }
+  ],
+  "view_constraints": []
+}

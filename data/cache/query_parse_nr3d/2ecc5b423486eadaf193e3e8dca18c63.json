@@ -1,0 +1,32 @@
+{
+  "raw_query": "backpack is farthest away from window closest to the bookshelf",
+  "target": {
+    "category": "backpack",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "farthest away from"
+    },
+    {
+      "category": "bookshelf",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "farthest away from",
+      "object": "window"
+    },
+    {
+      "subject": "window",
+      "relation": "closest to",
+      "object": "bookshelf"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,38 @@
+{
+  "raw_query": "If you were standing in front of the sink, facing away from the sink, out of the two chairs closest to you it's the one on the right",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "right",
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right of",
+      "object": "other chair"
+    },
+    {
+      "subject": "chair",
+      "relation": "closest to",
+      "object": "person"
+    },
+    {
+      "subject": "person",
+      "relation": "facing away from",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": [
+    "facing away from sink",
+    "right side"
+  ]
+}

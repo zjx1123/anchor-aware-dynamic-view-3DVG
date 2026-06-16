@@ -1,0 +1,32 @@
+{
+  "raw_query": "find the backpack that is in between the desk and the fan",
+  "target": {
+    "category": "backpack",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "left"
+    },
+    {
+      "category": "fan",
+      "attributes": [],
+      "relation_to_target": "right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "between",
+      "object": "desk"
+    },
+    {
+      "subject": "backpack",
+      "relation": "between",
+      "object": "fan"
+    }
+  ],
+  "view_constraints": []
+}

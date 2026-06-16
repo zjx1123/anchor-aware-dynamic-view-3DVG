@@ -1,0 +1,26 @@
+{
+  "raw_query": "much taller shelf of the two",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "much taller"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shelf",
+      "attributes": [
+        "taller"
+      ],
+      "relation_to_target": "comparative"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "comparative",
+      "object": "shelf"
+    }
+  ],
+  "view_constraints": []
+}

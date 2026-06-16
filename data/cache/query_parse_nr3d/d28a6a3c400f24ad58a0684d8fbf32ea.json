@@ -1,0 +1,38 @@
+{
+  "raw_query": "if you are facing the monitors select the mouse that goes with the computer on the left",
+  "target": {
+    "category": "mouse",
+    "attributes": [
+      "goes with the computer on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [],
+      "relation_to_target": "facing"
+    },
+    {
+      "category": "computer",
+      "attributes": [
+        "on the left"
+      ],
+      "relation_to_target": "associated with"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "you",
+      "relation": "facing",
+      "object": "monitors"
+    },
+    {
+      "subject": "mouse",
+      "relation": "goes with",
+      "object": "computer on the left"
+    }
+  ],
+  "view_constraints": [
+    "facing the monitors"
+  ]
+}

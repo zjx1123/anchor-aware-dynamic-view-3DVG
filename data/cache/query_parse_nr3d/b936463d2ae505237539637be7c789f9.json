@@ -1,0 +1,24 @@
+{
+  "raw_query": "the laptop by the chair with the floral pattern",
+  "target": {
+    "category": "laptop",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "floral pattern"
+      ],
+      "relation_to_target": "by"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "laptop",
+      "relation": "by",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

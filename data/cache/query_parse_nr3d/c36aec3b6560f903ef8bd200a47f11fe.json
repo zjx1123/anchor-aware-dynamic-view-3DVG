@@ -1,0 +1,29 @@
+{
+  "raw_query": "i am the round table in the corner of the room",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "round"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "room",
+      "attributes": [],
+      "relation_to_target": "corner"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in",
+      "object": "corner"
+    },
+    {
+      "subject": "corner",
+      "relation": "of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": []
+}

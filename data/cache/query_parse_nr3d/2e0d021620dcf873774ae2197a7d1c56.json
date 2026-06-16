@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the plants the plant on the right",
+  "target": {
+    "category": "plant",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "plants",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "plant",
+      "relation": "on the right of",
+      "object": "plants"
+    }
+  ],
+  "view_constraints": [
+    "facing the plants"
+  ]
+}

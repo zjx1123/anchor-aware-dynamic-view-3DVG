@@ -1,0 +1,33 @@
+{
+  "raw_query": "facing the foot of the bed the pillow on the right",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "foot"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on the right of",
+      "object": "bed"
+    },
+    {
+      "subject": "view",
+      "relation": "facing",
+      "object": "foot of bed"
+    }
+  ],
+  "view_constraints": [
+    "facing the foot of the bed"
+  ]
+}

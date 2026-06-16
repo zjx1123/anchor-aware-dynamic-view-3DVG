@@ -1,0 +1,26 @@
+{
+  "raw_query": "looking straight at the orange towel the desk on the right",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "orange"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "on the right"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "on",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": [
+    "looking straight at"
+  ]
+}

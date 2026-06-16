@@ -1,0 +1,25 @@
+{
+  "raw_query": "it is the chair by itself not near the desk",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "by itself",
+      "not near the desk"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "not near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "not near",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

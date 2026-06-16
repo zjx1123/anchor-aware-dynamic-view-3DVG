@@ -1,0 +1,24 @@
+{
+  "raw_query": "the doors closest to the chair",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "closest to",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,38 @@
+{
+  "raw_query": "face the door the table you want is across the room from the door in the middle of the other two tables",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "you want"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "across the room from"
+    },
+    {
+      "category": "table",
+      "attributes": [
+        "other two"
+      ],
+      "relation_to_target": "in the middle of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "across the room from",
+      "object": "door"
+    },
+    {
+      "subject": "table",
+      "relation": "in the middle of",
+      "object": "other two tables"
+    }
+  ],
+  "view_constraints": [
+    "face the door"
+  ]
+}

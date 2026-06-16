@@ -1,0 +1,16 @@
+{
+  "raw_query": "select the trash can at the back middle one",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "back",
+      "middle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "back",
+    "middle"
+  ]
+}

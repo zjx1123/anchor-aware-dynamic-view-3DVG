@@ -1,0 +1,24 @@
+{
+  "raw_query": "the shoes farthest from the front door",
+  "target": {
+    "category": "shoes",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "front"
+      ],
+      "relation_to_target": "farthest from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shoes",
+      "relation": "farthest from",
+      "object": "front door"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,28 @@
+{
+  "raw_query": "when facing the wall of bookshelves choose the box to the left",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "to the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "of bookshelves"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "to the left of",
+      "object": "wall of bookshelves"
+    }
+  ],
+  "view_constraints": [
+    "facing the wall of bookshelves"
+  ]
+}

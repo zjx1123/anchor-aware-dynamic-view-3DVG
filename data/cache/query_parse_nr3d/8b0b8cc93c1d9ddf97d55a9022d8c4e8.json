@@ -1,0 +1,32 @@
+{
+  "raw_query": "facing the shelves choose the chair on the right closest to you",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "on the right",
+      "closest to you"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "on the right of",
+      "object": "shelves"
+    },
+    {
+      "subject": "chair",
+      "relation": "closest to",
+      "object": "you"
+    }
+  ],
+  "view_constraints": [
+    "facing the shelves"
+  ]
+}

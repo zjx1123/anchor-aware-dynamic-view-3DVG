@@ -1,0 +1,14 @@
+{
+  "raw_query": "the cup in the middle",
+  "target": {
+    "category": "cup",
+    "attributes": [
+      "in the middle"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "middle"
+  ]
+}

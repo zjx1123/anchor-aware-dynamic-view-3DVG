@@ -1,0 +1,29 @@
+{
+  "raw_query": "of the five monitors facing you the keyboard that is directly in front of the center monitor",
+  "target": {
+    "category": "keyboard",
+    "attributes": [
+      "directly in front of center monitor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [
+        "center",
+        "facing you"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "keyboard",
+      "relation": "in front of",
+      "object": "center monitor"
+    }
+  ],
+  "view_constraints": [
+    "facing you"
+  ]
+}

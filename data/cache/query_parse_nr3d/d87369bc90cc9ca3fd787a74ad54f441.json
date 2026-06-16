@@ -1,0 +1,32 @@
+{
+  "raw_query": "from the foot of the bed choose the dresser that is to your right it is the shorter dresser with eight drawers",
+  "target": {
+    "category": "dresser",
+    "attributes": [
+      "shorter",
+      "eight drawers"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "foot of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "dresser",
+      "relation": "to the right of",
+      "object": "bed"
+    },
+    {
+      "subject": "dresser",
+      "relation": "shorter than",
+      "object": "other dresser"
+    }
+  ],
+  "view_constraints": [
+    "from the foot of the bed"
+  ]
+}

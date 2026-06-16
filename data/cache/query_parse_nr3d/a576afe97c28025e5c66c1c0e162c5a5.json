@@ -1,0 +1,41 @@
+{
+  "raw_query": "printer on left shelving on right you want the back option of the two boxes",
+  "target": {
+    "category": "printer",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "shelving",
+      "attributes": [
+        "left"
+      ],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "box",
+      "attributes": [
+        "back",
+        "two"
+      ],
+      "relation_to_target": "option of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "printer",
+      "relation": "on",
+      "object": "shelving"
+    },
+    {
+      "subject": "printer",
+      "relation": "option of",
+      "object": "box"
+    }
+  ],
+  "view_constraints": [
+    "left shelving",
+    "right",
+    "back option"
+  ]
+}

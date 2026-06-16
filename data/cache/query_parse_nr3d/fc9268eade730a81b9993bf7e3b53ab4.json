@@ -1,0 +1,24 @@
+{
+  "raw_query": "the cabinets above the sink",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "above the sink"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "above",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

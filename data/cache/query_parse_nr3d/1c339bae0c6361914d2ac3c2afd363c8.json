@@ -1,0 +1,22 @@
+{
+  "raw_query": "there is a table in front of this armchair",
+  "target": {
+    "category": "table",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "armchair",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "armchair"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,34 @@
+{
+  "raw_query": "the blue bag on top of the end table next to the couch",
+  "target": {
+    "category": "bag",
+    "attributes": [
+      "blue"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "end table",
+      "attributes": [],
+      "relation_to_target": "under"
+    },
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bag",
+      "relation": "on top of",
+      "object": "end table"
+    },
+    {
+      "subject": "end table",
+      "relation": "next to",
+      "object": "couch"
+    }
+  ],
+  "view_constraints": []
+}

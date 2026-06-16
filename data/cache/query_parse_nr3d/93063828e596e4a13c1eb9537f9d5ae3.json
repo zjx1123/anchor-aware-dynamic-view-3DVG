@@ -1,0 +1,24 @@
+{
+  "raw_query": "the smaller window near the shutters",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "smaller"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shutters",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "near",
+      "object": "shutters"
+    }
+  ],
+  "view_constraints": []
+}

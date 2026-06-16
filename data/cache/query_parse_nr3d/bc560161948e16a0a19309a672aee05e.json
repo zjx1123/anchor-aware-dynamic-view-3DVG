@@ -1,0 +1,25 @@
+{
+  "raw_query": "choose the backpack in the corner closer to the window",
+  "target": {
+    "category": "backpack",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "in corner closer to",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "corner",
+    "closer to window"
+  ]
+}

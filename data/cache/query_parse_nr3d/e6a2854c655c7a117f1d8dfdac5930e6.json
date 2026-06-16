@@ -1,0 +1,13 @@
+{
+  "raw_query": "the box stacked on top",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "stacked",
+      "on top"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

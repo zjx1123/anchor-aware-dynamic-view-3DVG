@@ -1,0 +1,37 @@
+{
+  "raw_query": "standing at the window facing the doors it is the one on the left",
+  "target": {
+    "category": "object",
+    "attributes": [
+      "on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "facing"
+    },
+    {
+      "category": "doors",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "facing",
+      "object": "doors"
+    },
+    {
+      "subject": "target",
+      "relation": "on the left of",
+      "object": "doors"
+    }
+  ],
+  "view_constraints": [
+    "standing at the window",
+    "facing the doors"
+  ]
+}

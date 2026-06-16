@@ -1,0 +1,28 @@
+{
+  "raw_query": "if you are standing at the foot of the bed choose the pillow on the left",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "foot"
+      ],
+      "relation_to_target": "standing at"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on the left of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": [
+    "standing at the foot of the bed"
+  ]
+}

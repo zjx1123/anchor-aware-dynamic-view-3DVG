@@ -1,0 +1,28 @@
+{
+  "raw_query": "the larger green box underneath the smaller green box",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "larger",
+      "green"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "box",
+      "attributes": [
+        "smaller",
+        "green"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "larger green box",
+      "relation": "underneath",
+      "object": "smaller green box"
+    }
+  ],
+  "view_constraints": []
+}

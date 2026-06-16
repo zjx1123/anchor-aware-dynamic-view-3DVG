@@ -1,0 +1,24 @@
+{
+  "raw_query": "trash can closest to the copier",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "copier",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "closest to",
+      "object": "copier"
+    }
+  ],
+  "view_constraints": []
+}

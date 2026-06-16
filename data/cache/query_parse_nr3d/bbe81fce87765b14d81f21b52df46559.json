@@ -1,0 +1,25 @@
+{
+  "raw_query": "the window in the back of the room ( assuming the blackboard is the front ) directly across the room from the board",
+  "target": {
+    "category": "window",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "blackboard",
+      "attributes": [],
+      "relation_to_target": "front"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "across from",
+      "object": "blackboard"
+    }
+  ],
+  "view_constraints": [
+    "back of the room",
+    "directly across from the board"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "raw_query": "the kitchen cabinet located above the oven",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "kitchen",
+      "above oven"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "oven",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "above",
+      "object": "oven"
+    }
+  ],
+  "view_constraints": []
+}

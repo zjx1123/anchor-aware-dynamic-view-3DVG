@@ -1,0 +1,31 @@
+{
+  "raw_query": "the window in the middle of the room next to the black floor mat",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "in the middle of the room"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "floor mat",
+      "attributes": [
+        "black"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "next to",
+      "object": "floor mat"
+    },
+    {
+      "subject": "window",
+      "relation": "in the middle of",
+      "object": "room"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,27 @@
+{
+  "raw_query": "if facing the wall with the yellow page and mirror its the door on the right",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "wall",
+      "attributes": [
+        "yellow page",
+        "mirror"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "on the right of",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "facing the wall with the yellow page and mirror"
+  ]
+}

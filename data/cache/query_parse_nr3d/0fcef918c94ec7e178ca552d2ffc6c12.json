@@ -1,0 +1,26 @@
+{
+  "raw_query": "look for the window that is closer to the olive green sofa",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "closer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sofa",
+      "attributes": [
+        "olive green"
+      ],
+      "relation_to_target": "closer to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "closer to",
+      "object": "sofa"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,25 @@
+{
+  "raw_query": "the desk that has something teal light blue sitting on it",
+  "target": {
+    "category": "desk",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "object",
+      "attributes": [
+        "teal",
+        "light blue"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "object",
+      "relation": "on",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

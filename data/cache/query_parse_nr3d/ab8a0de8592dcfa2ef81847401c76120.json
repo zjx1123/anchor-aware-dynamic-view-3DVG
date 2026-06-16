@@ -1,0 +1,44 @@
+{
+  "raw_query": "the chair is in front of the table brown cabinet by sink",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "cabinet",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "table"
+    },
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "cabinet"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "by",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

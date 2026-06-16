@@ -1,0 +1,31 @@
+{
+  "raw_query": "standing at the foot of the bed looking at the head of the bed it is the pillow on the left",
+  "target": {
+    "category": "pillow",
+    "attributes": [
+      "on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "foot of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "on the left of",
+      "object": "head of the bed"
+    },
+    {
+      "subject": "observer",
+      "relation": "standing at",
+      "object": "foot of the bed"
+    }
+  ],
+  "view_constraints": [
+    "looking at the head of the bed"
+  ]
+}

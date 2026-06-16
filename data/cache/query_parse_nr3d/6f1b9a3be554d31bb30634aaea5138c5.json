@@ -1,0 +1,29 @@
+{
+  "raw_query": "the trash can in the corner with the blue bag",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "blue bag"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "corner",
+      "attributes": [],
+      "relation_to_target": "location"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "in",
+      "object": "corner"
+    },
+    {
+      "subject": "trash can",
+      "relation": "has",
+      "object": "blue bag"
+    }
+  ],
+  "view_constraints": []
+}

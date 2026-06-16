@@ -1,0 +1,22 @@
+{
+  "raw_query": "box in front of another",
+  "target": {
+    "category": "box",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "box",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "in front of",
+      "object": "box"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,29 @@
+{
+  "raw_query": "the monitor on the floor next to the desk",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "on the floor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on",
+      "object": "floor"
+    },
+    {
+      "subject": "monitor",
+      "relation": "next to",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,26 @@
+{
+  "raw_query": "the chair against the whiteboard on the right side",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "whiteboard",
+      "attributes": [
+        "on the right side"
+      ],
+      "relation_to_target": "against"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "against",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": [
+    "right side"
+  ]
+}

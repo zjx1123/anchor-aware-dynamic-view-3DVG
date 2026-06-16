@@ -1,0 +1,24 @@
+{
+  "raw_query": "the window closest to the recycling bin",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "closest"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "recycling bin",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "closest to",
+      "object": "recycling bin"
+    }
+  ],
+  "view_constraints": []
+}

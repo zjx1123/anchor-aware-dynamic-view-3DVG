@@ -1,0 +1,33 @@
+{
+  "raw_query": "when facing the three windows you need to choose the one all the way to the left",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "all the way to the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [
+        "three windows"
+      ],
+      "relation_to_target": "part of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "target window",
+      "relation": "is located at",
+      "object": "leftmost position among three windows"
+    },
+    {
+      "subject": "three windows",
+      "relation": "contains",
+      "object": "target window"
+    }
+  ],
+  "view_constraints": [
+    "facing the three windows"
+  ]
+}

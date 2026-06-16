@@ -1,0 +1,26 @@
+{
+  "raw_query": "the correct door does not have the couch infront of it and has vertical lines on it",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "has vertical lines"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "couch",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "in front of",
+      "object": "door"
+    }
+  ],
+  "view_constraints": [
+    "the correct door does not have the couch in front of it"
+  ]
+}

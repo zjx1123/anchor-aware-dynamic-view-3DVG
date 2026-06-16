@@ -1,0 +1,37 @@
+{
+  "raw_query": "it is the large curtain on the window with a small white table in front of it",
+  "target": {
+    "category": "curtain",
+    "attributes": [
+      "large"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "behind"
+    },
+    {
+      "category": "table",
+      "attributes": [
+        "small",
+        "white"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "curtain",
+      "relation": "on",
+      "object": "window"
+    },
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "curtain"
+    }
+  ],
+  "view_constraints": []
+}

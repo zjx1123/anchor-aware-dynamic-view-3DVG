@@ -1,0 +1,34 @@
+{
+  "raw_query": "this desk is longer and located at the foot of the bed it is located on the opposite wall from the door",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "longer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "at the foot of"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "on the opposite wall from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "desk",
+      "relation": "located at",
+      "object": "foot of bed"
+    },
+    {
+      "subject": "desk",
+      "relation": "located on opposite wall from",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

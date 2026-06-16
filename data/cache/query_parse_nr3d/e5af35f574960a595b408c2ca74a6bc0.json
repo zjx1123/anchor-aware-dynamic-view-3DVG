@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the sinks choose the one on the right",
+  "target": {
+    "category": "sink",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sinks",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "on the right of",
+      "object": "sinks"
+    }
+  ],
+  "view_constraints": [
+    "facing the sinks"
+  ]
+}

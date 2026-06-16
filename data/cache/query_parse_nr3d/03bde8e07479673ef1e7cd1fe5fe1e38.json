@@ -1,0 +1,27 @@
+{
+  "raw_query": "from under the room it is the shoes under the bed completely",
+  "target": {
+    "category": "shoes",
+    "attributes": [
+      "under the bed",
+      "completely"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shoes",
+      "relation": "under",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": [
+    "under the room"
+  ]
+}

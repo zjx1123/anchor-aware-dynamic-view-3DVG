@@ -1,0 +1,22 @@
+{
+  "raw_query": "the pillow is directly to the right of the lamp",
+  "target": {
+    "category": "pillow",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "lamp",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pillow",
+      "relation": "directly to the right of",
+      "object": "lamp"
+    }
+  ],
+  "view_constraints": []
+}

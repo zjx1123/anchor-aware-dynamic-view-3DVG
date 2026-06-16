@@ -1,0 +1,26 @@
+{
+  "raw_query": "when facing the monitors it is the monitor on the left",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitors",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on the left of",
+      "object": "monitors"
+    }
+  ],
+  "view_constraints": [
+    "facing the monitors"
+  ]
+}

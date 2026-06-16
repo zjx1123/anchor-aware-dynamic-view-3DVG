@@ -1,0 +1,24 @@
+{
+  "raw_query": "the towel on the left side of the oven door",
+  "target": {
+    "category": "towel",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "oven",
+      "attributes": [],
+      "relation_to_target": "left side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "on left side of",
+      "object": "oven door"
+    }
+  ],
+  "view_constraints": [
+    "left side of oven door"
+  ]
+}

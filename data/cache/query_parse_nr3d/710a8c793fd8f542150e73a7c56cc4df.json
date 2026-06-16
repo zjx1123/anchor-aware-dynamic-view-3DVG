@@ -1,0 +1,37 @@
+{
+  "raw_query": "if looking at the window from the door the desk on the right",
+  "target": {
+    "category": "desk",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "viewed from"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "viewpoint"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "viewpoint",
+      "object": "window"
+    },
+    {
+      "subject": "desk",
+      "relation": "on the right of",
+      "object": "window"
+    }
+  ],
+  "view_constraints": [
+    "from the door",
+    "looking at the window"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "raw_query": "the chair is underneath the brown table in front bed",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "brown"
+      ],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "underneath",
+      "object": "table"
+    },
+    {
+      "subject": "table",
+      "relation": "in front of",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

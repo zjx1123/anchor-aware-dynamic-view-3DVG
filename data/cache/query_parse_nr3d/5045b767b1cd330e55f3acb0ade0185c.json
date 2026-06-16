@@ -1,0 +1,35 @@
+{
+  "raw_query": "find the sign that is under the cabinet and farthest away from the sink",
+  "target": {
+    "category": "sign",
+    "attributes": [
+      "under the cabinet",
+      "farthest away from the sink"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "cabinet",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "farthest from"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sign",
+      "relation": "under",
+      "object": "cabinet"
+    },
+    {
+      "subject": "sign",
+      "relation": "farthest from",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

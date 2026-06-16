@@ -1,0 +1,26 @@
+{
+  "raw_query": "pick the grey chair next to the green one",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "grey"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "green"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "grey chair",
+      "relation": "next to",
+      "object": "green chair"
+    }
+  ],
+  "view_constraints": []
+}

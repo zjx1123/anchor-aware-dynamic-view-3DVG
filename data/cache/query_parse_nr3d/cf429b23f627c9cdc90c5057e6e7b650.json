@@ -1,0 +1,27 @@
+{
+  "raw_query": "the middle rolling cart white in color next to the teal and tan",
+  "target": {
+    "category": "rolling cart",
+    "attributes": [
+      "middle",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "object",
+      "attributes": [
+        "teal and tan"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rolling cart",
+      "relation": "next to",
+      "object": "teal and tan"
+    }
+  ],
+  "view_constraints": []
+}

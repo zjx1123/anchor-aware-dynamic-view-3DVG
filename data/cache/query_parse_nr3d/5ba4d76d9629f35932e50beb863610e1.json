@@ -1,0 +1,26 @@
+{
+  "raw_query": "the whiteboard that has a blue note on top",
+  "target": {
+    "category": "whiteboard",
+    "attributes": [
+      "has blue note on top"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "note",
+      "attributes": [
+        "blue"
+      ],
+      "relation_to_target": "on top of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "note",
+      "relation": "on top of",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": []
+}

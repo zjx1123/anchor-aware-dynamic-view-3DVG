@@ -1,0 +1,12 @@
+{
+  "raw_query": "the chair with nothing colorful around it",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "with nothing colorful around it"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

@@ -1,0 +1,46 @@
+{
+  "raw_query": "the sink is to the right of the metal thing on the wall and on the right of the sink on the wall is so meting white and elongated also to the right of the sink are plastic containers",
+  "target": {
+    "category": "sink",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "metal thing",
+      "attributes": [
+        "on the wall"
+      ],
+      "relation_to_target": "to the left of"
+    },
+    {
+      "category": "white elongated thing",
+      "attributes": [
+        "on the wall"
+      ],
+      "relation_to_target": "to the right of"
+    },
+    {
+      "category": "plastic containers",
+      "attributes": [],
+      "relation_to_target": "to the right of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sink",
+      "relation": "to the right of",
+      "object": "metal thing on the wall"
+    },
+    {
+      "subject": "white elongated thing on the wall",
+      "relation": "to the right of",
+      "object": "sink"
+    },
+    {
+      "subject": "plastic containers",
+      "relation": "to the right of",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

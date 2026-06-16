@@ -1,0 +1,12 @@
+{
+  "raw_query": "the box that is higher",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "higher"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

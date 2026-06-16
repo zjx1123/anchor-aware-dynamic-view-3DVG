@@ -1,0 +1,24 @@
+{
+  "raw_query": "the door that is directly south of the arm chair",
+  "target": {
+    "category": "door",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "arm chair",
+      "attributes": [],
+      "relation_to_target": "north"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "south of",
+      "object": "arm chair"
+    }
+  ],
+  "view_constraints": [
+    "south"
+  ]
+}

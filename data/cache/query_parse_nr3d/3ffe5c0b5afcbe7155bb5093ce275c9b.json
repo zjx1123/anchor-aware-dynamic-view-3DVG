@@ -1,0 +1,32 @@
+{
+  "raw_query": "the chair in front of the window and between the beds",
+  "target": {
+    "category": "chair",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "in front of"
+    },
+    {
+      "category": "bed",
+      "attributes": [],
+      "relation_to_target": "between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "window"
+    },
+    {
+      "subject": "chair",
+      "relation": "between",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

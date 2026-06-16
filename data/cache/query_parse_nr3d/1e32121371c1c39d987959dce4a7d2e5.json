@@ -1,0 +1,34 @@
+{
+  "raw_query": "the white monitor farthest from the trash cans which are in between the two doors",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "trash can",
+      "attributes": [],
+      "relation_to_target": "farthest from"
+    },
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "in between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "in between",
+      "object": "door"
+    },
+    {
+      "subject": "monitor",
+      "relation": "farthest from",
+      "object": "trash can"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,27 @@
+{
+  "raw_query": "the tall narrow window next to the exit door",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "tall",
+      "narrow"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [
+        "exit"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "next to",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "the cabinet on the left end of the long row of chairs",
+  "target": {
+    "category": "cabinet",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "long row"
+      ],
+      "relation_to_target": "left end"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "on left end of",
+      "object": "long row of chairs"
+    }
+  ],
+  "view_constraints": []
+}

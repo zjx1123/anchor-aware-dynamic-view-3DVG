@@ -1,0 +1,24 @@
+{
+  "raw_query": "large cabinet that is not above the desk",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "large"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "not above",
+      "object": "desk"
+    }
+  ],
+  "view_constraints": []
+}

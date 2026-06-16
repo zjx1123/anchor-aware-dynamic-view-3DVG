@@ -1,0 +1,33 @@
+{
+  "raw_query": "the artwork directly above the bed nearest the bathroom",
+  "target": {
+    "category": "artwork",
+    "attributes": [
+      "directly above"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "nearest the bathroom"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "artwork",
+      "relation": "above",
+      "object": "bed"
+    },
+    {
+      "subject": "bed",
+      "relation": "nearest",
+      "object": "bathroom"
+    }
+  ],
+  "view_constraints": [
+    "directly above"
+  ]
+}

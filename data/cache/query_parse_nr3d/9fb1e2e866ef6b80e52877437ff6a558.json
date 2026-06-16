@@ -1,0 +1,26 @@
+{
+  "raw_query": "facing the refrigerator the chair to the far right",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "to the far right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "refrigerator",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "to the far right of",
+      "object": "refrigerator"
+    }
+  ],
+  "view_constraints": [
+    "facing the refrigerator"
+  ]
+}

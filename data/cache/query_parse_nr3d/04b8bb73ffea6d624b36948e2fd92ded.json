@@ -1,0 +1,33 @@
+{
+  "raw_query": "it is the door located in the corner of the room next to the long table",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "located in the corner of the room"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "long"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "located in",
+      "object": "corner of the room"
+    },
+    {
+      "subject": "door",
+      "relation": "next to",
+      "object": "long table"
+    }
+  ],
+  "view_constraints": [
+    "corner of the room"
+  ]
+}

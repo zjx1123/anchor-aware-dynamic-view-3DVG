@@ -1,0 +1,12 @@
+{
+  "raw_query": "choose the glass doors",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "glass"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

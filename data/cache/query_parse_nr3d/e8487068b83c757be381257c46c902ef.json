@@ -1,0 +1,31 @@
+{
+  "raw_query": "the printer directly in front of the window closest to the corner of the room",
+  "target": {
+    "category": "printer",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [
+        "closest to the corner of the room"
+      ],
+      "relation_to_target": "in front of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "printer",
+      "relation": "in front of",
+      "object": "window"
+    },
+    {
+      "subject": "window",
+      "relation": "closest to",
+      "object": "corner of the room"
+    }
+  ],
+  "view_constraints": [
+    "directly in front"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "raw_query": "the tall set of shelves in the corner",
+  "target": {
+    "category": "shelves",
+    "attributes": [
+      "tall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "corner",
+      "attributes": [],
+      "relation_to_target": "in"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelves",
+      "relation": "in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,30 @@
+{
+  "raw_query": "the longer rail farthest from sink",
+  "target": {
+    "category": "rail",
+    "attributes": [
+      "longer",
+      "farthest from sink"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "reference point"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rail",
+      "relation": "is farthest from",
+      "object": "sink"
+    },
+    {
+      "subject": "rail",
+      "relation": "is longer than",
+      "object": "other rail"
+    }
+  ],
+  "view_constraints": []
+}

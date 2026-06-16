@@ -1,0 +1,24 @@
+{
+  "raw_query": "the cabinets above the printer",
+  "target": {
+    "category": "cabinets",
+    "attributes": [
+      "above the printer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "printer",
+      "attributes": [],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinets",
+      "relation": "above",
+      "object": "printer"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,34 @@
+{
+  "raw_query": "this toilet is the one with the seat up and is in the stall closest to the sink",
+  "target": {
+    "category": "toilet",
+    "attributes": [
+      "seat up"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "toilet",
+      "relation": "has",
+      "object": "seat up"
+    },
+    {
+      "subject": "toilet",
+      "relation": "in",
+      "object": "stall"
+    },
+    {
+      "subject": "stall",
+      "relation": "closest to",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

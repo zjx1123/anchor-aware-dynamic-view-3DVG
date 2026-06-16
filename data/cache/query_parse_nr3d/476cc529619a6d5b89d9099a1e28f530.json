@@ -1,0 +1,24 @@
+{
+  "raw_query": "if you watching tv the box is to the right",
+  "target": {
+    "category": "box",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "tv",
+      "attributes": [],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "right of",
+      "object": "tv"
+    }
+  ],
+  "view_constraints": [
+    "watching tv"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "raw_query": "the garbage can and not recycling bin",
+  "target": {
+    "category": "garbage can",
+    "attributes": [
+      "not recycling bin"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

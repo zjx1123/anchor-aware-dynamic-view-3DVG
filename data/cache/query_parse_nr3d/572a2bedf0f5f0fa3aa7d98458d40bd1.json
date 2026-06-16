@@ -1,0 +1,32 @@
+{
+  "raw_query": "bottom cabinet with a printer next to the standing fan",
+  "target": {
+    "category": "cabinet",
+    "attributes": [
+      "bottom",
+      "with a printer"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "fan",
+      "attributes": [
+        "standing"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cabinet",
+      "relation": "has",
+      "object": "printer"
+    },
+    {
+      "subject": "cabinet",
+      "relation": "next to",
+      "object": "fan"
+    }
+  ],
+  "view_constraints": []
+}

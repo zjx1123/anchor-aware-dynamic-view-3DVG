@@ -1,0 +1,36 @@
+{
+  "raw_query": "the right storage bin on the floor under the clock",
+  "target": {
+    "category": "storage bin",
+    "attributes": [
+      "right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "clock",
+      "attributes": [],
+      "relation_to_target": "above"
+    },
+    {
+      "category": "floor",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "storage bin",
+      "relation": "under",
+      "object": "clock"
+    },
+    {
+      "subject": "storage bin",
+      "relation": "on",
+      "object": "floor"
+    }
+  ],
+  "view_constraints": [
+    "right"
+  ]
+}

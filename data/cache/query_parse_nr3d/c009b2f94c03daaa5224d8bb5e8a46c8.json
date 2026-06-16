@@ -1,0 +1,21 @@
+{
+  "raw_query": "the small blue couch that is on the end",
+  "target": {
+    "category": "couch",
+    "attributes": [
+      "small",
+      "blue"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "on",
+      "object": "end"
+    }
+  ],
+  "view_constraints": [
+    "end"
+  ]
+}

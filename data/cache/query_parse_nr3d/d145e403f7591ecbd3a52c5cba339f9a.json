@@ -1,0 +1,12 @@
+{
+  "raw_query": "the curtains are grey",
+  "target": {
+    "category": "curtains",
+    "attributes": [
+      "grey"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": []
+}

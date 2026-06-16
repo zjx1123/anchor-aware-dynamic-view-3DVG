@@ -1,0 +1,24 @@
+{
+  "raw_query": "choose the round table that is not in the corner",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "round"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "corner",
+      "attributes": [],
+      "relation_to_target": "not in"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "not in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": []
+}

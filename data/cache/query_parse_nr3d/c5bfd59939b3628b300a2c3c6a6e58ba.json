@@ -1,0 +1,33 @@
+{
+  "raw_query": "the rail on the wall under the toilet paper holder",
+  "target": {
+    "category": "rail",
+    "attributes": [
+      "on the wall",
+      "under the toilet paper holder"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "toilet paper holder",
+      "attributes": [],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "rail",
+      "relation": "under",
+      "object": "toilet paper holder"
+    },
+    {
+      "subject": "rail",
+      "relation": "on",
+      "object": "wall"
+    }
+  ],
+  "view_constraints": [
+    "wall",
+    "under toilet paper holder"
+  ]
+}

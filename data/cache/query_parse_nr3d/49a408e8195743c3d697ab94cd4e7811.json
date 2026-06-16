@@ -1,0 +1,22 @@
+{
+  "raw_query": "the correct window is taller and touches the ground",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "taller",
+      "touches the ground"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "touches",
+      "object": "ground"
+    }
+  ],
+  "view_constraints": [
+    "taller",
+    "touches the ground"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "raw_query": "mirror in the bathroom",
+  "target": {
+    "category": "mirror",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "bathroom",
+      "attributes": [],
+      "relation_to_target": "contains"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "mirror",
+      "relation": "in",
+      "object": "bathroom"
+    }
+  ],
+  "view_constraints": []
+}

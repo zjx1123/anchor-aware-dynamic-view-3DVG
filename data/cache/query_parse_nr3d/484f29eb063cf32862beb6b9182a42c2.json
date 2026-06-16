@@ -1,0 +1,26 @@
+{
+  "raw_query": "you want the window that is dark greyish green to the right of the window with pictures on it",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "dark greyish green"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [
+        "with pictures on it"
+      ],
+      "relation_to_target": "left of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "to the right of",
+      "object": "window with pictures on it"
+    }
+  ],
+  "view_constraints": []
+}

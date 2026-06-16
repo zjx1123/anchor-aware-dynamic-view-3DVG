@@ -1,0 +1,33 @@
+{
+  "raw_query": "the towel hanging on the shower curtain rod closest to the toilet",
+  "target": {
+    "category": "towel",
+    "attributes": [
+      "hanging"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "shower curtain rod",
+      "attributes": [
+        "closest to the toilet"
+      ],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "hanging on",
+      "object": "shower curtain rod"
+    },
+    {
+      "subject": "shower curtain rod",
+      "relation": "closest to",
+      "object": "toilet"
+    }
+  ],
+  "view_constraints": [
+    "closest to the toilet"
+  ]
+}

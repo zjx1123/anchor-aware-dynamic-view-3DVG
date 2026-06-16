@@ -1,0 +1,26 @@
+{
+  "raw_query": "the keyboard that is not in front of the whiteboard",
+  "target": {
+    "category": "keyboard",
+    "attributes": [
+      "not in front of whiteboard"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "whiteboard",
+      "attributes": [
+        "white"
+      ],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "keyboard",
+      "relation": "not in front of",
+      "object": "whiteboard"
+    }
+  ],
+  "view_constraints": []
+}

@@ -1,0 +1,28 @@
+{
+  "raw_query": "looking at the beds head on the bag nearest to the bed on the left",
+  "target": {
+    "category": "bag",
+    "attributes": [
+      "nearest to the bed on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "on the left"
+      ],
+      "relation_to_target": "nearest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bag",
+      "relation": "nearest to",
+      "object": "bed on the left"
+    }
+  ],
+  "view_constraints": [
+    "looking at the bed head on"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "raw_query": "if we face the small yellow table the chair to the far right",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "to the far right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [
+        "small",
+        "yellow"
+      ],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "to the far right of",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "face the small yellow table"
+  ]
+}

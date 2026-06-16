@@ -1,0 +1,27 @@
+{
+  "raw_query": "the dresser underneath the bed with a purple covering",
+  "target": {
+    "category": "dresser",
+    "attributes": [
+      "underneath bed",
+      "purple covering"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "with purple covering"
+      ],
+      "relation_to_target": "above"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "dresser",
+      "relation": "underneath",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

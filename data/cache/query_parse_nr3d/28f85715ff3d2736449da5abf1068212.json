@@ -1,0 +1,26 @@
+{
+  "raw_query": "the correct cup is closer to the edge of the desk",
+  "target": {
+    "category": "cup",
+    "attributes": [
+      "correct"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "edge"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cup",
+      "relation": "closer to",
+      "object": "edge of desk"
+    }
+  ],
+  "view_constraints": [
+    "closer to edge of desk"
+  ]
+}

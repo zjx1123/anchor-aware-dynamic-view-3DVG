@@ -1,0 +1,20 @@
+{
+  "raw_query": "the square table in the middle of the room",
+  "target": {
+    "category": "table",
+    "attributes": [
+      "square"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "table",
+      "relation": "in",
+      "object": "middle of room"
+    }
+  ],
+  "view_constraints": [
+    "middle of room"
+  ]
+}

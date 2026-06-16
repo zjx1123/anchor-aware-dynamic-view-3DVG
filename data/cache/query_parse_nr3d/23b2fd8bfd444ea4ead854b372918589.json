@@ -1,0 +1,32 @@
+{
+  "raw_query": "the chair between the desks in the middle of the room",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "between the desks",
+      "in the middle of the room"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "between"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "between",
+      "object": "desks"
+    },
+    {
+      "subject": "chair",
+      "relation": "in",
+      "object": "middle of room"
+    }
+  ],
+  "view_constraints": [
+    "middle of the room"
+  ]
+}

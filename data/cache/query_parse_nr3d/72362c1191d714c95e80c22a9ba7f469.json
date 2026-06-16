@@ -1,0 +1,24 @@
+{
+  "raw_query": "the trash can located next to the two doors leading out",
+  "target": {
+    "category": "trash can",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "next to",
+      "object": "door"
+    }
+  ],
+  "view_constraints": [
+    "two doors leading out"
+  ]
+}

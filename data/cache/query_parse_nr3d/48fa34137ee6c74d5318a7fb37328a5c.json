@@ -1,0 +1,32 @@
+{
+  "raw_query": "i am the shelf above the bed with red clothes on the bed",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "above the bed",
+      "with red clothes on the bed"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bed",
+      "attributes": [
+        "with red clothes"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "above",
+      "object": "bed"
+    },
+    {
+      "subject": "red clothes",
+      "relation": "on",
+      "object": "bed"
+    }
+  ],
+  "view_constraints": []
+}

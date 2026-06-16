@@ -1,0 +1,35 @@
+{
+  "raw_query": "when facing the row of grey chairs the window that is over the chairs on the left",
+  "target": {
+    "category": "window",
+    "attributes": [
+      "over the chairs",
+      "on the left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "grey",
+        "row"
+      ],
+      "relation_to_target": "below"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "above",
+      "object": "chairs"
+    },
+    {
+      "subject": "window",
+      "relation": "on the left of",
+      "object": "row of grey chairs"
+    }
+  ],
+  "view_constraints": [
+    "facing the row of grey chairs"
+  ]
+}

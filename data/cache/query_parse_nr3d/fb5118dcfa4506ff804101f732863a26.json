@@ -1,0 +1,24 @@
+{
+  "raw_query": "choose the monitor that is closest to the windows",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "closest to windows"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "window",
+      "attributes": [],
+      "relation_to_target": "closest to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "closest to",
+      "object": "windows"
+    }
+  ],
+  "view_constraints": []
+}

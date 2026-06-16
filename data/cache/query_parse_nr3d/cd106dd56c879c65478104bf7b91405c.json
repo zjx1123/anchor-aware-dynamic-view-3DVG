@@ -1,0 +1,32 @@
+{
+  "raw_query": "when facing the play carpet it is the chair to the left not in the corner",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "to the left",
+      "not in the corner"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "play carpet",
+      "attributes": [],
+      "relation_to_target": "facing"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "to the left of",
+      "object": "play carpet"
+    },
+    {
+      "subject": "chair",
+      "relation": "not in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": [
+    "facing the play carpet"
+  ]
+}

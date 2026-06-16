@@ -1,0 +1,24 @@
+{
+  "raw_query": "tiny door in the corner",
+  "target": {
+    "category": "door",
+    "attributes": [
+      "tiny"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "corner",
+      "attributes": [],
+      "relation_to_target": "in"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "door",
+      "relation": "in",
+      "object": "corner"
+    }
+  ],
+  "view_constraints": []
+}

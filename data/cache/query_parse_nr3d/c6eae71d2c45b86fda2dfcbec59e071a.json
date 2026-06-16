@@ -1,0 +1,32 @@
+{
+  "raw_query": "the window near the table not the one near the shelves",
+  "target": {
+    "category": "window",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "near"
+    },
+    {
+      "category": "shelves",
+      "attributes": [],
+      "relation_to_target": "not near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "window",
+      "relation": "near",
+      "object": "table"
+    },
+    {
+      "subject": "window",
+      "relation": "not near",
+      "object": "shelves"
+    }
+  ],
+  "view_constraints": []
+}

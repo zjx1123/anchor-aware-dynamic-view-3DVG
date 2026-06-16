@@ -1,0 +1,36 @@
+{
+  "raw_query": "it is the left armchair between the two closest to the table",
+  "target": {
+    "category": "armchair",
+    "attributes": [
+      "left"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "armchair",
+      "attributes": [],
+      "relation_to_target": "right"
+    },
+    {
+      "category": "table",
+      "attributes": [],
+      "relation_to_target": "near"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "armchair",
+      "relation": "between",
+      "object": "two armchairs"
+    },
+    {
+      "subject": "armchair",
+      "relation": "closest to",
+      "object": "table"
+    }
+  ],
+  "view_constraints": [
+    "left"
+  ]
+}

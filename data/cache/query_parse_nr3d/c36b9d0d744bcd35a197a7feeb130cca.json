@@ -1,0 +1,36 @@
+{
+  "raw_query": "the bottle is the only one sitting on the bathroom counter next to the sink",
+  "target": {
+    "category": "bottle",
+    "attributes": [
+      "only one"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "counter",
+      "attributes": [
+        "bathroom"
+      ],
+      "relation_to_target": "on"
+    },
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bottle",
+      "relation": "on",
+      "object": "counter"
+    },
+    {
+      "subject": "bottle",
+      "relation": "next to",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

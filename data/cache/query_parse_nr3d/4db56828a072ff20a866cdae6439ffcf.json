@@ -1,0 +1,24 @@
+{
+  "raw_query": "the tall shelf behind the door",
+  "target": {
+    "category": "shelf",
+    "attributes": [
+      "tall"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "door",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelf",
+      "relation": "behind",
+      "object": "door"
+    }
+  ],
+  "view_constraints": []
+}

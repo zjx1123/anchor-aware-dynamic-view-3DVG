@@ -1,0 +1,20 @@
+{
+  "raw_query": "the correct box is in the middle",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "correct"
+    ]
+  },
+  "anchors": [],
+  "relations": [
+    {
+      "subject": "box",
+      "relation": "is in",
+      "object": "middle"
+    }
+  ],
+  "view_constraints": [
+    "middle"
+  ]
+}

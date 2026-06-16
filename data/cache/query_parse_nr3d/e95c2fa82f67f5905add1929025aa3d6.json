@@ -1,0 +1,24 @@
+{
+  "raw_query": "this couch is not next to a tall shelf unit",
+  "target": {
+    "category": "couch",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "shelf unit",
+      "attributes": [
+        "tall"
+      ],
+      "relation_to_target": "not next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "couch",
+      "relation": "not next to",
+      "object": "shelf unit"
+    }
+  ],
+  "view_constraints": []
+}

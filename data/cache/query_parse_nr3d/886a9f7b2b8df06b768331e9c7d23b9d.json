@@ -1,0 +1,24 @@
+{
+  "raw_query": "the backpack on the floor",
+  "target": {
+    "category": "backpack",
+    "attributes": [
+      "on the floor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "floor",
+      "attributes": [],
+      "relation_to_target": "support"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "backpack",
+      "relation": "on",
+      "object": "floor"
+    }
+  ],
+  "view_constraints": []
+}

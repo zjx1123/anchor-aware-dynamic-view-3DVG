@@ -1,0 +1,14 @@
+{
+  "raw_query": "it is the box on top",
+  "target": {
+    "category": "box",
+    "attributes": [
+      "on top"
+    ]
+  },
+  "anchors": [],
+  "relations": [],
+  "view_constraints": [
+    "top"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "raw_query": "the soap dish on the left side of the sink",
+  "target": {
+    "category": "soap dish",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "left side of"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "soap dish",
+      "relation": "on left side of",
+      "object": "sink"
+    }
+  ],
+  "view_constraints": []
+}

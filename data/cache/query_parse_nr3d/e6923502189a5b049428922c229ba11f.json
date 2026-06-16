@@ -1,0 +1,24 @@
+{
+  "raw_query": "i am shelves beside the yellow price tag",
+  "target": {
+    "category": "shelves",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "price tag",
+      "attributes": [
+        "yellow"
+      ],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shelves",
+      "relation": "beside",
+      "object": "price tag"
+    }
+  ],
+  "view_constraints": []
+}

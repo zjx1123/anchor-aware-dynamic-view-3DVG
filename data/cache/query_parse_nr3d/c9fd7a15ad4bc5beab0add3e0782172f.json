@@ -1,0 +1,24 @@
+{
+  "raw_query": "it is the chair with the towel hanging behind it",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "with towel hanging behind it"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "towel",
+      "attributes": [],
+      "relation_to_target": "hanging behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "towel",
+      "relation": "hanging behind",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": []
+}

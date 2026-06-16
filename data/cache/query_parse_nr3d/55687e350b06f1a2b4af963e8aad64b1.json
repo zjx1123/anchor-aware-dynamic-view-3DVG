@@ -1,0 +1,32 @@
+{
+  "raw_query": "the box shelf you want is right next to the chair in the corner with the pillow it is almost touching the chair",
+  "target": {
+    "category": "box shelf",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "in the corner",
+        "with the pillow"
+      ],
+      "relation_to_target": "next to"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "box shelf",
+      "relation": "next to",
+      "object": "chair"
+    },
+    {
+      "subject": "box shelf",
+      "relation": "almost touching",
+      "object": "chair"
+    }
+  ],
+  "view_constraints": [
+    "corner"
+  ]
+}

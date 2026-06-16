@@ -1,0 +1,32 @@
+{
+  "raw_query": "this sign is next to the sink and on the counter",
+  "target": {
+    "category": "sign",
+    "attributes": []
+  },
+  "anchors": [
+    {
+      "category": "sink",
+      "attributes": [],
+      "relation_to_target": "next to"
+    },
+    {
+      "category": "counter",
+      "attributes": [],
+      "relation_to_target": "on"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "sign",
+      "relation": "next to",
+      "object": "sink"
+    },
+    {
+      "subject": "sign",
+      "relation": "on",
+      "object": "counter"
+    }
+  ],
+  "view_constraints": []
+}

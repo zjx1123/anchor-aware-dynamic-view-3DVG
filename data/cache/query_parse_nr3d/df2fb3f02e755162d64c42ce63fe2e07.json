@@ -1,0 +1,24 @@
+{
+  "raw_query": "the correct trash can is not in the bathroom",
+  "target": {
+    "category": "trash can",
+    "attributes": [
+      "correct"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "bathroom",
+      "attributes": [],
+      "relation_to_target": "not in"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "trash can",
+      "relation": "not in",
+      "object": "bathroom"
+    }
+  ],
+  "view_constraints": []
+}

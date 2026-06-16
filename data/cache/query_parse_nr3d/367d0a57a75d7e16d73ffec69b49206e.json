@@ -1,0 +1,29 @@
+{
+  "raw_query": "if you are standing in the middle of the room facing the two monitors you are looking for the monitor on your right",
+  "target": {
+    "category": "monitor",
+    "attributes": [
+      "on the right"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "monitor",
+      "attributes": [
+        "two monitors"
+      ],
+      "relation_to_target": "left"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "monitor",
+      "relation": "on the right of",
+      "object": "two monitors"
+    }
+  ],
+  "view_constraints": [
+    "standing in the middle of the room",
+    "facing the two monitors"
+  ]
+}

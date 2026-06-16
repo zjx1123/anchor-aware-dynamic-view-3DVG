@@ -1,0 +1,39 @@
+{
+  "raw_query": "turn and face the small white fridge between the desks and it is the desk on the left beside the fridge",
+  "target": {
+    "category": "fridge",
+    "attributes": [
+      "small",
+      "white"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "desk",
+      "attributes": [],
+      "relation_to_target": "between"
+    },
+    {
+      "category": "desk",
+      "attributes": [
+        "left"
+      ],
+      "relation_to_target": "beside"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fridge",
+      "relation": "between",
+      "object": "desks"
+    },
+    {
+      "subject": "desk",
+      "relation": "beside",
+      "object": "fridge"
+    }
+  ],
+  "view_constraints": [
+    "turn and face"
+  ]
+}

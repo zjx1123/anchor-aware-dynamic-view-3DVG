@@ -1,0 +1,36 @@
+{
+  "raw_query": "of the two chairs that are next to each other choose the one in front of the monitor",
+  "target": {
+    "category": "chair",
+    "attributes": [
+      "in front of monitor"
+    ]
+  },
+  "anchors": [
+    {
+      "category": "chair",
+      "attributes": [
+        "next to other chair"
+      ],
+      "relation_to_target": "adjacent"
+    },
+    {
+      "category": "monitor",
+      "attributes": [],
+      "relation_to_target": "behind"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "chair",
+      "relation": "next to",
+      "object": "chair"
+    },
+    {
+      "subject": "chair",
+      "relation": "in front of",
+      "object": "monitor"
+    }
+  ],
+  "view_constraints": []
+}
