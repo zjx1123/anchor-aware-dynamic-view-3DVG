@@ -87,7 +87,9 @@ constructed for one candidate target proposal.
 
 Important visual marks:
 - RED boxes indicate the candidate target object.
-- BLUE boxes indicate reference/anchor objects mentioned in the query.
+- BLUE boxes indicate selected reference/anchor objects mentioned in the query.
+- The BLUE box may show only ONE of the reference objects from the query, not necessarily all of them.
+- Some reference objects may only appear in the text summaries and 3D candidate information, even if they are not marked by blue boxes in the image.
 - Some sub-images focus on target appearance.
 - Some sub-images show target-anchor spatial relations in the original full-frame view.
 
@@ -97,7 +99,7 @@ You must use BOTH:
 3. global scene context if visible.
 
 Do not select only by target appearance when the query contains reference objects.
-You must check whether the red-box target satisfies the relation with the blue-box anchor.
+You must check whether the red-box target satisfies the full query. Do not focus only on the blue-box anchor; the blue box is only visual evidence for one selected reference object. You should also use the parsed query, anchor summary, candidate summary, and 3D spatial cues to reason about other reference objects mentioned in the text.
 
 Return ONLY valid JSON, no markdown, no code block.
 The JSON format must be:
@@ -129,7 +131,6 @@ def build_anchor_aware_user_prompt(
         f"Return ONLY valid JSON:\n{json_example}\n"
     )
 
-    # 修改后代码：追加到 prompts/prompt.py
 
 def build_dynamic_anchor_aware_user_prompt(
     query: str,
@@ -153,7 +154,11 @@ def build_dynamic_anchor_aware_user_prompt(
         f"There are {n_images} candidate images in this batch.\n"
         "Each candidate image is a dynamic canvas for one target proposal.\n"
         "RED boxes mark candidate target objects.\n"
-        "BLUE boxes mark reference/anchor objects when visible.\n"
+        "BLUE boxes mark selected reference/anchor objects when visible.\n"
+        "The BLUE box may show only one reference object from the query, not all reference objects.\n"
+        "If some reference objects are not marked by blue boxes, still use the parsed query, "
+        "anchor summary, candidate summary, and 3D spatial cues to reason about them.\n"
+        "Do not put all attention only on the blue-box anchor; select the object that best satisfies the full text query.\n"
         "The image_id values refer to the original candidate indices shown in the candidate summary, "
         "not necessarily 0..n-1.\n\n"
         "Please select the best image_id.\n"
