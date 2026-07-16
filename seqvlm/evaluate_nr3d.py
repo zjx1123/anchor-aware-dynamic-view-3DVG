@@ -58,6 +58,28 @@ if __name__ == '__main__':
     parser.add_argument('--num_relation_views', type=int, default=2)
     parser.add_argument('--use_global_context', action='store_true')
 
+    # final global view args
+    parser.add_argument('--use_final_global_view', action='store_true')
+    parser.add_argument('--disable_final_global_gate', action='store_true')
+
+    parser.add_argument(
+        '--global_rendered_root',
+        type=str,
+        default='../data/global_rendered_views_nr3d',
+    )
+
+    parser.add_argument(
+        '--final_global_view_root',
+        type=str,
+        default='../data/final_global_aux_nr3d',
+    )
+
+    parser.add_argument(
+        '--max_final_global_anchors',
+        type=int,
+        default=3,
+    )
+
     args = parser.parse_args()
     set_seed(args.seed)
 
@@ -106,7 +128,14 @@ if __name__ == '__main__':
         'num_appearance_views': args.num_appearance_views,
         'num_relation_views': args.num_relation_views,
         'use_global_context': args.use_global_context,
-    }
+
+        # final global view
+        'use_final_global_view': args.use_final_global_view,
+        'use_final_global_gate': not args.disable_final_global_gate,
+        'global_rendered_root': args.global_rendered_root,
+        'final_global_view_root': args.final_global_view_root,
+        'max_final_global_anchors': args.max_final_global_anchors,
+            }
 
     predictor = AdpativePredictor(**vlm_configs)
 

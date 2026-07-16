@@ -28,4 +28,8 @@ python -u evaluate_nr3d.py \
   --canvas_k 5 \
   --num_appearance_views 2 \
   --num_relation_views 2 \
-  --use_global_context
+  --use_global_context\
+  --use_final_global_view \
+  --global_rendered_root ../data/global_rendered_views_nr3d \
+  --final_global_view_root ../data/final_global_aux_nr3d \
+  --max_final_global_anchors 2

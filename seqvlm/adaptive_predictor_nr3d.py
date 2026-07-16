@@ -17,6 +17,7 @@ from api import invoke_api
 from seqvlm.feat_handler_nr3d import VisualFeatHandler
 from seqvlm.query_parser import QueryParser
 from seqvlm.dynamic_view_selector import DynamicViewSelector
+from seqvlm.final_global_view_builder import FinalGlobalViewBuilder
 
 from seqvlm.anchor_utils_nr3d import (
     build_anchor_candidates_nr3d,
@@ -97,6 +98,27 @@ class AdpativePredictor:
             )
         else:
             self.dynamic_view_selector = None
+
+        # Final-round global auxiliary view for NR3D
+        self.use_final_global_view = kwargs.get("use_final_global_view", False)
+
+        # 默认启用 gate：先 local-only 判断是否需要 global view
+        self.use_final_global_gate = kwargs.get("use_final_global_gate", True)
+
+        self.final_global_view_builder = None
+
+        if self.use_final_global_view:
+            self.final_global_view_builder = FinalGlobalViewBuilder(
+                rendered_root=kwargs.get(
+                    "global_rendered_root",
+                    "../data/global_rendered_views_nr3d",
+                ),
+                out_root=kwargs.get(
+                    "final_global_view_root",
+                    "../data/final_global_aux_nr3d",
+                ),
+                max_anchors=kwargs.get("max_final_global_anchors", 3),
+            )
 
     def execute(self, scene_id, obj_name, caption, prog_str):
         '''
@@ -243,6 +265,7 @@ class AdpativePredictor:
         )
 
         pred = self.predict(
+            scene_id=scene_id,
             prop_images=prop_images,
             caption=caption,
             parsed_query=parsed_query,
@@ -258,6 +281,7 @@ class AdpativePredictor:
 
     def predict(
         self,
+        scene_id,
         prop_images,
         caption,
         parsed_query=None,
@@ -272,11 +296,15 @@ class AdpativePredictor:
             for image in prop_images
         ]
 
-        # remain_props: [(global_candidate_id, base64_image), ...]
         remain_props = [
             (i, image)
             for i, image in enumerate(base64Images)
         ]
+
+        meta_by_image_id = {
+            int(m["local_image_id"]): m
+            for m in (candidate_metas or [])
+        }
 
         while len(remain_props) > 1:
             prop_image_groups = []
@@ -285,17 +313,163 @@ class AdpativePredictor:
                 g = remain_props[i:i + max_batch_size]
                 prop_image_groups.append(g)
 
+            is_final_round = len(prop_image_groups) == 1
             next_round = []
 
             for images in prop_image_groups:
-                selected_global_id = self.select_with_retry(
-                    images=images,
-                    caption=caption,
-                    parsed_query=parsed_query,
-                    anchor_infos=anchor_infos or [],
-                    anchor_summary=anchor_summary or "",
-                    candidate_metas=candidate_metas or [],
-                )
+                selected_global_id = -1
+
+                if (
+                    is_final_round
+                    and self.use_final_global_view
+                    and self.use_final_global_gate
+                    and self.final_global_view_builder is not None
+                ):
+                    # Step 1: local-only final gate
+                    local_selected_id, local_answer = self.select_with_retry(
+                        images=images,
+                        caption=caption,
+                        parsed_query=parsed_query,
+                        anchor_infos=anchor_infos or [],
+                        anchor_summary=anchor_summary or "",
+                        candidate_metas=candidate_metas or [],
+                        final_global_view_path=None,
+                        prompt_mode="final_local_gate",
+                        return_answer=True,
+                    )
+
+                    need_global, gate_reason = self.parse_need_global(local_answer)
+
+                    print(
+                        f"[FinalGlobalGate] scene={scene_id}, "
+                        f"need_global={need_global}, "
+                        f"local_selected={local_selected_id}, "
+                        f"reason={gate_reason}"
+                    )
+
+                    if local_selected_id == -1:
+                        print(
+                            f"[FinalGlobalGateFallback] scene={scene_id}, "
+                            f"local gate failed, use normal local selection."
+                        )
+
+                        selected_global_id = self.select_with_retry(
+                            images=images,
+                            caption=caption,
+                            parsed_query=parsed_query,
+                            anchor_infos=anchor_infos or [],
+                            anchor_summary=anchor_summary or "",
+                            candidate_metas=candidate_metas or [],
+                            final_global_view_path=None,
+                            prompt_mode="normal",
+                        )
+
+                    elif not need_global:
+                        print(
+                            f"[FinalGlobalSkipped] scene={scene_id}, "
+                            f"selected={local_selected_id}"
+                        )
+                        selected_global_id = local_selected_id
+
+                    else:
+                        final_candidates = []
+
+                        for image_id, _ in images:
+                            meta = meta_by_image_id.get(int(image_id))
+                            if meta is None:
+                                continue
+
+                            final_candidates.append({
+                                "image_id": int(image_id),
+                                # NR3D 这里必须是 local_idx
+                                "proposal_id": int(meta["proposal_id"]),
+                            })
+
+                        final_global_view_path = self.final_global_view_builder.build(
+                            scene_id=scene_id,
+                            query=caption,
+                            final_candidates=final_candidates,
+                            anchor_infos=anchor_infos or [],
+                            parsed_query=parsed_query,
+                        )
+
+                        if final_global_view_path is not None:
+                            print(
+                                f"[FinalGlobalView] scene={scene_id}, "
+                                f"path={final_global_view_path}"
+                            )
+
+                            selected_global_id = self.select_with_retry(
+                                images=images,
+                                caption=caption,
+                                parsed_query=parsed_query,
+                                anchor_infos=anchor_infos or [],
+                                anchor_summary=anchor_summary or "",
+                                candidate_metas=candidate_metas or [],
+                                final_global_view_path=final_global_view_path,
+                                prompt_mode="final_global_decision",
+                                gate_reason=gate_reason,
+                            )
+
+                            if selected_global_id == -1:
+                                print(
+                                    f"[FinalGlobalFallback] scene={scene_id}, "
+                                    f"global decision failed, use local_selected={local_selected_id}"
+                                )
+                                selected_global_id = local_selected_id
+
+                        else:
+                            print(
+                                f"[FinalGlobalViewMissing] scene={scene_id}, "
+                                f"use local_selected={local_selected_id}"
+                            )
+                            selected_global_id = local_selected_id
+
+                else:
+                    final_global_view_path = None
+
+                    if (
+                        is_final_round
+                        and self.use_final_global_view
+                        and not self.use_final_global_gate
+                        and self.final_global_view_builder is not None
+                    ):
+                        final_candidates = []
+
+                        for image_id, _ in images:
+                            meta = meta_by_image_id.get(int(image_id))
+                            if meta is None:
+                                continue
+
+                            final_candidates.append({
+                                "image_id": int(image_id),
+                                "proposal_id": int(meta["proposal_id"]),
+                            })
+
+                        final_global_view_path = self.final_global_view_builder.build(
+                            scene_id=scene_id,
+                            query=caption,
+                            final_candidates=final_candidates,
+                            anchor_infos=anchor_infos or [],
+                            parsed_query=parsed_query,
+                        )
+
+                        if final_global_view_path is not None:
+                            print(
+                                f"[FinalGlobalView] scene={scene_id}, "
+                                f"path={final_global_view_path}"
+                            )
+
+                    selected_global_id = self.select_with_retry(
+                        images=images,
+                        caption=caption,
+                        parsed_query=parsed_query,
+                        anchor_infos=anchor_infos or [],
+                        anchor_summary=anchor_summary or "",
+                        candidate_metas=candidate_metas or [],
+                        final_global_view_path=final_global_view_path,
+                        prompt_mode="normal",
+                    )
 
                 if selected_global_id != -1:
                     selected_item = None
@@ -312,6 +486,28 @@ class AdpativePredictor:
 
         return remain_props[0][0] if remain_props else None
 
+    def parse_need_global(self, answer):
+        need_global = False
+        reason = ""
+
+        try:
+            if isinstance(answer, dict):
+                raw_need = answer.get("need_global", False)
+                reason = answer.get("global_need_reason", "")
+
+                if isinstance(raw_need, bool):
+                    need_global = raw_need
+                elif isinstance(raw_need, str):
+                    need_global = raw_need.strip().lower() in ["true", "yes", "1"]
+                elif isinstance(raw_need, int):
+                    need_global = bool(raw_need)
+
+        except Exception:
+            need_global = False
+            reason = ""
+
+        return need_global, reason
+
     def select_with_retry(
         self,
         images,
@@ -320,6 +516,10 @@ class AdpativePredictor:
         anchor_infos=None,
         anchor_summary=None,
         candidate_metas=None,
+        final_global_view_path=None,
+        prompt_mode="normal",
+        return_answer=False,
+        gate_reason=None,
     ):
         n_images = len(images)
         assert n_images > 0
@@ -345,8 +545,23 @@ class AdpativePredictor:
                     anchor_summary=anchor_summary or "",
                     candidate_summary=candidate_summary,
                     n_images=n_images,
+                    has_final_global_view=final_global_view_path is not None,
                 )
-                system_prompt = DYNAMIC_ANCHOR_AWARE_SYSTEM_PROMPT
+
+                if prompt_mode == "final_local_gate":
+                    system_prompt = FINAL_LOCAL_GATE_PROMPT
+
+                elif prompt_mode == "final_global_decision":
+                    system_prompt = FINAL_GLOBAL_DECISION_PROMPT
+
+                    if gate_reason:
+                        user_prompt += (
+                            "\n\nThe local-only gate requested the auxiliary global view for this reason:\n"
+                            f"{gate_reason}\n"
+                        )
+
+                else:
+                    system_prompt = DYNAMIC_ANCHOR_AWARE_SYSTEM_PROMPT
 
             else:
                 user_prompt = build_anchor_aware_user_prompt(
@@ -369,6 +584,45 @@ class AdpativePredictor:
             )
             system_prompt = SYSTEM_PROMPT
 
+        content = [
+            {
+                "type": "text",
+                "text": user_prompt,
+            }
+        ]
+
+        for x in images:
+            content.append({
+                "type": "image_url",
+                "image_url": {
+                    "url": f"data:image/jpeg;base64,{x[1]}",
+                    "detail": "high",
+                },
+            })
+
+        if final_global_view_path is not None and os.path.exists(final_global_view_path):
+            final_global_base64 = encode_image_to_base64(final_global_view_path)
+
+            content.append({
+                "type": "text",
+                "text": (
+                    "Additional auxiliary global view for the FINAL round only. "
+                    "This image is NOT a candidate image. "
+                    "Use it only for the specific reason requested by the local-only gate. "
+                    "Do not use this global view to infer viewpoint-dependent directions, "
+                    "object facing direction, or to swap same-category target-anchor objects. "
+                    "The final answer must still be one of the valid candidate image_id values."
+                ),
+            })
+
+            content.append({
+                "type": "image_url",
+                "image_url": {
+                    "url": f"data:image/jpeg;base64,{final_global_base64}",
+                    "detail": "high",
+                },
+            })
+
         messages = [
             {
                 "role": "system",
@@ -376,22 +630,7 @@ class AdpativePredictor:
             },
             {
                 "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": user_prompt,
-                    },
-                    *map(
-                        lambda x: {
-                            "type": "image_url",
-                            "image_url": {
-                                "url": f"data:image/jpeg;base64,{x[1]}",
-                                "detail": "high",
-                            },
-                        },
-                        images,
-                    ),
-                ],
+                "content": content,
             },
         ]
 
@@ -411,6 +650,8 @@ class AdpativePredictor:
                 # Anchor-aware / dynamic prompt:
                 # image_id 是 prop_images 的全局候选 id，不是当前 batch 内部下标。
                 if isinstance(image_id, int) and image_id in valid_global_ids:
+                    if return_answer:
+                        return image_id, answer
                     return image_id
 
                 guide_prompt = (
@@ -434,5 +675,8 @@ class AdpativePredictor:
             })
 
             retry += 1
+
+        if return_answer:
+            return -1, {}
 
         return -1
