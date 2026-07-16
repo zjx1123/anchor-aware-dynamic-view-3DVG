@@ -1,0 +1,13 @@
+case: 163
+scene_id: scene0658_00
+obj_id: 10
+obj_name: shelf
+caption: the shelf is black . there is a white lamp on top of it .
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The local canvases do not clearly show a white lamp on top of the black shelf. The spatial relationship between the shelf and the lamp is ambiguous, and the global view is necessary to confirm whether the lamp is indeed on top of the shelf, as required by the query.
+source_path: ../data/final_global_aux_scanrefer/scene0658_00/88380d224815/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0658_00/88380d224815/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

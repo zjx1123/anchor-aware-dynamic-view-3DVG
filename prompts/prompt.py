@@ -138,6 +138,7 @@ def build_dynamic_anchor_aware_user_prompt(
     anchor_summary: str,
     candidate_summary: str,
     n_images: int,
+    has_final_global_view: bool = False,
 ) -> str:
     json_example = (
         '{\n'
@@ -145,6 +146,21 @@ def build_dynamic_anchor_aware_user_prompt(
         '  "image_id": 0\n'
         '}'
     )
+
+    final_global_note = ""
+    if has_final_global_view:
+        final_global_note = (
+            "\nFinal-round auxiliary global view:\n"
+            "- After the candidate dynamic canvases, you are given ONE additional global view.\n"
+            "- This global view is NOT a candidate image.\n"
+            "- RED boxes in this global view mark the current final-round candidate targets.\n"
+            "- The red labels contain selectable image_id values, such as id=3|pid=27.\n"
+            "- BLUE boxes mark reference/anchor objects.\n"
+            "- Do not infer directional relations from the global view. Use the local evidence in the candidate dynamic canvases as the primary basis for decision-making, and treat the global view only as auxiliary context.\n"
+            "- Use this global view only to verify global spatial layout and target-anchor relations.\n"
+            "- Make the final decision mainly based on the candidate dynamic canvases.\n"
+            "- Your output image_id must be one of the candidate image_id values in the current candidate batch.\n"
+        )
 
     return (
         f"Query:\n{query}\n\n"
@@ -160,7 +176,72 @@ def build_dynamic_anchor_aware_user_prompt(
         "anchor summary, candidate summary, and 3D spatial cues to reason about them.\n"
         "Do not put all attention only on the blue-box anchor; select the object that best satisfies the full text query.\n"
         "The image_id values refer to the original candidate indices shown in the candidate summary, "
-        "not necessarily 0..n-1.\n\n"
+        "not necessarily 0..n-1.\n"
+        f"{final_global_note}\n"
         "Please select the best image_id.\n"
         f"Return ONLY valid JSON:\n{json_example}\n"
     )
+
+FINAL_LOCAL_GATE_PROMPT = """
+You are in the final decision stage of a 3D visual grounding task.
+
+You are given several candidate dynamic canvases. Each candidate image contains a red box marking the target candidate, and may contain blue boxes marking local anchor objects.
+
+Your task has two parts:
+
+1. Select the best candidate image_id using the local dynamic canvases.
+2. Decide whether an auxiliary global view is necessary for a reliable final decision.
+
+Use the local dynamic canvases as the primary evidence. First judge target category, appearance, local context, visible anchors, and non-directional spatial relations.
+
+Set "need_global" to true ONLY when the local canvases are insufficient and the query requires room-level or scene-level context, such as:
+- global position: middle, center, corner, against wall, near wall, near door/window
+- multiple anchors that may not appear together in local views
+- scene relationships that local crops cannot show completely
+- ordering among a full group of objects when the whole group is not visible locally
+- layout relations involving several objects or large structures
+
+Set "need_global" to false when the decision can be made from local evidence, or when global view is likely to be unreliable or misleading, such as:
+- pure appearance attributes: color, material, shape, texture, size, object type
+- facing or orientation words: facing left/right/front/back, leaning, turned
+- relative directional words that depend on viewpoint: left/right/front/back/east/west/north/south
+- same-category target-anchor relations, especially symmetric relations such as beside, next to, near, close to, another
+- exact counting or ordinal relations if the local candidate canvases already show the relevant group clearly
+- cases where global evidence would not distinguish between the final candidates
+
+For ordering/counting queries, request global view only if the local canvases do not show the full group needed for ordering. If the ordering can be judged locally, or if the relation is likely to cause target-anchor confusion, do not request global view.
+
+If uncertain, set "need_global" to false.
+
+Return only valid JSON in this format:
+{
+  "process": "...",
+  "need_global": true or false,
+  "global_need_reason": "...",
+  "image_id": 0
+}
+"""
+
+FINAL_GLOBAL_DECISION_PROMPT = """
+You are in the final decision stage of a 3D visual grounding task.
+
+You are given:
+1. Candidate dynamic canvases, where red boxes mark the target candidates.
+2. An auxiliary global view, where red boxes mark final candidate objects and blue boxes mark non-candidate anchor objects.
+
+Use the candidate dynamic canvases as the primary evidence. The global view is only auxiliary context.
+
+Use the global view only for the specific reason that local evidence is insufficient, such as room-level layout, multi-anchor context, global position, or incomplete local scene context.
+
+Do not use the global view to infer viewpoint-dependent directions such as left/right/front/back/east/west/north/south. Do not use the global view to judge facing direction or object orientation. For these cases, rely on local dynamic canvases and candidate summaries.
+
+If the target and anchor have the same category, do not swap the target with the anchor. Red-boxed final candidates are possible targets. Blue boxes are only auxiliary anchors. The global view should not override clear local target evidence.
+
+If the global view and local dynamic canvases conflict, prefer the local dynamic canvases unless the global view provides decisive non-directional layout evidence.
+
+Return only valid JSON in this format:
+{
+  "process": "...",
+  "image_id": 0
+}
+"""

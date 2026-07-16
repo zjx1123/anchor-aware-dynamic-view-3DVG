@@ -23,7 +23,7 @@ def load_seg_inst(scene_id):
     ins_scores: proposal 置信度
     center:     scene center
     '''
-    root_dir = '../data/mask3d/scannet200'
+    root_dir = '../data/mask3d/'
     data = np.load(os.path.join(root_dir, scene_id + '.npz'), allow_pickle=True)
     ins_labels = list(data['ins_labels'])
     if 'ins_scores' in data.files:

@@ -1,0 +1,56 @@
+source_log: /root/SeqVLM-clean/logs/scanrefer_full_20260715_151115.log
+total: 13
+copied: 13
+
+case=004	scene=scene0696_00	hash=58f3bb850a55	iou=0.57	obj=cabinet	copied=True
+  caption: the cabinet is the northwestern - most one . the cabinet is a brown rectangular prism .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_004_scene0696_00_58f3bb850a55/final_global_view.jpg
+
+case=043	scene=scene0207_00	hash=a436a72b02b2	iou=0.00	obj=refrigerator	copied=True
+  caption: the refrigerator is in a corner and left of the oven . the refrigerator is a white , boxy prism .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_043_scene0207_00_a436a72b02b2/final_global_view.jpg
+
+case=066	scene=scene0249_00	hash=c76f7d869ae7	iou=0.10	obj=chair	copied=True
+  caption: this is a chair . its blue in color and is in the center of the room 5th from each corner .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_066_scene0249_00_c76f7d869ae7/final_global_view.jpg
+
+case=067	scene=scene0621_00	hash=fa481a1a2b0c	iou=0.46	obj=table	copied=True
+  caption: this table is in the middle . it is square .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_067_scene0621_00_fa481a1a2b0c/final_global_view.jpg
+
+case=078	scene=scene0609_00	hash=21333ef19c87	iou=0.00	obj=table	copied=True
+  caption: the table is brown . the table is on the right side of the room .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_078_scene0609_00_21333ef19c87/final_global_view.jpg
+
+case=087	scene=scene0378_00	hash=fec639a6a866	iou=1.00	obj=chair	copied=True
+  caption: there is a square brown chair . it is against the wall and next to the door .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_087_scene0378_00_fec639a6a866/final_global_view.jpg
+
+case=125	scene=scene0500_00	hash=bfc5d9a2c2e2	iou=0.00	obj=chair	copied=True
+  caption: the brown wooden chair . the chair is in the back in the middle .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_125_scene0500_00_bfc5d9a2c2e2/final_global_view.jpg
+
+case=163	scene=scene0658_00	hash=88380d224815	iou=0.00	obj=shelf	copied=True
+  caption: the shelf is black . there is a white lamp on top of it .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_163_scene0658_00_88380d224815/final_global_view.jpg
+
+case=167	scene=scene0196_00	hash=93ec62d2f0d8	iou=0.00	obj=chair	copied=True
+  caption: this is a chair . it sets between 2 tables .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_167_scene0196_00_93ec62d2f0d8/final_global_view.jpg
+
+case=181	scene=scene0574_00	hash=842af1f3a15d	iou=0.99	obj=bench	copied=True
+  caption: this bench is on the top left corner . it is dark .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_181_scene0574_00_842af1f3a15d/final_global_view.jpg
+
+case=198	scene=scene0207_00	hash=441a1e0f447d	iou=0.00	obj=door	copied=True
+  caption: this is the closet doors in the corner of the room . a bed is present in front of the closet .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_198_scene0207_00_441a1e0f447d/final_global_view.jpg
+
+case=221	scene=scene0500_00	hash=2913b6bde9be	iou=0.00	obj=chair	copied=True
+  caption: the object is a wooden chair . it is the right most chair against the wall . there is a large window behind it .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_221_scene0500_00_2913b6bde9be/final_global_view.jpg
+
+case=234	scene=scene0608_00	hash=f66faf304b7d	iou=0.93	obj=sofa_chair	copied=True
+  caption: this sofa chair is in the middle . it is dark .
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_scanrefer_20260715_151115/case_234_scene0608_00_f66faf304b7d/final_global_view.jpg
+

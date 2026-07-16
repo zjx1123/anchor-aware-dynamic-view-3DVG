@@ -1,0 +1,13 @@
+case: 87
+scene_id: scene0378_00
+obj_id: 43
+obj_name: chair
+caption: there is a square brown chair . it is against the wall and next to the door .
+IoU: 1.00
+need_global: True
+local_selected: 0
+global_need_reason: The query requires verifying two spatial relations—'against the wall' and 'next to the door'—which involve multiple objects and their relative positions in the room. These relationships cannot be fully confirmed from local views alone, as the local canvases may not capture the complete layout or simultaneous visibility of both anchors. A global view is needed to assess whether any chair satisfies both conditions simultaneously.
+source_path: ../data/final_global_aux_scanrefer/scene0378_00/fec639a6a866/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0378_00/fec639a6a866/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

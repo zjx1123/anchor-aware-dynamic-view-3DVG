@@ -1,0 +1,13 @@
+case: 234
+scene_id: scene0608_00
+obj_id: 29
+obj_name: sofa_chair
+caption: this sofa chair is in the middle . it is dark .
+IoU: 0.93
+need_global: True
+local_selected: 0
+global_need_reason: The query includes a global positional constraint ('in the middle') that requires room-level context to verify. Local dynamic canvases do not provide sufficient information about the chair's position relative to the entire room layout.
+source_path: ../data/final_global_aux_scanrefer/scene0608_00/f66faf304b7d/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0608_00/f66faf304b7d/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

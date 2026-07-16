@@ -1,0 +1,13 @@
+case: 221
+scene_id: scene0500_00
+obj_id: 12
+obj_name: chair
+caption: the object is a wooden chair . it is the right most chair against the wall . there is a large window behind it .
+IoU: 0.00
+need_global: True
+local_selected: 8
+global_need_reason: The query requires identifying the 'right most' chair, which depends on the full layout of chairs along the wall. Local canvases show individual chairs but do not reveal the complete row or relative positions of all chairs. Without a global view, it's impossible to determine which chair is truly the rightmost. Additionally, confirming the exact alignment of the chair against the wall and the window behind it may require broader context.
+source_path: ../data/final_global_aux_scanrefer/scene0500_00/2913b6bde9be/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0500_00/2913b6bde9be/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

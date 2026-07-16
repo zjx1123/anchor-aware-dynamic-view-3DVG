@@ -24,4 +24,8 @@ python evaluate.py \
   --view_meta_root ../data/view_meta_scanrefer \
   --posed_image_root ../data/posed_images_rgb_pose \
   --dynamic_canvas_root ../data/dynamic_canvas_scanrefer \
-  --canvas_k 5
+  --canvas_k 5\
+  --use_final_global_view \
+  --global_rendered_root ../data/global_rendered_views_scanrefer_spazer \
+  --final_global_view_root ../data/final_global_aux_scanrefer \
+  --max_final_global_anchors 2

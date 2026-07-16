@@ -1,0 +1,13 @@
+case: 167
+scene_id: scene0196_00
+obj_id: 33
+obj_name: chair
+caption: this is a chair . it sets between 2 tables .
+IoU: 0.00
+need_global: True
+local_selected: 15
+global_need_reason: The query requires confirming that the chair is between two tables, which involves a spatial relationship that may not be fully visible in the local canvases. The local views show proximity to tables but do not definitively establish the 'between' relation, especially since the relative positions of the two tables are not both clearly visible in any single canvas. A global view would provide the full layout to verify if the chair is indeed positioned between two tables.
+source_path: ../data/final_global_aux_scanrefer/scene0196_00/93ec62d2f0d8/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0196_00/93ec62d2f0d8/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

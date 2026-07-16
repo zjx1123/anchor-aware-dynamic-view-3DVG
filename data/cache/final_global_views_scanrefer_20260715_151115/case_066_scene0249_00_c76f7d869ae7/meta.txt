@@ -1,0 +1,13 @@
+case: 66
+scene_id: scene0249_00
+obj_id: 13
+obj_name: chair
+caption: this is a chair . its blue in color and is in the center of the room 5th from each corner .
+IoU: 0.10
+need_global: True
+local_selected: 37
+global_need_reason: The query requires determining if the chair is '5th from each corner' and 'in the center of the room', which involves room-level spatial reasoning and full layout visibility. Local canvases show only partial views and cannot confirm the global position or symmetric arrangement needed to satisfy the '5th from each corner' condition. A global view is necessary to assess the complete room layout and validate the target's position relative to all corners.
+source_path: ../data/final_global_aux_scanrefer/scene0249_00/c76f7d869ae7/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0249_00/c76f7d869ae7/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

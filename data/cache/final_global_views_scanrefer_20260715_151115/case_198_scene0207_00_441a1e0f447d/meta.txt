@@ -1,0 +1,13 @@
+case: 198
+scene_id: scene0207_00
+obj_id: 20
+obj_name: door
+caption: this is the closet doors in the corner of the room . a bed is present in front of the closet .
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The query requires confirmation that the closet doors are in the corner of the room and that the bed is positioned in front of them. While image_id=0 shows a plausible corner configuration, the spatial relationship between the closet and the bed cannot be confirmed from local views alone due to the large distance (5.90m). A global view is necessary to verify the full layout and confirm the 'in front of' relation and corner positioning.
+source_path: ../data/final_global_aux_scanrefer/scene0207_00/441a1e0f447d/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0207_00/441a1e0f447d/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

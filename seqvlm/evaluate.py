@@ -78,6 +78,23 @@ if __name__ == '__main__':
     parser.add_argument('--num_appearance_views', type=int, default=2)
     parser.add_argument('--num_relation_views', type=int, default=2)
     parser.add_argument('--use_global_context', action='store_true')
+    parser.add_argument("--use_final_global_view", action="store_true")
+    parser.add_argument(
+        "--global_rendered_root",
+        type=str,
+        default="../data/global_rendered_views_scanrefer",
+    )
+    parser.add_argument(
+        "--final_global_view_root",
+        type=str,
+        default="../data/final_global_aux_scanrefer",
+    )
+    parser.add_argument(
+        "--max_final_global_anchors",
+        type=int,
+        default=3,
+    )
+
     args = parser.parse_args()
     set_seed(args.seed)
     
@@ -127,6 +144,10 @@ if __name__ == '__main__':
     vlm_configs["num_appearance_views"] = args.num_appearance_views
     vlm_configs["num_relation_views"] = args.num_relation_views
     vlm_configs["use_global_context"] = args.use_global_context
+    vlm_configs["use_final_global_view"] = args.use_final_global_view
+    vlm_configs["global_rendered_root"] = args.global_rendered_root
+    vlm_configs["final_global_view_root"] = args.final_global_view_root
+    vlm_configs["max_final_global_anchors"] = args.max_final_global_anchors
 
     predictor = AdpativePredictor(**vlm_configs)
     

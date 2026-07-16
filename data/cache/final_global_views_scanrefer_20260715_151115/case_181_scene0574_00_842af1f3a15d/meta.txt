@@ -1,0 +1,13 @@
+case: 181
+scene_id: scene0574_00
+obj_id: 2
+obj_name: bench
+caption: this bench is on the top left corner . it is dark .
+IoU: 0.99
+need_global: True
+local_selected: 0
+global_need_reason: The query involves a global spatial constraint ('top left corner') and an appearance attribute ('dark') that cannot be confidently verified from the local dynamic canvases. The local views show identical benches in similar positions, making it impossible to determine which one satisfies the 'top left corner' condition without a broader scene context. Additionally, the 'dark' attribute is ambiguous given the visible appearance. Therefore, a global view is needed to assess the true spatial location and overall appearance.
+source_path: ../data/final_global_aux_scanrefer/scene0574_00/842af1f3a15d/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0574_00/842af1f3a15d/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log

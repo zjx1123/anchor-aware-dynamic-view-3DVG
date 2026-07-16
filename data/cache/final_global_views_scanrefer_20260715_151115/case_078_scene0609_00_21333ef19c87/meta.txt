@@ -1,0 +1,13 @@
+case: 78
+scene_id: scene0609_00
+obj_id: 5
+obj_name: table
+caption: the table is brown . the table is on the right side of the room .
+IoU: 0.00
+need_global: True
+local_selected: 2
+global_need_reason: The query involves a global spatial relation ('on the right side of the room') that cannot be determined from local views alone. A global view is needed to establish the correct positioning of the table relative to the entire room.
+source_path: ../data/final_global_aux_scanrefer/scene0609_00/21333ef19c87/final_global_view.jpg
+resolved_source: /root/autodl-tmp/SeqVLM_data/final_global_aux_scanrefer/scene0609_00/21333ef19c87/final_global_view.jpg
+copied: True
+log: scanrefer_full_20260715_151115.log
