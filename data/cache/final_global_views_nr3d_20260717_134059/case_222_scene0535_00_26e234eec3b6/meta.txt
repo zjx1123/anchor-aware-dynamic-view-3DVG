@@ -1,0 +1,13 @@
+case: 222
+scene_id: scene0535_00
+obj_id: 26
+obj_name: chair
+caption: the chair between the desks in the middle of the room
+IoU: 1.00
+need_global: True
+local_selected: 3
+global_need_reason: The query involves determining if a chair is between two desks and located in the middle of the room. These require assessing relationships across multiple objects and room-level positioning, which cannot be reliably determined from local dynamic canvases alone. A global view is needed to verify the full layout and confirm the chair's central location relative to multiple desks.
+source_path: ../data/final_global_aux_nr3d/scene0535_00/26e234eec3b6/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0535_00/26e234eec3b6/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

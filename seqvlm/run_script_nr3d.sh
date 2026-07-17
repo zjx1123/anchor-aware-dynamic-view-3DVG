@@ -24,7 +24,7 @@ python -u evaluate_nr3d.py \
   --crop_pool_meta_root ../data/crop_pool_meta_nr3d \
   --view_meta_root ../data/view_meta_nr3d \
   --posed_image_root ../data/posed_images_rgb_pose \
-  --dynamic_canvas_root ../data/dynamic_canvas_nr3d \
+  --dynamic_canvas_root ../data/dynamic_canvas_nr3d_anchor085 \
   --canvas_k 5 \
   --num_appearance_views 2 \
   --num_relation_views 2 \
@@ -32,4 +32,5 @@ python -u evaluate_nr3d.py \
   --use_final_global_view \
   --global_rendered_root ../data/global_rendered_views_nr3d \
   --final_global_view_root ../data/final_global_aux_nr3d \
-  --max_final_global_anchors 2
+  --max_final_global_anchors 2\
+  --seg_conf_score 0.85 \

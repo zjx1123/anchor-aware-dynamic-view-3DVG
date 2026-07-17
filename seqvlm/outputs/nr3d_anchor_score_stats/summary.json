@@ -1,0 +1,135 @@
+{
+  "total_eval_cases": 250,
+  "cases_missing_parse_cache": 0,
+  "total_anchor_occurrences": 283,
+  "unique_anchor_categories": 90,
+  "anchor_cases": 228,
+  "score_quantiles": {
+    "min": 0.7020898461341858,
+    "p01": 0.781139612197876,
+    "p05": 0.8536382734775543,
+    "p10": 0.8729221105575562,
+    "p20": 0.9083762168884277,
+    "p25": 0.9272474348545074,
+    "median": 0.9997923374176025,
+    "p75": 1.0000250339508057,
+    "p90": 1.0001940727233887,
+    "p95": 1.0001940727233887,
+    "p99": 1.000263147354126,
+    "max": 1.000329613685608,
+    "mean": 0.9625700745902719,
+    "std": 0.05708102835587552
+  },
+  "threshold_analysis": [
+    {
+      "threshold": 0.4,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.45,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.55,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.6,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.65,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.7,
+      "retained_anchors": 283,
+      "filtered_anchors": 0,
+      "retained_anchor_ratio": 1.0,
+      "affected_cases": 0,
+      "empty_anchor_cases": 0,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0
+    },
+    {
+      "threshold": 0.75,
+      "retained_anchors": 282,
+      "filtered_anchors": 1,
+      "retained_anchor_ratio": 0.9964664310954063,
+      "affected_cases": 1,
+      "empty_anchor_cases": 1,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.0043859649122807015
+    },
+    {
+      "threshold": 0.8,
+      "retained_anchors": 278,
+      "filtered_anchors": 5,
+      "retained_anchor_ratio": 0.9823321554770318,
+      "affected_cases": 5,
+      "empty_anchor_cases": 4,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.017543859649122806
+    },
+    {
+      "threshold": 0.85,
+      "retained_anchors": 270,
+      "filtered_anchors": 13,
+      "retained_anchor_ratio": 0.9540636042402827,
+      "affected_cases": 12,
+      "empty_anchor_cases": 10,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.043859649122807015
+    },
+    {
+      "threshold": 0.9,
+      "retained_anchors": 231,
+      "filtered_anchors": 52,
+      "retained_anchor_ratio": 0.8162544169611308,
+      "affected_cases": 50,
+      "empty_anchor_cases": 34,
+      "total_anchor_cases": 228,
+      "empty_anchor_case_ratio": 0.14912280701754385
+    }
+  ]
+}

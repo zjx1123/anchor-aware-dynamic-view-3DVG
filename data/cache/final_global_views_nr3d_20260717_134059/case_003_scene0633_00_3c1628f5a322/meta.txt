@@ -1,0 +1,13 @@
+case: 3
+scene_id: scene0633_00
+obj_id: 25
+obj_name: box shelf
+caption: the box shelf you want is right next to the chair in the corner with the pillow it is almost touching the chair
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The query requires precise spatial reasoning about 'next to' and 'almost touching' between the box shelf and the chair in the corner. The local canvases show significant distances (2.25m and 3.09m) between the candidates and the chair, making it unclear if they satisfy the proximity condition. A global view is necessary to verify whether any box shelf is actually adjacent to or nearly touching the chair, especially since the local crops may miss critical spatial relationships involving multiple objects in the corner.
+source_path: ../data/final_global_aux_nr3d/scene0633_00/3c1628f5a322/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0633_00/3c1628f5a322/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

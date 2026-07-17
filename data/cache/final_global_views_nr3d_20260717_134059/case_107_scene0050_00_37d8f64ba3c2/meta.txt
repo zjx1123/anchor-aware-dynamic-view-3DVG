@@ -1,0 +1,13 @@
+case: 107
+scene_id: scene0050_00
+obj_id: 9
+obj_name: door
+caption: the door that is directly south of the arm chair
+IoU: 0.00
+need_global: True
+local_selected: 1
+global_need_reason: The query requires determining a precise directional relationship ('directly south') between the door and the arm chair. The local dynamic canvases do not provide enough context to confirm whether the door is directly south of the arm chair due to limited field of view and potential occlusion. A global view is needed to assess the full spatial layout and verify the exact alignment.
+source_path: ../data/final_global_aux_nr3d/scene0050_00/37d8f64ba3c2/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0050_00/37d8f64ba3c2/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

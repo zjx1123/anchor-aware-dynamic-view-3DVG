@@ -1,0 +1,13 @@
+case: 221
+scene_id: scene0389_00
+obj_id: 12
+obj_name: door
+caption: the door that has a painting to the left of it
+IoU: 1.00
+need_global: True
+local_selected: 1
+global_need_reason: The query involves a directional spatial relation ('left of') between two objects, and while the local views provide some context, the full spatial layout including the relative positions of the door and painting requires a broader scene understanding. The global view helps confirm that the painting is indeed to the left of the door, which cannot be reliably determined from local crops alone.
+source_path: ../data/final_global_aux_nr3d/scene0389_00/e80edf021bc3/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0389_00/e80edf021bc3/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

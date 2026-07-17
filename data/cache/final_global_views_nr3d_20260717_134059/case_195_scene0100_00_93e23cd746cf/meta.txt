@@ -1,0 +1,13 @@
+case: 195
+scene_id: scene0100_00
+obj_id: 18
+obj_name: cup
+caption: the cup in the middle
+IoU: 1.00
+need_global: True
+local_selected: 2
+global_need_reason: The query requires determining which cup is 'in the middle', which depends on the overall layout of multiple cups in the scene. Local views may not capture the full arrangement needed to judge central positioning accurately.
+source_path: ../data/final_global_aux_nr3d/scene0100_00/93e23cd746cf/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0100_00/93e23cd746cf/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

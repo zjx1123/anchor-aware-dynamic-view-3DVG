@@ -1,0 +1,13 @@
+case: 30
+scene_id: scene0645_00
+obj_id: 33
+obj_name: lamp
+caption: this lamp is on a table between the beds
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The query requires verifying that the lamp is on a table and located between two beds. This involves confirming spatial relationships among three objects: the lamp, the table, and two beds. The local canvases do not provide sufficient context to determine if the lamp is truly between the beds or on the table, as the full layout and relative positioning cannot be assessed from the cropped views alone. A global view is necessary to evaluate the room-level arrangement and confirm the 'between' and 'on' relations.
+source_path: ../data/final_global_aux_nr3d/scene0645_00/648c3bd33dd1/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0645_00/648c3bd33dd1/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

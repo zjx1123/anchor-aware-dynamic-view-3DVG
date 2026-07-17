@@ -1,0 +1,13 @@
+case: 184
+scene_id: scene0704_00
+obj_id: 11
+obj_name: picture
+caption: the left artwork directly above the blue shredder
+IoU: 1.00
+need_global: True
+local_selected: 0
+global_need_reason: The anchor object (blue shredder) is not visible in any of the local canvases, making it impossible to determine the correct spatial relationship ('directly above') without global context. A global view is necessary to locate the blue shredder and identify the artwork directly above it.
+source_path: ../data/final_global_aux_nr3d/scene0704_00/41ca89aeb2f2/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0704_00/41ca89aeb2f2/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

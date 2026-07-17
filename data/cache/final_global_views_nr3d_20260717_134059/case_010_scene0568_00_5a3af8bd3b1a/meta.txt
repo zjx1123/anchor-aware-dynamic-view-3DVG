@@ -1,0 +1,13 @@
+case: 10
+scene_id: scene0568_00
+obj_id: 0
+obj_name: chair
+caption: when facing the play carpet it is the chair to the left not in the corner
+IoU: 0.02
+need_global: True
+local_selected: 3
+global_need_reason: The query requires understanding the relative position of the chair with respect to the play carpet and its location within the room (not in the corner). The local canvases do not show the play carpet or provide sufficient context about the room layout to determine if the chair is to the left of the play carpet when facing it. A global view is needed to establish the full spatial relationship and confirm the chair's position relative to the play carpet and the room's corners.
+source_path: ../data/final_global_aux_nr3d/scene0568_00/5a3af8bd3b1a/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0568_00/5a3af8bd3b1a/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

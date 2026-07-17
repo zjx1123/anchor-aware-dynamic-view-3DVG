@@ -1,0 +1,83 @@
+source_log: /root/SeqVLM-clean/logs/nr3d_full_20260717_134059.log
+total: 20
+copied: 20
+
+case=003	scene=scene0633_00	hash=3c1628f5a322	iou=0.00	obj=box shelf	copied=True
+  caption: the box shelf you want is right next to the chair in the corner with the pillow it is almost touching the chair
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_003_scene0633_00_3c1628f5a322/final_global_view.jpg
+
+case=010	scene=scene0568_00	hash=5a3af8bd3b1a	iou=0.02	obj=chair	copied=True
+  caption: when facing the play carpet it is the chair to the left not in the corner
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_010_scene0568_00_5a3af8bd3b1a/final_global_view.jpg
+
+case=027	scene=scene0643_00	hash=c70938b72f5d	iou=0.00	obj=desk	copied=True
+  caption: turn and face the small white fridge between the desks and it is the desk on the left beside the fridge
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_027_scene0643_00_c70938b72f5d/final_global_view.jpg
+
+case=030	scene=scene0645_00	hash=648c3bd33dd1	iou=0.00	obj=lamp	copied=True
+  caption: this lamp is on a table between the beds
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_030_scene0645_00_648c3bd33dd1/final_global_view.jpg
+
+case=035	scene=scene0169_00	hash=31b6eabb64aa	iou=0.00	obj=window	copied=True
+  caption: when facing the row of grey chairs the window that is over the chairs on the left
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_035_scene0169_00_31b6eabb64aa/final_global_view.jpg
+
+case=058	scene=scene0678_00	hash=3ae667e74324	iou=1.00	obj=window	copied=True
+  caption: the window in the middle of the room next to the black floor mat
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_058_scene0678_00_3ae667e74324/final_global_view.jpg
+
+case=065	scene=scene0307_00	hash=fbfbaa831047	iou=0.00	obj=shelf	copied=True
+  caption: choose the shelf next to the blue shower
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_065_scene0307_00_fbfbaa831047/final_global_view.jpg
+
+case=081	scene=scene0607_00	hash=f4c24f4d3528	iou=1.00	obj=sink	copied=True
+  caption: the sink on the right hand side
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_081_scene0607_00_f4c24f4d3528/final_global_view.jpg
+
+case=088	scene=scene0222_00	hash=d83a42dff498	iou=0.00	obj=window	copied=True
+  caption: the window on the right that has a fan in front of the middle of it
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_088_scene0222_00_d83a42dff498/final_global_view.jpg
+
+case=104	scene=scene0535_00	hash=5120f5f7f089	iou=1.00	obj=box	copied=True
+  caption: the correct box is in the middle
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_104_scene0535_00_5120f5f7f089/final_global_view.jpg
+
+case=107	scene=scene0050_00	hash=37d8f64ba3c2	iou=0.00	obj=door	copied=True
+  caption: the door that is directly south of the arm chair
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_107_scene0050_00_37d8f64ba3c2/final_global_view.jpg
+
+case=109	scene=scene0697_00	hash=d9979e25a875	iou=0.00	obj=lamp	copied=True
+  caption: the lamp on the stand with two remotes
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_109_scene0697_00_d9979e25a875/final_global_view.jpg
+
+case=135	scene=scene0565_00	hash=51777da339bc	iou=1.00	obj=door	copied=True
+  caption: it is the door located in the corner of the room next to the long table
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_135_scene0565_00_51777da339bc/final_global_view.jpg
+
+case=155	scene=scene0353_00	hash=6cfa886479e9	iou=0.00	obj=book	copied=True
+  caption: choose the book on the bottom bunk closest to the outside of the bunk
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_155_scene0353_00_6cfa886479e9/final_global_view.jpg
+
+case=184	scene=scene0704_00	hash=41ca89aeb2f2	iou=1.00	obj=picture	copied=True
+  caption: the left artwork directly above the blue shredder
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_184_scene0704_00_41ca89aeb2f2/final_global_view.jpg
+
+case=192	scene=scene0609_00	hash=27cd22abfd72	iou=1.00	obj=table	copied=True
+  caption: the square table in the middle of the room
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_192_scene0609_00_27cd22abfd72/final_global_view.jpg
+
+case=195	scene=scene0100_00	hash=93e23cd746cf	iou=1.00	obj=cup	copied=True
+  caption: the cup in the middle
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_195_scene0100_00_93e23cd746cf/final_global_view.jpg
+
+case=221	scene=scene0389_00	hash=e80edf021bc3	iou=1.00	obj=door	copied=True
+  caption: the door that has a painting to the left of it
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_221_scene0389_00_e80edf021bc3/final_global_view.jpg
+
+case=222	scene=scene0535_00	hash=26e234eec3b6	iou=1.00	obj=chair	copied=True
+  caption: the chair between the desks in the middle of the room
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_222_scene0535_00_26e234eec3b6/final_global_view.jpg
+
+case=246	scene=scene0432_00	hash=fd1cb61f2fcc	iou=0.00	obj=sofa chair	copied=True
+  caption: it is the chair with the towel hanging behind it
+  dst: /root/SeqVLM-clean/data/cache/final_global_views_nr3d_20260717_134059/case_246_scene0432_00_fd1cb61f2fcc/final_global_view.jpg

@@ -1,0 +1,13 @@
+case: 27
+scene_id: scene0643_00
+obj_id: 40
+obj_name: desk
+caption: turn and face the small white fridge between the desks and it is the desk on the left beside the fridge
+IoU: 0.00
+need_global: True
+local_selected: 2
+global_need_reason: The query involves directional relations ('left') and requires understanding of the layout between multiple objects (fridge between two desks). The local canvases do not show the full scene or confirm the presence of the fridge, making it difficult to verify the exact spatial relationships without a global view.
+source_path: ../data/final_global_aux_nr3d/scene0643_00/c70938b72f5d/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0643_00/c70938b72f5d/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

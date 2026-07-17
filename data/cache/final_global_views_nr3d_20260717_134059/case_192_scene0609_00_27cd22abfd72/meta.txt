@@ -1,0 +1,13 @@
+case: 192
+scene_id: scene0609_00
+obj_id: 4
+obj_name: table
+caption: the square table in the middle of the room
+IoU: 1.00
+need_global: True
+local_selected: 0
+global_need_reason: The query specifies 'in the middle of the room', which requires room-level spatial context to determine the global position of the table. Local canvases cannot provide sufficient information about the overall room layout or the central location of the table.
+source_path: ../data/final_global_aux_nr3d/scene0609_00/27cd22abfd72/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0609_00/27cd22abfd72/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

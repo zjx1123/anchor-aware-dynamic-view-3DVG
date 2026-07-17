@@ -1,0 +1,13 @@
+case: 155
+scene_id: scene0353_00
+obj_id: 35
+obj_name: book
+caption: choose the book on the bottom bunk closest to the outside of the bunk
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The local canvases do not show the full context of the bottom bunk or the book's position relative to it. Determining if the book is on the bottom bunk and closest to the outside requires room-level context that cannot be inferred from local views alone.
+source_path: ../data/final_global_aux_nr3d/scene0353_00/6cfa886479e9/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0353_00/6cfa886479e9/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

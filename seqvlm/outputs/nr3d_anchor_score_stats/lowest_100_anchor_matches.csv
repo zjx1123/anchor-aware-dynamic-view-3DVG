@@ -1,0 +1,101 @@
+﻿case_idx,anchor_idx,scene_id,gt_obj_id,target_name,anchor_category,matched_class,anchor_clip_score,second_clip_score,score_margin,num_scene_classes,relation_to_target,anchor_attributes,caption
+246,0,scene0432_00,2,sofa chair,towel,sofa chair,0.7020898461341858,0.6857907772064209,0.016299068927764893,2,hanging behind,[],it is the chair with the towel hanging behind it
+24,0,scene0629_00,32,picture,air mattress,picture,0.772901713848114,0.7701936960220337,0.0027080178260803223,15,in front of,"[""propped on the wall""]",the picture that is slightly behind the air mattress propped on the wall
+4,0,scene0568_00,15,chair,play carpet,picture,0.781139612197876,0.7701957821846008,0.010943830013275146,12,facing,[],while facing the play carpet it is the farthest chair to the left beside the bookshelf
+10,0,scene0568_00,0,chair,play carpet,picture,0.781139612197876,0.7701957821846008,0.010943830013275146,12,facing,[],when facing the play carpet it is the chair to the left not in the corner
+58,0,scene0678_00,32,window,floor mat,picture,0.795688271522522,0.7719597816467285,0.023728489875793457,17,next to,"[""black""]",the window in the middle of the room next to the black floor mat
+162,0,scene0343_00,5,shelf,price tag,shelf,0.8035947680473328,0.8011192083358765,0.002475559711456299,8,beside,"[""yellow""]",i am shelves beside the yellow price tag
+82,0,scene0314_00,8,office chair,shelves,table,0.8176560401916504,0.8134632706642151,0.004192769527435303,6,facing,[],facing the shelves choose the chair on the right closest to you
+184,0,scene0704_00,11,picture,shredder,picture,0.8200555443763733,0.8091369867324829,0.01091855764389038,15,below,"[""blue""]",the left artwork directly above the blue shredder
+20,2,scene0607_00,16,sink,plastic containers,cup,0.8329773545265198,0.8214842081069946,0.011493146419525146,12,to the right of,[],the sink is to the right of the metal thing on the wall and on the right of the sink on the wall is so meting white and elongated also to the right of the sink are plastic containers
+20,1,scene0607_00,16,sink,white elongated thing,cup,0.8353698253631592,0.790414035320282,0.0449557900428772,12,to the right of,"[""on the wall""]",the sink is to the right of the metal thing on the wall and on the right of the sink on the wall is so meting white and elongated also to the right of the sink are plastic containers
+115,0,scene0598_00,18,window,shutters,window,0.844734787940979,0.8304535150527954,0.014281272888183594,10,near,[],the smaller window near the shutters
+46,0,scene0580_00,9,backpack,ipad,object,0.8479756712913513,0.8380115628242493,0.00996410846710205,17,next to,"[""on the bed""]",the backpack on the floor next to the ipad on the bed
+65,0,scene0307_00,24,shelf,shower,sink,0.849880039691925,0.823576807975769,0.026303231716156006,18,next to,"[""blue""]",choose the shelf next to the blue shower
+241,0,scene0231_00,31,trash can,piles of papers,book,0.8509510159492493,0.8387829661369324,0.012168049812316895,38,behind,[],the trash can in front of piles of papers that are under a desk
+221,0,scene0389_00,12,door,painting,tv,0.8531740307807922,0.8379523158073425,0.015221714973449707,18,left,[],the door that has a painting to the left of it
+9,0,scene0063_00,7,chair,sink,kitchen counter,0.8578164577484131,0.8566465377807617,0.0011699199676513672,12,behind,[],"If you were standing in front of the sink, facing away from the sink, out of the two chairs closest to you it's the one on the right"
+40,0,scene0686_00,23,toilet,stall,toilet,0.8596438765525818,0.8440234065055847,0.01562047004699707,12,contains,"[""right""]",the toilet in the right stall
+80,0,scene0553_00,8,toilet paper,metal holding bar,handicap bar,0.8601958155632019,0.813060462474823,0.047135353088378906,13,above,[],toilet paper located directly below the metal holding bar and directly to the left of the toilet
+20,0,scene0607_00,16,sink,metal thing,cup,0.860852837562561,0.832960844039917,0.027891993522644043,12,to the left of,"[""on the wall""]",the sink is to the right of the metal thing on the wall and on the right of the sink on the wall is so meting white and elongated also to the right of the sink are plastic containers
+88,0,scene0222_00,29,window,fan,clothes,0.861427903175354,0.8261509537696838,0.035276949405670166,19,in front of,"[""in front of the middle of the window""]",the window on the right that has a fan in front of the middle of it
+118,1,scene0553_00,10,toilet paper,door,toilet,0.8629087805747986,0.8499947786331177,0.012914001941680908,13,near,[],white item resting on top of paper towel dispenser close to the door
+131,0,scene0307_00,4,sink,washing machine,copier,0.8633374571800232,0.853857159614563,0.009480297565460205,18,near,[],the sink closest to the washing machine
+102,0,scene0671_00,16,backpack,wall,object,0.8642863035202026,0.8624789714813232,0.0018073320388793945,11,hanging on,[],choose the black backpack hanging on the wall
+96,0,scene0700_00,6,backpack,floor,picture,0.8685060739517212,0.85300612449646,0.01549994945526123,22,support,[],the backpack on the floor
+161,1,scene0606_00,30,storage bin,floor,picture,0.8685060739517212,0.8503358960151672,0.018170177936553955,24,on,[],the right storage bin on the floor under the clock
+95,0,scene0343_00,8,cart,object,table,0.8686299324035645,0.8628256916999817,0.005804240703582764,8,next to,"[""teal and tan""]",the middle rolling cart white in color next to the teal and tan
+173,0,scene0653_00,11,board,note,board,0.8689786791801453,0.8685847520828247,0.00039392709732055664,20,on top of,"[""blue""]",the whiteboard that has a blue note on top
+1,0,scene0307_00,5,sink,washer,object,0.8725718259811401,0.8721394538879395,0.0004323720932006836,18,closer,[],select the sink farther from the washer
+8,1,scene0633_00,22,curtain,table,picture,0.8727153539657593,0.868615984916687,0.004099369049072266,18,in front of,"[""small"", ""white""]",it is the large curtain on the window with a small white table in front of it
+248,0,scene0500_00,28,window,blackboard,whiteboard,0.8737491369247437,0.7671706676483154,0.10657846927642822,9,front,[],the window in the back of the room ( assuming the blackboard is the front ) directly across the room from the board
+51,0,scene0598_00,11,chair,wall,divider,0.8757973313331604,0.8656755685806274,0.010121762752532959,10,against,[],chair against the wall closest to the window
+75,0,scene0462_00,21,box,wall,door,0.8794835805892944,0.8642863035202026,0.015197277069091797,14,against,[],the smaller white colored box against the wall next to the green bucket
+169,0,scene0030_00,18,bookshelf,wall,door,0.8794835805892944,0.8656755685806274,0.013808012008666992,21,facing,"[""of bookshelves""]",when facing the wall of bookshelves choose the box to the left
+179,0,scene0077_00,20,door,wall,door,0.8794835805892944,0.8656755685806274,0.013808012008666992,12,facing,"[""yellow page"", ""mirror""]",if facing the wall with the yellow page and mirror its the door on the right
+72,1,scene0251_00,14,door,room,window,0.8849356174468994,0.8751822710037231,0.00975334644317627,8,leading into,"[""white flooring""]",the open door by the trash cans leading into a room with white flooring
+76,0,scene0231_00,31,trash can,folder,object,0.8853374123573303,0.8846543431282043,0.0006830692291259766,38,above,"[""multicolored"", ""on the wall""]",the trash can that has some multicolored folder things on the wall above it
+92,0,scene0046_00,49,shoes,window,door,0.8868734836578369,0.8835767507553101,0.0032967329025268555,29,near,[],the shoes closest to the window
+178,0,scene0643_00,27,book,window,door,0.8868734836578369,0.8643342852592468,0.022539198398590088,20,near,[],the book closest to the windows
+216,0,scene0046_00,50,backpack,window,door,0.8868734836578369,0.8835767507553101,0.0032967329025268555,29,reference point for distance,[],find the backpack that is farthest away from the window
+225,0,scene0064_00,7,armchair,door,window,0.8869088292121887,0.8440865278244019,0.042822301387786865,19,facing,[],the armchair facing the door
+209,0,scene0251_00,11,trash can,corner,window,0.8892841339111328,0.8801618218421936,0.009122312068939209,8,location,[],the trash can in the corner with the blue bag
+223,0,scene0549_00,7,end table,corner,box,0.8914681673049927,0.8892841339111328,0.0021840333938598633,11,in,[],round table in corner with something black on it
+229,1,scene0426_00,16,monitor,window blinds,window,0.8942248821258545,0.8150304555892944,0.07919442653656006,25,near,[],find the monitor that sits on the table near the window blinds
+136,0,scene0474_00,41,monitor,room,object,0.8947076201438904,0.8849356174468994,0.009772002696990967,23,side of,[],the monitor that is the only one on the side of the room without the man
+141,0,scene0665_00,19,table,room,object,0.8947076201438904,0.8751822710037231,0.019525349140167236,11,corner,[],i am the round table in the corner of the room
+111,1,scene0648_00,4,backpack,fan,picture,0.8947849273681641,0.8883193135261536,0.006465613842010498,23,right,[],find the backpack that is in between the desk and the fan
+5,0,scene0527_00,23,towel,wall,picture,0.8976563215255737,0.8794835805892944,0.018172740936279297,15,support,[],it is the towel on the wall that is the farthest from the sinks
+86,0,scene0231_00,20,picture,wall,picture,0.8976563215255737,0.8794835805892944,0.018172740936279297,38,facing,"[""with two pictures""]",facing the wall with two pictures the picture on the right
+129,0,scene0583_00,12,door,wall,picture,0.8976563215255737,0.8794835805892944,0.018172740936279297,19,adjacent,[],the door along the wall with the open door ( it is not the open door )
+154,0,scene0644_00,35,whiteboard,wall,picture,0.8976563215255737,0.8794835805892944,0.018172740936279297,22,contains,"[""with two white boards""]",when facing the wall with two white boards so that the door is at your right select the whiteboard on the right
+168,0,scene0699_00,26,pillow,kitchen table,desk,0.8992080688476562,0.8360900282859802,0.06311804056167603,23,near,[],the pillow on the side near the kitchen table
+177,0,scene0685_00,16,box,box,book,0.8992564678192139,0.8813455104827881,0.01791095733642578,12,behind,[],box in front of another
+207,0,scene0353_00,32,backpack,wardrobe cabinet,kitchen cabinet,0.9006796479225159,0.8642036318778992,0.0364760160446167,32,closer to,"[""tall"", ""brown""]",this backpack is closer to the tall brown wardrobe cabinet '
+223,1,scene0549_00,7,end table,object,box,0.9038111567497253,0.8821670413017273,0.021644115447998047,11,on,"[""black""]",round table in corner with something black on it
+38,0,scene0086_00,15,rail,toilet paper holder,toilet seat cover dispenser,0.9050271511077881,0.869756281375885,0.035270869731903076,18,above,[],the rail on the wall under the toilet paper holder
+194,2,scene0653_00,14,desk,cabinet,file cabinet,0.9053100347518921,0.8813328146934509,0.023977220058441162,20,on,"[""black""]",the lightest colored desk under the clock closest to the file box on the black cabinet
+231,0,scene0458_00,18,bottle,counter,object,0.9072744846343994,0.8713126182556152,0.03596186637878418,20,on,"[""bathroom""]",the bottle is the only one sitting on the bathroom counter next to the sink
+155,0,scene0353_00,35,book,bunk,bed,0.9100288152694702,0.8528544306755066,0.05717438459396362,32,supports,"[""bottom""]",choose the book on the bottom bunk closest to the outside of the bunk
+109,0,scene0697_00,19,lamp,stand,object,0.9107376933097839,0.8935152888298035,0.01722240447998047,19,on,"[""with two remotes""]",the lamp on the stand with two remotes
+197,1,scene0328_00,28,sign,counter,kitchen counter,0.9120597243309021,0.8994367122650146,0.012623012065887451,15,on,[],this sign is next to the sink and on the counter
+218,0,scene0653_00,25,window,computer,monitor,0.9121630191802979,0.881808876991272,0.03035414218902588,20,facing directly away from,[],the window that does not have a computer facing directly away from it
+243,1,scene0598_00,16,mouse,computer,monitor,0.9121630191802979,0.881808876991272,0.03035414218902588,10,associated with,"[""on the left""]",if you are facing the monitors select the mouse that goes with the computer on the left
+247,0,scene0246_00,2,light,room,picture,0.9148361086845398,0.8947076201438904,0.020128488540649414,22,contains,[],the light in the middle of the room on the ceiling
+140,0,scene0643_00,38,shelf,corner,object,0.9167729020118713,0.9033516645431519,0.013421237468719482,20,in,[],the tall set of shelves in the corner
+100,0,scene0670_00,13,towel,oven,stove,0.9183359146118164,0.8601093888282776,0.05822652578353882,17,left side of,[],the towel on the left side of the oven door
+182,0,scene0149_00,8,kitchen cabinets,oven,stove,0.9183359146118164,0.892693281173706,0.02564263343811035,13,below,[],the kitchen cabinet located above the oven
+239,0,scene0203_00,21,bag,end table,coffee table,0.9242182970046997,0.8832616806030273,0.04095661640167236,23,under,[],the blue bag on top of the end table next to the couch
+142,0,scene0025_00,4,couch,shelf unit,bookshelf,0.924536406993866,0.8824955224990845,0.042040884494781494,23,not next to,"[""tall""]",this couch is not next to a tall shelf unit
+226,0,scene0300_00,6,table,bag,backpack,0.9259992837905884,0.8513134717941284,0.07468581199645996,9,on,[],it is the brown table with a bag on it
+54,0,scene0699_00,18,door,corner,picture,0.9267675876617432,0.8914681673049927,0.03529942035675049,23,in,[],tiny door in the corner
+204,0,scene0616_00,4,table,corner,picture,0.9267675876617432,0.8892841339111328,0.03748345375061035,14,not in,[],choose the round table that is not in the corner
+50,0,scene0629_00,0,door,painting,picture,0.9277272820472717,0.8428410887718201,0.08488619327545166,15,closer to,"[""red and yellow""]",pick the door that is slightly open and is closer to the red an yellow painting
+134,0,scene0518_00,13,cabinet,desk,table,0.93071448802948,0.8782879710197449,0.05242651700973511,16,below,[],large cabinet that is not above the desk
+181,0,scene0063_00,3,microwave,desk,table,0.93071448802948,0.8782879710197449,0.05242651700973511,12,supporting,"[""light brown""]",the microwave on the light brown desk
+30,0,scene0645_00,33,lamp,table,desk,0.9307318329811096,0.8984120488166809,0.03231978416442871,38,supporting,[],this lamp is on a table between the beds
+67,0,scene0249_00,33,window,recycling bin,trash can,0.934809684753418,0.798262357711792,0.13654732704162598,8,closest to,[],the window closest to the recycling bin
+176,0,scene0084_00,7,toilet paper,paper towels,paper towel roll,0.9361606240272522,0.9278296828269958,0.008330941200256348,27,near,[],the middle option near the paper towels
+28,0,scene0704_00,15,cabinet,printer,copier,0.9364234209060669,0.8790640830993652,0.05735933780670166,15,not above,[],wall mounted cabinet the one that is not above printer
+110,0,scene0704_00,14,cabinets,printer,copier,0.9364234209060669,0.8790640830993652,0.05735933780670166,15,below,[],the cabinets above the printer
+148,0,scene0651_00,8,chair,kitchen,kitchen counter,0.9372340440750122,0.9114492535591125,0.025784790515899658,12,near,[],the chair closest to the kitchen
+211,0,scene0651_00,8,chair,kitchen,kitchen counter,0.9372340440750122,0.9114492535591125,0.025784790515899658,12,closest to,[],choose the chair that is closest to the kitchen
+232,0,scene0025_00,11,shelf,shelf,bookshelf,0.9415465593338013,0.8829823732376099,0.058564186096191406,23,comparative,"[""taller""]",much taller shelf of the two
+194,1,scene0653_00,14,desk,file box,box,0.9427502751350403,0.9227784276008606,0.019971847534179688,20,near,[],the lightest colored desk under the clock closest to the file box on the black cabinet
+136,1,scene0474_00,41,monitor,man,person,0.944715142250061,0.896708607673645,0.048006534576416016,23,without,[],the monitor that is the only one on the side of the room without the man
+244,0,scene0314_00,7,office chair,chair,office chair,0.9461596012115479,0.8723514676094055,0.07380813360214233,6,adjacent,"[""next to other chair""]",of the two chairs that are next to each other choose the one in front of the monitor
+94,0,scene0580_00,25,door,doors,door,0.9464390277862549,0.8507145643234253,0.09572446346282959,17,facing,[],facing the doors the door on the left
+112,1,scene0580_00,25,door,doors,door,0.9464390277862549,0.8507145643234253,0.09572446346282959,17,facing,[],standing at the window facing the doors it is the one on the left
+117,0,scene0645_00,29,trash can,bathroom,toilet,0.948784351348877,0.9453217387199402,0.0034626126289367676,38,not in,[],the correct trash can is not in the bathroom
+174,0,scene0645_00,72,mirror,bathroom,toilet,0.948784351348877,0.9453217387199402,0.0034626126289367676,38,contains,[],mirror in the bathroom
+56,0,scene0462_00,21,box,shelving,shelf,0.9535354375839233,0.8511369824409485,0.10239845514297485,14,on,"[""left""]",printer on left shelving on right you want the back option of the two boxes
+29,0,scene0696_00,4,monitor,monitors,monitor,0.9578905701637268,0.8959304690361023,0.06196010112762451,13,facing,[],when facing the monitors it is the monitor on the left
+3,0,scene0633_00,25,box shelf,chair,armchair,0.9587770104408264,0.860783576965332,0.09799343347549438,18,next to,"[""in the corner"", ""with the pillow""]",the box shelf you want is right next to the chair in the corner with the pillow it is almost touching the chair
+114,0,scene0607_00,16,sink,sinks,sink,0.959032416343689,0.874639630317688,0.08439278602600098,12,facing,[],facing the sinks choose the one on the right
+107,0,scene0050_00,9,door,arm chair,chair,0.9607139229774475,0.9357098937034607,0.025004029273986816,22,north,[],the door that is directly south of the arm chair
+123,0,scene0648_00,25,chair,doorway,door,0.9607983827590942,0.8760092854499817,0.08478909730911255,23,near,"[""exit""]",it is the chair closest to the exit doorway
+220,0,scene0251_00,12,trash can,doorway,door,0.9607983827590942,0.8760092854499817,0.08478909730911255,8,next to,"[""open""]",the trashcan next to the open doorway
+64,2,scene0644_00,41,keyboard,shelves,shelf,0.9627906084060669,0.8670403361320496,0.09575027227401733,22,near,[],the keyboard that is on the little side desk on the end of the big desks and is near the shelves
+199,1,scene0549_00,30,window,shelves,shelf,0.9627906084060669,0.8276374340057373,0.1351531744003296,11,not near,[],the window near the table not the one near the shelves
+34,0,scene0598_00,7,chair,bookshelves,bookshelf,0.9633789658546448,0.8167527914047241,0.14662617444992065,10,facing,[],facing the bookshelves the chair in the lower right corner
+68,0,scene0208_00,1,bookshelf,bookcase,bookshelf,0.9680622816085815,0.9172495007514954,0.05081278085708618,18,adjacent,"[""longest set""]",find the box with the longest set of bookcases then choose the smaller one in the corner next to it on the left

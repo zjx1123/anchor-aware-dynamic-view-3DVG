@@ -1,0 +1,13 @@
+case: 104
+scene_id: scene0535_00
+obj_id: 29
+obj_name: box
+caption: the correct box is in the middle
+IoU: 1.00
+need_global: True
+local_selected: 0
+global_need_reason: The query involves a global spatial relation ('in the middle') that requires understanding the overall layout of objects in the scene. Local views alone cannot confirm which box is centrally located among others.
+source_path: ../data/final_global_aux_nr3d/scene0535_00/5120f5f7f089/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0535_00/5120f5f7f089/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

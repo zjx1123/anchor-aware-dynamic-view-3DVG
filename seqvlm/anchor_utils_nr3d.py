@@ -46,9 +46,29 @@ def build_anchor_candidates_nr3d(
             continue
 
         try:
-            matched_cls, _ = handler.predict_obj_class(anchor_cat, obj_embeds)
-        except Exception:
-            matched_cls = anchor_cat
+            matched_cls, _, anchor_match_score = \
+                handler.predict_obj_class(
+                    anchor_cat,
+                    obj_embeds,
+                    return_match_score=True,
+                )
+        except Exception as e:
+            print(
+                f"[Anchor Match Error] "
+                f"anchor={anchor_cat}, error={e}"
+            )
+            continue
+
+        # 新增：低质量参照物文本匹配直接丢弃
+        if anchor_match_score < seg_conf_score:
+            print(
+                f"[Anchor Filtered] "
+                f"anchor={anchor_cat}, "
+                f"matched_class={matched_cls}, "
+                f"clip_score={anchor_match_score:.4f}, "
+                f"threshold={seg_conf_score:.4f}"
+            )
+            continue
 
         candidates = []
 

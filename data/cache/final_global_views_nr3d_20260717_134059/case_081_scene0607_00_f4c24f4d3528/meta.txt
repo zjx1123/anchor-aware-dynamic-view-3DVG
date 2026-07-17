@@ -1,0 +1,13 @@
+case: 81
+scene_id: scene0607_00
+obj_id: 16
+obj_name: sink
+caption: the sink on the right hand side
+IoU: 1.00
+need_global: True
+local_selected: 0
+global_need_reason: The query involves a relative directional descriptor ('right hand side') that requires understanding the overall scene layout and viewer perspective, which cannot be determined from local dynamic canvases alone.
+source_path: ../data/final_global_aux_nr3d/scene0607_00/f4c24f4d3528/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0607_00/f4c24f4d3528/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log

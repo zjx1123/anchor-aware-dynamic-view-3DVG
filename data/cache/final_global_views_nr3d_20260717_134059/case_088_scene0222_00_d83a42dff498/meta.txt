@@ -1,0 +1,13 @@
+case: 88
+scene_id: scene0222_00
+obj_id: 29
+obj_name: window
+caption: the window on the right that has a fan in front of the middle of it
+IoU: 0.00
+need_global: True
+local_selected: 0
+global_need_reason: The local canvases do not show a window as the target object, nor do they clearly depict a fan in front of the middle of a window on the right side. The query requires room-level context to verify the global position ('on the right') and the spatial relationship between the fan and the window, which cannot be determined from the current local views.
+source_path: ../data/final_global_aux_nr3d/scene0222_00/d83a42dff498/final_global_view.jpg
+resolved_source: /root/SeqVLM-clean/data/final_global_aux_nr3d/scene0222_00/d83a42dff498/final_global_view.jpg
+copied: True
+log: nr3d_full_20260717_134059.log
