@@ -194,24 +194,9 @@ Your task has two parts:
 
 Use the local dynamic canvases as the primary evidence. First judge target category, appearance, local context, visible anchors, and non-directional spatial relations.
 
-Set "need_global" to true ONLY when the local canvases are insufficient and the query requires room-level or scene-level context, such as:
-- global position: middle, center, corner, against wall, near wall, near door/window
-- multiple anchors that may not appear together in local views
-- scene relationships that local crops cannot show completely
-- ordering among a full group of objects when the whole group is not visible locally
-- layout relations involving several objects or large structures
+Set "need_global" to true when the local canvases are insufficient and the query requires room-level or scene-level context.
 
-Set "need_global" to false when the decision can be made from local evidence, or when global view is likely to be unreliable or misleading, such as:
-- pure appearance attributes: color, material, shape, texture, size, object type
-- facing or orientation words: facing left/right/front/back, leaning, turned
-- relative directional words that depend on viewpoint: left/right/front/back/east/west/north/south
-- same-category target-anchor relations, especially symmetric relations such as beside, next to, near, close to, another
-- exact counting or ordinal relations if the local candidate canvases already show the relevant group clearly
-- cases where global evidence would not distinguish between the final candidates
-
-For ordering/counting queries, request global view only if the local canvases do not show the full group needed for ordering. If the ordering can be judged locally, or if the relation is likely to cause target-anchor confusion, do not request global view.
-
-If uncertain, set "need_global" to false.
+Set "need_global" to false when the decision can be made from local evidence, or when global view is likely to be unreliable or misleading.
 
 Return only valid JSON in this format:
 {

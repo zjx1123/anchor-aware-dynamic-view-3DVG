@@ -1,7 +1,10 @@
-'''
-把 Mask3D 实例 proposal 的 3D 点云 投影到每个渲染视角，
-计算 2D bbox、可见性、面积等，供后续候选筛选使用。
-'''
+"""
+把 3D instance 点云投影到每个渲染视角，
+计算 2D bbox、可见性、面积等。
+
+ScanRefer 使用 Mask3D proposals；
+NR3D 使用与 feats_3d.pkl 相同的 GT instances。
+"""
 import os
 import json
 import argparse
@@ -22,10 +25,102 @@ def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+BACKGROUND_LABELS = {"wall", "floor", "ceiling"}
+
+
+def _to_numpy(value):
+    if torch.is_tensor(value):
+        return value.detach().cpu().numpy()
+    return np.asarray(value)
+
+
+def load_nr3d_gt_instances(scene_id, scan_dir):
+    """
+    读取与生成 feats_3d.pkl 时完全相同的 GT instance 数据。
+
+    proposal_id:
+        去除 wall/floor/ceiling 后的局部顺序，
+        与 feats_3d.pkl 中的 local_index 一致。
+
+    obj_id:
+        原始 ScanNet GT instance id。
+    """
+    pcd_path = os.path.join(
+        scan_dir,
+        "pcd_with_global_alignment",
+        f"{scene_id}.pth",
+    )
+    label_path = os.path.join(
+        scan_dir,
+        "instance_id_to_name",
+        f"{scene_id}.json",
+    )
+
+    if not os.path.exists(pcd_path):
+        raise FileNotFoundError(
+            f"Missing aligned point cloud: {pcd_path}"
+        )
+
+    if not os.path.exists(label_path):
+        raise FileNotFoundError(
+            f"Missing instance label file: {label_path}"
+        )
+
+    # 兼容不同 PyTorch 版本
+    try:
+        loaded = torch.load(
+            pcd_path,
+            map_location="cpu",
+            weights_only=False,
+        )
+    except TypeError:
+        loaded = torch.load(
+            pcd_path,
+            map_location="cpu",
+        )
+
+    pcds, colors, _, instance_labels = loaded
+
+    pcds = _to_numpy(pcds).astype(np.float32)
+    instance_labels = _to_numpy(instance_labels)
+
+    with open(label_path, "r", encoding="utf-8") as f:
+        obj_labels = json.load(f)
+
+    instances = []
+
+    # 必须与 load_pc() 保持完全相同的遍历及过滤顺序
+    for original_obj_id, obj_label in enumerate(obj_labels):
+        if obj_label in BACKGROUND_LABELS:
+            continue
+
+        mask = instance_labels == original_obj_id
+        num_points = int(mask.sum())
+
+        if num_points <= 0:
+            raise RuntimeError(
+                f"{scene_id}: GT instance {original_obj_id} "
+                f"({obj_label}) contains no points"
+            )
+
+        # 必须使用未归一化的全局坐标
+        points = pcds[mask, :3].astype(np.float32)
+
+        # 过滤后的索引，即 NR3D 推理中的 local_index/proposal_id
+        proposal_id = len(instances)
+
+        instances.append({
+            "proposal_id": int(proposal_id),
+            "obj_id": int(original_obj_id),
+            "label": str(obj_label),
+            "points": points,
+        })
+
+    return instances
 
 def project_points_to_view(points_np, view_meta, device):
     """
-    Project axis-aligned Mask3D proposal points to a rendered PyTorch3D view.
+    Project axis-aligned instance points to a rendered PyTorch3D view.
     points_np: [N, 3]
     view_meta: one item from render_meta["views"]
     """
@@ -91,49 +186,146 @@ def build_scene_meta(
     mask3d_root,
     rendered_root,
     device,
+    instance_source="mask3d",
+    nr3d_scan_dir=None,
     min_visible_points=20,
     min_bbox_size=5,
     overwrite=False,
 ):
     scene_dir = os.path.join(rendered_root, scene_id)
 
-    render_meta_path = os.path.join(scene_dir, "render_meta.json")
-    out_path = os.path.join(scene_dir, "rendered_view_meta.json")
-    mask_path = os.path.join(mask3d_root, f"{scene_id}.npz")
+    render_meta_path = os.path.join(
+        scene_dir,
+        "render_meta.json",
+    )
+    out_path = os.path.join(
+        scene_dir,
+        "rendered_view_meta.json",
+    )
 
+    # 恢复：已有结果且没有要求覆盖时直接跳过
     if os.path.exists(out_path) and not overwrite:
         print(f"[skip existing] {scene_id}")
         return True
 
+    # 恢复：先检查 render_meta 是否存在
     if not os.path.exists(render_meta_path):
-        print(f"[skip] missing render_meta: {render_meta_path}")
-        return False
-
-    if not os.path.exists(mask_path):
-        print(f"[skip] missing mask3d npz: {mask_path}")
+        print(
+            f"[skip] missing render_meta: "
+            f"{render_meta_path}"
+        )
         return False
 
     render_meta = load_json(render_meta_path)
-    data = np.load(mask_path, allow_pickle=True)
 
-    if "ins_pcds" not in data:
-        raise KeyError(
-            f"{mask_path} does not contain key 'ins_pcds'. Available keys: {data.files}"
+    # ---------------------------------------------------------
+    # NR3D：读取与 feats_3d.pkl 相同的 GT instances
+    # ---------------------------------------------------------
+    if instance_source == "nr3d_gt":
+        if not nr3d_scan_dir:
+            raise ValueError(
+                "--nr3d_scan_dir is required when "
+                "--instance_source nr3d_gt"
+            )
+
+        instances = load_nr3d_gt_instances(
+            scene_id=scene_id,
+            scan_dir=nr3d_scan_dir,
+        )
+
+    # ---------------------------------------------------------
+    # ScanRefer：继续读取原来的 Mask3D proposals
+    # ---------------------------------------------------------
+    elif instance_source == "mask3d":
+        mask_path = os.path.join(
+            mask3d_root,
+            f"{scene_id}.npz",
+        )
+
+        if not os.path.exists(mask_path):
+            print(
+                f"[skip] missing mask3d npz: "
+                f"{mask_path}"
+            )
+            return False
+
+        data = np.load(
+            mask_path,
+            allow_pickle=True,
+        )
+
+        if "ins_pcds" not in data:
+            raise KeyError(
+                f"{mask_path} does not contain key "
+                f"'ins_pcds'. Available keys: "
+                f"{data.files}"
+            )
+
+        instances = []
+
+        for proposal_id, points in enumerate(
+            data["ins_pcds"]
+        ):
+            instances.append({
+                "proposal_id": int(proposal_id),
+                "obj_id": None,
+                "label": None,
+                "points": np.asarray(
+                    points[:, :3],
+                    dtype=np.float32,
+                ),
+            })
+
+    else:
+        raise ValueError(
+            f"Unsupported instance_source: "
+            f"{instance_source}"
         )
 
     result = {}
 
-    for obj_id, pts in enumerate(data["ins_pcds"]):
-        pts = np.asarray(pts[:, :3], dtype=np.float32)
+    # ---------------------------------------------------------
+    # 对每个 instance 投影到五个渲染视角
+    # ---------------------------------------------------------
+    for instance in instances:
+        proposal_id = int(
+            instance["proposal_id"]
+        )
+
+        pts = np.asarray(
+            instance["points"][:, :3],
+            dtype=np.float32,
+        )
+
+        if pts.ndim != 2 or pts.shape[0] == 0:
+            print(
+                f"[warn] empty/invalid points: "
+                f"scene={scene_id}, "
+                f"proposal_id={proposal_id}"
+            )
+            continue
 
         xyz_min = pts.min(axis=0)
         xyz_max = pts.max(axis=0)
 
-        center = ((xyz_min + xyz_max) / 2.0).tolist()
-        size = (xyz_max - xyz_min).tolist()
+        center = (
+            (xyz_min + xyz_max) / 2.0
+        ).tolist()
+
+        size = (
+            xyz_max - xyz_min
+        ).tolist()
 
         obj_result = {
-            "proposal_id": int(obj_id),
+            "proposal_id": proposal_id,
+
+            # NR3D 下对应原始 GT instance id
+            "obj_id": instance.get("obj_id"),
+
+            # NR3D 下保存实例类别，方便人工检查
+            "label": instance.get("label"),
+
+            "instance_source": instance_source,
             "center_3d": center,
             "size_3d": size,
             "views": {},
@@ -145,7 +337,13 @@ def build_scene_meta(
         for view_meta in render_meta["views"]:
             view_name = view_meta["view_name"]
 
-            x, y, valid, image_width, image_height = project_points_to_view(
+            (
+                x,
+                y,
+                valid,
+                image_width,
+                image_height,
+            ) = project_points_to_view(
                 points_np=pts,
                 view_meta=view_meta,
                 device=device,
@@ -158,20 +356,42 @@ def build_scene_meta(
                     "visible": False,
                     "visible_points": visible_points,
                     "slot": int(view_meta["slot"]),
+                    "view_style": view_meta.get(
+                        "scene",
+                        {},
+                    ).get(
+                        "view_style",
+                        view_name,
+                    ),
                 }
                 continue
 
-            bbox = bbox_from_valid_pixels(x, y, valid)
+            bbox = bbox_from_valid_pixels(
+                x=x,
+                y=y,
+                valid=valid,
+            )
+
             x1, y1, x2, y2 = bbox
 
             bw = max(0, x2 - x1)
             bh = max(0, y2 - y1)
 
             area = float(bw * bh)
-            area_ratio = area / float(image_width * image_height)
+
+            area_ratio = (
+                area
+                / float(
+                    image_width * image_height
+                )
+            )
 
             visible = True
-            if bw < min_bbox_size or bh < min_bbox_size:
+
+            if (
+                bw < min_bbox_size
+                or bh < min_bbox_size
+            ):
                 visible = False
 
             view_item = {
@@ -187,24 +407,52 @@ def build_scene_meta(
                 "image_width": image_width,
                 "image_height": image_height,
                 "slot": int(view_meta["slot"]),
-                "view_style": view_meta.get("scene", {}).get("view_style", view_name),
+                "view_style": view_meta.get(
+                    "scene",
+                    {},
+                ).get(
+                    "view_style",
+                    view_name,
+                ),
             }
 
-            obj_result["views"][view_name] = view_item
+            obj_result["views"][view_name] = (
+                view_item
+            )
 
             if visible and area > best_area:
                 best_area = area
                 best_view = view_name
 
-        obj_result["best_rendered_view"] = best_view
-        obj_result["best_rendered_area"] = best_area if best_area >= 0 else 0.0
+        obj_result["best_rendered_view"] = (
+            best_view
+        )
+        obj_result["best_rendered_area"] = (
+            best_area if best_area >= 0 else 0.0
+        )
 
-        result[str(obj_id)] = obj_result
+        # 关键：必须写入 result
+        result[str(proposal_id)] = obj_result
 
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
+    with open(
+        out_path,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            result,
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
 
-    print(f"[done] {scene_id}: {out_path}")
+    print(
+        f"[done] {scene_id}: "
+        f"instances={len(result)}, "
+        f"source={instance_source}, "
+        f"path={out_path}"
+    )
+
     return True
 
 
@@ -212,6 +460,27 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--scene_list", required=True)
+    parser.add_argument(
+        "--instance_source",
+        type=str,
+        choices=["mask3d", "nr3d_gt"],
+        default="mask3d",
+        help=(
+            "mask3d for ScanRefer; "
+            "nr3d_gt for NR3D GT instances"
+        ),
+    )
+
+    parser.add_argument(
+        "--nr3d_scan_dir",
+        type=str,
+        default=None,
+        help=(
+            "Directory containing "
+            "pcd_with_global_alignment/ and "
+            "instance_id_to_name/"
+        ),
+    )
     parser.add_argument(
         "--mask3d_root",
         default=os.path.join(DATA_ROOT, "mask3d_inst_seg_pcds"),
@@ -251,6 +520,8 @@ def main():
                 min_visible_points=args.min_visible_points,
                 min_bbox_size=args.min_bbox_size,
                 overwrite=args.overwrite,
+                instance_source=args.instance_source,
+                nr3d_scan_dir=args.nr3d_scan_dir,
             ):
                 ok += 1
         except Exception as e:
