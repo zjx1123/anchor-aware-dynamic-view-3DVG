@@ -1,0 +1,25 @@
+{
+  "anchors": [
+    {
+      "attributes": [],
+      "category": "bed",
+      "relation_to_target": "not on"
+    }
+  ],
+  "raw_query": "the only pillow that is not on the bed",
+  "relations": [
+    {
+      "object": "bed",
+      "relation": "not on",
+      "subject": "pillow"
+    }
+  ],
+  "target": {
+    "attributes": [
+      "only",
+      "not on the bed"
+    ],
+    "category": "pillow"
+  },
+  "view_constraints": []
+}

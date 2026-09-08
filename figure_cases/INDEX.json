@@ -1,0 +1,37 @@
+{
+  "25": {
+    "out_dir": "/root/SeqVLM-clean/figure_cases/nr3d_case025_scene0652_00",
+    "query": "the only pillow that is not on the bed",
+    "parsed": {
+      "anchors": [
+        {
+          "attributes": [],
+          "category": "bed",
+          "relation_to_target": "not on"
+        }
+      ],
+      "raw_query": "the only pillow that is not on the bed",
+      "relations": [
+        {
+          "object": "bed",
+          "relation": "not on",
+          "subject": "pillow"
+        }
+      ],
+      "target": {
+        "attributes": [
+          "only",
+          "not on the bed"
+        ],
+        "category": "pillow"
+      },
+      "view_constraints": []
+    },
+    "gt": "pillow#17",
+    "iou": 1.0,
+    "final_id": 5,
+    "final_pid": "14",
+    "n_candidates": 6,
+    "gate": "[FinalGlobalGate] scene=scene0652_00, need_global=True, local_selected=5, reason=The local canvas for image_id=5 shows a pillow near the bed but does not clearly confirm whether it is physically on or off the bed. A global view would provide better context to determine if this pillow is indeed not on the bed, especially since the query emphasizes 'the only' such pillow, requiring high confidence in the spatial relationship."
+  }
+}
