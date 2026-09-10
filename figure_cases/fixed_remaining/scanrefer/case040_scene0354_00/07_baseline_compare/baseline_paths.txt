@@ -1,0 +1,8 @@
+../data/scanrefer_preprocessed/scene0354_00/3/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/5/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/6/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/8/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/9/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/10/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/11/canvas.jpg
+../data/scanrefer_preprocessed/scene0354_00/12/canvas.jpg

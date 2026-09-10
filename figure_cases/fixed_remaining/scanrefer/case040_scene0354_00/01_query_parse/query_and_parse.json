@@ -1,0 +1,75 @@
+{
+  "dataset": "scanrefer",
+  "case": 40,
+  "scene_id": "scene0354_00",
+  "query": "this is a red office chair . it is at the end with the tv and to the left .",
+  "gt_obj_name": "chair",
+  "gt_obj_id": "2",
+  "baseline_iou": 0.02,
+  "improved_iou": 1.0,
+  "delta": 0.98,
+  "need_global": false,
+  "final_global_skipped": true,
+  "baseline_log": "/root/SeqVLM-clean/logs/scanrefer_full.out",
+  "improved_log": "/root/SeqVLM-clean/logs/scanrefer_full_20260715_151115.log",
+  "parsed_query": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "tv",
+        "relation_to_target": "at the end with"
+      }
+    ],
+    "raw_query": "this is a red office chair . it is at the end with the tv and to the left .",
+    "relations": [
+      {
+        "object": "tv",
+        "relation": "at the end with",
+        "subject": "office chair"
+      },
+      {
+        "object": "tv",
+        "relation": "to the left of",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "red"
+      ],
+      "category": "office chair"
+    },
+    "view_constraints": [
+      "to the left"
+    ]
+  },
+  "final_selected_image_id": 7,
+  "final_global_gate": "[FinalGlobalGate] scene=scene0354_00, need_global=False, local_selected=7, reason=",
+  "n_target_candidates_improved": 10,
+  "target_candidate_paths_improved": [
+    "../data/dynamic_canvas_scanrefer/scene0354_00/eb5fa02769f1/3/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/b17d146af151/5/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/2ab168fe99ca/6/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/762105205931/8/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/b0b400f1278a/9/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/f612a8c326ff/10/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/da88554fedef/11/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/7097bb57f5a0/12/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/4d3ef759ef60/78/canvas.jpg",
+    "../data/dynamic_canvas_scanrefer/scene0354_00/8ac8f894f47f/90/canvas.jpg"
+  ],
+  "n_target_candidates_baseline": 8,
+  "target_candidate_paths_baseline": [
+    "../data/scanrefer_preprocessed/scene0354_00/3/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/5/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/6/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/8/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/9/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/10/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/11/canvas.jpg",
+    "../data/scanrefer_preprocessed/scene0354_00/12/canvas.jpg"
+  ],
+  "global_view_log_path": null,
+  "compare_status": "baseline 0.02 -> improved 1.0",
+  "note": "remaining fixed case (not in the 3 global-fixed packages)"
+}

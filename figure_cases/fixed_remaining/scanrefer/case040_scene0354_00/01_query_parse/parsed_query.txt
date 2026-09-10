@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    {
+      "attributes": [],
+      "category": "tv",
+      "relation_to_target": "at the end with"
+    }
+  ],
+  "raw_query": "this is a red office chair . it is at the end with the tv and to the left .",
+  "relations": [
+    {
+      "object": "tv",
+      "relation": "at the end with",
+      "subject": "office chair"
+    },
+    {
+      "object": "tv",
+      "relation": "to the left of",
+      "subject": "office chair"
+    }
+  ],
+  "target": {
+    "attributes": [
+      "red"
+    ],
+    "category": "office chair"
+  },
+  "view_constraints": [
+    "to the left"
+  ]
+}

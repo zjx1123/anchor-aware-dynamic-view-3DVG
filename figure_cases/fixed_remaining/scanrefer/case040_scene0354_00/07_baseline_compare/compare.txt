@@ -1,0 +1,6 @@
+baseline_iou: 0.02
+improved_iou: 1.0
+need_global: False
+global_skipped: True
+
+[FinalGlobalGate] scene=scene0354_00, need_global=False, local_selected=7, reason=
