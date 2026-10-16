@@ -89,7 +89,6 @@ Important visual marks:
 - RED boxes indicate the candidate target object.
 - BLUE boxes indicate selected reference/anchor objects mentioned in the query.
 - The BLUE box may show only ONE of the reference objects from the query, not necessarily all of them.
-- Some reference objects may only appear in the text summaries and 3D candidate information, even if they are not marked by blue boxes in the image.
 - Some sub-images focus on target appearance.
 - Some sub-images show target-anchor spatial relations in the original full-frame view.
 
@@ -99,8 +98,11 @@ You must use BOTH:
 3. global scene context if visible.
 
 Do not select only by target appearance when the query contains reference objects.
-You must check whether the red-box target satisfies the full query. Do not focus only on the blue-box anchor; the blue box is only visual evidence for one selected reference object. You should also use the parsed query, anchor summary, candidate summary, and 3D spatial cues to reason about other reference objects mentioned in the text.
-
+First verify that the RED-boxed object matches the target category and attributes.
+Use a spatial relation only when the target and the correct anchor are visibly grounded in the same relation view.
+Missing or unclear relation evidence is unknown, not a contradiction; never infer linguistic directions from camera orientation.
+You must check whether the red-box target satisfies the full query. Do not focus only on the blue-box anchor; the blue box is only visual evidence for one selected reference object. 
+Use only visible evidence and the provided text. Do not infer relations from unavailable geometry. 
 Return ONLY valid JSON, no markdown, no code block.
 The JSON format must be:
 { "process": "Explain how you checked target appearance, anchors, and spatial relations.", "image_id": 0 }
@@ -120,13 +122,12 @@ def build_anchor_aware_user_prompt(
         '}'
     )
     return (
-        f"Query:\n{query}\n\n"
-        f"Parsed query:\n{parsed_query}\n\n"
-        f"Anchor/reference object summary:\n{anchor_summary}\n\n"
-        f"Current candidate batch:\n{candidate_summary}\n\n"
+        f"Query:\n{query}\n"
+        f"Parsed query:\n{parsed_query}\n"
+        f"Current candidate batch:\n{candidate_summary}\n"
         f"There are {n_images} candidate images in this batch.\n"
         "The image_id values refer to the original candidate indices shown in the "
-        "candidate summary, not necessarily 0..n-1.\n\n"
+        "candidate summary, not necessarily 0..n-1.\n"
         "Please select the best image_id.\n"
         f"Return ONLY valid JSON:\n{json_example}\n"
     )
@@ -153,10 +154,13 @@ def build_dynamic_anchor_aware_user_prompt(
             "\nFinal-round auxiliary global view:\n"
             "- After the candidate dynamic canvases, you are given ONE additional global view.\n"
             "- This global view is NOT a candidate image.\n"
-            "- RED boxes in this global view mark the current final-round candidate targets.\n"
-            "- The red labels contain selectable image_id values, such as id=3|pid=27.\n"
-            "- BLUE boxes mark reference/anchor objects.\n"
-            "- Do not infer directional relations from the global view. Use the local evidence in the candidate dynamic canvases as the primary basis for decision-making, and treat the global view only as auxiliary context.\n"
+            "RED boxes mark candidate target objects.\n"
+            "BLUE boxes mark selected reference/anchor hypotheses when visible.\n"
+            "The BLUE-boxed object is an anchor hypothesis, not a verified anchor.\n"
+            "Its attributes and relation to the target must be checked visually.\n"
+            "If a required anchor is not visibly grounded, treat that relation as unverified.\n"
+            "Do not infer missing anchor relations.\n"
+            "Select the candidate that best satisfies the full query using directly visible evidence.\n"
             "- Use this global view only to verify global spatial layout and target-anchor relations.\n"
             "- Make the final decision mainly based on the candidate dynamic canvases.\n"
             "- Your output image_id must be one of the candidate image_id values in the current candidate batch.\n"
@@ -164,16 +168,15 @@ def build_dynamic_anchor_aware_user_prompt(
 
     return (
         f"Query:\n{query}\n\n"
-        f"Parsed query:\n{parsed_query}\n\n"
-        f"Anchor/reference object summary:\n{anchor_summary}\n\n"
-        f"Current candidate batch:\n{candidate_summary}\n\n"
+        f"Parsed query:\n{parsed_query}\n"
+        f"Anchor/reference object summary:\n{anchor_summary}\n"
+        f"Current candidate batch:\n{candidate_summary}\n"
         f"There are {n_images} candidate images in this batch.\n"
         "Each candidate image is a dynamic canvas for one target proposal.\n"
         "RED boxes mark candidate target objects.\n"
         "BLUE boxes mark selected reference/anchor objects when visible.\n"
         "The BLUE box may show only one reference object from the query, not all reference objects.\n"
-        "If some reference objects are not marked by blue boxes, still use the parsed query, "
-        "anchor summary, candidate summary, and 3D spatial cues to reason about them.\n"
+        "If a reference object is not visibly grounded, treat its relation as unverified rather than inferring it.\n"
         "Do not put all attention only on the blue-box anchor; select the object that best satisfies the full text query.\n"
         "The image_id values refer to the original candidate indices shown in the candidate summary, "
         "not necessarily 0..n-1.\n"
@@ -216,11 +219,14 @@ You are given:
 
 Use the candidate dynamic canvases as the primary evidence. The global view is only auxiliary context.
 
-Use the global view only for the specific reason that local evidence is insufficient, such as room-level layout, multi-anchor context, global position, or incomplete local scene context.
+Use the global view only to verify the exact missing fact stated by the gate.
 
 Do not use the global view to infer viewpoint-dependent directions such as left/right/front/back/east/west/north/south. Do not use the global view to judge facing direction or object orientation. For these cases, rely on local dynamic canvases and candidate summaries.
 
 If the target and anchor have the same category, do not swap the target with the anchor. Red-boxed final candidates are possible targets. Blue boxes are only auxiliary anchors. The global view should not override clear local target evidence.
+Check only the missing fact stated by the gate.
+Change the local selection only if the global view clearly proves that another candidate satisfies that fact and the local candidate does not.
+If the global evidence is ambiguous, keep the local selection.
 
 If the global view and local dynamic canvases conflict, prefer the local dynamic canvases unless the global view provides decisive non-directional layout evidence.
 

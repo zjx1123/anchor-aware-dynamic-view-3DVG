@@ -50,8 +50,6 @@ def invoke_api(model, messages):
         response = client.chat.completions.create(
             model=model, 
             messages=messages,
-            temperature=0.1,
-            top_p=0.3,
         )
         result = {
             'answer': response.choices[0].message.content, 

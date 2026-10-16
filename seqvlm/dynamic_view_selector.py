@@ -41,7 +41,7 @@ class DynamicViewSelector:
         posed_image_root: str,
         canvas_root: str,
         canvas_k: int = 5,
-        num_appearance_views: int = 2,
+        num_appearance_views: int = 3,
         num_relation_views: int = 2,
         use_global_context: bool = True,
     ):
@@ -76,36 +76,154 @@ class DynamicViewSelector:
             + 0.002 * float(item.get("visible_points", 0.0))
         )
 
+
+    def _draw_appearance_crop(
+        self,
+        scene_id: str,
+        target_id: int,
+        item: Dict[str, Any],
+        out_path: str,
+    ) -> Optional[str]:
+        """
+        Draw the target red box on an appearance crop.
+
+        bbox_xyxy: target bbox in the original RGB frame
+        crop_xyxy: crop region in the original RGB frame
+        """
+        src_path = os.path.join(
+            self.crop_image_root,
+            scene_id,
+            str(target_id),
+            item["file_name"],
+        )
+
+        if not os.path.exists(src_path):
+            return None
+
+        img = cv2.imread(src_path)
+        if img is None:
+            return None
+
+        bbox = item.get("bbox_xyxy")
+        crop_bbox = item.get("crop_xyxy")
+
+        if bbox is None or crop_bbox is None:
+            print(
+                f"[AppearanceBox] missing bbox metadata: "
+                f"scene={scene_id}, target={target_id}, "
+                f"file={item.get('file_name')}"
+            )
+            return None
+
+        # Coordinates in the original full-frame image
+        x1, y1, x2, y2 = [int(v) for v in bbox]
+        crop_x1, crop_y1, crop_x2, crop_y2 = [
+            int(v) for v in crop_bbox
+        ]
+
+        # Convert full-frame bbox to crop-local coordinates
+        local_x1 = x1 - crop_x1
+        local_y1 = y1 - crop_y1
+        local_x2 = x2 - crop_x1
+        local_y2 = y2 - crop_y1
+
+        h, w = img.shape[:2]
+
+        # Clip the box to the crop boundary
+        local_x1 = max(0, min(local_x1, w - 1))
+        local_y1 = max(0, min(local_y1, h - 1))
+        local_x2 = max(0, min(local_x2, w - 1))
+        local_y2 = max(0, min(local_y2, h - 1))
+
+        if local_x2 <= local_x1 or local_y2 <= local_y1:
+            print(
+                f"[AppearanceBox] invalid local bbox: "
+                f"scene={scene_id}, target={target_id}, "
+                f"bbox={[local_x1, local_y1, local_x2, local_y2]}"
+            )
+            return None
+
+        # Target: red in BGR
+        cv2.rectangle(
+            img,
+            (local_x1, local_y1),
+            (local_x2, local_y2),
+            (0, 0, 255),
+            3,
+        )
+
+        # Keep the label inside the crop
+        if local_y1 >= 24:
+            text_y = local_y1 - 7
+        else:
+            text_y = min(local_y1 + 22, h - 5)
+
+        cv2.putText(
+            img,
+            f"T:{target_id}",
+            (local_x1, text_y),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.7,
+            (0, 0, 255),
+            2,
+            cv2.LINE_AA,
+        )
+
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        cv2.imwrite(out_path, img)
+
+        return out_path
+    
     def _select_target_appearance_views(
         self,
         scene_id: str,
         target_id: int,
         crop_pool_meta: Dict[str, Any],
-    ) -> List[str]:
+        out_dir: str,
+    ) -> Tuple[List[str], set]:
         """
-        Select top target appearance crops from crop pool.
+        Select target appearance crops and draw a red target box on each crop.
         """
         obj_key = str(target_id)
         items = crop_pool_meta.get(obj_key, [])
-        if not items:
-            return []
 
-        items = sorted(items, key=self._score_view, reverse=True)
+        if not items:
+            return [], set()
+
+        items = sorted(
+            items,
+            key=self._score_view,
+            reverse=True,
+        )
 
         image_paths = []
-        for item in items[: self.num_appearance_views]:
+        used_file_names = set()
+
+        for item in items:
+            if len(image_paths) >= self.num_appearance_views:
+                break
+
             file_name = item["file_name"]
-            p = os.path.join(
-                self.crop_image_root,
-                scene_id,
-                obj_key,
-                file_name,
+            image_name = str(item.get("image_name", len(image_paths)))
+
+            out_path = os.path.join(
+                out_dir,
+                f"appearance_{len(image_paths):02d}_{image_name}.jpg",
             )
-            if os.path.exists(p):
-                image_paths.append(p)
 
-        return image_paths
+            marked_path = self._draw_appearance_crop(
+                scene_id=scene_id,
+                target_id=target_id,
+                item=item,
+                out_path=out_path,
+            )
 
+            if marked_path is not None:
+                image_paths.append(marked_path)
+                used_file_names.add(file_name)
+
+        return image_paths, used_file_names
+    
     def _index_views_by_frame(self, views: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
         return {str(v["image_name"]): v for v in views if "image_name" in v}
 
@@ -279,10 +397,13 @@ class DynamicViewSelector:
         selected_images = []
 
         # 1. target appearance crops
-        appearance_imgs = self._select_target_appearance_views(
-            scene_id=scene_id,
-            target_id=target_proposal_id,
-            crop_pool_meta=crop_pool_meta,
+        appearance_imgs, used_appearance_files = (
+            self._select_target_appearance_views(
+                scene_id=scene_id,
+                target_id=target_proposal_id,
+                crop_pool_meta=crop_pool_meta,
+                out_dir=out_dir,
+            )
         )
         selected_images.extend(appearance_imgs)
 
@@ -314,24 +435,50 @@ class DynamicViewSelector:
 
         selected_images.extend(relation_imgs)
 
-        # 3. fallback: if not enough images, fill with more target appearance crops
+        # 3. Fallback: fill empty slots with additional boxed appearance crops
         if len(selected_images) < self.canvas_k:
-            all_target_items = crop_pool_meta.get(str(target_proposal_id), [])
-            all_target_items = sorted(all_target_items, key=self._score_view, reverse=True)
+            all_target_items = crop_pool_meta.get(
+                str(target_proposal_id),
+                [],
+            )
+            all_target_items = sorted(
+                all_target_items,
+                key=self._score_view,
+                reverse=True,
+            )
 
-            existed = set(os.path.abspath(x) for x in selected_images)
+            fill_rank = 0
+
             for item in all_target_items:
-                p = os.path.join(
-                    self.crop_image_root,
-                    scene_id,
-                    str(target_proposal_id),
-                    item["file_name"],
-                )
-                if os.path.exists(p) and os.path.abspath(p) not in existed:
-                    selected_images.append(p)
-                    existed.add(os.path.abspath(p))
                 if len(selected_images) >= self.canvas_k:
                     break
+
+                file_name = item["file_name"]
+
+                # Avoid repeating an appearance crop already selected above
+                if file_name in used_appearance_files:
+                    continue
+
+                image_name = str(
+                    item.get("image_name", fill_rank)
+                )
+
+                out_path = os.path.join(
+                    out_dir,
+                    f"appearance_fill_{fill_rank:02d}_{image_name}.jpg",
+                )
+
+                marked_path = self._draw_appearance_crop(
+                    scene_id=scene_id,
+                    target_id=target_proposal_id,
+                    item=item,
+                    out_path=out_path,
+                )
+
+                if marked_path is not None:
+                    selected_images.append(marked_path)
+                    used_appearance_files.add(file_name)
+                    fill_rank += 1
 
         selected_images = selected_images[: self.canvas_k]
 

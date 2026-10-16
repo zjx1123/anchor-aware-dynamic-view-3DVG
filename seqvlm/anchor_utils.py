@@ -89,16 +89,16 @@ def summarize_anchors_for_prompt(anchor_infos: List[Dict[str, Any]]) -> str:
 
     lines = []
     lines.append("Parsed reference/anchor objects in this scene:")
+
     for a in anchor_infos:
-        loc_text = bbox_center_size_to_text(a["loc"])
         attr_text = ", ".join(a.get("attributes", [])) or "none"
+
         lines.append(
             f"- anchor proposal id={a['proposal_id']}, "
             f"query_category={a['anchor_query_category']}, "
             f"matched_class={a['matched_class']}, "
-            f"relation_to_target={a.get('relation_to_target', '')}, "
-            f"attributes={attr_text}, "
-            f"{loc_text}"
+            f"required_target_relation={a.get('relation_to_target', '')}, "
+            f"required_anchor_attributes={attr_text}"
         )
 
     return "\n".join(lines)
@@ -128,8 +128,10 @@ def summarize_candidate_batch_for_prompt(
     anchor_infos: List[Dict[str, Any]],
 ) -> str:
     """
-    batch_items: [(global_candidate_idx, base64_image), ...]
-    global_candidate_idx 对应 prop_images 的 index。
+    Build candidate summaries for the VLM.
+
+    Only candidate identity and semantic category are exposed.
+    Spatial relations must be verified from the candidate canvas.
     """
     lines = []
     lines.append("Candidate target objects in the current image batch:")
@@ -147,27 +149,7 @@ def summarize_candidate_batch_for_prompt(
         lines.append(
             f"- image_id={image_id}, "
             f"proposal_id={m['proposal_id']}, "
-            f"label={m['label']}, "
-            f"score={m['score']:.3f}, "
-            f"{bbox_center_size_to_text(m['loc'])}"
+            f"label={m['label']}"
         )
-
-        if anchor_infos:
-            dists = []
-            for a in anchor_infos:
-                dists.append((
-                    l2_distance(m["loc"], a["loc"]),
-                    a["proposal_id"],
-                    a["matched_class"],
-                    a.get("relation_to_target", ""),
-                ))
-            dists = sorted(dists, key=lambda x: x[0])[:5]
-            dist_text = "; ".join(
-                [
-                    f"to anchor_id={aid}({cls}, rel={rel}): {dist:.2f}m"
-                    for dist, aid, cls, rel in dists
-                ]
-            )
-            lines.append(f"  nearest anchors: {dist_text}")
 
     return "\n".join(lines)

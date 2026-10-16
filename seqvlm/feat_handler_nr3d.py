@@ -25,18 +25,23 @@ class VisualFeatHandler:
         if load_blip2 is None:
             load_blip2 = os.environ.get("SEQVLM_LOAD_BLIP2", "0") == "1"
         tokenizer_path = '../data/huggingface/clip-vit-base-patch16'
+
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path, 
                                                        model_max_length=512, 
                                                        use_fast=True, 
                                                        clean_up_tokenization_spaces=True)
-        self.clip = CLIPModel.from_pretrained(tokenizer_path).cuda()
+        self.clip = CLIPModel.from_pretrained(tokenizer_path).to(self.device)
         self.processor = None
         self.model = None
         if load_blip2:
             model_path = "../data/huggingface/blip2-flan-t5-xl"
             self.processor = Blip2Processor.from_pretrained(model_path, clean_up_tokenization_spaces=True)
-            self.model = Blip2ForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.float16).cuda()
+            blip_dtype = torch.float16 if self.device.type == "cuda" else torch.float32
+            self.model = Blip2ForConditionalGeneration.from_pretrained(
+                model_path, torch_dtype=blip_dtype
+            ).to(self.device)
 
 
         self.class_name_list = list(CLASS_LABELS_200)
@@ -48,7 +53,7 @@ class VisualFeatHandler:
                                                 padding=True,
                                                 return_tensors='pt')
         for name in self.class_name_tokens.data:
-            self.class_name_tokens.data[name] = self.class_name_tokens.data[name].cuda()
+            self.class_name_tokens.data[name] = self.class_name_tokens.data[name].to(self.device)
 
         label_lang_infos = self.clip.get_text_features(**self.class_name_tokens)
         self.label_lang_infos = label_lang_infos / label_lang_infos.norm(p=2, dim=-1, keepdim=True)
@@ -62,9 +67,13 @@ class VisualFeatHandler:
         obj_embeds,
         return_match_score=False,
     ):
+        if not torch.is_tensor(obj_embeds):
+            obj_embeds = torch.as_tensor(obj_embeds)
+        obj_embeds = obj_embeds.to(self.device)
+
         class_logits_3d = torch.matmul(
             self.label_lang_infos,
-            obj_embeds.t().cuda()
+            obj_embeds.t()
         )
 
         obj_cls = class_logits_3d.argmax(dim=0)
@@ -81,7 +90,7 @@ class VisualFeatHandler:
             return_tensors='pt'
         )
         for name in class_tokens.data:
-            class_tokens.data[name] = class_tokens.data[name].cuda()
+            class_tokens.data[name] = class_tokens.data[name].to(self.device)
 
         label_feats = self.clip.get_text_features(**class_tokens)
         label_feats = label_feats / label_feats.norm(
@@ -96,7 +105,7 @@ class VisualFeatHandler:
             return_tensors='pt'
         )
         for name in query_tokens.data:
-            query_tokens.data[name] = query_tokens.data[name].cuda()
+            query_tokens.data[name] = query_tokens.data[name].to(self.device)
 
         query_feats = self.clip.get_text_features(**query_tokens)
         query_feats = query_feats / query_feats.norm(
@@ -119,19 +128,22 @@ class VisualFeatHandler:
 
         # 只有参照物匹配时返回第三个值
         return pred_cls, pred_class_list, match_score
-        
-        def judge_consistency(self, obj_name, images, ratio=0.25) -> bool:
-            if len(images) == 0:
-                return False
-            if self.model is None or self.processor is None:
-                return True
-            prompt = [f"Question: Is there a {obj_name}? Answer:"] * len(images)
-            inputs = self.processor(images=images, text=prompt, return_tensors="pt").to('cuda', torch.float16)
 
-            generated_ids = self.model.generate(**inputs, max_new_tokens=100)
-            answer = self.processor.batch_decode(generated_ids, skip_special_tokens=True)
+    def judge_consistency(self, obj_name, images, ratio=0.25) -> bool:
+        if len(images) == 0:
+            return False
+        if self.model is None or self.processor is None:
+            return True
+        prompt = [f"Question: Is there a {obj_name}? Answer:"] * len(images)
+        blip_dtype = torch.float16 if self.device.type == "cuda" else torch.float32
+        inputs = self.processor(images=images, text=prompt, return_tensors="pt").to(
+            self.device, blip_dtype
+        )
 
-            return answer.count('yes') / len(answer) >= ratio
+        generated_ids = self.model.generate(**inputs, max_new_tokens=100)
+        answer = self.processor.batch_decode(generated_ids, skip_special_tokens=True)
+
+        return answer.count('yes') / len(answer) >= ratio
             
 
 if __name__ == '__main__':
