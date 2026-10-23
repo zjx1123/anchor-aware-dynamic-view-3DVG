@@ -111,29 +111,36 @@ def build_anchor_candidates_nr3d(
     return anchor_infos
 
 
-def summarize_anchors_for_prompt(anchor_infos: List[Dict[str, Any]]) -> str:
-    if not anchor_infos:
-        return "No explicit anchor/reference objects were parsed from the query."
+def summarize_anchors_for_prompt(
+        anchor_infos: List[Dict[str, Any]]
+    ) -> str:
+        if not anchor_infos:
+            return (
+                "No explicit anchor/reference objects "
+                "were parsed from the query."
+            )
 
-    lines = []
-    lines.append("Parsed reference/anchor objects in this scene:")
-
-    for a in anchor_infos:
-        loc_text = bbox_center_size_to_text(a["loc"])
-        attr_text = ", ".join(a.get("attributes", [])) or "none"
-
+        lines = []
         lines.append(
-            f"- anchor proposal_id={a['proposal_id']}, "
-            f"obj_id={a.get('obj_id', 'NA')}, "
-            f"local_index={a.get('local_index', 'NA')}, "
-            f"query_category={a['anchor_query_category']}, "
-            f"matched_class={a['matched_class']}, "
-            f"relation_to_target={a.get('relation_to_target', '')}, "
-            f"attributes={attr_text}, "
-            f"{loc_text}"
+            "Parsed reference/anchor objects in this scene:"
         )
 
-    return "\n".join(lines)
+        for a in anchor_infos:
+            attr_text = (
+                ", ".join(a.get("attributes", []))
+                or "none"
+            )
+
+            lines.append(
+                f"- anchor proposal id={a['proposal_id']}, "
+                f"query_category={a['anchor_query_category']}, "
+                f"matched_class={a['matched_class']}, "
+                f"required_target_relation="
+                f"{a.get('relation_to_target', '')}, "
+                f"required_anchor_attributes={attr_text}"
+            )
+
+        return "\n".join(lines)
 
 
 def build_target_candidate_meta_nr3d(
@@ -179,15 +186,14 @@ def summarize_candidate_batch_for_prompt_nr3d(
     candidate_metas: List[Dict[str, Any]],
     anchor_infos: List[Dict[str, Any]],
 ) -> str:
-    """
-    batch_items: [(global_candidate_idx, base64_image), ...]
-    global_candidate_idx 对应 prop_images 中的全局候选 id。
-    """
     lines = []
-    lines.append("Candidate target objects in the current image batch:")
+    lines.append(
+        "Candidate target objects in the current image batch:"
+    )
 
     meta_by_local = {
-        m["local_image_id"]: m for m in candidate_metas
+        m["local_image_id"]: m
+        for m in candidate_metas
     }
 
     for image_id, _ in batch_items:
@@ -195,34 +201,51 @@ def summarize_candidate_batch_for_prompt_nr3d(
         if m is None:
             continue
 
-        lines.append(
+        loc = m["loc"]
+        sx, sy, sz = [
+            float(v) for v in loc[3:6]
+        ]
+
+        line = (
             f"- image_id={image_id}, "
             f"proposal_id={m['proposal_id']}, "
-            f"obj_id={m.get('obj_id', 'NA')}, "
-            f"local_index={m.get('local_index', 'NA')}, "
             f"label={m['label']}, "
-            f"score={m['score']:.3f}, "
-            f"{bbox_center_size_to_text(m['loc'])}"
+            f"size=({sx:.2f}, {sy:.2f}, {sz:.2f})"
         )
 
         if anchor_infos:
-            dists = []
+            distances = []
+
             for a in anchor_infos:
-                dists.append((
-                    l2_distance(m["loc"], a["loc"]),
-                    a["proposal_id"],
-                    a.get("obj_id", "NA"),
+                distance = l2_distance(
+                    m["loc"],
+                    a["loc"],
+                )
+
+                distances.append((
+                    distance,
+                    int(a["proposal_id"]),
                     a["matched_class"],
-                    a.get("relation_to_target", ""),
                 ))
 
-            dists = sorted(dists, key=lambda x: x[0])[:5]
+            distances = sorted(
+                distances,
+                key=lambda x: x[0],
+            )[:5]
 
-            dist_text = "; ".join([
-                f"to anchor proposal_id={aid}, obj_id={obj_id}({cls}, rel={rel}): {dist:.2f}m"
-                for dist, aid, obj_id, cls, rel in dists
-            ])
+            distance_text = "; ".join(
+                [
+                    f"{cls}#{anchor_id}: {distance:.2f}m"
+                    for distance, anchor_id, cls
+                    in distances
+                ]
+            )
 
-            lines.append(f"  nearest anchors: {dist_text}")
+            line += (
+                f", category-matched anchor distances="
+                f"[{distance_text}]"
+            )
+
+        lines.append(line)
 
     return "\n".join(lines)
