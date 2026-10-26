@@ -181,6 +181,8 @@ def build_dynamic_anchor_aware_user_prompt(
         "The image_id values refer to the original candidate indices shown in the candidate summary, "
         "not necessarily 0..n-1.\n"
         f"{final_global_note}\n"
+        "Anchor distances cover only the listed hypotheses and may be incomplete or mismatched.\n"
+        "Use them only as secondary evidence for near/far relations, prioritizing visual evidence.\n"
         "Please select the best image_id.\n"
         f"Return ONLY valid JSON:\n{json_example}\n"
     )

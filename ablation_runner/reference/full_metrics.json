@@ -1,0 +1,15 @@
+{
+  "Overall@25": 0.584,
+  "Overall@50": 0.508,
+  "Unique@25": 0.818,
+  "Unique@50": 0.742,
+  "Multiple@25": 0.5,
+  "Multiple@50": 0.424,
+  "n": 250,
+  "exceptions": 0,
+  "gate_cases": 210,
+  "global_view_cases": 15,
+  "logged_vlm_outputs": 860,
+  "logged_prompt_tokens": 5617909,
+  "logged_completion_tokens": 1042016
+}

@@ -20,3 +20,10 @@ data/scanrefer/
 data/referit3d/
 data/tar/
 data/mask3d/
+# Runtime cache / newly local-only data dirs (live on data disk)
+data/cache/
+data/dynamic_canvas_nr3d_anchor085_redbox_v1
+
+# Local experiment outputs (live on data disk via symlink)
+ablation_runs/
+runs/

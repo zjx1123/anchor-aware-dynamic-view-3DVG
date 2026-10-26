@@ -1,0 +1,7703 @@
+{
+  "the chair is west of the left - most table . the chair is dark brown and has four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "left-most"
+        ],
+        "category": "table",
+        "relation_to_target": "west of"
+      }
+    ],
+    "raw_query": "the chair is west of the left - most table . the chair is dark brown and has four legs .",
+    "relations": [
+      {
+        "object": "left-most table",
+        "relation": "west of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark brown",
+        "four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "a counter / desk where a tv often sits . it is beside the black chair .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "chair",
+        "relation_to_target": "beside"
+      }
+    ],
+    "raw_query": "a counter / desk where a tv often sits . it is beside the black chair .",
+    "relations": [
+      {
+        "object": "tv",
+        "relation": "has",
+        "subject": "counter"
+      },
+      {
+        "object": "chair",
+        "relation": "beside",
+        "subject": "counter"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "tv often sits"
+      ],
+      "category": "counter"
+    },
+    "view_constraints": []
+  },
+  "the trash can is right of the right - most door on the northern wall . the trash can is a trapezoidal prism and gray .": {
+    "anchors": [
+      {
+        "attributes": [
+          "right-most",
+          "on northern wall"
+        ],
+        "category": "door",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "the trash can is right of the right - most door on the northern wall . the trash can is a trapezoidal prism and gray .",
+    "relations": [
+      {
+        "object": "right-most door on the northern wall",
+        "relation": "is right of",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "trapezoidal prism",
+        "gray"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": [
+      "northern wall"
+    ]
+  },
+  "there is a long rectangular bench . it is next to another wide bench that 's closer to the pillar .": {
+    "anchors": [
+      {
+        "attributes": [
+          "wide"
+        ],
+        "category": "bench",
+        "relation_to_target": "next to"
+      },
+      {
+        "attributes": [],
+        "category": "pillar",
+        "relation_to_target": "closer to"
+      }
+    ],
+    "raw_query": "there is a long rectangular bench . it is next to another wide bench that 's closer to the pillar .",
+    "relations": [
+      {
+        "object": "wide bench",
+        "relation": "next to",
+        "subject": "long rectangular bench"
+      },
+      {
+        "object": "pillar",
+        "relation": "closer to",
+        "subject": "wide bench"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "long",
+        "rectangular"
+      ],
+      "category": "bench"
+    },
+    "view_constraints": []
+  },
+  "the cabinet is the northwestern - most one . the cabinet is a brown rectangular prism .": {
+    "anchors": [],
+    "raw_query": "the cabinet is the northwestern - most one . the cabinet is a brown rectangular prism .",
+    "relations": [
+      {
+        "object": "northwestern-most",
+        "relation": "is",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "rectangular prism"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": [
+      "northwestern-most"
+    ]
+  },
+  "the chair is southwest of the left - most round table . the chair has a curved back and is blue .": {
+    "anchors": [
+      {
+        "attributes": [
+          "round",
+          "left-most"
+        ],
+        "category": "table",
+        "relation_to_target": "southwest of"
+      }
+    ],
+    "raw_query": "the chair is southwest of the left - most round table . the chair has a curved back and is blue .",
+    "relations": [
+      {
+        "object": "left-most round table",
+        "relation": "southwest of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "curved back",
+        "blue"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the monitor is the southeast - most one on the eastern - most table . the monitor has a black square center .": {
+    "anchors": [
+      {
+        "attributes": [
+          "eastern-most"
+        ],
+        "category": "table",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "the monitor is the southeast - most one on the eastern - most table . the monitor has a black square center .",
+    "relations": [
+      {
+        "object": "eastern-most table",
+        "relation": "on",
+        "subject": "monitor"
+      },
+      {
+        "object": "southeast-most",
+        "relation": "is",
+        "subject": "monitor"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black square center"
+      ],
+      "category": "monitor"
+    },
+    "view_constraints": [
+      "southeast-most",
+      "eastern-most"
+    ]
+  },
+  "the coffee table is black and on top of an area rug that has 2 semi - circles on it . the coffee table has a book on it and is in front of a couch and across from a bookshelf .": {
+    "anchors": [
+      {
+        "attributes": [
+          "has 2 semi-circles"
+        ],
+        "category": "area rug",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "bookshelf",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "the coffee table is black and on top of an area rug that has 2 semi - circles on it . the coffee table has a book on it and is in front of a couch and across from a bookshelf .",
+    "relations": [
+      {
+        "object": "area rug",
+        "relation": "on top of",
+        "subject": "coffee table"
+      },
+      {
+        "object": "couch",
+        "relation": "in front of",
+        "subject": "coffee table"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "across from",
+        "subject": "coffee table"
+      },
+      {
+        "object": "book",
+        "relation": "has on it",
+        "subject": "coffee table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "coffee table"
+    },
+    "view_constraints": []
+  },
+  "it is a beige and black chair . the beige and black chair is the chair at the right of the two chairs in the mid - front of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "it is a beige and black chair . the beige and black chair is the chair at the right of the two chairs in the mid - front of the room .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "right of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "beige",
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "mid-front of the room"
+    ]
+  },
+  "a chair sits pulled under a table . it 's the third chair from the left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "a chair sits pulled under a table . it 's the third chair from the left .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "chair"
+      },
+      {
+        "object": "third from the left",
+        "relation": "positioned",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "third from the left",
+        "pulled under"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "left-to-right orientation"
+    ]
+  },
+  "the monitor is opposite the desk with two monitors , and is next to the white shelf / cabinet . there is a black , non - rolling chair at the same desk .": {
+    "anchors": [
+      {
+        "attributes": [
+          "with two monitors"
+        ],
+        "category": "desk",
+        "relation_to_target": "opposite"
+      },
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "shelf",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the monitor is opposite the desk with two monitors , and is next to the white shelf / cabinet . there is a black , non - rolling chair at the same desk .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "opposite",
+        "subject": "monitor"
+      },
+      {
+        "object": "shelf",
+        "relation": "next to",
+        "subject": "monitor"
+      },
+      {
+        "object": "desk",
+        "relation": "at",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "non-rolling"
+      ],
+      "category": "monitor"
+    },
+    "view_constraints": []
+  },
+  "a window is lit up in the wall . it 's behind a row of chairs .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "a window is lit up in the wall . it 's behind a row of chairs .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "behind",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "lit up"
+      ],
+      "category": "window"
+    },
+    "view_constraints": [
+      "lit up",
+      "behind a row of chairs"
+    ]
+  },
+  "this is a black , rolling office chair . this chair sits at the desk , at the end of the bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "at"
+      },
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "at the end of"
+      }
+    ],
+    "raw_query": "this is a black , rolling office chair . this chair sits at the desk , at the end of the bed .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "sits at",
+        "subject": "chair"
+      },
+      {
+        "object": "bed",
+        "relation": "is at the end of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "rolling",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the picture is above the counter that 's between two chairs . the picture is blue , gold , and white .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "counter",
+        "relation_to_target": "below"
+      },
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "left_of"
+      },
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "right_of"
+      }
+    ],
+    "raw_query": "the picture is above the counter that 's between two chairs . the picture is blue , gold , and white .",
+    "relations": [
+      {
+        "object": "counter",
+        "relation": "above",
+        "subject": "picture"
+      },
+      {
+        "object": "chair",
+        "relation": "between",
+        "subject": "counter"
+      },
+      {
+        "object": "chair",
+        "relation": "between",
+        "subject": "counter"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "blue",
+        "gold",
+        "white"
+      ],
+      "category": "picture"
+    },
+    "view_constraints": []
+  },
+  "the chair is south of the northwestern - most bookshelf . the chair is gray and has four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "northwestern-most"
+        ],
+        "category": "bookshelf",
+        "relation_to_target": "north of"
+      }
+    ],
+    "raw_query": "the chair is south of the northwestern - most bookshelf . the chair is gray and has four legs .",
+    "relations": [
+      {
+        "object": "northwestern-most bookshelf",
+        "relation": "south of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray",
+        "has four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the chair the right - most one on the northern side of the table . the chair is red with two arms .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "northern side"
+      }
+    ],
+    "raw_query": "the chair the right - most one on the northern side of the table . the chair is red with two arms .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "on the northern side of",
+        "subject": "chair"
+      },
+      {
+        "object": "table",
+        "relation": "right-most",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "red",
+        "two arms"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right-most",
+      "northern side"
+    ]
+  },
+  "the chair is next to the northeast - most table . the chair is black with four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "northeast-most"
+        ],
+        "category": "table",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the chair is next to the northeast - most table . the chair is black with four legs .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "northeast-most"
+    ]
+  },
+  "an l - shaped desk with a wood top . it is opposite the window in the room and directly to your left when you enter the door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "opposite"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "left when entering"
+      }
+    ],
+    "raw_query": "an l - shaped desk with a wood top . it is opposite the window in the room and directly to your left when you enter the door .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "opposite",
+        "subject": "desk"
+      },
+      {
+        "object": "door",
+        "relation": "to the left of",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "l-shaped",
+        "wood top"
+      ],
+      "category": "desk"
+    },
+    "view_constraints": [
+      "when entering the door"
+    ]
+  },
+  "this towel is hanging . it is green .": {
+    "anchors": [],
+    "raw_query": "this towel is hanging . it is green .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "green",
+        "hanging"
+      ],
+      "category": "towel"
+    },
+    "view_constraints": []
+  },
+  "this is a table . this table is front of the book shelves , the book shelves it is in front of are the second and the third from the left . the third book shelf from the left is shorter than all the rest .": {
+    "anchors": [
+      {
+        "attributes": [
+          "second from the left"
+        ],
+        "category": "book shelf",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [
+          "third from the left"
+        ],
+        "category": "book shelf",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "this is a table . this table is front of the book shelves , the book shelves it is in front of are the second and the third from the left . the third book shelf from the left is shorter than all the rest .",
+    "relations": [
+      {
+        "object": "book shelves",
+        "relation": "in front of",
+        "subject": "table"
+      },
+      {
+        "object": "all the rest",
+        "relation": "shorter than",
+        "subject": "book shelf"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "this table is to the left of the couch . it 's positioned on the floor between the rug and the carpet .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "to the right of"
+      },
+      {
+        "attributes": [],
+        "category": "rug",
+        "relation_to_target": "between"
+      },
+      {
+        "attributes": [],
+        "category": "carpet",
+        "relation_to_target": "between"
+      }
+    ],
+    "raw_query": "this table is to the left of the couch . it 's positioned on the floor between the rug and the carpet .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "to the left of",
+        "subject": "table"
+      },
+      {
+        "object": "rug",
+        "relation": "between",
+        "subject": "table"
+      },
+      {
+        "object": "carpet",
+        "relation": "between",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "table"
+    },
+    "view_constraints": [
+      "floor"
+    ]
+  },
+  "a door stands in the hall . it 's to the right of some clothes hanging on the wall .": {
+    "anchors": [
+      {
+        "attributes": [
+          "hanging on the wall"
+        ],
+        "category": "clothes",
+        "relation_to_target": "to the left of"
+      }
+    ],
+    "raw_query": "a door stands in the hall . it 's to the right of some clothes hanging on the wall .",
+    "relations": [
+      {
+        "object": "clothes",
+        "relation": "to the right of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "door"
+    },
+    "view_constraints": [
+      "hall"
+    ]
+  },
+  "this is a tan . metal frame chair . the chair is at the second table back , on the right side of the room . this chair is on the front left side edge of the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "second table back"
+      },
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "right side"
+      }
+    ],
+    "raw_query": "this is a tan . metal frame chair . the chair is at the second table back , on the right side of the room . this chair is on the front left side edge of the table .",
+    "relations": [
+      {
+        "object": "second table back",
+        "relation": "at",
+        "subject": "chair"
+      },
+      {
+        "object": "front left side edge of the table",
+        "relation": "on",
+        "subject": "chair"
+      },
+      {
+        "object": "room",
+        "relation": "on right side of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "tan",
+        "metal frame"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "front left side edge of the table",
+      "right side of the room"
+    ]
+  },
+  "a small circular table sits in the middle of the floor . it 's surrounded by four chairs .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "surrounding"
+      }
+    ],
+    "raw_query": "a small circular table sits in the middle of the floor . it 's surrounded by four chairs .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "surrounded by",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "small",
+        "circular"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "the white towel is hanging on the wall in the bathroom . it is on the right wall next to the toilet .": {
+    "anchors": [
+      {
+        "attributes": [
+          "right"
+        ],
+        "category": "wall",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the white towel is hanging on the wall in the bathroom . it is on the right wall next to the toilet .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "hanging on",
+        "subject": "towel"
+      },
+      {
+        "object": "toilet",
+        "relation": "next to",
+        "subject": "towel"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "towel"
+    },
+    "view_constraints": [
+      "bathroom"
+    ]
+  },
+  "the table is black and against the back right wall . there are chairs around it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "back",
+          "right"
+        ],
+        "category": "wall",
+        "relation_to_target": "against"
+      }
+    ],
+    "raw_query": "the table is black and against the back right wall . there are chairs around it .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "table"
+      },
+      {
+        "object": "table",
+        "relation": "around",
+        "subject": "chairs"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "back right wall"
+    ]
+  },
+  "there is a white plastic soap dispenser placed on the side of the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "on the side of"
+      }
+    ],
+    "raw_query": "there is a white plastic soap dispenser placed on the side of the wall .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on the side of",
+        "subject": "soap dispenser"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "plastic"
+      ],
+      "category": "soap dispenser"
+    },
+    "view_constraints": []
+  },
+  "the chair is black and pushed into a desk . it is the chair furthest to the left . that is on the left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "pushed into"
+      }
+    ],
+    "raw_query": "the chair is black and pushed into a desk . it is the chair furthest to the left . that is on the left .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "pushed into",
+        "subject": "chair"
+      },
+      {
+        "object": "furthest to the left",
+        "relation": "is",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "pushed into a desk",
+        "furthest to the left"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "left"
+    ]
+  },
+  "the bookshelf has a white board leaning on it . the bookshelf has 3 layers .": {
+    "anchors": [
+      {
+        "attributes": [
+          "3 layers"
+        ],
+        "category": "bookshelf",
+        "relation_to_target": "leaning on"
+      }
+    ],
+    "raw_query": "the bookshelf has a white board leaning on it . the bookshelf has 3 layers .",
+    "relations": [
+      {
+        "object": "bookshelf",
+        "relation": "leaning on",
+        "subject": "white board"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "leaning"
+      ],
+      "category": "white board"
+    },
+    "view_constraints": []
+  },
+  "the door is rectangular and white . it is located to the left of the world map on the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "world map",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "the door is rectangular and white . it is located to the left of the world map on the wall .",
+    "relations": [
+      {
+        "object": "world map",
+        "relation": "located to the left of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "white"
+      ],
+      "category": "door"
+    },
+    "view_constraints": [
+      "on the wall"
+    ]
+  },
+  "this is a brown door . it is across from an armchair .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "armchair",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "this is a brown door . it is across from an armchair .",
+    "relations": [
+      {
+        "object": "armchair",
+        "relation": "across from",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "large larder style stainless steel fridge freezer . has a split upper and lower areas with large wide handle . located to the left of the large larder style kitchen unit .": {
+    "anchors": [
+      {
+        "attributes": [
+          "large",
+          "larder style"
+        ],
+        "category": "kitchen unit",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "large larder style stainless steel fridge freezer . has a split upper and lower areas with large wide handle . located to the left of the large larder style kitchen unit .",
+    "relations": [
+      {
+        "object": "kitchen unit",
+        "relation": "located to the left of",
+        "subject": "fridge freezer"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "large",
+        "larder style",
+        "stainless steel",
+        "split upper and lower areas",
+        "large wide handle"
+      ],
+      "category": "fridge freezer"
+    },
+    "view_constraints": []
+  },
+  "this picture is located on the back wall of the room . it is above the left bed .": {
+    "anchors": [
+      {
+        "attributes": [
+          "left"
+        ],
+        "category": "bed",
+        "relation_to_target": "below"
+      }
+    ],
+    "raw_query": "this picture is located on the back wall of the room . it is above the left bed .",
+    "relations": [
+      {
+        "object": "left bed",
+        "relation": "above",
+        "subject": "picture"
+      },
+      {
+        "object": "back wall",
+        "relation": "on",
+        "subject": "picture"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "picture"
+    },
+    "view_constraints": [
+      "back wall",
+      "above left bed"
+    ]
+  },
+  "there are dark brown kitchen cabinet . they are beneath the counter directly to the left of the doorway .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "counter",
+        "relation_to_target": "above"
+      },
+      {
+        "attributes": [],
+        "category": "doorway",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "there are dark brown kitchen cabinet . they are beneath the counter directly to the left of the doorway .",
+    "relations": [
+      {
+        "object": "counter",
+        "relation": "beneath",
+        "subject": "cabinet"
+      },
+      {
+        "object": "doorway",
+        "relation": "directly to the left of",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark brown",
+        "kitchen"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "a brown ottomon with two black knapsacks and a tissue box on it sits in front of a matching brown leather sofa , which is up against a wall . to its left is a black piano .": {
+    "anchors": [
+      {
+        "attributes": [
+          "brown",
+          "leather",
+          "matching"
+        ],
+        "category": "sofa",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "behind sofa"
+      },
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "piano",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "a brown ottomon with two black knapsacks and a tissue box on it sits in front of a matching brown leather sofa , which is up against a wall . to its left is a black piano .",
+    "relations": [
+      {
+        "object": "sofa",
+        "relation": "in front of",
+        "subject": "ottoman"
+      },
+      {
+        "object": "wall",
+        "relation": "up against",
+        "subject": "sofa"
+      },
+      {
+        "object": "ottoman",
+        "relation": "to the left of",
+        "subject": "piano"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "with two black knapsacks",
+        "with a tissue box on it"
+      ],
+      "category": "ottoman"
+    },
+    "view_constraints": [
+      "front view of ottoman",
+      "left side of scene includes piano"
+    ]
+  },
+  "wooden cabinets are on the wall to the left of the kitchen sink . they are in the corner , to the left of the windows that sit above the sink .": {
+    "anchors": [
+      {
+        "attributes": [
+          "kitchen"
+        ],
+        "category": "sink",
+        "relation_to_target": "to the right"
+      },
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "to the left"
+      }
+    ],
+    "raw_query": "wooden cabinets are on the wall to the left of the kitchen sink . they are in the corner , to the left of the windows that sit above the sink .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "cabinet"
+      },
+      {
+        "object": "sink",
+        "relation": "to the left of",
+        "subject": "cabinet"
+      },
+      {
+        "object": "corner",
+        "relation": "in",
+        "subject": "cabinet"
+      },
+      {
+        "object": "window",
+        "relation": "to the left of",
+        "subject": "cabinet"
+      },
+      {
+        "object": "sink",
+        "relation": "above",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "wooden"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": [
+      "left side of sink",
+      "corner",
+      "below windows"
+    ]
+  },
+  "there is a rectangular red pillow . it is on the right side of a bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "there is a rectangular red pillow . it is on the right side of a bed .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "on the right side of",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "red"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular brown door . it is next to a light switch .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "light switch",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular brown door . it is next to a light switch .",
+    "relations": [
+      {
+        "object": "light switch",
+        "relation": "next to",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "brown"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "this is a armchair . its white with patterns on it . its closest to the window in the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "closest to"
+      }
+    ],
+    "raw_query": "this is a armchair . its white with patterns on it . its closest to the window in the room .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "closest to",
+        "subject": "armchair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "with patterns"
+      ],
+      "category": "armchair"
+    },
+    "view_constraints": []
+  },
+  "a rolling office chair on the right side of the table from the head chair . it is the second to last chair .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "right side of"
+      },
+      {
+        "attributes": [
+          "head"
+        ],
+        "category": "chair",
+        "relation_to_target": "from"
+      }
+    ],
+    "raw_query": "a rolling office chair on the right side of the table from the head chair . it is the second to last chair .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "on right side of",
+        "subject": "chair"
+      },
+      {
+        "object": "head chair",
+        "relation": "from",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "is second to last",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rolling",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side of table",
+      "from head chair",
+      "second to last"
+    ]
+  },
+  "this is a red office chair . it is at the end with the tv and to the left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "tv",
+        "relation_to_target": "at the end with"
+      }
+    ],
+    "raw_query": "this is a red office chair . it is at the end with the tv and to the left .",
+    "relations": [
+      {
+        "object": "tv",
+        "relation": "at the end with",
+        "subject": "office chair"
+      },
+      {
+        "object": "tv",
+        "relation": "to the left of",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "red"
+      ],
+      "category": "office chair"
+    },
+    "view_constraints": [
+      "to the left"
+    ]
+  },
+  "this is a black chair . the back of the chair is against the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "this is a black chair . the back of the chair is against the wall .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "back of chair is against wall"
+    ]
+  },
+  "a brown wooden door . on the left to the paper box .": {
+    "anchors": [
+      {
+        "attributes": [
+          "paper"
+        ],
+        "category": "box",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "a brown wooden door . on the left to the paper box .",
+    "relations": [
+      {
+        "object": "paper box",
+        "relation": "left of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "wooden"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "the refrigerator is in a corner and left of the oven . the refrigerator is a white , boxy prism .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "oven",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "the refrigerator is in a corner and left of the oven . the refrigerator is a white , boxy prism .",
+    "relations": [
+      {
+        "object": "oven",
+        "relation": "left of",
+        "subject": "refrigerator"
+      },
+      {
+        "object": "corner",
+        "relation": "in",
+        "subject": "refrigerator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "boxy",
+        "prism"
+      ],
+      "category": "refrigerator"
+    },
+    "view_constraints": [
+      "corner"
+    ]
+  },
+  "this is a pillow . its pink in color and is on top of the pattered sofa .": {
+    "anchors": [
+      {
+        "attributes": [
+          "pattered"
+        ],
+        "category": "sofa",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "this is a pillow . its pink in color and is on top of the pattered sofa .",
+    "relations": [
+      {
+        "object": "sofa",
+        "relation": "on top of",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "pink"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "this is a black chair facing away from the viewer . it is closest to the viewer .": {
+    "anchors": [],
+    "raw_query": "this is a black chair facing away from the viewer . it is closest to the viewer .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "black",
+        "facing away from viewer",
+        "closest to viewer"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "facing away from viewer",
+      "closest to viewer"
+    ]
+  },
+  "this is a black office chair . it is to the left of a computer tower .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "computer tower",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a black office chair . it is to the left of a computer tower .",
+    "relations": [
+      {
+        "object": "computer tower",
+        "relation": "left of",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "office chair"
+    },
+    "view_constraints": []
+  },
+  "there is a white drying rack . placed next to another one .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "drying rack",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a white drying rack . placed next to another one .",
+    "relations": [
+      {
+        "object": "drying rack",
+        "relation": "next to",
+        "subject": "drying rack"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "drying rack"
+    },
+    "view_constraints": []
+  },
+  "the grey cushioned chair has wooden arms on each side . this grey cushioned chair has another beside it on the left .": {
+    "anchors": [
+      {
+        "attributes": [
+          "grey",
+          "cushioned"
+        ],
+        "category": "chair",
+        "relation_to_target": "beside on left"
+      }
+    ],
+    "raw_query": "the grey cushioned chair has wooden arms on each side . this grey cushioned chair has another beside it on the left .",
+    "relations": [
+      {
+        "object": "wooden arms",
+        "relation": "has",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "has beside",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey",
+        "cushioned",
+        "wooden arms"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a black chair in a small classroom . it is on the right side of the table and is next to the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "right side of"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "this is a black chair in a small classroom . it is on the right side of the table and is next to the wall .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "on the right side of",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "small classroom"
+    ]
+  },
+  "the chair is on the opposite side from the green paper cutter and has a chair to its right . the chair is gold and has four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "green"
+        ],
+        "category": "paper cutter",
+        "relation_to_target": "opposite side"
+      },
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "the chair is on the opposite side from the green paper cutter and has a chair to its right . the chair is gold and has four legs .",
+    "relations": [
+      {
+        "object": "green paper cutter",
+        "relation": "on opposite side from",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "has to its right",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gold",
+        "four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this pillow is on the bed . it is brown .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "this pillow is on the bed . it is brown .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "on",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "the tiny mini fridge . the mini fridge on the corner by the whiteboard .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "whiteboard",
+        "relation_to_target": "adjacent"
+      }
+    ],
+    "raw_query": "the tiny mini fridge . the mini fridge on the corner by the whiteboard .",
+    "relations": [
+      {
+        "object": "corner",
+        "relation": "on",
+        "subject": "fridge"
+      },
+      {
+        "object": "whiteboard",
+        "relation": "by",
+        "subject": "fridge"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "tiny",
+        "mini"
+      ],
+      "category": "fridge"
+    },
+    "view_constraints": [
+      "corner",
+      "by whiteboard"
+    ]
+  },
+  "the file cabinet is below the center desk on the right side of the room . the file cabinet is a dark gray box .": {
+    "anchors": [
+      {
+        "attributes": [
+          "center",
+          "right side of the room"
+        ],
+        "category": "desk",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "the file cabinet is below the center desk on the right side of the room . the file cabinet is a dark gray box .",
+    "relations": [
+      {
+        "object": "center desk",
+        "relation": "below",
+        "subject": "file cabinet"
+      },
+      {
+        "object": "right side of the room",
+        "relation": "on",
+        "subject": "center desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark gray",
+        "box"
+      ],
+      "category": "file cabinet"
+    },
+    "view_constraints": [
+      "right side of the room"
+    ]
+  },
+  "this picture is hanged on the wall besides another picture . two monitors are present on the table under these pictures .": {
+    "anchors": [
+      {
+        "attributes": [
+          "hanged",
+          "on the wall"
+        ],
+        "category": "picture",
+        "relation_to_target": "besides"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "this picture is hanged on the wall besides another picture . two monitors are present on the table under these pictures .",
+    "relations": [
+      {
+        "object": "picture",
+        "relation": "besides",
+        "subject": "picture"
+      },
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "picture"
+      },
+      {
+        "object": "table",
+        "relation": "on",
+        "subject": "monitors"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "hanged",
+        "on the wall"
+      ],
+      "category": "picture"
+    },
+    "view_constraints": [
+      "wall",
+      "table"
+    ]
+  },
+  "the book shelf is in the back corner of the room . there is a window to the right of it on the adjoining wall and a desk in front of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "to the right of"
+      },
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "the book shelf is in the back corner of the room . there is a window to the right of it on the adjoining wall and a desk in front of it .",
+    "relations": [
+      {
+        "object": "back corner of the room",
+        "relation": "in",
+        "subject": "bookshelf"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "to the right of",
+        "subject": "window"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "in front of",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "bookshelf"
+    },
+    "view_constraints": [
+      "back corner of the room"
+    ]
+  },
+  "there is a rectangular computer tower . it is on a stand with wheels next to a sofa .": {
+    "anchors": [
+      {
+        "attributes": [
+          "with wheels"
+        ],
+        "category": "stand",
+        "relation_to_target": "supporting"
+      },
+      {
+        "attributes": [],
+        "category": "sofa",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular computer tower . it is on a stand with wheels next to a sofa .",
+    "relations": [
+      {
+        "object": "stand",
+        "relation": "on",
+        "subject": "computer tower"
+      },
+      {
+        "object": "sofa",
+        "relation": "next to",
+        "subject": "stand"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "computer tower"
+    },
+    "view_constraints": []
+  },
+  "the gray padded chair is on rollers . it is the only rolling chair at the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "at"
+      }
+    ],
+    "raw_query": "the gray padded chair is on rollers . it is the only rolling chair at the table .",
+    "relations": [
+      {
+        "object": "rollers",
+        "relation": "on",
+        "subject": "chair"
+      },
+      {
+        "object": "table",
+        "relation": "at",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray",
+        "padded",
+        "on rollers"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "a black chair . in front of the door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "a black chair . in front of the door .",
+    "relations": [
+      {
+        "object": "door",
+        "relation": "in front of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the door is right of the purple chair . the door is a brown rectangle .": {
+    "anchors": [
+      {
+        "attributes": [
+          "purple"
+        ],
+        "category": "chair",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "the door is right of the purple chair . the door is a brown rectangle .",
+    "relations": [
+      {
+        "object": "purple chair",
+        "relation": "right of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "rectangle"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "a small wooden cabinet . there is three small bins near it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "small"
+        ],
+        "category": "bin",
+        "relation_to_target": "near"
+      }
+    ],
+    "raw_query": "a small wooden cabinet . there is three small bins near it .",
+    "relations": [
+      {
+        "object": "cabinet",
+        "relation": "near",
+        "subject": "bin"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "small",
+        "wooden"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular computer tower . it is on a stand with wheels .": {
+    "anchors": [
+      {
+        "attributes": [
+          "with wheels"
+        ],
+        "category": "stand",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "there is a rectangular computer tower . it is on a stand with wheels .",
+    "relations": [
+      {
+        "object": "stand",
+        "relation": "on",
+        "subject": "computer tower"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "computer tower"
+    },
+    "view_constraints": []
+  },
+  "two windows . on the side of the bathroom .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bathroom",
+        "relation_to_target": "side"
+      }
+    ],
+    "raw_query": "two windows . on the side of the bathroom .",
+    "relations": [
+      {
+        "object": "bathroom",
+        "relation": "on side of",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "two"
+      ],
+      "category": "window"
+    },
+    "view_constraints": [
+      "side of bathroom"
+    ]
+  },
+  "the cabinet is in the middle of the room . the cabinet is a white prism with a blue top .": {
+    "anchors": [],
+    "raw_query": "the cabinet is in the middle of the room . the cabinet is a white prism with a blue top .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "white",
+        "prism",
+        "blue top"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": [
+      "in the middle of the room"
+    ]
+  },
+  "this is a tan end table . it is in between to couches .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a tan end table . it is in between to couches .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "between",
+        "subject": "end table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "tan"
+      ],
+      "category": "end table"
+    },
+    "view_constraints": []
+  },
+  "this is a red office chair . it is at the back head of the table next to a black chair .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "chair",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "this is a red office chair . it is at the back head of the table next to a black chair .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "at the back head of",
+        "subject": "chair"
+      },
+      {
+        "object": "black chair",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "red",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a chair . its blue in color and is in the center of the room 5th from each corner .": {
+    "anchors": [],
+    "raw_query": "this is a chair . its blue in color and is in the center of the room 5th from each corner .",
+    "relations": [
+      {
+        "object": "center of room",
+        "relation": "in",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "blue"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "5th from each corner"
+    ]
+  },
+  "this table is in the middle . it is square .": {
+    "anchors": [],
+    "raw_query": "this table is in the middle . it is square .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "square",
+        "in the middle"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "this is a trash can that has a bag in it . it is left of the counter on the floor in the corner .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "counter",
+        "relation_to_target": "right of"
+      }
+    ],
+    "raw_query": "this is a trash can that has a bag in it . it is left of the counter on the floor in the corner .",
+    "relations": [
+      {
+        "object": "counter",
+        "relation": "left of",
+        "subject": "trash can"
+      },
+      {
+        "object": "floor",
+        "relation": "on",
+        "subject": "trash can"
+      },
+      {
+        "object": "corner",
+        "relation": "in",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "has a bag in it"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": [
+      "floor",
+      "corner"
+    ]
+  },
+  "this is a black door with a metal handle . it is the entrance to the room .": {
+    "anchors": [],
+    "raw_query": "this is a black door with a metal handle . it is the entrance to the room .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "black",
+        "metal handle"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "an oval shaped sink . it is above a white cabinet .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "cabinet",
+        "relation_to_target": "below"
+      }
+    ],
+    "raw_query": "an oval shaped sink . it is above a white cabinet .",
+    "relations": [
+      {
+        "object": "cabinet",
+        "relation": "above",
+        "subject": "sink"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "oval shaped"
+      ],
+      "category": "sink"
+    },
+    "view_constraints": []
+  },
+  "this is a rectangular radiator . it is under a window .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "this is a rectangular radiator . it is under a window .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "under",
+        "subject": "radiator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "radiator"
+    },
+    "view_constraints": []
+  },
+  "the recycling bin is on the floor partially under the table . it is green at the top .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "the recycling bin is on the floor partially under the table . it is green at the top .",
+    "relations": [
+      {
+        "object": "floor",
+        "relation": "on",
+        "subject": "recycling bin"
+      },
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "recycling bin"
+      },
+      {
+        "object": "recycling bin",
+        "relation": "above",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "green at the top"
+      ],
+      "category": "recycling bin"
+    },
+    "view_constraints": [
+      "partial view under table"
+    ]
+  },
+  "the backpack is yellow . the backpack is on the back of the black chair .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "chair",
+        "relation_to_target": "on the back of"
+      }
+    ],
+    "raw_query": "the backpack is yellow . the backpack is on the back of the black chair .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "on the back of",
+        "subject": "backpack"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "yellow"
+      ],
+      "category": "backpack"
+    },
+    "view_constraints": []
+  },
+  "the armchair is to the right of the other chair . it is facing the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "facing"
+      }
+    ],
+    "raw_query": "the armchair is to the right of the other chair . it is facing the table .",
+    "relations": [
+      {
+        "object": "other chair",
+        "relation": "to the right of",
+        "subject": "armchair"
+      },
+      {
+        "object": "table",
+        "relation": "facing",
+        "subject": "armchair"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "armchair"
+    },
+    "view_constraints": []
+  },
+  "this chair is facing down and right . it is curved and is the closest the viewer .": {
+    "anchors": [],
+    "raw_query": "this chair is facing down and right . it is curved and is the closest the viewer .",
+    "relations": [
+      {
+        "object": "down and right",
+        "relation": "facing",
+        "subject": "chair"
+      },
+      {
+        "object": "curved",
+        "relation": "is",
+        "subject": "chair"
+      },
+      {
+        "object": "closest to viewer",
+        "relation": "is",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "facing down and right",
+        "curved",
+        "closest to viewer"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "facing down and right",
+      "closest to viewer"
+    ]
+  },
+  "this is a white soap dispenser . it is above the sink .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "sink",
+        "relation_to_target": "below"
+      }
+    ],
+    "raw_query": "this is a white soap dispenser . it is above the sink .",
+    "relations": [
+      {
+        "object": "sink",
+        "relation": "above",
+        "subject": "soap dispenser"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "soap dispenser"
+    },
+    "view_constraints": []
+  },
+  "the small wooden bookshelf . the shelf is by the desk .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "the small wooden bookshelf . the shelf is by the desk .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "by",
+        "subject": "bookshelf"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "small",
+        "wooden"
+      ],
+      "category": "bookshelf"
+    },
+    "view_constraints": []
+  },
+  "the table is brown . the table is on the right side of the room .": {
+    "anchors": [],
+    "raw_query": "the table is brown . the table is on the right side of the room .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "on the right side of",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "right side of the room"
+    ]
+  },
+  "an ottoman made from leather . it is the one furthest to the left .": {
+    "anchors": [],
+    "raw_query": "an ottoman made from leather . it is the one furthest to the left .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "made from leather"
+      ],
+      "category": "ottoman"
+    },
+    "view_constraints": [
+      "furthest to the left"
+    ]
+  },
+  "the object is a chair . it is on the right side of the room from the doorway at the end table . it is the second one next to the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "doorway",
+        "relation_to_target": "from"
+      },
+      {
+        "attributes": [],
+        "category": "end table",
+        "relation_to_target": "at"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the object is a chair . it is on the right side of the room from the doorway at the end table . it is the second one next to the wall .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "on right side of",
+        "subject": "chair"
+      },
+      {
+        "object": "doorway",
+        "relation": "from",
+        "subject": "chair"
+      },
+      {
+        "object": "end table",
+        "relation": "at",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "second",
+        "next to wall"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side of room",
+      "from doorway",
+      "at end table",
+      "second next to wall"
+    ]
+  },
+  "this is a grey patterned couch . its on the wall where the entry way is on the left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [],
+        "category": "entry way",
+        "relation_to_target": "left of"
+      }
+    ],
+    "raw_query": "this is a grey patterned couch . its on the wall where the entry way is on the left .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "couch"
+      },
+      {
+        "object": "couch",
+        "relation": "left of",
+        "subject": "entry way"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey",
+        "patterned"
+      ],
+      "category": "couch"
+    },
+    "view_constraints": []
+  },
+  "there is one purple chair in the room the purple chair is in front of a brown wooden door . the wooden door is the item we are looking for . the brown wooden door has shiny brass hardware . the purple chair and the brown wooden door are to the right of the big desk in front of all the little desks in the room .": {
+    "anchors": [
+      {
+        "attributes": [
+          "purple"
+        ],
+        "category": "chair",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [
+          "big"
+        ],
+        "category": "desk",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "there is one purple chair in the room the purple chair is in front of a brown wooden door . the wooden door is the item we are looking for . the brown wooden door has shiny brass hardware . the purple chair and the brown wooden door are to the right of the big desk in front of all the little desks in the room .",
+    "relations": [
+      {
+        "object": "brown wooden door",
+        "relation": "in front of",
+        "subject": "purple chair"
+      },
+      {
+        "object": "big desk",
+        "relation": "to the right of",
+        "subject": "brown wooden door"
+      },
+      {
+        "object": "little desks",
+        "relation": "in front of",
+        "subject": "big desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "wooden",
+        "shiny brass hardware"
+      ],
+      "category": "door"
+    },
+    "view_constraints": [
+      "right of big desk",
+      "in front of little desks"
+    ]
+  },
+  "the whiteboard is on the white wall . it is to the right of the doors .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "wall",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [],
+        "category": "doors",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "the whiteboard is on the white wall . it is to the right of the doors .",
+    "relations": [
+      {
+        "object": "white wall",
+        "relation": "on",
+        "subject": "whiteboard"
+      },
+      {
+        "object": "doors",
+        "relation": "to the right of",
+        "subject": "whiteboard"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "whiteboard"
+    },
+    "view_constraints": []
+  },
+  "it is a chair . there is a table in front and a bookshelf behind it . a backpack is in the seat .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [],
+        "category": "bookshelf",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "backpack",
+        "relation_to_target": "in the seat"
+      }
+    ],
+    "raw_query": "it is a chair . there is a table in front and a bookshelf behind it . a backpack is in the seat .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "in front of",
+        "subject": "table"
+      },
+      {
+        "object": "chair",
+        "relation": "behind",
+        "subject": "bookshelf"
+      },
+      {
+        "object": "chair",
+        "relation": "in the seat",
+        "subject": "backpack"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the chair is left of the table north of the green table . the chair is brown with four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "green"
+        ],
+        "category": "table",
+        "relation_to_target": "north of"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "left of"
+      }
+    ],
+    "raw_query": "the chair is left of the table north of the green table . the chair is brown with four legs .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "left of",
+        "subject": "chair"
+      },
+      {
+        "object": "green table",
+        "relation": "north of",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the trash can is located along the far wall of the room . the trash can is also directly to the right of the toilet and underneath the toilet paper .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "directly to the right of"
+      },
+      {
+        "attributes": [],
+        "category": "toilet paper",
+        "relation_to_target": "underneath"
+      }
+    ],
+    "raw_query": "the trash can is located along the far wall of the room . the trash can is also directly to the right of the toilet and underneath the toilet paper .",
+    "relations": [
+      {
+        "object": "far wall of the room",
+        "relation": "located along",
+        "subject": "trash can"
+      },
+      {
+        "object": "toilet",
+        "relation": "directly to the right of",
+        "subject": "trash can"
+      },
+      {
+        "object": "toilet paper",
+        "relation": "underneath",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "trash can"
+    },
+    "view_constraints": [
+      "far wall of the room"
+    ]
+  },
+  "there is a square brown chair . it is against the wall and next to the door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a square brown chair . it is against the wall and next to the door .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "chair"
+      },
+      {
+        "object": "door",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "square",
+        "brown"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a white rectangular pillow . it is sitting at the head of the bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "head"
+      }
+    ],
+    "raw_query": "this is a white rectangular pillow . it is sitting at the head of the bed .",
+    "relations": [
+      {
+        "object": "head of bed",
+        "relation": "sitting at",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "rectangular"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "it is a black trash can . the black trash can sits to the left of another black trash can that has a clear white trash bag in it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black",
+          "has clear white trash bag"
+        ],
+        "category": "trash can",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "it is a black trash can . the black trash can sits to the left of another black trash can that has a clear white trash bag in it .",
+    "relations": [
+      {
+        "object": "another black trash can that has a clear white trash bag in it",
+        "relation": "sits to the left of",
+        "subject": "black trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": []
+  },
+  "there are two large wooden doors . the doors are a golden wooden color with large dark handles .": {
+    "anchors": [],
+    "raw_query": "there are two large wooden doors . the doors are a golden wooden color with large dark handles .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "large",
+        "wooden",
+        "golden wooden color",
+        "large dark handles"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "this is a lamp . the lamp is at the corner of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "corner"
+      }
+    ],
+    "raw_query": "this is a lamp . the lamp is at the corner of the room .",
+    "relations": [
+      {
+        "object": "corner of room",
+        "relation": "at",
+        "subject": "lamp"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "lamp"
+    },
+    "view_constraints": []
+  },
+  "this is a white pillow . it is under the picture .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "picture",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "this is a white pillow . it is under the picture .",
+    "relations": [
+      {
+        "object": "picture",
+        "relation": "under",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "this is a black sofa chair . it is to the left of the lamp .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "lamp",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a black sofa chair . it is to the left of the lamp .",
+    "relations": [
+      {
+        "object": "lamp",
+        "relation": "left of",
+        "subject": "sofa chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "sofa chair"
+    },
+    "view_constraints": []
+  },
+  "the picture is affixed to the wall . it is located to the left of the door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "the picture is affixed to the wall . it is located to the left of the door .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "affixed to",
+        "subject": "picture"
+      },
+      {
+        "object": "door",
+        "relation": "located to the left of",
+        "subject": "picture"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "affixed to the wall"
+      ],
+      "category": "picture"
+    },
+    "view_constraints": []
+  },
+  "the pillow on the bed farther from the door . it is the top pillow on the side of the bed that is closer to the table between the beds .": {
+    "anchors": [
+      {
+        "attributes": [
+          "farther from the door"
+        ],
+        "category": "bed",
+        "relation_to_target": "support"
+      },
+      {
+        "attributes": [
+          "between the beds"
+        ],
+        "category": "table",
+        "relation_to_target": "side closer to"
+      }
+    ],
+    "raw_query": "the pillow on the bed farther from the door . it is the top pillow on the side of the bed that is closer to the table between the beds .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "on",
+        "subject": "pillow"
+      },
+      {
+        "object": "table",
+        "relation": "closer to",
+        "subject": "pillow"
+      },
+      {
+        "object": "door",
+        "relation": "farther from",
+        "subject": "bed"
+      },
+      {
+        "object": "beds",
+        "relation": "between",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "top",
+        "on the side closer to the table"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": [
+      "bed farther from the door",
+      "side of bed closer to table"
+    ]
+  },
+  "this tv is on the left wall . it is black .": {
+    "anchors": [
+      {
+        "attributes": [
+          "left"
+        ],
+        "category": "wall",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "this tv is on the left wall . it is black .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "tv"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "tv"
+    },
+    "view_constraints": [
+      "left wall"
+    ]
+  },
+  "the item is in end table . what is the only in end table found between the two couches in the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "end table",
+        "relation_to_target": "contains"
+      },
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "between"
+      }
+    ],
+    "raw_query": "the item is in end table . what is the only in end table found between the two couches in the room .",
+    "relations": [
+      {
+        "object": "end table",
+        "relation": "in",
+        "subject": "item"
+      },
+      {
+        "object": "couch",
+        "relation": "between",
+        "subject": "end table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "only"
+      ],
+      "category": "item"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular dark cabinet . it is next to a white cabinet .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "cabinet",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular dark cabinet . it is next to a white cabinet .",
+    "relations": [
+      {
+        "object": "white cabinet",
+        "relation": "next to",
+        "subject": "rectangular dark cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "dark"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "there is a black desk with a clear rectangular glass . the desk is located near the window , and has a office chair pulled up to it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "near"
+      },
+      {
+        "attributes": [],
+        "category": "office chair",
+        "relation_to_target": "pulled up to"
+      }
+    ],
+    "raw_query": "there is a black desk with a clear rectangular glass . the desk is located near the window , and has a office chair pulled up to it .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "located near",
+        "subject": "desk"
+      },
+      {
+        "object": "desk",
+        "relation": "pulled up to",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "clear rectangular glass"
+      ],
+      "category": "desk"
+    },
+    "view_constraints": []
+  },
+  "the couch has a pillow on the left side of it . there is a fire extinguisher on the wall behind the couch .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "has pillow on left side"
+      },
+      {
+        "attributes": [
+          "on wall",
+          "behind couch"
+        ],
+        "category": "fire extinguisher",
+        "relation_to_target": "on wall behind couch"
+      }
+    ],
+    "raw_query": "the couch has a pillow on the left side of it . there is a fire extinguisher on the wall behind the couch .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "on left side of",
+        "subject": "pillow"
+      },
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "fire extinguisher"
+      },
+      {
+        "object": "couch",
+        "relation": "behind",
+        "subject": "fire extinguisher"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "on left side of couch"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": [
+      "behind couch",
+      "left side of couch"
+    ]
+  },
+  "the cool office chair . the chair is by the desk .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "the cool office chair . the chair is by the desk .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "by",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "cool",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular monitor . it is to the right of the one closest to the door .": {
+    "anchors": [
+      {
+        "attributes": [
+          "closest to the door"
+        ],
+        "category": "monitor",
+        "relation_to_target": "left of"
+      }
+    ],
+    "raw_query": "there is a rectangular monitor . it is to the right of the one closest to the door .",
+    "relations": [
+      {
+        "object": "monitor closest to the door",
+        "relation": "to the right of",
+        "subject": "rectangular monitor"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "monitor"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular gray cabinet . it is on a wall next to a shelf .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [],
+        "category": "shelf",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular gray cabinet . it is on a wall next to a shelf .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "cabinet"
+      },
+      {
+        "object": "shelf",
+        "relation": "next to",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "gray"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "a medium sized wooden chair . the chair is in front of a window with blinds .": {
+    "anchors": [
+      {
+        "attributes": [
+          "with blinds"
+        ],
+        "category": "window",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "a medium sized wooden chair . the chair is in front of a window with blinds .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "in front of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "medium sized",
+        "wooden"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a simple dark square table with four chairs pushed up to it . it is near the end of the room . the chair on its right side is a rolling office chair .": {
+    "anchors": [
+      {
+        "attributes": [
+          "rolling",
+          "office"
+        ],
+        "category": "chair",
+        "relation_to_target": "right side"
+      }
+    ],
+    "raw_query": "this is a simple dark square table with four chairs pushed up to it . it is near the end of the room . the chair on its right side is a rolling office chair .",
+    "relations": [
+      {
+        "object": "four chairs",
+        "relation": "has",
+        "subject": "table"
+      },
+      {
+        "object": "end of the room",
+        "relation": "near",
+        "subject": "table"
+      },
+      {
+        "object": "table",
+        "relation": "on right side of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark",
+        "square"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "near end of the room"
+    ]
+  },
+  "the brown shelf is to the left of the window . it is so tall that it reaches the ceiling .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "right of"
+      }
+    ],
+    "raw_query": "the brown shelf is to the left of the window . it is so tall that it reaches the ceiling .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "to the left of",
+        "subject": "shelf"
+      },
+      {
+        "object": "ceiling",
+        "relation": "reaches",
+        "subject": "shelf"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "tall",
+        "reaches ceiling"
+      ],
+      "category": "shelf"
+    },
+    "view_constraints": [
+      "left side of window",
+      "tall enough to reach ceiling"
+    ]
+  },
+  "there are two carts with shelves and wheels against the wall . the one we want is on the left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      }
+    ],
+    "raw_query": "there are two carts with shelves and wheels against the wall . the one we want is on the left .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "cart"
+      },
+      {
+        "object": "cart",
+        "relation": "on the left of",
+        "subject": "cart"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "with shelves",
+        "with wheels",
+        "on the left"
+      ],
+      "category": "cart"
+    },
+    "view_constraints": [
+      "left side"
+    ]
+  },
+  "this is a brown leather chair located under the first dark brown table immediately inside the door . it is on the middle side of the room , relative to the table .": {
+    "anchors": [
+      {
+        "attributes": [
+          "dark brown",
+          "first"
+        ],
+        "category": "table",
+        "relation_to_target": "above"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "immediately inside"
+      }
+    ],
+    "raw_query": "this is a brown leather chair located under the first dark brown table immediately inside the door . it is on the middle side of the room , relative to the table .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "chair"
+      },
+      {
+        "object": "door",
+        "relation": "immediately inside",
+        "subject": "chair"
+      },
+      {
+        "object": "room",
+        "relation": "on middle side of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "leather"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "relative to the table"
+    ]
+  },
+  "the door is to the right of the mail cubbies . it is directly across from the cabinets .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "mail cubbies",
+        "relation_to_target": "to the right of"
+      },
+      {
+        "attributes": [],
+        "category": "cabinets",
+        "relation_to_target": "directly across from"
+      }
+    ],
+    "raw_query": "the door is to the right of the mail cubbies . it is directly across from the cabinets .",
+    "relations": [
+      {
+        "object": "mail cubbies",
+        "relation": "to the right of",
+        "subject": "door"
+      },
+      {
+        "object": "cabinets",
+        "relation": "directly across from",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "this is a chair against the wall by the plugins . this is by the right corner of the white board .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [],
+        "category": "plugins",
+        "relation_to_target": "by"
+      },
+      {
+        "attributes": [
+          "right corner"
+        ],
+        "category": "white board",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "this is a chair against the wall by the plugins . this is by the right corner of the white board .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "chair"
+      },
+      {
+        "object": "plugins",
+        "relation": "by",
+        "subject": "chair"
+      },
+      {
+        "object": "right corner of the white board",
+        "relation": "by",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "against the wall",
+        "by the plugins",
+        "by the right corner of the white board"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the window is tall and has a brown frame . the window is on the right of another one .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "the window is tall and has a brown frame . the window is on the right of another one .",
+    "relations": [
+      {
+        "object": "another window",
+        "relation": "on the right of",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "tall",
+        "brown frame"
+      ],
+      "category": "window"
+    },
+    "view_constraints": []
+  },
+  "the large hanging curtain . the curtain is next to the little shelf .": {
+    "anchors": [
+      {
+        "attributes": [
+          "little"
+        ],
+        "category": "shelf",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the large hanging curtain . the curtain is next to the little shelf .",
+    "relations": [
+      {
+        "object": "shelf",
+        "relation": "next to",
+        "subject": "curtain"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "large",
+        "hanging"
+      ],
+      "category": "curtain"
+    },
+    "view_constraints": []
+  },
+  "this is a white bathtub . it is behind a shower curtain .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "shower curtain",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "this is a white bathtub . it is behind a shower curtain .",
+    "relations": [
+      {
+        "object": "shower curtain",
+        "relation": "behind",
+        "subject": "bathtub"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "bathtub"
+    },
+    "view_constraints": []
+  },
+  "the cart is below the announcement board . the cart is to the left of the black cart .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "announcement board",
+        "relation_to_target": "above"
+      },
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "cart",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "the cart is below the announcement board . the cart is to the left of the black cart .",
+    "relations": [
+      {
+        "object": "announcement board",
+        "relation": "below",
+        "subject": "cart"
+      },
+      {
+        "object": "black cart",
+        "relation": "left of",
+        "subject": "cart"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "cart"
+    },
+    "view_constraints": []
+  },
+  "this is a black chair . there are many black chairs in this room . but there are only two chairs that are right in front of the blackboard . if you are looking at the blackboard give me the chair on the left . if you are standing behind the chairs it is the chair on the right .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "blackboard",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "this is a black chair . there are many black chairs in this room . but there are only two chairs that are right in front of the blackboard . if you are looking at the blackboard give me the chair on the left . if you are standing behind the chairs it is the chair on the right .",
+    "relations": [
+      {
+        "object": "blackboard",
+        "relation": "in front of",
+        "subject": "chair"
+      },
+      {
+        "object": "blackboard",
+        "relation": "on the left of",
+        "subject": "chair"
+      },
+      {
+        "object": "chairs",
+        "relation": "on the right of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "looking at the blackboard",
+      "standing behind the chairs"
+    ]
+  },
+  "the bench is between two large bookshelves . the bench is rectangular and red brown in color .": {
+    "anchors": [
+      {
+        "attributes": [
+          "large"
+        ],
+        "category": "bookshelf",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [
+          "large"
+        ],
+        "category": "bookshelf",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "the bench is between two large bookshelves . the bench is rectangular and red brown in color .",
+    "relations": [
+      {
+        "object": "bookshelf",
+        "relation": "between",
+        "subject": "bench"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "red brown"
+      ],
+      "category": "bench"
+    },
+    "view_constraints": []
+  },
+  "this is a wooden desk . the desk is close to wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "close to"
+      }
+    ],
+    "raw_query": "this is a wooden desk . the desk is close to wall .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "close to",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "wooden"
+      ],
+      "category": "desk"
+    },
+    "view_constraints": []
+  },
+  "the object referenced here is a long black couch against a wall in the room . it has various pillows on it and is near a hanging orange sweater and a whiteboard .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [
+          "hanging",
+          "orange"
+        ],
+        "category": "sweater",
+        "relation_to_target": "near"
+      },
+      {
+        "attributes": [],
+        "category": "whiteboard",
+        "relation_to_target": "near"
+      }
+    ],
+    "raw_query": "the object referenced here is a long black couch against a wall in the room . it has various pillows on it and is near a hanging orange sweater and a whiteboard .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "couch"
+      },
+      {
+        "object": "sweater",
+        "relation": "near",
+        "subject": "couch"
+      },
+      {
+        "object": "whiteboard",
+        "relation": "near",
+        "subject": "couch"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "long",
+        "black",
+        "has pillows"
+      ],
+      "category": "couch"
+    },
+    "view_constraints": []
+  },
+  "the office chair is black and is pushed out from the desk . the chair is the second from the right .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "the office chair is black and is pushed out from the desk . the chair is the second from the right .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "pushed out from",
+        "subject": "chair"
+      },
+      {
+        "object": "other chairs",
+        "relation": "second from the right",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "second from the right"
+    ]
+  },
+  "this is a brown bed . it is to the left of another bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "this is a brown bed . it is to the left of another bed .",
+    "relations": [
+      {
+        "object": "another bed",
+        "relation": "is to the left of",
+        "subject": "brown bed"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "bed"
+    },
+    "view_constraints": []
+  },
+  "the green instrument case has a gray rolled up sleeping bag in front of it . the instrument case is to the left of the white dresser .": {
+    "anchors": [
+      {
+        "attributes": [
+          "gray",
+          "rolled up"
+        ],
+        "category": "sleeping bag",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "dresser",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "the green instrument case has a gray rolled up sleeping bag in front of it . the instrument case is to the left of the white dresser .",
+    "relations": [
+      {
+        "object": "instrument case",
+        "relation": "in front of",
+        "subject": "sleeping bag"
+      },
+      {
+        "object": "dresser",
+        "relation": "to the left of",
+        "subject": "instrument case"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "green"
+      ],
+      "category": "instrument case"
+    },
+    "view_constraints": []
+  },
+  "this is a black chair . it is in the corner of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "contains"
+      }
+    ],
+    "raw_query": "this is a black chair . it is in the corner of the room .",
+    "relations": [
+      {
+        "object": "corner of room",
+        "relation": "in",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "corner of room"
+    ]
+  },
+  "the towel is hanging on the wall . it is the right most towel hanging . it is light colored .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "hanging on"
+      }
+    ],
+    "raw_query": "the towel is hanging on the wall . it is the right most towel hanging . it is light colored .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "hanging on",
+        "subject": "towel"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "light colored",
+        "right most"
+      ],
+      "category": "towel"
+    },
+    "view_constraints": []
+  },
+  "the door is open facing the inside of the small bedroom . it sits midway in the wall and has a closet on one side of it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "small"
+        ],
+        "category": "bedroom",
+        "relation_to_target": "contains"
+      },
+      {
+        "attributes": [],
+        "category": "closet",
+        "relation_to_target": "adjacent to one side"
+      }
+    ],
+    "raw_query": "the door is open facing the inside of the small bedroom . it sits midway in the wall and has a closet on one side of it .",
+    "relations": [
+      {
+        "object": "inside of bedroom",
+        "relation": "facing",
+        "subject": "door"
+      },
+      {
+        "object": "wall",
+        "relation": "located in",
+        "subject": "door"
+      },
+      {
+        "object": "closet",
+        "relation": "has adjacent",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "open",
+        "facing inside",
+        "midway in wall"
+      ],
+      "category": "door"
+    },
+    "view_constraints": [
+      "door is open",
+      "facing inside of bedroom"
+    ]
+  },
+  "the brown wooden chair . the chair is in the back in the middle .": {
+    "anchors": [],
+    "raw_query": "the brown wooden chair . the chair is in the back in the middle .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "brown",
+        "wooden"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "in the back",
+      "in the middle"
+    ]
+  },
+  "it is a black cabinet . the black cabinet is sitting next to the white cabinet and the white rail across from the white door .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "cabinet",
+        "relation_to_target": "next to"
+      },
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "rail",
+        "relation_to_target": "across from"
+      },
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "door",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "it is a black cabinet . the black cabinet is sitting next to the white cabinet and the white rail across from the white door .",
+    "relations": [
+      {
+        "object": "white cabinet",
+        "relation": "next to",
+        "subject": "black cabinet"
+      },
+      {
+        "object": "white door",
+        "relation": "across from",
+        "subject": "white rail"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "there is a long black couch in the room . it is by the wall with a picture .": {
+    "anchors": [
+      {
+        "attributes": [
+          "with a picture"
+        ],
+        "category": "wall",
+        "relation_to_target": "adjacent"
+      }
+    ],
+    "raw_query": "there is a long black couch in the room . it is by the wall with a picture .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "by",
+        "subject": "couch"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "long",
+        "black"
+      ],
+      "category": "couch"
+    },
+    "view_constraints": []
+  },
+  "there is a cylindrical table . it is next to a curtain .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "curtain",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a cylindrical table . it is next to a curtain .",
+    "relations": [
+      {
+        "object": "curtain",
+        "relation": "next to",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "cylindrical"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "a white pillow . next to the black pillow .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "pillow",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "a white pillow . next to the black pillow .",
+    "relations": [
+      {
+        "object": "black pillow",
+        "relation": "next to",
+        "subject": "white pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular door . it is next to a map .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "map",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular door . it is next to a map .",
+    "relations": [
+      {
+        "object": "map",
+        "relation": "next to",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "this is a small square gray pillow . it is located on a black couch .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "couch",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "this is a small square gray pillow . it is located on a black couch .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "on",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "small",
+        "square",
+        "gray"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "this is a white cabinet . it is to the left of a toilet .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a white cabinet . it is to the left of a toilet .",
+    "relations": [
+      {
+        "object": "toilet",
+        "relation": "left of",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": []
+  },
+  "it is a white toilet with the lid up at the end of the bathroom . there is a toilet on the right side hanging up .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bathroom",
+        "relation_to_target": "at the end of"
+      },
+      {
+        "attributes": [
+          "on the right side",
+          "hanging up"
+        ],
+        "category": "toilet",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "it is a white toilet with the lid up at the end of the bathroom . there is a toilet on the right side hanging up .",
+    "relations": [
+      {
+        "object": "bathroom",
+        "relation": "at the end of",
+        "subject": "toilet"
+      },
+      {
+        "object": "toilet",
+        "relation": "next to",
+        "subject": "toilet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "lid up"
+      ],
+      "category": "toilet"
+    },
+    "view_constraints": [
+      "end of bathroom",
+      "right side"
+    ]
+  },
+  "the trash can is on the floor to the left of the cabinet . there is a small white bin beside it , to the right .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "cabinet",
+        "relation_to_target": "to the left of"
+      },
+      {
+        "attributes": [
+          "small",
+          "white"
+        ],
+        "category": "bin",
+        "relation_to_target": "beside it, to the right"
+      }
+    ],
+    "raw_query": "the trash can is on the floor to the left of the cabinet . there is a small white bin beside it , to the right .",
+    "relations": [
+      {
+        "object": "floor",
+        "relation": "on",
+        "subject": "trash can"
+      },
+      {
+        "object": "cabinet",
+        "relation": "to the left of",
+        "subject": "trash can"
+      },
+      {
+        "object": "trash can",
+        "relation": "beside",
+        "subject": "bin"
+      },
+      {
+        "object": "trash can",
+        "relation": "to the right of",
+        "subject": "bin"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "on the floor"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": []
+  },
+  "the trash can is grey and is on the floor . it is in the far corner of the room against the red wall and the glass wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "floor",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [
+          "red"
+        ],
+        "category": "red wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [
+          "glass"
+        ],
+        "category": "glass wall",
+        "relation_to_target": "against"
+      }
+    ],
+    "raw_query": "the trash can is grey and is on the floor . it is in the far corner of the room against the red wall and the glass wall .",
+    "relations": [
+      {
+        "object": "floor",
+        "relation": "on",
+        "subject": "trash can"
+      },
+      {
+        "object": "red wall",
+        "relation": "against",
+        "subject": "trash can"
+      },
+      {
+        "object": "glass wall",
+        "relation": "against",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": [
+      "far corner of the room"
+    ]
+  },
+  "the armchair on the left side of the room . it is grey .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "left side of"
+      }
+    ],
+    "raw_query": "the armchair on the left side of the room . it is grey .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "on left side of",
+        "subject": "armchair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey"
+      ],
+      "category": "armchair"
+    },
+    "view_constraints": [
+      "left side of the room"
+    ]
+  },
+  "it is a brown leather couch with a bag on the left cushion . there is a fire extinguisher behind it and it is across from another identical couch .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bag",
+        "relation_to_target": "on left cushion"
+      },
+      {
+        "attributes": [],
+        "category": "fire extinguisher",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [
+          "identical"
+        ],
+        "category": "couch",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "it is a brown leather couch with a bag on the left cushion . there is a fire extinguisher behind it and it is across from another identical couch .",
+    "relations": [
+      {
+        "object": "left cushion",
+        "relation": "on",
+        "subject": "bag"
+      },
+      {
+        "object": "couch",
+        "relation": "behind",
+        "subject": "fire extinguisher"
+      },
+      {
+        "object": "couch",
+        "relation": "across from",
+        "subject": "couch"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "leather",
+        "has bag on left cushion"
+      ],
+      "category": "couch"
+    },
+    "view_constraints": []
+  },
+  "this is a plain office chair . it si near the corner of the table . it is slightly pulled out and by the white board .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "near corner"
+      },
+      {
+        "attributes": [],
+        "category": "white board",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "this is a plain office chair . it si near the corner of the table . it is slightly pulled out and by the white board .",
+    "relations": [
+      {
+        "object": "corner of table",
+        "relation": "near",
+        "subject": "chair"
+      },
+      {
+        "object": "table",
+        "relation": "pulled out",
+        "subject": "chair"
+      },
+      {
+        "object": "white board",
+        "relation": "by",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "plain",
+        "office"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "slightly pulled out"
+    ]
+  },
+  "this is a black chair on the right corner . it has an object on it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "right"
+        ],
+        "category": "corner",
+        "relation_to_target": "location"
+      }
+    ],
+    "raw_query": "this is a black chair on the right corner . it has an object on it .",
+    "relations": [
+      {
+        "object": "corner",
+        "relation": "on",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "on",
+        "subject": "object"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the pillow is on top of a bed that is to the left of a desk and a drawer . the pillow is a white rectangle .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "right_of"
+      },
+      {
+        "attributes": [],
+        "category": "drawer",
+        "relation_to_target": "right_of"
+      }
+    ],
+    "raw_query": "the pillow is on top of a bed that is to the left of a desk and a drawer . the pillow is a white rectangle .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "on_top_of",
+        "subject": "pillow"
+      },
+      {
+        "object": "desk",
+        "relation": "to_the_left_of",
+        "subject": "bed"
+      },
+      {
+        "object": "drawer",
+        "relation": "to_the_left_of",
+        "subject": "bed"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "rectangle"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "the table is brown and round . it is on the right side of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "contains"
+      }
+    ],
+    "raw_query": "the table is brown and round . it is on the right side of the room .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "on the right side of",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "round"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "right side of the room"
+    ]
+  },
+  "this is a yellow office chair . it is facing the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "facing"
+      }
+    ],
+    "raw_query": "this is a yellow office chair . it is facing the table .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "facing",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "yellow"
+      ],
+      "category": "office chair"
+    },
+    "view_constraints": []
+  },
+  "the window has blinds on it . it is to the right of the bed in the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "left of"
+      }
+    ],
+    "raw_query": "the window has blinds on it . it is to the right of the bed in the room .",
+    "relations": [
+      {
+        "object": "blinds",
+        "relation": "has",
+        "subject": "window"
+      },
+      {
+        "object": "bed",
+        "relation": "to the right of",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "has blinds"
+      ],
+      "category": "window"
+    },
+    "view_constraints": []
+  },
+  "a white laundry basket is on top of a laundry machine . it is located at the far left machine , across from the door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "laundry machine",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "a white laundry basket is on top of a laundry machine . it is located at the far left machine , across from the door .",
+    "relations": [
+      {
+        "object": "laundry machine",
+        "relation": "on top of",
+        "subject": "laundry basket"
+      },
+      {
+        "object": "far left machine",
+        "relation": "located at",
+        "subject": "laundry basket"
+      },
+      {
+        "object": "door",
+        "relation": "across from",
+        "subject": "laundry basket"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "laundry basket"
+    },
+    "view_constraints": [
+      "far left",
+      "across from door"
+    ]
+  },
+  "this is a gray office chair . it is to the left of the monitors .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "monitors",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "this is a gray office chair . it is to the left of the monitors .",
+    "relations": [
+      {
+        "object": "monitors",
+        "relation": "to the left of",
+        "subject": "office chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray"
+      ],
+      "category": "office chair"
+    },
+    "view_constraints": []
+  },
+  "this chair is kept closer to the table . on right a white board can be seen on the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "closer to"
+      },
+      {
+        "attributes": [
+          "on wall",
+          "right"
+        ],
+        "category": "white board",
+        "relation_to_target": "on right"
+      }
+    ],
+    "raw_query": "this chair is kept closer to the table . on right a white board can be seen on the wall .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "closer to",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "white board"
+      },
+      {
+        "object": "chair",
+        "relation": "on right of",
+        "subject": "white board"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "closer to table"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side view"
+    ]
+  },
+  "this is a window in the meeting room . it is near the chalkboard .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chalkboard",
+        "relation_to_target": "near"
+      }
+    ],
+    "raw_query": "this is a window in the meeting room . it is near the chalkboard .",
+    "relations": [
+      {
+        "object": "chalkboard",
+        "relation": "near",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "window"
+    },
+    "view_constraints": []
+  },
+  "a red cube shaped footrest . the footrest is near the end of a large blue couch and a wooden table .": {
+    "anchors": [
+      {
+        "attributes": [
+          "large",
+          "blue"
+        ],
+        "category": "couch",
+        "relation_to_target": "near the end of"
+      },
+      {
+        "attributes": [
+          "wooden"
+        ],
+        "category": "table",
+        "relation_to_target": "near"
+      }
+    ],
+    "raw_query": "a red cube shaped footrest . the footrest is near the end of a large blue couch and a wooden table .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "near the end of",
+        "subject": "footrest"
+      },
+      {
+        "object": "table",
+        "relation": "near",
+        "subject": "footrest"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "red",
+        "cube shaped"
+      ],
+      "category": "footrest"
+    },
+    "view_constraints": []
+  },
+  "this printer is directly below the window . it is sitting on the counter , in the corner .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "above"
+      },
+      {
+        "attributes": [],
+        "category": "counter",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "this printer is directly below the window . it is sitting on the counter , in the corner .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "below",
+        "subject": "printer"
+      },
+      {
+        "object": "counter",
+        "relation": "on",
+        "subject": "printer"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "directly below window",
+        "sitting on counter",
+        "in corner"
+      ],
+      "category": "printer"
+    },
+    "view_constraints": [
+      "corner"
+    ]
+  },
+  "this is a white two drawer storage bin . it is between the bedside table and the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bedside table",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a white two drawer storage bin . it is between the bedside table and the wall .",
+    "relations": [
+      {
+        "object": "bedside table and wall",
+        "relation": "between",
+        "subject": "storage bin"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "two drawer"
+      ],
+      "category": "storage bin"
+    },
+    "view_constraints": []
+  },
+  "the table is dark brown . it is to the right of two tall chairs tucked under it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "tall"
+        ],
+        "category": "chair",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "the table is dark brown . it is to the right of two tall chairs tucked under it .",
+    "relations": [
+      {
+        "object": "two tall chairs",
+        "relation": "to the right of",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark brown"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "there is a white toilet flush button above the toilet . it is to the left of the sink .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "below"
+      },
+      {
+        "attributes": [],
+        "category": "sink",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "there is a white toilet flush button above the toilet . it is to the left of the sink .",
+    "relations": [
+      {
+        "object": "toilet",
+        "relation": "above",
+        "subject": "toilet flush button"
+      },
+      {
+        "object": "sink",
+        "relation": "left of",
+        "subject": "toilet flush button"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "toilet flush button"
+    },
+    "view_constraints": []
+  },
+  "this is a black mattress . it is to the right of the radiator .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "radiator",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "this is a black mattress . it is to the right of the radiator .",
+    "relations": [
+      {
+        "object": "radiator",
+        "relation": "to the right of",
+        "subject": "mattress"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "mattress"
+    },
+    "view_constraints": []
+  },
+  "it is a grey circular table in the corner of the room . there is a lamp on top of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "corner"
+      }
+    ],
+    "raw_query": "it is a grey circular table in the corner of the room . there is a lamp on top of it .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "on top of",
+        "subject": "lamp"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey",
+        "circular"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "a brown wooden chair . it is in between multiple wooden chairs next to a wall .": {
+    "anchors": [
+      {
+        "attributes": [
+          "wooden"
+        ],
+        "category": "chair",
+        "relation_to_target": "surrounding"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "a brown wooden chair . it is in between multiple wooden chairs next to a wall .",
+    "relations": [
+      {
+        "object": "multiple wooden chairs",
+        "relation": "in between",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "wooden"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this pillow is by the wall . it is dark .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "this pillow is by the wall . it is dark .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "by",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": []
+  },
+  "the chair is pulled into the desk . the chair has a wall behind it . the couch is in the background past it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "pulled into"
+      },
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "in background past"
+      }
+    ],
+    "raw_query": "the chair is pulled into the desk . the chair has a wall behind it . the couch is in the background past it .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "pulled into",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "has behind",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "in background past",
+        "subject": "couch"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "background"
+    ]
+  },
+  "there are white washing machines . they are an island in the middle of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "contains"
+      }
+    ],
+    "raw_query": "there are white washing machines . they are an island in the middle of the room .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "is located in",
+        "subject": "washing machine"
+      },
+      {
+        "object": "room",
+        "relation": "is an island in",
+        "subject": "washing machine"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "washing machine"
+    },
+    "view_constraints": []
+  },
+  "it is a gray trash can . the gray trash can sits at the bottom right of the long beige table behind the brown chairs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "long",
+          "beige"
+        ],
+        "category": "table",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [
+          "brown"
+        ],
+        "category": "chairs",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "it is a gray trash can . the gray trash can sits at the bottom right of the long beige table behind the brown chairs .",
+    "relations": [
+      {
+        "object": "bottom right of table",
+        "relation": "sits at",
+        "subject": "trash can"
+      },
+      {
+        "object": "chairs",
+        "relation": "behind",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": [
+      "bottom right"
+    ]
+  },
+  "this fridge is in the corner on the back right . it faces left and is behind the cabinet . there is a table to the left and in front .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "cabinet",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "this fridge is in the corner on the back right . it faces left and is behind the cabinet . there is a table to the left and in front .",
+    "relations": [
+      {
+        "object": "cabinet",
+        "relation": "behind",
+        "subject": "fridge"
+      },
+      {
+        "object": "table",
+        "relation": "to the right of",
+        "subject": "fridge"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "in the corner",
+        "on the back right",
+        "faces left",
+        "behind the cabinet"
+      ],
+      "category": "fridge"
+    },
+    "view_constraints": [
+      "back right corner",
+      "faces left"
+    ]
+  },
+  "the cabinet is south of the northwest table . the cabinet is gray with four legs .": {
+    "anchors": [
+      {
+        "attributes": [
+          "northwest"
+        ],
+        "category": "table",
+        "relation_to_target": "northwest"
+      }
+    ],
+    "raw_query": "the cabinet is south of the northwest table . the cabinet is gray with four legs .",
+    "relations": [
+      {
+        "object": "northwest table",
+        "relation": "south of",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray",
+        "four legs"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": [
+      "south of northwest table"
+    ]
+  },
+  "the radiator on the wall . the radiator is next to the toilet .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the radiator on the wall . the radiator is next to the toilet .",
+    "relations": [
+      {
+        "object": "toilet",
+        "relation": "next to",
+        "subject": "radiator"
+      },
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "radiator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "on the wall"
+      ],
+      "category": "radiator"
+    },
+    "view_constraints": [
+      "wall"
+    ]
+  },
+  "the shelf is black . there is a white lamp on top of it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "lamp",
+        "relation_to_target": "on top of"
+      }
+    ],
+    "raw_query": "the shelf is black . there is a white lamp on top of it .",
+    "relations": [
+      {
+        "object": "shelf",
+        "relation": "on top of",
+        "subject": "lamp"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "shelf"
+    },
+    "view_constraints": []
+  },
+  "this shelf is on the other side . it is on the wall .": {
+    "anchors": [],
+    "raw_query": "this shelf is on the other side . it is on the wall .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "shelf"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "on the other side",
+        "on the wall"
+      ],
+      "category": "shelf"
+    },
+    "view_constraints": [
+      "other side"
+    ]
+  },
+  "this is a white monitor . it is on the floor .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "floor",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "this is a white monitor . it is on the floor .",
+    "relations": [
+      {
+        "object": "floor",
+        "relation": "on",
+        "subject": "monitor"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "monitor"
+    },
+    "view_constraints": []
+  },
+  "trashcan sitting in a hallway .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "hallway",
+        "relation_to_target": "in"
+      }
+    ],
+    "raw_query": "trashcan sitting in a hallway .",
+    "relations": [
+      {
+        "object": "hallway",
+        "relation": "in",
+        "subject": "trashcan"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "sitting"
+      ],
+      "category": "trashcan"
+    },
+    "view_constraints": []
+  },
+  "this is a chair . it sets between 2 tables .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a chair . it sets between 2 tables .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "between",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the microwave is left of the door . the microwave is a white rectangular prism .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "the microwave is left of the door . the microwave is a white rectangular prism .",
+    "relations": [
+      {
+        "object": "door",
+        "relation": "left of",
+        "subject": "microwave"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "rectangular prism"
+      ],
+      "category": "microwave"
+    },
+    "view_constraints": []
+  },
+  "the kitchen table chair . the chair is on the right under the table .": {
+    "anchors": [
+      {
+        "attributes": [
+          "kitchen"
+        ],
+        "category": "table",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "the kitchen table chair . the chair is on the right under the table .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "on the right",
+        "subject": "chair"
+      },
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "kitchen",
+        "on the right",
+        "under the table"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side of the table",
+      "under the table"
+    ]
+  },
+  "this is a chair . it sets against the wall by another chair .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "this is a chair . it sets against the wall by another chair .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "next to",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "it is a wooden desk chair . it is the chair that is second to last on the right side of the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "right side of"
+      }
+    ],
+    "raw_query": "it is a wooden desk chair . it is the chair that is second to last on the right side of the table .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "is located on the right side of",
+        "subject": "chair"
+      },
+      {
+        "object": "in a sequence on the right side of the table",
+        "relation": "is second to last",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "wooden",
+        "second to last",
+        "on the right side of the table"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side of the table"
+    ]
+  },
+  "this is a black chair . it is at the corner of the table .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "corner"
+      }
+    ],
+    "raw_query": "this is a black chair . it is at the corner of the table .",
+    "relations": [
+      {
+        "object": "corner of table",
+        "relation": "at",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this cabinet is on the other side . its green in color .": {
+    "anchors": [],
+    "raw_query": "this cabinet is on the other side . its green in color .",
+    "relations": [
+      {
+        "object": "unknown",
+        "relation": "on the other side",
+        "subject": "cabinet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "green"
+      ],
+      "category": "cabinet"
+    },
+    "view_constraints": [
+      "on the other side"
+    ]
+  },
+  "this towel is curled . it is hung .": {
+    "anchors": [],
+    "raw_query": "this towel is curled . it is hung .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "curled",
+        "hung"
+      ],
+      "category": "towel"
+    },
+    "view_constraints": []
+  },
+  "there is a table that has two chairs tucked under it . it also has a red and black object on it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [
+          "red",
+          "black"
+        ],
+        "category": "object",
+        "relation_to_target": "on"
+      }
+    ],
+    "raw_query": "there is a table that has two chairs tucked under it . it also has a red and black object on it .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "under",
+        "subject": "chair"
+      },
+      {
+        "object": "table",
+        "relation": "on",
+        "subject": "object"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "a white sink . on the side of the bathroom .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bathroom",
+        "relation_to_target": "contains"
+      }
+    ],
+    "raw_query": "a white sink . on the side of the bathroom .",
+    "relations": [
+      {
+        "object": "bathroom",
+        "relation": "on the side of",
+        "subject": "sink"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "sink"
+    },
+    "view_constraints": [
+      "side of bathroom"
+    ]
+  },
+  "this is a white keyboard . it is located below the computer screen on the right .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "computer screen",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "this is a white keyboard . it is located below the computer screen on the right .",
+    "relations": [
+      {
+        "object": "computer screen",
+        "relation": "below",
+        "subject": "keyboard"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "keyboard"
+    },
+    "view_constraints": [
+      "right"
+    ]
+  },
+  "the chair is in one of the sides of the room . the color of the chair is brown .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "room",
+        "relation_to_target": "contains"
+      }
+    ],
+    "raw_query": "the chair is in one of the sides of the room . the color of the chair is brown .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "in",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "side of the room"
+    ]
+  },
+  "the highlighted object is the kitchen refrigerator . it has a freezer on top . it appears to have stainless steel components . there are magnets and other items stuck to the front and side of it .": {
+    "anchors": [],
+    "raw_query": "the highlighted object is the kitchen refrigerator . it has a freezer on top . it appears to have stainless steel components . there are magnets and other items stuck to the front and side of it .",
+    "relations": [
+      {
+        "object": "freezer",
+        "relation": "has",
+        "subject": "refrigerator"
+      },
+      {
+        "object": "magnets",
+        "relation": "has",
+        "subject": "refrigerator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "kitchen",
+        "stainless steel",
+        "freezer on top",
+        "magnets on front and side"
+      ],
+      "category": "refrigerator"
+    },
+    "view_constraints": [
+      "front and side view"
+    ]
+  },
+  "the chair is black and is pushed into the desk . it is located pushed into the desk across from the bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "pushed into"
+      },
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "across from"
+      }
+    ],
+    "raw_query": "the chair is black and is pushed into the desk . it is located pushed into the desk across from the bed .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "pushed into",
+        "subject": "chair"
+      },
+      {
+        "object": "bed",
+        "relation": "across from",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this bench is on the top left corner . it is dark .": {
+    "anchors": [],
+    "raw_query": "this bench is on the top left corner . it is dark .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "dark"
+      ],
+      "category": "bench"
+    },
+    "view_constraints": [
+      "top left corner"
+    ]
+  },
+  "this is a rectangular flat panel monitor . it is the last monitor on the right in the front row of monitors .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "monitor",
+        "relation_to_target": "in the front row"
+      }
+    ],
+    "raw_query": "this is a rectangular flat panel monitor . it is the last monitor on the right in the front row of monitors .",
+    "relations": [
+      {
+        "object": "the last monitor on the right in the front row of monitors",
+        "relation": "is",
+        "subject": "monitor"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "flat panel"
+      ],
+      "category": "monitor"
+    },
+    "view_constraints": [
+      "front row",
+      "right side"
+    ]
+  },
+  "this is a square table . it is to the left of shelves .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "shelves",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "this is a square table . it is to the left of shelves .",
+    "relations": [
+      {
+        "object": "shelves",
+        "relation": "to the left of",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "square"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "this chair is on the right side . it is facing left .": {
+    "anchors": [],
+    "raw_query": "this chair is on the right side . it is facing left .",
+    "relations": [
+      {
+        "object": "scene",
+        "relation": "on the right side of",
+        "subject": "chair"
+      },
+      {
+        "object": "left",
+        "relation": "facing",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "on the right side",
+        "facing left"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side",
+      "facing left"
+    ]
+  },
+  "the multi color curtain is closest to the open closet door . right in front of this curtain there is door straight ahead .": {
+    "anchors": [
+      {
+        "attributes": [
+          "open"
+        ],
+        "category": "closet door",
+        "relation_to_target": "closest to"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "the multi color curtain is closest to the open closet door . right in front of this curtain there is door straight ahead .",
+    "relations": [
+      {
+        "object": "closet door",
+        "relation": "closest to",
+        "subject": "curtain"
+      },
+      {
+        "object": "curtain",
+        "relation": "in front of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "multi color"
+      ],
+      "category": "curtain"
+    },
+    "view_constraints": [
+      "straight ahead"
+    ]
+  },
+  "a chair sits near a long wooden table . it is the second chair from the right .": {
+    "anchors": [
+      {
+        "attributes": [
+          "long",
+          "wooden"
+        ],
+        "category": "table",
+        "relation_to_target": "near"
+      }
+    ],
+    "raw_query": "a chair sits near a long wooden table . it is the second chair from the right .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "near",
+        "subject": "chair"
+      },
+      {
+        "object": "second from the right",
+        "relation": "is",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "second from the right"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side of the table"
+    ]
+  },
+  "this chair is in the middle . it is facing right .": {
+    "anchors": [],
+    "raw_query": "this chair is in the middle . it is facing right .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "in the middle",
+        "facing right"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "facing right"
+    ]
+  },
+  "this is a black chair . it is to the left of another chair .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a black chair . it is to the left of another chair .",
+    "relations": [
+      {
+        "object": "another chair",
+        "relation": "left of",
+        "subject": "black chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "in the room there is a cream colored door to the left of the wooden shelves and to the right of the water heater . the door is slightly open and has a door handle about half way up on the right side .": {
+    "anchors": [
+      {
+        "attributes": [
+          "wooden"
+        ],
+        "category": "shelves",
+        "relation_to_target": "to the left of"
+      },
+      {
+        "attributes": [],
+        "category": "water heater",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "in the room there is a cream colored door to the left of the wooden shelves and to the right of the water heater . the door is slightly open and has a door handle about half way up on the right side .",
+    "relations": [
+      {
+        "object": "shelves",
+        "relation": "to the left of",
+        "subject": "door"
+      },
+      {
+        "object": "water heater",
+        "relation": "to the right of",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "cream colored",
+        "slightly open",
+        "has door handle",
+        "door handle about half way up on the right side"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "the picture is on the back wall of the room . it is to the right of the shower curtain .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "shower curtain",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "the picture is on the back wall of the room . it is to the right of the shower curtain .",
+    "relations": [
+      {
+        "object": "back wall",
+        "relation": "on",
+        "subject": "picture"
+      },
+      {
+        "object": "shower curtain",
+        "relation": "to the right of",
+        "subject": "picture"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "picture"
+    },
+    "view_constraints": [
+      "back wall of the room"
+    ]
+  },
+  "this is a metallic round table with a base of one pole . it is below the picture on the wall and between two red stools .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "picture",
+        "relation_to_target": "above"
+      },
+      {
+        "attributes": [
+          "red"
+        ],
+        "category": "stool",
+        "relation_to_target": "left and right"
+      }
+    ],
+    "raw_query": "this is a metallic round table with a base of one pole . it is below the picture on the wall and between two red stools .",
+    "relations": [
+      {
+        "object": "picture",
+        "relation": "below",
+        "subject": "table"
+      },
+      {
+        "object": "two red stools",
+        "relation": "between",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "metallic",
+        "round",
+        "one pole base"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "the chair is left of a desk that is between the two blackboards . the chair is black with a curved back .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "right"
+      },
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "blackboard",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "the chair is left of a desk that is between the two blackboards . the chair is black with a curved back .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "left of",
+        "subject": "chair"
+      },
+      {
+        "object": "two blackboards",
+        "relation": "between",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "curved back"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the pillow is on a black couch that is placed in the northern corner of the room with a whiteboard above it . it has a dirty silver color and is shaped like a rectangular prism with one of the sides caved in .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "couch",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [],
+        "category": "whiteboard",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "the pillow is on a black couch that is placed in the northern corner of the room with a whiteboard above it . it has a dirty silver color and is shaped like a rectangular prism with one of the sides caved in .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "on",
+        "subject": "pillow"
+      },
+      {
+        "object": "couch",
+        "relation": "above",
+        "subject": "whiteboard"
+      },
+      {
+        "object": "northern corner of the room",
+        "relation": "in",
+        "subject": "couch"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dirty silver color",
+        "rectangular prism",
+        "one side caved in"
+      ],
+      "category": "pillow"
+    },
+    "view_constraints": [
+      "northern corner of the room"
+    ]
+  },
+  "this is a white shelf . it is between tables .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a white shelf . it is between tables .",
+    "relations": [
+      {
+        "object": "tables",
+        "relation": "between",
+        "subject": "shelf"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "shelf"
+    },
+    "view_constraints": []
+  },
+  "a wooden square table . in the middle of the room .": {
+    "anchors": [],
+    "raw_query": "a wooden square table . in the middle of the room .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "wooden",
+        "square"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "in the middle of the room"
+    ]
+  },
+  "the whiteboard is next to two doors . the whiteboard is a long , white rectangle .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the whiteboard is next to two doors . the whiteboard is a long , white rectangle .",
+    "relations": [
+      {
+        "object": "door",
+        "relation": "next to",
+        "subject": "whiteboard"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "long",
+        "white",
+        "rectangle"
+      ],
+      "category": "whiteboard"
+    },
+    "view_constraints": []
+  },
+  "the trash can is the second closest to the door out of the group of cans . the trash can has a plastic bag over it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "second closest"
+      }
+    ],
+    "raw_query": "the trash can is the second closest to the door out of the group of cans . the trash can has a plastic bag over it .",
+    "relations": [
+      {
+        "object": "door",
+        "relation": "is second closest to",
+        "subject": "trash can"
+      },
+      {
+        "object": "plastic bag",
+        "relation": "has",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "has plastic bag over it"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": []
+  },
+  "this is the closet doors in the corner of the room . a bed is present in front of the closet .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "this is the closet doors in the corner of the room . a bed is present in front of the closet .",
+    "relations": [
+      {
+        "object": "closet doors",
+        "relation": "in front of",
+        "subject": "bed"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "in the corner of the room"
+      ],
+      "category": "closet doors"
+    },
+    "view_constraints": [
+      "corner of the room"
+    ]
+  },
+  "there are two black chairs situated between six brown chairs and a black couch . this black chair is next to the black couch . it appears to be leather . it is black . there is a snack machine on the opposite wall .": {
+    "anchors": [
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "couch",
+        "relation_to_target": "next to"
+      },
+      {
+        "attributes": [
+          "brown"
+        ],
+        "category": "chair",
+        "relation_to_target": "between"
+      },
+      {
+        "attributes": [],
+        "category": "snack machine",
+        "relation_to_target": "opposite wall"
+      }
+    ],
+    "raw_query": "there are two black chairs situated between six brown chairs and a black couch . this black chair is next to the black couch . it appears to be leather . it is black . there is a snack machine on the opposite wall .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "next to",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "between",
+        "subject": "chair"
+      },
+      {
+        "object": "snack machine",
+        "relation": "opposite wall",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "leather"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "opposite wall"
+    ]
+  },
+  "the chair is black and oriented beside another surface . it is spatially facing about 330 degrees in relation to the viewer .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "surface",
+        "relation_to_target": "beside"
+      }
+    ],
+    "raw_query": "the chair is black and oriented beside another surface . it is spatially facing about 330 degrees in relation to the viewer .",
+    "relations": [
+      {
+        "object": "surface",
+        "relation": "beside",
+        "subject": "chair"
+      },
+      {
+        "object": "viewer",
+        "relation": "facing",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "facing about 330 degrees"
+    ]
+  },
+  "this is a framed picture on the wall in the bathroom . it is above the toilet .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "on"
+      },
+      {
+        "attributes": [],
+        "category": "toilet",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "this is a framed picture on the wall in the bathroom . it is above the toilet .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "on",
+        "subject": "picture"
+      },
+      {
+        "object": "toilet",
+        "relation": "above",
+        "subject": "picture"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "framed"
+      ],
+      "category": "picture"
+    },
+    "view_constraints": [
+      "bathroom"
+    ]
+  },
+  "this window is bright . it is facing inward .": {
+    "anchors": [],
+    "raw_query": "this window is bright . it is facing inward .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "bright",
+        "facing inward"
+      ],
+      "category": "window"
+    },
+    "view_constraints": [
+      "facing inward"
+    ]
+  },
+  "it is a white window . the white window is is next to the white window curtain .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "window curtain",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "it is a white window . the white window is is next to the white window curtain .",
+    "relations": [
+      {
+        "object": "window curtain",
+        "relation": "next to",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "window"
+    },
+    "view_constraints": []
+  },
+  "this is a black keyboard . it is in front of a monitor .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "monitor",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "this is a black keyboard . it is in front of a monitor .",
+    "relations": [
+      {
+        "object": "monitor",
+        "relation": "in front of",
+        "subject": "keyboard"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "keyboard"
+    },
+    "view_constraints": []
+  },
+  "this storage bin is on the top right . it is box shaped .": {
+    "anchors": [],
+    "raw_query": "this storage bin is on the top right . it is box shaped .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "box shaped"
+      ],
+      "category": "storage bin"
+    },
+    "view_constraints": [
+      "top right"
+    ]
+  },
+  "the trash can is the rightmost one out of a row of three trash cans next to the bed . the trash can is blue and has a plastic bag on top .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the trash can is the rightmost one out of a row of three trash cans next to the bed . the trash can is blue and has a plastic bag on top .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "is next to",
+        "subject": "trash can"
+      },
+      {
+        "object": "row of three trash cans",
+        "relation": "is rightmost in",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "blue",
+        "has plastic bag on top",
+        "rightmost"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": []
+  },
+  "the sink is north of the table in the center . the sink is rectangular and metallic .": {
+    "anchors": [
+      {
+        "attributes": [
+          "in the center"
+        ],
+        "category": "table",
+        "relation_to_target": "south"
+      }
+    ],
+    "raw_query": "the sink is north of the table in the center . the sink is rectangular and metallic .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "north of",
+        "subject": "sink"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "metallic"
+      ],
+      "category": "sink"
+    },
+    "view_constraints": [
+      "north of table",
+      "center"
+    ]
+  },
+  "this is a brown table . it sets along the wall , with a microwave on top of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "adjacent"
+      },
+      {
+        "attributes": [],
+        "category": "microwave",
+        "relation_to_target": "on top of"
+      }
+    ],
+    "raw_query": "this is a brown table . it sets along the wall , with a microwave on top of it .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "adjacent to",
+        "subject": "table"
+      },
+      {
+        "object": "table",
+        "relation": "on top of",
+        "subject": "microwave"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "there is a square brown nightstand . it is left of the bed .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "there is a square brown nightstand . it is left of the bed .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "left of",
+        "subject": "nightstand"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "square",
+        "brown"
+      ],
+      "category": "nightstand"
+    },
+    "view_constraints": []
+  },
+  "the black chair is located in front of the wooden door . the chair is also located to the right of a white shelving unit .": {
+    "anchors": [
+      {
+        "attributes": [
+          "wooden"
+        ],
+        "category": "door",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "shelving unit",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "the black chair is located in front of the wooden door . the chair is also located to the right of a white shelving unit .",
+    "relations": [
+      {
+        "object": "door",
+        "relation": "in front of",
+        "subject": "chair"
+      },
+      {
+        "object": "shelving unit",
+        "relation": "to the right of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "the pillow is on top of the couch . it is on the furthest left .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "under"
+      }
+    ],
+    "raw_query": "the pillow is on top of the couch . it is on the furthest left .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "on top of",
+        "subject": "pillow"
+      },
+      {
+        "object": "couch",
+        "relation": "on the furthest left",
+        "subject": "pillow"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "pillow"
+    },
+    "view_constraints": [
+      "on the furthest left"
+    ]
+  },
+  "this is a desk chair facing towards a desk . it is dark colored and pushed in .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "facing towards"
+      }
+    ],
+    "raw_query": "this is a desk chair facing towards a desk . it is dark colored and pushed in .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "facing towards",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "dark colored",
+        "pushed in"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a big screen tv . it is affixed to the wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "affixed to"
+      }
+    ],
+    "raw_query": "this is a big screen tv . it is affixed to the wall .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "affixed to",
+        "subject": "tv"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "big screen"
+      ],
+      "category": "tv"
+    },
+    "view_constraints": []
+  },
+  "this is a small night stand kept close to the wall . a table on the left and bed on the right are kept close to it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "this is a small night stand kept close to the wall . a table on the left and bed on the right are kept close to it .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "close to",
+        "subject": "night stand"
+      },
+      {
+        "object": "night stand",
+        "relation": "on the left of",
+        "subject": "table"
+      },
+      {
+        "object": "night stand",
+        "relation": "on the right of",
+        "subject": "bed"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "small"
+      ],
+      "category": "night stand"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular silver refrigerator . it is at the side of the room and next to brown cabinets .": {
+    "anchors": [
+      {
+        "attributes": [
+          "brown"
+        ],
+        "category": "cabinets",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular silver refrigerator . it is at the side of the room and next to brown cabinets .",
+    "relations": [
+      {
+        "object": "cabinets",
+        "relation": "next to",
+        "subject": "refrigerator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "silver"
+      ],
+      "category": "refrigerator"
+    },
+    "view_constraints": [
+      "at the side of the room"
+    ]
+  },
+  "the sink is white and has a wide counter around it . the sink is in between two walls .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "between"
+      }
+    ],
+    "raw_query": "the sink is white and has a wide counter around it . the sink is in between two walls .",
+    "relations": [
+      {
+        "object": "two walls",
+        "relation": "in between",
+        "subject": "sink"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "has wide counter"
+      ],
+      "category": "sink"
+    },
+    "view_constraints": []
+  },
+  "the curtain is by the white table . the curtain is gray .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "table",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "the curtain is by the white table . the curtain is gray .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "by",
+        "subject": "curtain"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "gray"
+      ],
+      "category": "curtain"
+    },
+    "view_constraints": []
+  },
+  "there is a rectangular radiator . it is next to a white chair .": {
+    "anchors": [
+      {
+        "attributes": [
+          "white"
+        ],
+        "category": "chair",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a rectangular radiator . it is next to a white chair .",
+    "relations": [
+      {
+        "object": "chair",
+        "relation": "next to",
+        "subject": "radiator"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular"
+      ],
+      "category": "radiator"
+    },
+    "view_constraints": []
+  },
+  "this is a janitor cart holding supplies . its front is facing away fron the viewer .": {
+    "anchors": [],
+    "raw_query": "this is a janitor cart holding supplies . its front is facing away fron the viewer .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "holding supplies"
+      ],
+      "category": "janitor cart"
+    },
+    "view_constraints": [
+      "front facing away from viewer"
+    ]
+  },
+  "the rectangle trash can . the trash can is by the hamper .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "hamper",
+        "relation_to_target": "by"
+      }
+    ],
+    "raw_query": "the rectangle trash can . the trash can is by the hamper .",
+    "relations": [
+      {
+        "object": "hamper",
+        "relation": "by",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangle"
+      ],
+      "category": "trash can"
+    },
+    "view_constraints": []
+  },
+  "the object is a wooden chair . it is the right most chair against the wall . there is a large window behind it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "against"
+      },
+      {
+        "attributes": [
+          "large"
+        ],
+        "category": "window",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "the object is a wooden chair . it is the right most chair against the wall . there is a large window behind it .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "behind",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "wooden"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right most"
+    ]
+  },
+  "the sink is white . it is on top of the counter .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "counter",
+        "relation_to_target": "below"
+      }
+    ],
+    "raw_query": "the sink is white . it is on top of the counter .",
+    "relations": [
+      {
+        "object": "counter",
+        "relation": "on top of",
+        "subject": "sink"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "sink"
+    },
+    "view_constraints": []
+  },
+  "this is a white soap dispenser . it is above a sink .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "sink",
+        "relation_to_target": "below"
+      }
+    ],
+    "raw_query": "this is a white soap dispenser . it is above a sink .",
+    "relations": [
+      {
+        "object": "sink",
+        "relation": "above",
+        "subject": "soap dispenser"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "soap dispenser"
+    },
+    "view_constraints": []
+  },
+  "this is a rack object with different surfaces atop each other . there are objects on top of them .": {
+    "anchors": [],
+    "raw_query": "this is a rack object with different surfaces atop each other . there are objects on top of them .",
+    "relations": [
+      {
+        "object": "rack",
+        "relation": "on top of",
+        "subject": "objects"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "different surfaces atop each other"
+      ],
+      "category": "rack"
+    },
+    "view_constraints": []
+  },
+  "this toaster oven is black . it is on the far hard surface .": {
+    "anchors": [
+      {
+        "attributes": [
+          "far"
+        ],
+        "category": "hard surface",
+        "relation_to_target": "supporting"
+      }
+    ],
+    "raw_query": "this toaster oven is black . it is on the far hard surface .",
+    "relations": [
+      {
+        "object": "hard surface",
+        "relation": "on",
+        "subject": "toaster oven"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black"
+      ],
+      "category": "toaster oven"
+    },
+    "view_constraints": [
+      "far"
+    ]
+  },
+  "a grey chair is behind a table and black chairs . the grey chair is leaning back and has a black chair to the right of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "in front of"
+      },
+      {
+        "attributes": [
+          "black"
+        ],
+        "category": "chair",
+        "relation_to_target": "to the right of"
+      }
+    ],
+    "raw_query": "a grey chair is behind a table and black chairs . the grey chair is leaning back and has a black chair to the right of it .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "behind",
+        "subject": "grey chair"
+      },
+      {
+        "object": "black chairs",
+        "relation": "behind",
+        "subject": "grey chair"
+      },
+      {
+        "object": "none",
+        "relation": "leaning back",
+        "subject": "grey chair"
+      },
+      {
+        "object": "grey chair",
+        "relation": "to the right of",
+        "subject": "black chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "grey",
+        "leaning back"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "behind",
+      "to the right of"
+    ]
+  },
+  "there is a black and white toilet . it is to the left of the bathroom stall door .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bathroom stall door",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "there is a black and white toilet . it is to the left of the bathroom stall door .",
+    "relations": [
+      {
+        "object": "bathroom stall door",
+        "relation": "left of",
+        "subject": "toilet"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "white"
+      ],
+      "category": "toilet"
+    },
+    "view_constraints": []
+  },
+  "this is a toilet . it is made of porcelain .": {
+    "anchors": [],
+    "raw_query": "this is a toilet . it is made of porcelain .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "made of porcelain"
+      ],
+      "category": "toilet"
+    },
+    "view_constraints": []
+  },
+  "there is a circular wooden end table . it is next to a teal couch .": {
+    "anchors": [
+      {
+        "attributes": [
+          "teal"
+        ],
+        "category": "couch",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a circular wooden end table . it is next to a teal couch .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "next to",
+        "subject": "table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "circular",
+        "wooden",
+        "end"
+      ],
+      "category": "table"
+    },
+    "view_constraints": []
+  },
+  "it is a white table . the white table is sitting behind the two brown desks in the far left corner of the room .": {
+    "anchors": [
+      {
+        "attributes": [
+          "brown"
+        ],
+        "category": "desk",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "it is a white table . the white table is sitting behind the two brown desks in the far left corner of the room .",
+    "relations": [
+      {
+        "object": "desks",
+        "relation": "behind",
+        "subject": "table"
+      },
+      {
+        "object": "far left corner of the room",
+        "relation": "in",
+        "subject": "desks"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "far left corner of the room"
+    ]
+  },
+  "there is a square beige table . it is next to a large rectangular table at the side of the room .": {
+    "anchors": [
+      {
+        "attributes": [
+          "large",
+          "rectangular"
+        ],
+        "category": "table",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "there is a square beige table . it is next to a large rectangular table at the side of the room .",
+    "relations": [
+      {
+        "object": "large rectangular table",
+        "relation": "next to",
+        "subject": "square beige table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "square",
+        "beige"
+      ],
+      "category": "table"
+    },
+    "view_constraints": [
+      "side of the room"
+    ]
+  },
+  "this radiator is attached to the wall under the window . two trash cans are present in front of this .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "attached to"
+      },
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "above"
+      }
+    ],
+    "raw_query": "this radiator is attached to the wall under the window . two trash cans are present in front of this .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "attached to",
+        "subject": "radiator"
+      },
+      {
+        "object": "window",
+        "relation": "under",
+        "subject": "radiator"
+      },
+      {
+        "object": "radiator",
+        "relation": "in front of",
+        "subject": "trash can"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "attached to wall",
+        "under window"
+      ],
+      "category": "radiator"
+    },
+    "view_constraints": [
+      "front view of radiator",
+      "below window"
+    ]
+  },
+  "this is a closed door . it is wooden and has a handle .": {
+    "anchors": [],
+    "raw_query": "this is a closed door . it is wooden and has a handle .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "closed",
+        "wooden",
+        "has handle"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "this sofa chair is in the middle . it is dark .": {
+    "anchors": [],
+    "raw_query": "this sofa chair is in the middle . it is dark .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "dark",
+        "in the middle"
+      ],
+      "category": "sofa chair"
+    },
+    "view_constraints": [
+      "in the middle"
+    ]
+  },
+  "a green and black chair is pulled out from a desk . there is a keyboard to the left of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "keyboard",
+        "relation_to_target": "left"
+      }
+    ],
+    "raw_query": "a green and black chair is pulled out from a desk . there is a keyboard to the left of it .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "pulled out from",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "to the left of",
+        "subject": "keyboard"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "green",
+        "black"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "it is a black adjustable desk chair . it is pushed up under the desk table that is against the wall from the left side of the bed .": {
+    "anchors": [
+      {
+        "attributes": [
+          "table"
+        ],
+        "category": "desk",
+        "relation_to_target": "under"
+      },
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "left side of"
+      }
+    ],
+    "raw_query": "it is a black adjustable desk chair . it is pushed up under the desk table that is against the wall from the left side of the bed .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "under",
+        "subject": "chair"
+      },
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "desk"
+      },
+      {
+        "object": "bed",
+        "relation": "left side of",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "black",
+        "adjustable"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "left side of the bed",
+      "against the wall"
+    ]
+  },
+  "a bookshelf is against the wall with a door to the left of it . this bookshelf has a desk and chair in front of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "wall",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "door",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "in front"
+      },
+      {
+        "attributes": [],
+        "category": "chair",
+        "relation_to_target": "in front"
+      }
+    ],
+    "raw_query": "a bookshelf is against the wall with a door to the left of it . this bookshelf has a desk and chair in front of it .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "against",
+        "subject": "bookshelf"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "to the left of",
+        "subject": "door"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "in front of",
+        "subject": "desk"
+      },
+      {
+        "object": "bookshelf",
+        "relation": "in front of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "against the wall"
+      ],
+      "category": "bookshelf"
+    },
+    "view_constraints": []
+  },
+  "the door is next to the trash can and a table . the door is a brown rectangle .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "trash can",
+        "relation_to_target": "next to"
+      },
+      {
+        "attributes": [],
+        "category": "table",
+        "relation_to_target": "next to"
+      }
+    ],
+    "raw_query": "the door is next to the trash can and a table . the door is a brown rectangle .",
+    "relations": [
+      {
+        "object": "trash can",
+        "relation": "next to",
+        "subject": "door"
+      },
+      {
+        "object": "table",
+        "relation": "next to",
+        "subject": "door"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "brown",
+        "rectangle"
+      ],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "the chair is sitting with a round table behind it . there are two armchairs behind it .": {
+    "anchors": [
+      {
+        "attributes": [
+          "round"
+        ],
+        "category": "table",
+        "relation_to_target": "behind"
+      },
+      {
+        "attributes": [],
+        "category": "armchair",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "the chair is sitting with a round table behind it . there are two armchairs behind it .",
+    "relations": [
+      {
+        "object": "table",
+        "relation": "in front of",
+        "subject": "chair"
+      },
+      {
+        "object": "armchair",
+        "relation": "in front of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "chair"
+    },
+    "view_constraints": []
+  },
+  "this is a sink basin that is empty . it is white and tan .": {
+    "anchors": [],
+    "raw_query": "this is a sink basin that is empty . it is white and tan .",
+    "relations": [],
+    "target": {
+      "attributes": [
+        "empty",
+        "white",
+        "tan"
+      ],
+      "category": "sink basin"
+    },
+    "view_constraints": []
+  },
+  "there is a chair with an orange seat in the back of the room , facing away from the wall . there is a blue container to the right .": {
+    "anchors": [
+      {
+        "attributes": [
+          "blue"
+        ],
+        "category": "container",
+        "relation_to_target": "to the right"
+      }
+    ],
+    "raw_query": "there is a chair with an orange seat in the back of the room , facing away from the wall . there is a blue container to the right .",
+    "relations": [
+      {
+        "object": "wall",
+        "relation": "facing away from",
+        "subject": "chair"
+      },
+      {
+        "object": "room",
+        "relation": "in back of",
+        "subject": "chair"
+      },
+      {
+        "object": "chair",
+        "relation": "to the right of",
+        "subject": "container"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "orange seat"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "back of the room",
+      "facing away from the wall"
+    ]
+  },
+  "the bed is on the left side of the room . it has a green cover .": {
+    "anchors": [],
+    "raw_query": "the bed is on the left side of the room . it has a green cover .",
+    "relations": [
+      {
+        "object": "room",
+        "relation": "on the left side of",
+        "subject": "bed"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "green cover"
+      ],
+      "category": "bed"
+    },
+    "view_constraints": [
+      "left side of the room"
+    ]
+  },
+  "the door is to the right of the desk . the door has shelves in front of it .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "left"
+      },
+      {
+        "attributes": [],
+        "category": "shelves",
+        "relation_to_target": "front"
+      }
+    ],
+    "raw_query": "the door is to the right of the desk . the door has shelves in front of it .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "right of",
+        "subject": "door"
+      },
+      {
+        "object": "door",
+        "relation": "in front of",
+        "subject": "shelves"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "door"
+    },
+    "view_constraints": []
+  },
+  "there is a window . it is to the left of the desk and shelves .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "desk",
+        "relation_to_target": "right"
+      },
+      {
+        "attributes": [],
+        "category": "shelves",
+        "relation_to_target": "right"
+      }
+    ],
+    "raw_query": "there is a window . it is to the left of the desk and shelves .",
+    "relations": [
+      {
+        "object": "desk",
+        "relation": "left of",
+        "subject": "window"
+      },
+      {
+        "object": "shelves",
+        "relation": "left of",
+        "subject": "window"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "window"
+    },
+    "view_constraints": []
+  },
+  "the chair is north of the closet . the chair is white and has four legs .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "closet",
+        "relation_to_target": "south of"
+      }
+    ],
+    "raw_query": "the chair is north of the closet . the chair is white and has four legs .",
+    "relations": [
+      {
+        "object": "closet",
+        "relation": "north of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "white",
+        "has four legs"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "north of closet"
+    ]
+  },
+  "the waist height white oscillating fan is positioned beside the bed and desk chair . if you enter the bedroom door and continue straight ahead you will run into it before reaching the bed . against the rear wall .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "bed",
+        "relation_to_target": "beside"
+      },
+      {
+        "attributes": [],
+        "category": "desk chair",
+        "relation_to_target": "beside"
+      }
+    ],
+    "raw_query": "the waist height white oscillating fan is positioned beside the bed and desk chair . if you enter the bedroom door and continue straight ahead you will run into it before reaching the bed . against the rear wall .",
+    "relations": [
+      {
+        "object": "bed",
+        "relation": "beside",
+        "subject": "fan"
+      },
+      {
+        "object": "desk chair",
+        "relation": "beside",
+        "subject": "fan"
+      },
+      {
+        "object": "bed",
+        "relation": "in front of",
+        "subject": "fan"
+      },
+      {
+        "object": "rear wall",
+        "relation": "against",
+        "subject": "fan"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "waist height",
+        "white",
+        "oscillating"
+      ],
+      "category": "fan"
+    },
+    "view_constraints": [
+      "enter bedroom door",
+      "continue straight ahead",
+      "before reaching the bed"
+    ]
+  },
+  "there is a rectangular dark coffee table . it is in front of a couch and at the center of the room .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "couch",
+        "relation_to_target": "behind"
+      }
+    ],
+    "raw_query": "there is a rectangular dark coffee table . it is in front of a couch and at the center of the room .",
+    "relations": [
+      {
+        "object": "couch",
+        "relation": "in front of",
+        "subject": "coffee table"
+      },
+      {
+        "object": "room",
+        "relation": "at center of",
+        "subject": "coffee table"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "rectangular",
+        "dark"
+      ],
+      "category": "coffee table"
+    },
+    "view_constraints": [
+      "center of room"
+    ]
+  },
+  "the object is a desk . if you enter the room it would be located on the right side directly in front of you against the window .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "window",
+        "relation_to_target": "against"
+      }
+    ],
+    "raw_query": "the object is a desk . if you enter the room it would be located on the right side directly in front of you against the window .",
+    "relations": [
+      {
+        "object": "window",
+        "relation": "against",
+        "subject": "desk"
+      },
+      {
+        "object": "entrance",
+        "relation": "on the right side",
+        "subject": "desk"
+      },
+      {
+        "object": "entrance",
+        "relation": "directly in front of",
+        "subject": "desk"
+      }
+    ],
+    "target": {
+      "attributes": [],
+      "category": "desk"
+    },
+    "view_constraints": [
+      "right side",
+      "directly in front of entrance",
+      "against window"
+    ]
+  },
+  "you are looking for the chair closest to the front . it is on the right side , right behind the chair leg .": {
+    "anchors": [
+      {
+        "attributes": [],
+        "category": "chair leg",
+        "relation_to_target": "in front of"
+      }
+    ],
+    "raw_query": "you are looking for the chair closest to the front . it is on the right side , right behind the chair leg .",
+    "relations": [
+      {
+        "object": "chair leg",
+        "relation": "behind",
+        "subject": "chair"
+      },
+      {
+        "object": "front",
+        "relation": "on the right side of",
+        "subject": "chair"
+      }
+    ],
+    "target": {
+      "attributes": [
+        "closest to the front"
+      ],
+      "category": "chair"
+    },
+    "view_constraints": [
+      "right side",
+      "closest to the front"
+    ]
+  }
+}

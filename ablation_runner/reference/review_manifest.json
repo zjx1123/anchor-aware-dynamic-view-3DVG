@@ -1,0 +1,29 @@
+{
+  "commit": "fa5d69b51bef8ef8fb3e061dfd13606c626ab07c",
+  "verified_full_cases": 250,
+  "recovered_query_parses": 250,
+  "offline_tests_passed": 11,
+  "api_calls_during_review": 0,
+  "live_inference_tested": false,
+  "limitations": [
+    "Remote Full model exact version is not in the log.",
+    "Server data/CLIP/config are not available in this review environment.",
+    "Full is historical and has no prompt/source hashes."
+  ],
+  "files": {
+    "ADVANCED_README_zh.md": "19e0ed4773abf4038bfc25d22ef730bca7e49a1d2a1e82c633c36327917dd03c",
+    "README_zh.md": "bc75e516e061b7cbf4278bc7efa8982f112074ebe2b7714bb5be3bf1dc9e24d0",
+    "reference/full_case_index.csv": "91d5c08b155bbea6fb181f8ea5d43f93fdcee513c5694d715da63b206af7526f",
+    "reference/full_metrics.json": "78d7e67d3266ad8b74377f02ff25bcc8687c75a925b85a78b9e22cac697170f8",
+    "reference/full_scanrefer_20261016.log": "b3e211c905384d936fcb058beb9b1e4e561ba17b9e2e3c2960ffa86a1f1fd538",
+    "reference/query_parse_frozen.json": "3e6310191ddd4993844edd925ca0e9f9e67ba84b421a84c95674007838308a74",
+    "seqvlm/reablate_scanrefer.py": "2786c912da361008db0e83221618e4fc382958fd5b927c7c7795249a1c53f7df",
+    "start_all_scanrefer.py": "550c0402b6557ecbe1dfb97289a38554e11136ea1e6a617bcc4324b3b6e25edc",
+    "tests/test_all_supervisor.py": "d85c233ea9a8e7ce7de9a7de84afe1338b5a72c4690bd4072ab7c559b8fd9a0e",
+    "tests/test_reablation_offline.py": "98d17fd360f4bd58ed53d1433ea88abb882b14e29edaad52a16f77cba35557ef"
+  },
+  "bundle_version": "1.2",
+  "default_api_call_limit": null,
+  "automatic_variants": 6,
+  "real_server_started": false
+}
